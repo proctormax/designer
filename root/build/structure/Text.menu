@@ -1,0 +1,191 @@
+
+[---------------------------------
+         <<menu>>
+	   Text
+---------------------------------
+Show Character,	Ctrl+T
+Show Typography,	Ctrl+Shift+T
+Show Paragraph
+Show Text Styles
+Show Glyph Browser
+---------------------------------
+Character Traits >
+Size >
+Spacing >
+Ligatures >
+Baseline >
+Capitalization >
+---------------------------------
+Alignment >
+Paragraph Leading >
+Vertical Alignment >
+---------------------------------
+Text Styles >
+Reapply Text Styles
+Reapply Base Styles
+---------------------------------
+Insert Filler Text
+Insert Charater >
+---------------------------------
+Spelling >
+---------------------------------]
+
+
+
+[---------------------------------
+            <<menu>>
+	   Edit>Defaults
+---------------------------------
+Synchronize from Selection
+Save
+Revert
+Factory Reset
+---------------------------------]	
+
+
+
+
+[---------------------------------
+            <<menu>>
+    Text > Character Traits
+---------------------------------
+Bold,   Ctrl+B
+Italic, Ctrl+I
+Underlin,   Ctrl+U
+Strikeout
+---------------------------------]
+
+[---------------------------------
+            <<menu>>
+    Text > Size
+---------------------------------
+Bigger, Ctrl+>
+Smaller,    Ctrl+<
+Precise Bigger, Ctrl+Alt+>
+Precise Smaller, Ctrl+Alt+<
+---------------------------------]
+
+[---------------------------------
+            <<menu>>
+    Text > Spacing
+---------------------------------
+Use Default
+Use None
+---------------------------------
+Tighten,    Alt+Left
+Loosen,     Alt+Right
+Tighten More,    Alt+Shift+Left
+Loosen More,     Alt+Shift+Right
+---------------------------------]
+
+[---------------------------------
+            <<menu>>
+    Text > Ligatures
+---------------------------------
+Use Default
+Use None
+Use All
+---------------------------------]
+
+[---------------------------------
+            <<menu>>
+    Text > Baseline
+---------------------------------
+Use Default
+Superscript,            Ctrl+Shift+=
+Subscript,              Ctrl+Alt+-
+---------------------------------
+Raise Baseline,         Alt+Shift+Up
+Lower Baseline,         Alt+Shift+Down
+Precise Raise Baseline, Ctrl+Alt+Shift+Up
+Precise Lower Baseline, Ctrl+Alt+Shift+Down
+---------------------------------]
+
+[---------------------------------
+            <<menu>>
+    Text > Capitalization
+---------------------------------
+None
+Small Caps
+All Caps
+---------------------------------]
+
+[---------------------------------
+           <<menu>>
+         Text > Alignment
+---------------------------------
+Align Left,         Ctrl+Alt+L
+Align Center,       Ctrl+Alt+C
+Align Right,        Ctrl+Alt+R
+---------------------------------]
+
+[---------------------------------
+            <<menu>>
+    Text > Paragraph Leading
+---------------------------------
+Increase,           Alt+Down
+Decrease,           Alt+Up
+Precise Increase,   Ctrl+Alt+Down
+Precise Decrease,   Ctrl+Alt+Up
+---------------------------------]
+
+[---------------------------------
+            <<menu>>
+    Text > Vertical Alignment
+---------------------------------
+Top
+Center
+Bottom
+Justify
+---------------------------------]
+
+[---------------------------------
+            <<menu>>
+    Text > Text Styles
+---------------------------------
+Create Paragraph Style
+Update Paragraph Style
+Delete Paragraph Style
+Set No Paragraph Style
+---------------------------------
+Create Character Style
+Update Character Style
+Delete Character Style
+Set No Character Style
+---------------------------------
+Delete Unused Styles
+Detach and Delete All Styles
+Save Text Styles as Default
+Import Text Styles...
+---------------------------------]
+
+[---------------------------------
+            <<menu>>
+    Text > Insert Charater
+---------------------------------
+Line Break, Shift+Return
+---------------------------------
+Em Dash,    Alt+Shift+-
+En Dash,    Alt+-
+Figure Dash
+---------------------------------
+Em Space
+En Space
+Zero-Width Space
+Non-Breaking Space, Alt+Space
+---------------------------------
+Soft Hyphen,    Ctrl+Shift+-
+Non-Breaking Hyphen,    Ctrl+Alt+-
+---------------------------------]
+
+[---------------------------------
+            <<menu>>
+    Text > Spelling
+---------------------------------
+Show Spelling Options,  Ctrl+Shift+;
+Check Spelling
+---------------------------------
+Check Spelling While Typing
+---------------------------------
+Ignore Mis-Spelt Word
+---------------------------------]

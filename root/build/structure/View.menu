@@ -1,0 +1,135 @@
+[---------------------------------
+            <<menu>>
+	          View
+---------------------------------
+Zoom    >
+---------------------------------
+Rotate Left
+Rotate Right
+Reset Rotation,          Ctrl+Alt+Shift+R
+---------------------------------
+View Mode  >
+---------------------------------
+New View
+Views   >
+---------------------------------
+Show Bleed
+Show Margins
+Show Guides,             Ctrl+;
+Show Grid,               Ctrl+'
+Show Rulers,             Ctrl+R
+---------------------------------
+Lock Guides
+---------------------------------
+Studio  >
+---------------------------------
+Studio Presets  >
+---------------------------------
+Snapping Manager...
+Guides Manager...
+Grid and Axis Manager...
+Assistant Manager...
+Resource Manager...
+---------------------------------
+Move to Previous View Point
+Move to Next View Point
+---------------------------------
+Show Context Toolbar
+---------------------------------
+Show Toolbar,            Ctrl+Alt+T
+Customize Toolbar...
+---------------------------------
+Dock Tools
+Show Tools
+Customize Tools
+---------------------------------
+Toggle UI,               Tab
+---------------------------------]
+
+
+[---------------------------------
+            <<menu>>
+	   View > Zoom
+---------------------------------
+Zoom In,                 Ctrl+=
+Zoom Out,                Ctrl+-
+Zoom to Fit,             Ctrl+0
+Zoom to Width,           Alt+Shift+0
+Zoom to Selection,       Ctrl+Alt+0
+100%,                    Ctrl+1
+200%,                    Ctrl+2
+400%,                    Ctrl+3
+800%,                    Ctrl+4
+Actual Size,             Ctrl+8
+Pixel Size,              Ctrl+9
+---------------------------------]
+
+
+[---------------------------------
+            <<menu>>
+	   View > View Mode
+---------------------------------
+Pixels,                  Ctrl+Alt+Y
+Pixels (Retina),         Ctrl+Alt+Shift+Y
+Vector
+Outline
+---------------------------------
+Single View
+Split View,              ,
+---------------------------------
+Clip to Canvas,          \
+---------------------------------]
+
+
+[---------------------------------
+            <<menu>>
+	   View > Views
+---------------------------------
+<Untitled>[Modified](50.6%)
+---------------------------------]
+
+
+[---------------------------------
+            <<menu>>
+	   View > Studio
+---------------------------------
+32bit
+Appearance
+Assets
+Brushes
+Character
+Color
+Constraints
+Glyph
+History
+Isometric
+LayerFx
+Layers
+Navigator
+Paragraph
+Stock
+Stroke
+Styles
+Swatches
+Symbols
+TextStyles
+Tools
+Transform
+---------------------------------
+Slices
+---------------------------------
+Show Left Studio
+Show Right Studio
+---------------------------------
+Hide Studio,    Ctrl+Shift+H
+Reset Studio
+---------------------------------]
+
+
+[---------------------------------
+            <<menu>>
+	   View > Studio Presets
+---------------------------------
+Add Preset...
+Manage Studio Presets...
+---------------------------------]

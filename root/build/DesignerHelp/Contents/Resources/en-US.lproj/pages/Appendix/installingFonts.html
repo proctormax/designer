@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="install, import, add-on, font, ttf, otf, .ttf, .otf" />
+	<meta name="description" content="How to install fonts for use with your Affinity app." />
+	<title>Installing fonts</title>
+</head>
+
+<body>
+
+	<header>
+		<h1>Installing fonts</h1>
+		<p>Fonts are installed using your operating system, rather than imported into your Affinity app.</p>
+	</header>
+
+	<section class="about">
+		<aside class="box tip">
+			<p>If fonts are supplied in a ZIP archive, <a href="extractingResources.html">extract the archive's contents</a> before proceeding.</p>
+		</aside>
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To install fonts:</summary>
+			<x-osx>
+				<p>Do one of the following:</p>
+				<ul>
+					<li>For an individual font, browse to its file in Finder, double-click the file, then click <span class="ui">Install Font</span>.</li>
+					<li>For multiple fonts, open the Font Book app (included with macOS), click <span class="ui">Add fonts</span> on the toolbar, locate and select the font files, then click <span class="ui">Open</span>.</li>
+					<li>Drag one or more font files from Finder and drop them onto the Font Book app’s icon.</li>
+				</ul>
+			</x-osx>
+			<x-win32>
+				<ol>
+					<li>In an Explorer window, browse to the font files to be installed.</li>
+					<li>Select one or more of the files.</li>
+					<li>Right-click one of the files and select <span class="ui">Install</span>&#8212;please note you may require administrator permission.</li>
+				</ol>
+			</x-win32>
+		</details>
+		
+		<h3>After installing</h3>
+		<p>The fonts should be instantly available in your Affinity app. If not, try quitting and reopening the app.</p>
+		<p class="osx">If the fonts are still unavailable, confirm in your font manager that installation was successful and the fonts are enabled.</p>
+		<p class="win32">If the fonts are still unavailable, confirm in your font manager that installation was successful.</p>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="aboutAffinityResources.html">About Affinity add-ons</a></li>
+			<li><a href="../Panels/glyphPanel.html">Glyph panel</a></li>
+		</ul>
+	</section>
+
+	<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="pre-made, shape, star, tool" />
+	<meta name="description" content="Create stars and petal shapes easily with the Star Tool." />
+	<title>Star Tool</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1><img src="../../../shared/ui/Shape_Star.png" class="tool heading" width="18" height="18" alt="Star" /> Star Tool</h1>
+		<p>The <span class="ui">Star Tool</span> enables you to create all sorts of stars quickly and easily. The added controls even makes it possible to add curved sides to create alternative shapes.</p>
+	</header>
+
+	<figure>
+		<p><img src="../../../shared/shapes_star1.png" class="responsive" alt="Star default" /></p>
+		<figcaption>Default shape and handle position (in red) before customization (with Curved edges enabled).</figcaption>
+	</figure>
+
+	<section class="about">
+		<h2>Customization</h2>
+		<p>The <span class="ui">Star Tool</span> has several options on the shape and on the context toolbar to enable the number of points, the inner radius (length of points) and the curvature of the left and right sides of the points to be controlled.</p>
+
+		<figure>
+			<p><img src="../../../shared/shapes_star2.png" class="responsive" alt="Star alternatives" /></p>
+			<figcaption>Two possible outcomes when the options are customized (with Curved edges enabled).</figcaption>
+		</figure>
+	</section>
+
+	<section class="settings">
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted from the context toolbar:</p>
+		<ul>
+			<li><span class="ui">Fill</span>&#8212;click the color swatch to display a pop-up panel to update fill color.</li>
+			<li><span class="ui">Stroke</span>&#8212;click the color swatch to display a pop-up panel to update stroke color.</li>
+			<li><span class="ui">Stroke properties</span>&#8212;set the stroke style, width, joins, cap ends, order and arrowhead settings via a pop-up panel.</li>
+			<li><img src="../../../shared/ui/cogicon.png" class="tool" width="18" height="18" alt="Presets Icon" /> <span class="ui">Presets</span>&#8212;click to display a pop-up panel from which you may select an existing preset (if any are available) or create a new preset.</li>
+			<li><span class="ui">Curved edges</span>&#8212;when checked, the sides of the star's points can be curved using the <span class="ui">Left</span>/<span class="ui">Right curve</span> settings.</li>
+			<li><span class="ui">Points</span>&#8212;sets the number of protrusions on the shape.</li>
+			<li><span class="ui">Inner radius</span>&#8212;controls the length of the points relative to the center of the star.</li>
+			<li><span class="ui">Outer circle</span>/<span class="ui">Inner circle</span>&#8212;sets the roundness at the point's tips or inner vertices.</li>
+			<li><img src="../../../shared/ui/rotationcntr.png" class="tool" width="16" height="16" alt="Enable Transform Origin" /> <span class="ui">Enable Transform Origin</span>&#8212;displays a movable transform origin about which the shape can be rotated.</li>
+			<li><img src="../../../shared/ui/hideselection.png" class="tool" width="16" height="16" alt="Hide Selection while Dragging" /> <span class="ui">Hide Selection while Dragging</span>&#8212;when selected, the object's selection box is temporarily hidden when transforming the object. If this option is off, the selection box remains visible during transformation. The selected behavior persists across all objects unless it is manually switched.</li>
+ 			<li><img src="../../../shared/ui/alignment_mode.png" class="tool" width="16" height="16" alt="Show Alignment Handles" /> <span class="ui">Show Alignment Handles</span>&#8212;when selected, displays alignment handles at the center and edges of the selected object. Hovering over these handles displays a floating guideline across the page. You can drag the handles to position the center or edges of the selected object in line with this guide.</li>
+ 			<li><img src="../../../shared/ui/multiple_transform.png" class="tool" width="16" height="16" alt="Transform Objects Separately" /> <span class="ui">Transform Objects Separately</span>&#8212;when selected, where multiple objects are selected, they can be be resized, rotated and sheared independently of each other instead of transforming the bounding box.</li>
+			<li><img src="../../../shared/ui/resetboundingbox.png" class="tool" width="16" height="16" alt="Cycle Selection Box" /> <span class="ui">Cycle Selection Box</span>&#8212;after reshaping, rotating, or shearing the object, this option toggles the selection box between a Base box (honors the transform), Regular bounds (ignores transform) or Planar bounds (fitting to an isometric grid if active).</li>
+			<li><img src="../../../shared/ui/converttocurves.png" class="tool" width="16" height="16" alt="Convert to Curves" /> <span class="ui">Convert to Curves</span>&#8212;converts the selected object into a series of connected lines and nodes.</li>
+			<li><span class="ui">Select new object</span>&#8212;when enabled (default), the new shape layer will be selected on creation.</li>
+		</ul>
+
+		<aside class="box note">
+			<p>To reset any red handle to its default position, simply double-click the handle.</p>
+		</aside>
+		
+		<aside class="box prefs">
+			<h3>Preferences</h3>
+			<p>Related behaviors can be adjusted from <a href="../Workspace/preferences.html">the app's preferences</a>:</p>
+			<ul>
+				<li><span class="ui">Tools&gt;Tool Handle Size</span></li>
+			</ul>			
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../CurvesShapes/about_geometricShapes.html">About geometric shapes</a></li>
+			<li><a href="../CurvesShapes/draw_geometricShapes.html">Draw and edit shapes</a></li>
+			<li><a href="tools_doublestar.html">Double Star Tool</a></li>
+			<li><a href="tools_squareStar.html">Square Star Tool</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

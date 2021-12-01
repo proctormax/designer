@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="panels" />
+	<meta name="description" content="Panel overview and settings." />
+	<title>Character panel</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Character panel</h1>
+
+		<p>The <span class="ui">Character</span> panel allows you to apply local formatting to individual letters, words, sentences and paragraphs as well as entire stories.</p>
+
+	</header>
+
+	<section class="about">
+
+		<h2>About the Character panel</h2>
+		
+		<p>The Character panel is unique in providing the ability to:</p>
+		
+		<ul>
+			<li>List typefaces within particular collections (including Missing Fonts).</li>
+			<li>Apply double underline or strikethrough as well as controlling their color independently of text color.</li>
+			<li>Set kerning and shearing.</li>
+			<li>Apply horizontal and vertical scaling.</li>
+		</ul>
+
+		<figure class="nft overrideDE overrideFR">
+			<p><img src="../../images/panel_character.png" class="responsive panel" alt="Character panel" /></p>
+			<figcaption>The Character panel.</figcaption>
+		</figure>
+		
+		<p>The following panel options are available:</p>
+
+		<ul>
+			<li>Collection&#8212;sets the typefaces which are accessible via the panel. Select from the pop-up menu.</li>
+			<li>Typeface&#8212;sets the typeface for the selected text. Select from the pop-up menu.</li>
+			<li>Size&#8212;controls the point size of characters.</li>
+			<li>Font&#8212;controls which typeface style is applied to the selected text.</li>
+			<li><span class="ui">Font color</span>&#8212;sets the color of the text. Select from the pop-up panel.</li>			
+			<li><span class="ui">Background color</span>&#8212;sets the color applied behind the selected text (i.e., creating a highlight effect). Select from the pop-up panel.</li>
+			<li>Text Style&#8212;allows a character <a href="../Text/textStyles.html">text style</a> to be applied to selected text.</li>
+		</ul>
+
+		<details open="open">
+			<summary>Decorations</summary>
+			<ul>
+				<li>Underline&#8212;select whether the text has <span class="ui">No Underline</span> or a single or double underline.</li>
+				<li><span class="ui">Underline color</span>&#8212;sets the color of the text underline. If this is set to 'None', the underline color will match the Font's color. Select from the pop-up panel.</li>
+				<li>Strikethrough&#8212;select whether the text has <span class="ui">No Strikethrough</span> or a single or double strikethrough.</li>
+				<li><span class="ui">Strikethrough color</span>&#8212;sets the color of the text strikethrough. If this is set to 'None', the strikethrough color will match the Font's color. Select from the pop-up panel.</li>				
+			</ul>
+		</details>
+
+		<details open="open">
+			<summary>Positioning and Transform</summary>
+			<ul>
+				<li><span class="ui">Kerning</span>&#8212;controls the kerning (distance) between characters. <span class="ui">Auto</span> will automatically kern characters by default. Positive values give expanded kerning, negative values give condensed kerning. This setting is expressed in permilles, i.e. thousandths of an em space.</li>
+				<li><span class="ui">Tracking</span>&#8212;controls the spacing between characters. This setting is expressed in permilles, i.e. thousandths of an em space.</li>
+				<li><span class="ui">Baseline</span>&#8212;controls where characters naturally sit on a line. Increasing the value lowers the baseline, decreasing the value raises the baseline.</li>
+				<li><span class="ui">Leading Override</span>&#8212;applies local override to selected text to increase the leading with regard to the paragraph’s leading.</li>
+				<li><span class="ui">Shear</span>&#8212;controls the extent of text slant. Positive values will tilt text to the right, negative values will tilt text to the left.</li>
+				<li><span class="ui">Horizontal Scale</span>&#8212;stretches the characters and spacing width with regard to point size.</li>
+				<li><span class="ui">Vertical Scale</span>&#8212;stretches the characters with regard to point size.</li>
+				<li><span class="ui">Superscript</span>&#8212;converts text characters to superscript, i.e. characters are set higher than neighboring characters and font size is decreased.</li>
+				<li><span class="ui">Subscript</span>&#8212;converts text characters to subscript, i.e. characters are set lower than neighboring characters and font size is decreased.</li>
+			</ul>
+		</details>
+
+		<details open="open">
+			<summary>Typography</summary>
+			<ul>
+				<li><span class="ui">Standard Ligatures</span>&#8212;applies any available typeface ligatures to the selected text.</li>
+				<li><span class="ui">Contextual Alternatives</span>&#8212;applies any alternative typeface designs available for glyphs depending on their relative position within a word or with respect to neighboring glyphs.</li>
+				<li><span class="ui">Ordinals</span>&#8212;automatically applies a superscript to letters which are part of an ordinal number.</li>
+				<li><span class="ui">Fractions</span>&#8212;dynamically converts fractions into a single glyph.</li>									
+				<li><span class="ui">Superscript</span>&#8212;converts text characters to superscript, i.e. characters are set higher than neighboring characters and font size is decreased.</li>
+				<li><span class="ui">Subscript</span>&#8212;converts text characters to subscript, i.e. characters are set lower than neighboring characters and font size is decreased.</li>
+				<li><span class="ui">All Caps</span>&#8212;displays all selected text as upper case (or small caps, if <span class="ui">Small Caps</span> option selected).</li>
+				<li><span class="ui">Small Caps</span>&#8212;displays lower case letters as miniature upper case.</li>			
+			</ul>
+		</details>
+
+		<details>
+			<summary>Language</summary>
+			<ul>
+				<li>Choose a language (for spell check and reference purposes). Select from the pop-up menu.</li>			
+			</ul>
+		</details>
+		
+		<details open="open">
+			<summary>Optical Alignment</summary>
+			<p>Optical Alignment determines how certain characters in your document (for example, punctuation marks or particular letters) will fit in relation to the text frame; this can be used to automatically extend lines beginning or ending with certain characters when text frames are snapped to page margin. Adjust the settings to ensure the characters you choose are aligned to your liking.</p>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Text/characters.html">Character formatting</a></li>
+			<li><a href="../Text/opentype_fonts.html">OpenType font features</a></li>
+			<li><a href="paragraphPanel.html">Paragraph panel</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

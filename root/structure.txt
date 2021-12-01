@@ -1,0 +1,320 @@
+User interface:
+    Visual Reference
+    Toolbar
+    Persona Toolbar
+    Context toolbar
+Get started:
+    App registration and content syncing
+    Create new documents
+    New from clipboard
+    Open documents and images
+    Document setup
+    About bit depth
+    Viewing
+    Zooming
+    Document templates
+    PanScroll the Document view
+    Editing files in other Affinity apps
+Artboards:
+    About artboards
+    Adding and removing
+    Selecting, moving and resizing
+    Renaming and viewing
+    Aligning and distributing
+    Design aids
+    Color and opacity
+    Moving artboard content
+    Exporting
+    Printing
+Drawing curves and shapes:
+    About lines, curves and shapes
+    Draw curves and shapes
+    Edit vector curves and shapes
+    Drawing pencil lines
+    About geometric shapes
+    Draw and edit shapes
+    Selecting and aligning nodes
+    Transforming curves and shapes
+    Using multiple strokes and fills
+    Expand stroke
+    Contouring curves and shapes
+    Cornering shapes
+    Fill modes
+Colors:
+    About color
+    Color models
+    About color spaces
+    Color management
+    Using OpenColorIO
+    Selecting colors
+    Sampling colors
+    Global colors
+    Spot colors
+    Overprinting
+    Color chords
+    Gradient editing
+    Transparency
+    Transparency editing
+Layers:
+    About layers
+    Create layers
+    Selecting and editing layers
+    ArrangeManage layers
+    Layer opacity
+    Layer blending
+    Layer blend ranges
+    Image layers
+    Layer clipping
+    Layer masking
+    Using Adjustment layers
+Object control:
+    Selecting objects
+    Grouping objects
+    Duplicating objects
+    Aligning objects
+    Joining objects
+    Creating compounds
+    Distributing and spacing objects
+    Ordering objects
+    Targeting objects
+    Isolating objects
+    Finding objects
+    Transforming objects
+    Rotating and shearing objects
+    Rasterizing
+    Convert objects to curves
+    Styles
+    Copying and pasting objects
+    Using assets
+    Symbols
+    Object defaults
+Placing external content:
+    Embedding vs linking
+    Placing content
+    Resource Manager
+    Using stock photos
+Vector painting:
+    Painting vector brush strokes
+    Modifying vector brush strokes
+    Creating custom vector brushes
+    Pressure sensitivity
+Pixel painting:
+    Painting pixel brush strokes
+    Modifying pixel brushes
+    Creating custom pixel brushes
+    Erasing
+    Retouch
+Text:
+    Working with text
+    Importing text
+    Artistic text
+    Frame text
+    Text on a path
+    Shape text
+    Character formatting
+    Paragraph formatting
+    OpenType font features
+    Special characters and glyphs
+    Spelling
+    Text styles:
+        Using text styles
+        Creating and managing text styles
+        Removing text styles
+        Text style types
+Selections:
+    Creating pixel selections
+    Range pixel selections
+    Sampled color pixel selections
+    Modifying pixel selections
+    Refining pixel selection edges
+    Creating outline selections
+    Flooding pixel selections
+Saving and sharing:
+    Save
+    Setting bleed
+    Working with SVGs
+    Export
+    Print
+    Packaging:
+        About packaging
+        Creating packages
+        Opening packages
+Exporting:
+    Exporting using Export Persona
+    Export OptionsPanel
+    SlicesPanel
+    LayersPanel (Export Persona)
+Design aids:
+    Using undo, redo and history
+    Clip to Canvas
+    Rotate document view
+    Grids
+    Isometric and axonometric grids
+    Ruler and column guides
+    Margins
+    Rulers
+    Measuring guides
+    Dynamic guides
+    Snapping
+    Curve snapping
+    Construction snapping for curves
+    Force Pixel Alignment
+    Constraints
+    Using snapshots
+    Assistant Manager
+Layer effects (FX):
+    Using layer effects
+    3D Effect
+    BevelEmboss
+    Color Overlay
+    Gaussian Blur
+    Gradient Overlay
+    Inner Glow
+    Inner Shadow
+    Outer Glow
+    Outer Shadow
+    Outline
+Adjustments:
+    Applying Adjustments
+    Black and White Adjustment
+    BrightnessContrast Adjustment
+    Channel Mixer Adjustment
+    Color Balance Adjustment
+    Curves Adjustment
+    Exposure Adjustment
+    Gradient Map Adjustment
+    HSL Adjustment
+    Invert Adjustment
+    Lens Filter Adjustment
+    Levels Adjustment
+    LUT Adjustment
+    OpenColorIO Adjustment
+    Posterize Adjustment
+    Recolor Adjustment
+    Selective Color Adjustment
+    ShadowsHighlights Adjustment
+    Soft Proof Adjustment
+    Split Toning Adjustment
+    Threshold Adjustment
+    Vibrance Adjustment
+    White Balance Adjustment
+Workspace:
+    Changing the UI appearance
+    Accessibility
+    Customize
+        Keyboard shortcuts
+        Workspace
+        ToolsPanel
+        Toolbar
+Tools:
+    DesignTools
+        MoveTool
+        NodeTool
+        Point TransformTool
+        ContourTool
+        CornerTool
+        PenTool
+        PencilTool
+        Vector BrushTool
+        FillTool
+        TransparencyTool
+        ArtboardTool
+        Place ImageTool
+        Vector CropTool
+        Color PickerTool
+        Paint BrushTool
+        PixelTool
+        Erase BrushTool
+        Flood FillTool
+        ViewTool
+        ZoomTool
+    ShapeTools
+        RectangleTool
+        EllipseTool
+        Rounded RectangleTool
+        TriangleTool
+        DiamondTool
+        TrapezoidTool
+        PolygonTool
+        StarTool
+        Double StarTool
+        Square StarTool
+        ArrowTool
+        DonutTool
+        PieTool
+        SegmentTool
+        CrescentTool
+        CogTool
+        CloudTool
+        Callout Rounded RectangleTool
+        Callout EllipseTool
+        TearTool
+        HeartTool
+        Cat
+    TextTools
+        Artistic TextTool
+        Frame TextTool
+    SelectionTools
+        Flood SelectTool
+        Marquee SelectionTools
+        Selection BrushTool
+    RetouchTools
+        Dodge BrushTool
+        Burn BrushTool
+        Smudge BrushTool
+        Blur BrushTool
+        Sharpen BrushTool
+    ExportTools
+        SliceTool
+Panels:
+    PreviewPanel
+    AssetsPanel
+    AppearancePanel
+    BrushesPanel
+    CharacterPanel
+    ColorPanel
+    ConstraintsPanel
+    EffectsPanel
+    Export OptionsPanel (Export Persona)
+    Glyph BrowserPanel
+    HistoryPanel
+    IsometricPanel
+    LayersPanel
+    LayersPanel (Export Persona)
+    NavigatorPanel
+    ParagraphPanel
+    SlicesPanel (Export Persona)
+    SnapshotsPanel
+    StockPanel
+    StrokePanel
+    StylesPanel
+    SwatchesPanel
+    SymbolsPanel
+    Text StylesPanel
+    ToolsPanel
+    TransformPanel
+Appendix:
+    System requirements
+    Import and export file formats
+    Contacting us
+    Copyrights
+    Glossary
+    Importing Affinity Resources
+        About Affinity resources
+        Extracting resources
+        Importing assets
+        Importing brushes
+        Installing fonts
+        Importing styles
+        Importing swatches palettes
+        Importing templates
+Extras:
+    Hardware acceleration
+    Third-party support
+        Using pen tablets
+        Using Surface Pen
+        Using Surface Dial
+Keyboard shortcuts
+Preferences
+Expressions for field input
+Field input

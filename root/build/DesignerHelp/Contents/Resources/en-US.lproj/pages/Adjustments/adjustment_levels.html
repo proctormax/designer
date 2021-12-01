@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="adjustment, levels" />
+	<meta name="description" content="Adjust the tonal values of an image by setting the black point, white point, and gamma." />
+	<title>Levels adjustment</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Levels adjustment</h1>
+
+		<p>Adjust the tonal values and color balance of an image by setting the black point, white point, and gamma. Adjusting the levels affects the pixel distribution within an image.</p>
+
+		<figure>
+			<div class="comparison"><img src="../../../shared/adjustment_base.jpg" alt="Before" /><div><img src="../../../shared/adjustment_levels.jpg" alt="After" /></div>
+			</div>
+		</figure>
+
+		<aside class="box tip">
+			<p>Adjustments can be made in any color mode, regardless of the document's current color mode.</p>
+		</aside>
+
+	</header>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted in the dialog:</p>
+		<ul>
+			<li>Select a color mode from the first pop-up menu.</li>
+			<li>Specify a single color channel to apply the adjustment to, including the layer's alpha channel. <span class="ui">Master</span> (the default choice) applies the adjustment to all channels. Select from the second pop-up menu.</li>
+			<li><span class="ui">Black Level</span>&#8212;determines the range of pixels in the image considered to be pure black. Drag the slider to the right to include pixels in the range (thereby increasing shadows), drag to the left to exclude pixels (thereby reducing shadows).</li>
+			<li><span class="ui">White Level</span>&#8212;determines the range of pixels in the image considered to be pure white. Drag the slider to the left to include pixels in the range (thereby increasing highlights), drag to the right to exclude pixels (thereby reducing highlights).</li>
+			<li><span class="ui">Gamma</span>&#8212;determines the distribution of mid-tone pixels in the image. Drag the slider to the left to redistribute pixels towards the black point, drag to the right to redistribute towards the white point.</li>
+			<li><span class="ui">Output Black Level</span>&#8212;remaps the output level of absolute black. Moving the slider to the right makes the design look more pale and washed out.</li>
+			<li><span class="ui">Output White Level</span>&#8212;remaps the output level of absolute white. Moving the slider to the left lessens the intensity of highlights of the design.</li>
+		</ul>
+
+		<aside class="box tip">
+			<p>To create a negative-style (inverted) image, position the <span class="ui">Black Level</span> slider further to the right than the <span class="ui">White Level</span>.</p>
+		</aside>
+
+		<aside class="box note">
+			<p>Holding <span class="key ALT-TAG"></span> while modifying the Black Level or White Level provides a realtime clipping preview.</p>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="adjustment_applying.html">Applying adjustments</a></li>
+			<li><a href="adjustment_curves.html">Curves adjustment</a></li>
+			<li><a href="adjustment_brightnessContrast.html">Brightness / Contrast adjustment</a></li>
+			<li><a href="adjustment_shadowsHighlights.html">Shadows / Highlights adjustment</a></li>
+			<li><a href="adjustment_invert.html">Invert adjustment</a></li>
+		</ul>
+	</section>
+	
+	<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

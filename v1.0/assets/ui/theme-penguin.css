@@ -1,0 +1,70 @@
+
+
+/* THEME-PENGUIN:
+dark      = #4E5F71
+base      = #030206
+light    = #8BA5BE
+accent = #BF4000
+primary   = #A5A793
+highlight = #E5c300
+*/
+.theme-penguin .fill-dark{ background-color: #4E5F71;}
+.theme-penguin .fill-base{ background-color: #030206;}
+.theme-penguin .fill-light{ background-color: #8BA5BE;}
+.theme-penguin .fill-accent{ background-color: #BF4000;}
+.theme-penguin .fill-primary{ background-color: #A5A793;}
+.theme-penguin .fill-highlight{ background-color: #E5c300;}
+
+.theme-penguin .stroke-dark{ border-color: #4E5F71;}
+.theme-penguin .stroke-base{ border-color: #030206;}
+.theme-penguin .stroke-light{ border-color: #A5A793;}
+.theme-penguin .stroke-accent{ border-color: #BF4000;}
+.theme-penguin .stroke-primary{ border-color: #8BA5BE;}
+.theme-penguin .stroke-highlight{ border-color: #E5c300;}
+
+.theme-penguin .text-dark{ color: #030206;}
+.theme-penguin .text-base{ color: #BF4000;}
+.theme-penguin .text-light{ color: #A5A793;}
+.theme-penguin .text-accent{ color: #4E5F71;}
+.theme-penguin .text-primary{ color: #8BA5BE;}
+.theme-penguin .text-highlight{ color: #E5c300;}
+
+/* THEME-FOX:  
+.dark      = #1783  
+.base      = #733  
+.light     = #993    
+.accent   = #78d3       
+.primary   = #e83     
+.highlight = #173       
+*/
+.fill-none{ background: none;}
+.fill-inherit{ background-color: inherit;}
+.fill-transparent{ background-color: transparent;}
+.stroke-none{ border-color: none;}
+.stroke-inherit{ border-color: inherit;}
+.stroke-transparent{ border-color: transparent;}
+.text-none{ color: none;}
+.text-inherit{ color: inherit;}
+.text-transparent{ color: transparent;}
+
+
+.theme-fox .fill-dark{ background-color: #1783; }
+.theme-fox .fill-base{ background-color: #733; }
+.theme-fox .fill-light{ background-color: #993; }
+.theme-fox .fill-accent{ background-color: #78d3; }
+.theme-fox .fill-primary{ background-color: #e83; }
+.theme-fox .fill-highlight{ background-color: #173; }
+
+.theme-fox .stroke-dark{ border-color: #1783; }
+.theme-fox .stroke-base{ border-color: #733; }
+.theme-fox .stroke-light{ border-color: #993; }
+.theme-fox .stroke-accent{ border-color: #78d3; }
+.theme-fox .stroke-primary{ border-color: #e83; }
+.theme-fox .stroke-highlight{ border-color: #173; }
+
+.theme-fox .text-dark{ color: #1783; }
+.theme-fox .text-base{ color: #733; }
+.theme-fox .text-light{ color: #993; }
+.theme-fox .text-accent{ color: #78d3; }
+.theme-fox .text-primary{ color: #e83; }
+.theme-fox .text-highlight{ color: #173; }

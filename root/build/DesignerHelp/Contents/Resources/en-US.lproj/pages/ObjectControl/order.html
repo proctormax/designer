@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="ordering objects" />
+	<meta name="description" content="All objects can be repositioned within a layer's z-order to determine which parts of the design display when objects overlap." />
+	<title>Ordering objects</title>
+</head>
+
+<body>
+
+
+
+	<header>
+
+		<h1>Ordering objects</h1>
+		<p>Every object on the page occupies a specific position within a design's z-order (stacking order). With overlapping objects, this will determine which parts of the object are exposed and which are hidden.</p>
+	</header>
+
+	<section class="about">
+
+		<p>When objects are placed or drawn, they are assigned a position in the currently selected layer's z-order. This initial position is determined by object targeting. However, all objects can be repositioned within a layer's z-order as needed.</p>
+		<figure>
+			<p><img src="../../../shared/order.png" class="screenshot responsive" alt="Alignment example" /></p>
+			<figcaption>Before and after z-order repositioning.</figcaption>
+		</figure>
+		
+	</section>
+
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/move_to_back.png" class="tool" width="18" height="18" alt="Move to Back" /> <img src="../../../shared/ui/back_one.png" class="tool" width="18" height="18" alt="Back One" /> <img src="../../../shared/ui/forward_one.png" class="tool" width="18" height="18" alt="Forward One" /> <img src="../../../shared/ui/move_to_front.png" class="tool" width="18" height="18" alt="Move to Front" /> To change an object's z-order position:</summary>
+			<ol>
+				<li>Select one or more objects.</li>
+				<li>From the Toolbar, choose one of the following:<ul>
+						<li><span class="ui">Move to Back</span>&#8212;repositions the selected object(s) at the bottom of the layer.</li>
+						<li><span class="ui">Back One</span>&#8212;moves the selected object(s) down one position in the layer.</li>
+						<li><span class="ui">Forward One</span>&#8212;moves the selected object(s) up one position in the layer.</li>
+						<li><span class="ui">Move to Front</span>&#8212;repositions the selected object(s) at the top of the layer.</li>
+
+					</ul>
+					<aside class="box note">
+						<p>The above options are also available from the <span class="ui">Layer</span> menu's <span class="ui">Arrange</span> sub-menu.</p>
+					</aside>
+				</li>
+			</ol>
+
+			<aside class="box tip">
+				<p>You can also reposition or nest objects using the <span class="ui">Layers</span> panel.</p>
+			</aside>
+			
+		</details>
+		
+		<x-osx>
+			<aside class="box tip">
+				<p>To select nested content directly from the document view, select the <span class="ui">Move Tool</span>, then hold the <span class="CTRL-TAG"></span> and <span class="CMD-TAG"></span> <span class="KEY-TAG"></span>s and click an object in the view. From the contextual menu that appears, select any content contained in the same group as (or deeper than) the object you clicked.</p>
+			</aside>
+		</x-osx>
+
+		<x-win32>
+			<aside class="box tip">
+				<p>To select nested content directly from the document view, select the <span class="ui">Move Tool</span>, then hold the <span class="CMD-TAG"></span> <span class="KEY-TAG"></span> and right-click an object in the view. From the contextual menu that appears, select any content contained in the same group as (or deeper than) the object you clicked.</p>
+			</aside>
+		</x-win32>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="target.html">Targeting objects</a></li>
+			<li><a href="../Layers/manageLayers.html">Arrange/manage layers</a></li>
+			<li><a href="../Panels/layersPanel.html">Layers panel</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=objectControl">Keyboard shortcuts for object control</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

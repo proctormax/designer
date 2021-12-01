@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="panel, color, HSL, RGB, RGB Hex, CMYK, LAB" />
+	<meta name="description" content="The Color panel is used to apply color to objects." />
+	<title>Color panel</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Color panel</h1>
+
+		<p>The <span class="ui">Color</span> panel is used to choose color for various tools and selected objects.</p>
+
+		<aside class="box note">
+			<p>A pop-up version of the <span class="ui">Color</span> panel may appear when choosing color from within other dialogs.</p>
+		</aside>
+
+	</header>
+
+	<section class="about">
+		<h2>About the Color panel</h2>
+
+		<p>The <span class="ui">Color</span> panel can operate in several color modes&#8212;HSL, RGB, CMYK and LAB&#8212;and has various ways of defining color&#8212;color wheel (HSL only), color boxes and color sliders. Color tints can also be applied from within the panel.</p>
+
+		<figure class="nft overrideDE overrideFR">
+			<p><img src="../../images/panel_clr_wheel.png" width="663" class="responsive" alt="Color panel" /></p>
+
+			<figcaption>Color panel (HSL color wheel): (A) Primary/Secondary (left) or Stroke/Fill color selectors with color 'none' swatch and 'swap' arrow, (B) HSL values, (C) Switch to opacity/noise, (D) Panel Preferences, (E) Color picker and picked color swatch, (F) Saturation/Lightness control, (G) Hue control, (H) Opacity controls, (J) Noise controls.</figcaption>
+		</figure>
+
+		<p>Like the <span class="ui">Swatches</span> panel, the <span class="ui">Color</span> panel takes on different appearances depending on the active Persona and on the selected tool. The large color selectors indicate the currently selected colors.</p> 
+		
+		<ul>
+			<li>In Designer Persona, objects have fill and stroke color properties. The stroke color is represented by the cutout (donut) color selector. The fill is represented by the solid color selector.</li>
+			<li>In Pixel Persona, the two solid color selectors indicate interchangeable Primary and Secondary colors.</li>
+		</ul>
+
+		<p>The active color selector is shown at the front of the two color selectors. Choosing a new color will apply it to the active color selector.</p>
+
+		<aside class="box note">
+				<p>These swatches change appearance for some vector tools.</p>
+					<ul>
+						<li><img src="../../../shared/ui/gradient_tool.png" class="tool heading" width="18" height="18" alt="Fill Tool" /> <span class="ui">Fill Tool</span>: Only one color selector swatch is shown to represent the color of the currently selected stop on the gradient.</li>
+						<li><img src="../../../shared/ui/vector_brush.png" class="tool heading" width="18" height="18" alt="Vector Brush Tool" /> <span class="ui">Vector Brush Tool</span>: When selected, the panel shows primary and secondary swatches that can be swapped by clicking the adjacent double arrow.</li>
+					</ul>
+		</aside>
+
+	</section>
+
+	<section class="about">
+
+		<h2>Using the Color panel</h2>
+
+		<p>With the <span class="ui">Color</span> panel, colors can be applied to an object or for use by a tool in just a few clicks. Opacity and noise are further color attributes which can be applied.</p>
+
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary>To set the color of a selector:</summary>
+
+			<ol>
+				<li>Click the selector you want to apply the color to. It will show at the front of the two color selectors.</li>
+				<li>Do one of the following:<ul>
+						<li>Choose a color from the color model's <span class="ui">Wheel</span> (HSL only), <span class="ui">Sliders</span>, or <span class="ui">Boxes</span>.</li>
+						<li>Click the picked color swatch.</li>
+						<li>Click the <span class="ui">None</span> swatch to make the color completely transparent (for the tool, fill or stroke).</li>
+					</ul>
+				</li>
+			</ol>
+		</details>
+
+		<aside class="box tip">
+			<p>You can set the primary (fill) and secondary (stroke) color selectors to white and black, respectively, by pressing the <span class="ui">D</span> <span class="KEY-TAG"></span>. This affects any vector objects that are selected.</p>
+		</aside>
+
+		<details open="open">
+			<summary>To switch colors between the selectors:</summary>
+
+			<ul>
+				<li>Click the double-headed arrow. The colors switch (but the active swatch selector remains the same).</li>
+			</ul>
+		</details>
+
+		<details open="open">
+			<summary>To adjust opacity or noise setting:</summary>
+
+			<ol>
+				<li>Select the toggle button to the bottom-left of the panel.</li>
+				<li>Drag the slider to set the value.</li>
+			</ol>
+
+		</details>
+
+	</section>
+
+	<section class="about">
+
+		<h2>Color selection preferences and color models</h2>
+
+		<p><img src="../../../shared/ui/moremenuicon.png" class="tool heading" width="15" height="11" alt="Panel Preferences" /> When choosing colors in the <span class="ui">Color</span> panel, you can choose from various selection preferences and color model values. The color selection preferences are changed in the Panel Preferences menu.</p>
+
+		<p>Depending on the color model selected, you can also choose to work in <span class="ui">8 bit</span>, <span class="ui">16 bit</span> or <span class="ui">Percentage</span> mode.</p>
+
+		<p>Some of the selection methods allow you to set color using values other than RGB. This doesn't change the working color profile of the document, but changes the input values for the colors.</p>
+
+		<aside class="box note">
+			<p>You can specify color values for RGB, RGB Hex, HSL, CMYK and Grayscale depending on the pop-up menu in the <span class="ui">Color</span> panel. This is not the same as the working color profile. For example, if your working profile is an RGB profile, choosing 100% K (black) from the CMYK color model doesn't convert your document to CMYK. Instead the color applied will be an RGB approximation of 100% K (black). However, if you convert or export the document to a CMYK profile, the 100% K (black) will be honored.</p>
+		</aside>
+
+		<p><img src="../../../shared/ui/moremenuicon.png" class="tool heading" width="15" height="11" alt="Panel Preferences" /> The following color selection preferences are available from the Panel Preferences menu.</p>
+		<ul>
+			<li><span class="ui">Wheel</span>&#8212;HSL Color Wheel<ol>
+					<li>Drag on the outer ring to set the hue.</li>
+					<li>Drag in the triangle to set saturation and lightness.</li>
+				</ol>
+			</li>
+
+			<li><span class="ui">Sliders</span>&#8212;RGB, HSL, CMYK, LAB, Grayscale<ol>
+					<li>Select the color mode from the pop-up menu.</li>
+					<li>(Optional) From the Panel Preferences menu, select <span class="ui">8 bit</span>, <span class="ui">16 bit</span> or <span class="ui">Percentage</span>.</li>
+					<li>Drag sliders or type directly into the value boxes to set the color values.</li>
+				</ol>
+			</li>
+			<li><span class="ui">Boxes</span>&#8212;Hue, Saturation, Lightness only<ul>
+					<li><span class="ui">Hue</span>&#8212;Drag on the hue slider to set the hue, drag in the box to set the saturation and lightness.</li>
+					<li><span class="ui">Saturation</span>&#8212;Drag on the saturation slider to set the saturation, drag in the box to set the hue and lightness.</li>
+					<li><span class="ui">Lightness</span>&#8212;Drag on the lightness slider to set the lightness, drag in the box to set the saturation and hue.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Tint</span><ul>
+					<li>Drag the slider to control the color tint. The further to the left the slider is positioned, the less ink is applied to the page.</li>
+				</ul>
+			</li>
+		</ul>
+
+<p><img src="../../../shared/ui/LayersTabLockIcon.png" class="tool" width="16" height="16" alt="Lock/Unlock" /> By default, the color space is locked when using <span class="ui">Sliders</span> (e.g., CMYK sliders) to prevent it from changing. This avoids inadvertently swapping to another mode after using swatches or selecting a different object created with a different color mode. When unlocked, the <span class="ui">Color</span> panel will remember the color mode that the selected object was created in. This lock only works on the current session; subsequent sessions will use the HSL color wheel as default.</p>
+
+		<aside class="box tip">
+			<p><span class="SHIFT-TAG"></span>-dragging a <span class="ui">Color</span> panel slider will move all of the sliders at once. This can be useful when you have a color you like and you want to use a lighter or darker shade of it.</p>
+		</aside>
+
+	</section>
+
+	<section class="about">
+
+		<h2>Using the Color Picker</h2>
+
+		<p>The picker lets you sample colors within or outside Affinity Designer, then use them in your design.</p>
+
+	</section>
+
+	<section class="howto">
+
+		<details>
+			<summary><img src="../../../shared/ui/clrpicker.png" class="tool" width="18" height="18" alt="color picker" /> To use the Color Picker:</summary>
+
+			<ol>
+				<li>Drag the <span class="ui">Color Picker</span> icon to the color want to sample.</li>
+				<li>Click the selector you want to apply the color to.</li>
+				<li>Click the swatch next to the <span class="ui">Color Picker</span> to apply the color.</li>
+			</ol>
+
+		</details>
+
+	</section>
+
+	<section class="about">
+
+		<h2>Saving chosen colors for later use</h2>
+
+		<p>Once your color has been chosen and applied to a tool or object, there are several ways to preserve this color for later use.</p>
+
+		<p><img src="../../../shared/ui/moremenuicon.png" class="tool heading" width="15" height="11" alt="Panel Preferences" /> The following options are available from the Panel Preferences menu.</p>
+		<ul>
+			<li><span class="ui">Copy Color to Clipboard as Hex</span>&#8212;this calculates the current color's Hex value and adds it to the clipboard. This is useful for web developers, to standardize on colors between graphics and HTML coding in a web environment.</li>
+			<li><span class="ui">Add Color to Swatch</span>&#8212;adds the current color to the currently loaded palette in the Swatches panel.</li>
+			<li><span class="ui">Add Chord to Swatch</span> pop-up menu&#8212;adds a chord of the current color to the currently loaded palette in the Swatches panel.</li>
+		</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Clr/selectingClr.html">Selecting colors</a></li>
+			<li><a href="../Clr/clrChords.html">Color Chords</a></li>
+			<li><a href="../Workspace/customizingWorkspace.html">Customizing the workspace</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

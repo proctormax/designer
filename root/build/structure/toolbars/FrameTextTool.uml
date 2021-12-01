@@ -1,0 +1,29 @@
+{cmd:"FontFamily", tip:"Sets the font of the text. Select from the pop-up menu."}
+{cmd:"FontStyle", tip:"Click to display a pop-up menu with optional formats for the selected font."}
+{cmd:"FontSize", tip:"Type directly in the text box or drag the pop-up slider to set the value."}
+{cmd:"Bold", tip:"Toggles Bold text."}
+{cmd:"Italic", tip:"Toggles Italic text."}
+{cmd:"Underline", tip:"Toggles underlined text."}
+{cmd:"FontColor", tip:"Click the color swatch to display a pop-up panel to update fill color."}
+{icon:"Character style", cmd:"CharacterStyle", tip:"Applies a character style to the selected text. Select from the pop-up menu."}
+{icon:"Update Character style", cmd:"UpdateCharacterStyle", tip:"Updates the character style of the selected text."}
+{icon:"Character", cmd:"Character", tip:"Provides access to the Character panel for advanced text settings."}
+{icon:"Paragraph style", cmd:"ParagraphStyle", tip:"Applies a paragraph style to the selected text or to the paragraph in which the caret currently resides. Select from the pop-up menu."}
+{icon:"Update Paragraph style", cmd:"UpdateParagraphStyle", tip:"Updates the paragraph style of the selected text."}
+{icon:"Paragraph", cmd:"Paragraph", tip:"Provides access to the Paragraph panel for advanced paragraph settings."}
+{icon:"Left Align", cmd:"AlignLeft", tip:"Sets the paragraph alignment to the left margin."}
+{icon:"Center Align", cmd:"AlignCenter", tip:"Sets the paragraph alignment to be equidistant from the left and right margins."}
+{icon:"Right Align", cmd:"AlignRight", tip:"Sets the paragraph alignment to the right margin."}
+{icon:"Justified", cmd:"Justify", tip:"With additional pop-up menu options."}
+{icon:"Justified Left", cmd:"JustifyLeft", tip:"Sets the paragraph alignment to both the left and right margins. The last line of a paragraph is left aligned."}
+{icon:"Justified Center", cmd:"JustifyCenter", tip:"As with Justified Left, however, the last line of a paragraph is center aligned."}
+{icon:"Justified Right", cmd:"JustifyRight", tip:"As with Justified Left, however, the last line of a paragraph is right aligned."}
+{icon:"Justified All", cmd:"JustifyAll", tip:"As with Justified Left, however, the last line of a paragraph is justified regardless of length (sometimes known as Force-Justified)."}
+{icon:"Top Align", cmd:"AlignTop", tip:"Sets the cell text alignment to adhere to the top margin."}
+{icon:"Center Align", cmd:"CenterVertically", tip:"Sets the cell text alignment to be equidistant from the top and bottom margins."}
+{icon:"Bottom Align", cmd:"AlignBottom", tip:"Sets the cell text alignment to adhere to the bottom margin."}
+{icon:"Justify Vertically", cmd:"JustifyVertically", tip:"Sets the cell text alignment to both the top and bottom margins."}
+{icon:"Bulleted List", cmd:"BulletedList", tip:"Inserts a bulleted list."}
+{icon:"Numbered List", cmd:"NumberedList", tip:"Inserts a numbered list."}
+{cmd:"ParagraphLeading", tip:"Controls the distance between text baselines (vertical gap between lines) within the paragraph. Type directly in the text box or select from the pop-up menu."}
+{icon:"Typography", cmd:"Typography", tip:"Provides access to the Typography dialog for advanced typography settings."}

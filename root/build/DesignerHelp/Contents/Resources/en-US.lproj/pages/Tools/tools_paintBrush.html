@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="anti-aliased" />
+	<meta name="description" content="The Paint Brush Tool paints raster brush strokes." />
+	<title>Paint Brush Tool</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1><img src="../../../shared/ui/pixelpersonaonly.png" class="heading" height="27" alt="Pixel Persona only" /> <img src="../../../shared/ui/paint_brush.png" class="tool heading" width="18" height="18" alt="Paint Brush Tool" /> Paint Brush Tool</h1>
+
+		<p>The <span class="ui">Paint Brush Tool</span> lays down pixels on the page, creating strokes with antialiased edges. This creates a natural transition between the stroke and the surrounding pixels.</p>
+
+		<p>Its variable width lines can be controlled either by velocity&#8212;most useful when drawing with a mouse&#8212;or by pressure&#8212;for use when drawing with a pressure-sensitive device.</p>
+
+	</header>
+
+	<section class="about">
+		
+		<p>Other brush-based tools in Pixel Persona use similar settings to control the appearance of the applied pixels, although there may be slight variations.</p>
+
+		<p>Most brushes use a soft, round nozzle as their default. Alternative styles can be selected from the <span class="ui">Brushes</span> panel.</p>
+		
+		<aside class="box tip">
+			<p class="osx">With any Brush tool selected, you can quickly decrease or increase the size (width) of your brush by holding <span class="key CTRL-TAG"></span> and <span class="key ALT-TAG"></span> then dragging left or right, respectively. If the Brush tool has a hardness attribute, this can be adjusted in a similar way by holding <span class="key CTRL-TAG"></span> and <span class="key ALT-TAG"></span> then dragging up or down.</p>
+			<p class="win32">With any Brush tool selected, you can quickly decrease or increase the size (width) of your brush by holding <span class="key CMD-TAG"></span> and <span class="key ALT-TAG"></span> then dragging left or right, respectively. If the Brush tool has a hardness attribute, this can be adjusted in a similar way by holding <span class="key CMD-TAG"></span> and <span class="key ALT-TAG"></span> then dragging up or down.</p>
+		</aside>
+
+		<aside class="box tip">
+			<p>With any Brush tool selected in Pixel Persona, you can quickly change the opacity of your brush using numerical keys. For more information, see the <a href="../Clr/transparency.html">Transparency</a> topic.</p>
+		</aside>
+		
+	</section>
+	
+	<section class="settings">
+		<h3>Settings</h3>
+		
+		<p>The following settings can be adjusted from the context toolbar:</p>
+			<ul>
+				<li><span class="ui">Width</span>&#8212;the brush (stroke) size in pixels. Type directly in the text box or drag the pop-up slider to set the value.</li>
+				<li><span class="ui">Opacity</span>&#8212;how see through the brush is. Type directly in the text box or drag the pop-up slider to set the value.</li>
+				<li><span class="ui">Flow</span>&#8212;how fast the pixel brush effect is applied (1% is very slow, 100% is immediate). Type directly in the text box or drag the pop-up slider to set the value.</li>
+				<li><span class="ui">Hardness</span>&#8212;how hard the edges of the pixel brush are. The brush appears softer as the percentage decreases. Type directly in the text box or drag the pop-up slider to set the value.</li>
+				<li><span class="ui">More</span>&#8212;click to display the Brushes dialog to access advanced brush settings.</li>
+				<li><span class="ui">Force pressure to control size</span>&#8212;Click to control brush size with pressure if using a pressure-sensitive device. This overrides brush defaults.</li>
+				<li><span class="ui">Stabilizer</span>&#8212;enables stroke stabilization using either a <span class="ui">Rope stabilizer</span> or <span class="ui">Window stabilizer</span> mode; the former drags the stroke end by a 'rope' to smooth the stroke but lets you introduce sharp corners at increasing rope <span class="ui">Length</span> (radius) values by redirecting the slackened rope; the latter will smooth the stroke by averaging sampled input positions within a <span class="ui">Window</span> whose size is configurable.</li>
+				<li><span class="ui">Symmetry</span>&#8212;when set to greater than 0, repeats the brush stroke around a number of axes (defined by the symmetry value). The center axis point can be repositioned by click-dragging it.</li>
+				<li><span class="ui">Mirror</span>&#8212;with symmetry enabled, causes brush strokes to be mirrored along the X and Y axis.</li>
+				<li><span class="ui">Lock</span>&#8212;when checked, prevents the symmetry line from being moved.</li>
+				<li><span class="ui">Blend Mode</span>&#8212;changes how the applied pixels interact with existing pixels on a layer. Select from the pop-up menu.</li>
+				<li><span class="ui">Wet Edges</span>&#8212;builds paint up along the edges of your pixel brush stroke, producing a watercolor effect.</li>
+				<li><span class="ui">Protect Alpha</span>&#8212;when checked, you are not able to paint on the current layer's transparent regions.</li>
+			</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Painting/pixel_painting.html">Painting pixel brush strokes</a></li>
+			<li><a href="../Panels/brushesPanel.html">Brushes Panel</a></li>
+			<li><a href="../Painting/pressure.html">Pressure sensitivity</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=tools">Keyboard shortcuts for tools</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="layer, mask, masking" />
+	<meta name="description" content="Layer masks allow you to selectively hide layer contents to reveal layers below the masked layer." />
+	<title>Layer masking</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Layer masking</h1>
+		
+		<p>A layer mask is used to reveal a portion of a layer while the rest of the layer remains hidden. This means that you can use a mask layer to 'delete' areas of a layer that you don't want.</p>
+		<p>In Affinity Designer, two types of masking are possible: pixel masking and vector masking.<figure>
+			<div class="comparison"><img src="../../../shared/layer_masking_before.png" alt="pixel mask before" /><div><img src="../../../shared/layer_masking_pixel_after.png" alt="pixel mask after" /></div>
+			</div>
+			<figcaption><em>Pixel masking</em>: performs a similar task to the erase tools with one important difference; a pixel mask can be modified, or even discarded, at any point in time.</figcaption>
+		</figure>
+			
+		<figure>
+			<div class="comparison"><img src="../../../shared/layer_masking_before.png" alt="vector mask before" /><div><img src="../../../shared/layer_masking_vector_after.png" alt="vector mask after" /></div>
+			</div>
+			<figcaption><em>Vector masking</em>: this involves using a line or shape as a mask over another object that crops to the line or shape's outline.</figcaption>
+		</figure>
+		
+		<aside class="box note">
+			<p>Mask layers can have a unique <a href="../Layers/layerBlendModes.html">blend mode</a> assigned.</p>
+		</aside>
+	
+	</header>
+
+	<section class="about">
+		<h2>The non-destructive power of masking</h2>
+
+		<p>Masks are applied to designs as a separate layer, allowing them to be freely edited and moved. Mask layers affect any object below them within the same parent layer. They can also be <a href="layerClip.html">clipped</a> to individual objects so that only that object is affected.</p>
+		
+		<aside class="box note">
+			<p><a href="adjustmentLayers.html">Adjustment layers</a> also have mask layer properties. Areas of an adjustment layer can be revealed or hidden in the same way as with a mask layer.</p>
+		</aside>
+		
+		<aside class="box note">
+			<p>Masking can be applied at any level in the Layers panel&#8212;as an independent mask layer, applied to a specific layer (or child layer), to groups, or to individual objects. This is governed by the mask layer's positioning in the layer stack.</p>
+		</aside>
+	
+	</section>
+	
+	<section class="howto">
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/pixelpersona.png" class="tool" width="24" height="24" alt="Pixel Persona" /> <img src="../../../shared/ui/erase_brush.png" class="tool heading" width="18" height="18" alt="Erase Brush tool" /> <img src="../../../shared/ui/paint_brush.png" class="tool heading" width="18" height="18" alt="Paint Brush" /> To add a pixel mask to a vector layer:</summary>
+			<ol>
+				<li>In the <span class="ui">Layers</span> panel, select the chosen vector layer.</li>
+				<li>Jump to Pixel Persona.</li>
+				<li>Do one of the following:<ul>
+						<li>To 'erase', paint on the page using the <span class="ui">Erase Brush Tool</span>. A mask layer is created on painting.</li>
+						<li>To 'restore' the mask, paint on the page using the <span class="ui">Paint Brush Tool</span>. A white fill completely restores, while grayscale fills partially restore the mask by varying amounts.</li>
+					</ul>
+				</li>
+			</ol>
+
+		<aside class="box note">
+			<p>Selecting a pixel mask's thumbnail automatically switches the <span class="ui">Color</span> panel to <span class="ui">Grayscale</span> mode.</p>
+		</aside>
+
+		<aside class="box note">
+			<p>The Erase Brush Tool always erases using 100% black (ignoring the current fill swatch).</p>
+		</aside>	
+
+		</details>
+		
+		<details>
+					<summary><img src="../../../shared/ui/LayersTabMaskIcon.png" class="tool" width="16" height="16" alt="Mask Layer" /> To create an empty mask layer:</summary>
+			<ul>
+				<li>From the <span class="ui">Layers</span> panel, click <span class="ui">Mask Layer</span>.</li>
+			</ul>
+		<aside class="box note">
+			<p>By default, a created mask layer is applied to the current layer, but it can be moved by dragging outside the current layer, applying the mask to all layers below. Alternatively, the mask can be moved onto an object, applying the mask just to that object.</p>
+		</aside>
+		</details>
+
+		<details>
+			<summary>To edit a pixel mask:</summary>
+
+			<ol>
+				<li>In the <span class="ui">Layers</span> panel, select the mask thumbnail representing the mask layer.</li>
+				<li>Paint using the above tools.</li>
+			</ol>
+
+		</details>
+		
+		<details>
+			<summary>To change pixel mask properties:</summary>
+
+			<ul>
+				<li>As you erase on the pixel mask, adjust Width, Opacity, Flow and Hardness from the Erase Brush tool's context toolbar.</li>
+			</ul>
+
+		</details>
+
+		<details>
+			<summary>To enable/disable a clipped mask layer:</summary>
+			<ul>
+				<li><span class="key SHIFT-TAG"></span>-click on the mask thumbnail. A red line over the thumbnail indicates that the mask is disabled.</li>
+			</ul>
+		</details>
+
+
+	</section>
+	
+	<section class="howto">
+
+		<details open="open">
+			<summary>To add a vector mask:</summary>
+			<ol>
+				<li>Draw a filled vector object, e.g., a line or shape, which is to be your mask.</li> 
+				<li>Do one of the following:<ul>
+						<li>In the <span class="ui">Layers</span> panel, drag the created object entry directly onto the thumbnail of another 'target' object.</li>
+						<li><span class="key CLICK-TAG"></span>-click the object and select <span class="ui">Mask to Below</span>, if the object to be masked is directly below the masking object.</li>
+					</ul>										 
+				</li>
+			</ol>
+			<p>The thumbnail of the target object changes to indicate that a mask and crop have been applied.</p>
+			<p>The mask of the object is applied in a &#34;crop to top object&#34; operation.</p>
+
+			<aside class="box note">
+				<p>Vector masks can be used layer to layer, layer to object, object to layer, or object to object (as above).</p>
+			</aside>
+		</details>
+
+		<details>
+			<summary>To delete a mask:</summary>
+			<ol>
+				<li>In the <span class="ui">Layers</span> panel, select the mask's thumbnail.</li>
+				<li class="osx">Press the <span class="key BACKSPACE"></span> <span class="KEY-TAG"></span>.</li>
+				<li class="win32">Press the <span class="key BACKSPACE-WIN"></span> <span class="KEY-TAG"></span>.</li>
+			</ol>
+
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="adjustmentLayers.html">Using adjustment layers</a></li>
+			<li><a href="layerClip.html">Layer clipping</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

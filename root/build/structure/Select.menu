@@ -1,0 +1,99 @@
+[---------------------------------
+            <<menu>>
+	          Select
+---------------------------------
+Select All,             Ctrl+A
+Deselect,               Ctrl+D
+Invert Pixel Selection, Ctrl+Shift+I
+---------------------------------
+Select Next,            Ctrl+Alt+]
+Select Previous,        Ctrl+Alt+[
+---------------------------------
+Select Parent
+Select Top
+Select Bottom
+---------------------------------
+Select Same >
+Select Object >
+---------------------------------
+Color Range >
+Tonal Range >
+Select Sampled Color...
+---------------------------------
+Grow / Shrink...
+Feather...
+Smooth...
+Refine Edges...
+Outline...
+---------------------------------]
+
+[---------------------------------
+            <<menu>>
+	    Select > Select Same
+---------------------------------
+Fill Color
+Stroke Color
+Fill & Stroke Color
+---------------------------------
+Stroke Weight
+Transparency
+Blend Mode
+Shape
+---------------------------------
+Name
+Tag Color
+---------------------------------]
+
+[---------------------------------
+            <<menu>>
+	   Select > Select Object
+---------------------------------
+Art Text
+Frame Text
+Path Text
+---------------------------------
+Curves
+Open Curves
+Closed Curves
+---------------------------------
+Shapes
+Artboards
+---------------------------------
+Filled Objects
+Unfilled Objects
+Stroked Objects
+Unstroked Objects
+Dashed Objects
+Undashed Objects
+Constrained Objects
+Transparent Objects
+Opaque Objects
+---------------------------------
+Images
+Pixel Objects
+---------------------------------
+Groups
+Vector Layers
+Embedded Documents
+Symbols
+---------------------------------]
+
+@persona:Pixel
+[---------------------------------
+            <<menu>>
+	   Select > Color Range
+---------------------------------
+Select Reds
+Select Greens
+Select Blues
+---------------------------------]
+
+
+[---------------------------------
+            <<menu>>
+	   Select > Tonal Range
+---------------------------------
+Select Midtones
+Select Shadows
+Select Highlights
+---------------------------------]

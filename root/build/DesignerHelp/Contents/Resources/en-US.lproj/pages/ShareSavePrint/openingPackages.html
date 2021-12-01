@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="package, packaging, archive, archiving, distribute, distribution, distributing, zip, gather, collect" />
+	<meta name="description" content="Open a package and review its fonts and linked images." />
+	<title>Opening packages</title>
+</head>
+
+<body>
+
+	<header>
+		<h1>Opening packages</h1>
+		<p>When an .afpackage file is opened, Affinity Designer displays the <span class="ui">Package Document</span> dialog to inform the recipient of the package's contents, including any font and image issues they may need to resolve.</p>
+		
+		<figure class="nft">
+			<div class="single"><img src="../../images/packageOpening.jpg" class="screenshot responsive" alt="The dialog's Fonts section after opening a packaged document." /></div>
+			<figcaption></figcaption>
+		</figure>
+	</header>
+	
+	<section class="about">		
+		<h2>Dealing with font issues</h2>
+		<p>When opening a package, the dialog's <span class="ui">Fonts</span> section displays additional columns.</p>
+		<ul>
+			<li><span class="ui">Package</span>&#8212;indicates whether a corresponding font file is included in the package. If included, it may be listed as <a href="../ShareSavePrint/creatingPackages.html#dialogStatuses">Restricted</a>.</li>
+			<li><span class="ui">Install</span>&#8212;when ticked, Affinity Designer will temporarily load the included font file for its exclusive and temporary use.</li>
+		</ul>
+		<p>Discuss font licensing with the package's provider/recipient accordingly.</p>
+
+		<aside class="box tip">
+			<p>A prominent yellow warning sign is displayed next to any font that is restricted or not included in the package.</p>
+		</aside>
+		
+		<h2>Installing fonts</h2>
+		<p>Fonts listed as Missing in the <span class="ui">Status</span> column are not installed on the current device.</p>
+		<p>If such a font is included in the package, tick the checkbox in its <span class="ui">Install</span> column to make it available only to Affinity Designer and only for the current session. This enables the recipient to export and print the document as is.</p>
+		<p>If the document needs to be edited and fonts not installed on the current device are included in the package's Fonts folder, use your operating system's built-in mechanism or a third-party tool to install the fonts.</p>
+		
+		<aside class="box warning">
+			<p>Even if font files are provided in a package, it is your responsibility to investigate and adhere to their licensing terms before installing them on your device.</p>
+		</aside>
+		
+		<h2>Dealing with image issues</h2>
+		<p>Consult the package's provider if an image is reported as Missing. They may have removed it from the package due to licensing restrictions that prevent it being shared.</p>
+		
+		<p>You will not need to locate images listed as Present. When packaging, Affinity Designer updates a document's links to these resources to use the files in the package's Images folder.</p>
+				
+		<h2>Editing a packaged document</h2>
+		<p>Changes cannot be saved to the <a href="../ShareSavePrint/aboutPackaging.html#packageContents">.afpackage file</a>. This preserves its state in case it is needed again.</p>
+		<p>To save changes, use <span class="ui">File&gt;Save As</span> to create a new .afdesign file from the package.</p>
+	</section>
+	
+	<section class="howto">
+		<details open="open">
+			<summary>To open a package:</summary>
+			<ol>
+				<li>Select <span class="ui">File&gt;Open</span> and choose the .afpackage file. It opens as a read-only document.</li>
+				<li>Review the summary of fonts and images.</li>
+				<li>(Optional) On the <span class="ui">Package Document</span> dialog, select <span class="ui">Fonts</span>. For any font that's listed as Missing, put a tick in its checkbox in the <span class="ui">Install</span> column.</li>
+				<li>Select <span class="ui">OK</span>.</li>
+				<li>(Optional) Select <span class="ui">File&gt;Save As</span>. This creates an .afdesign file to which you can save changes and which you are now editing.</li>
+			</ol>
+		</details>
+	</section>
+	
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../ShareSavePrint/aboutPackaging.html">About packaging</a></li>
+			<li><a href="../ShareSavePrint/creatingPackages.html">Creating packages</a></li>
+			<li><a href="../Media/resourceManager.html">Resource Manager</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="convert to curves" />
+	<meta name="description" content="Convert almost any object into line segments and nodes to create custom shapes with unlimited editing power." />
+	<title>Converting objects to curves</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Convert objects to curves</h1>
+
+		<p>You can create new shapes by converting geometric shapes (created using the Shape tools) into curves and then adjusting the nodes of the resulting shape.</p>
+
+		<figure>
+			<p><img src="../../../shared/converttocurves.png" class="responsive" alt="Convert to curves in action" /></p>
+			<figcaption>The rounded rectangle shape is converted to curves to allow the horizontal edges to be modified.</figcaption>
+		</figure>
+
+	</header>
+
+	<section class="about">
+		<p>The <span class="term">Convert to Curves</span> operation is not limited to geometric shapes. You can convert almost any object to curves, including text.</p>
+
+		<figure>
+			<div class="comparison"><img src="../../../shared/converttocurves_before.png" alt="convert to curves before" /><div><img src="../../../shared/converttocurves_after.png" alt="convert to curves after" /></div>
+			</div>
+			<figcaption>Text converted to curves.</figcaption>
+		</figure>	
+
+		<aside class="box warning">
+			<p>Once an object has been converted to curves, it can no longer be edited in its conventional way. For example, you would not be able to change the font of text once it has been converted to curves.</p>
+		</aside>
+
+		<aside class="box tip">
+			<p>New shapes can also be created by joining two or more objects together in a variety of ways. For more information, see the <a href="join.html">Joining objects</a> topic.</p>
+		</aside>
+
+	</section>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/move_tool.png" class="tool" width="18" height="18" alt="Move tool" /> <img src="../../../shared/ui/node_tool.png" class="tool" width="18" height="18" alt="Node tool" /> To convert a shape to curves:</summary>
+			<ol>
+				<li>Select the shape with either the <span class="ui">Move</span> or the <span class="ui">Node Tool</span>.</li>
+				<li>Do one of the following:<ul>
+						<li>Click <span class="ui">Convert to Curves</span> on the context toolbar.</li>
+						<li>From the <span class="ui">Layer</span> menu, select <span class="ui">Convert to Curves</span>.</li>
+					</ul>
+				</li>
+			</ol>
+			<p>The shape is now made from curves and the <span class="ui">Node Tool</span> is automatically selected. Segments and nodes can be modified with the Node Tool.</p>
+		</details>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../CurvesShapes/draw_geometricShapes.html">Draw and edit shapes</a></li>
+			<li><a href="../CurvesShapes/edit_linesAndShapes.html">Edit curves and shapes</a></li>
+			<li><a href="join.html">Joining objects</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

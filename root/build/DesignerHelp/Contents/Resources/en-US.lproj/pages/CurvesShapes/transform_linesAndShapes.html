@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="transforming, scaling, transform, node, multi-select, perspective" />
+	<meta name="description" content="Lines and shapes can be transformed via node manipulation." />
+	<title>Transforming curves and shapes</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Transforming curves and shapes</h1>
+		<p>Just as objects can be transformed, the nodes of curves and shapes can be transformed too.</p>
+		
+	<figure>
+		<div class="comparison"><img src="../../../shared/node_transform_before.png" class="screenshot responsive" alt="node transform before" /><div><img src="../../../shared/node_transform_after.png" class="screenshot responsive" alt="node transform after" /></div>
+		</div>
+		<figcaption>Selection box around selected nodes being transformed</figcaption>
+	</figure>
+
+	</header>
+	
+	<section class="about">
+	
+		<p>Node transformation works by forming a selection box around selected nodes. In doing so the box can be transformed in the same way that an object's selection box can be. As a result, the position of nodes relative to each other is altered in the transformation process which reshapes the curve or shape in different ways.</p>
+		
+		<p>Many nodes can be transformed simultaneously or you can transform two selected nodes</p>
+			
+		<aside class="box note">
+			<p>Transformation is possible on both two-dimensional and axonometric designs (e.g., isometric).</p>
+		</aside>
+	
+	</section>	
+
+	<section class="howto">
+	
+		<details open="open">
+			<summary><img src="../../../shared/ui/node_tool.png" class="tool heading" width="18" height="18" alt="Node Tool" /> <img src="../../../shared/ui/transform_mode.png" class="tool heading" width="16" height="16" alt="Transform Mode" /> To transform multiple nodes:</summary>
+				<ol>
+					<li>With the <span class="ui">Node Tool</span>, select one or more nodes on a curve or shape.</li>
+					<li>On the context toolbar, enable <span class="ui">Transform Mode</span> in the <span class="ui">Transform</span> section.</li>
+					<li>Resize, rotate and skew either directly on the curve or shape using selection box handles or use the <span class="ui">Transform</span> panel for absolute precision.</li>
+				</ol>
+				
+			<aside class="box tip">
+				<p>With the <span class="ui">Transform</span> panel you can transform in relation to a configurable anchor point.</p>
+			</aside>
+			
+			<aside class="box tip">
+				<p>The <span class="ui">Transform</span> section also offers some options to hide selection when dragging, switch on alignment handles within the selection box for more precise transforms, control selection areas to encompass all the curve outline and cycle the type of selection box.</p>
+			</aside>
+
+		</details>
+
+ 		<details open="open">
+			<summary>To transform shapes for a simple distortion effect:</summary>
+			<ol>
+				<li>Select two nodes on the shape.</li>
+				<li>Enter <span class="ui">Transform Mode</span>.</li>
+				<li>With the <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> pressed, drag any selected node inwards or outwards.</li>
+			</ol>
+			<p>This is particularly effective on simple shapes such as rectangles.</p>
+			
+		<figure>
+			<div class="single"><img src="../../../shared/perspective.png" alt="perspective on shapes" /></div>
+			<figcaption></figcaption>
+		</figure>
+		</details>
+
+
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Tools/tools_node.html">Node Tool</a></li>
+			<li><a href="../CurvesShapes/select_align_nodes.html">Selecting and aligning nodes</a></li>
+			<li><a href="../ObjectControl/transform.html">Transforming objects</a></li>
+			<li><a href="../Panels/transformPanel.html">Transform panel</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=operations">Keyboard shortcuts for transforming operations</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

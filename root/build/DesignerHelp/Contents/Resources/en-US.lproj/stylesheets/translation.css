@@ -1,0 +1,112 @@
+.uitoolbar_message.persona:after {
+	content: "Persona Toolbar";
+}
+
+.uitoolbar_message.rawinfo:after {
+	content: "Toolbar";
+}
+
+.uitoolbar_message.phototoolbar:after {
+	content: "Toolbar";
+}
+
+.uitoolbar_message.photocontext:after {
+	content: "Context Toolbar";
+}
+
+.uitoolbar_message.drawcontext:after {
+	content: "Context Toolbar";
+}
+
+.uitoolbar_message.toolsphoto:after {
+	content: "Tools Panel";
+}
+
+.uitoolbar_message.liquifytoolbar:after {
+	content: "Toolbar";
+}
+
+.uitoolbar_message.toolsliquify:after {
+	content: "Tools Panel";
+}
+
+.uitoolbar_message.drawtoolbar:after {
+	content: "Toolbar";
+}
+
+.uitoolbar_message.pixeltoolbar:after {
+	content: "Toolbar";
+}
+
+.uitoolbar_message.exporttoolbar:after {
+	content: "Toolbar";
+}
+
+.uitoolbar_message.toolsraw:after {
+	content: "Tools Panel";
+}
+
+.uitoolbar_message.toolsdraw:after {
+	content: "Tools Panel";
+}
+
+.uitoolbar_message.toolspixel:after {
+	content: "Tools Panel";
+}
+
+.uitoolbar_message.toolsexport:after {
+	content: "Tools Panel";
+}
+
+.uitoolbar_message.tonemappingtoolbar:after {
+	content: "Toolbar";
+}
+
+.uitoolbar_message.toolstonemapping:after {
+	content: "Tools Panel";
+}
+
+.uitoolbar_message.panels:after {
+	content: "Panels";
+}
+
+.uitoolbar_message.status:after {
+	content: "Status Bar";
+}
+
+.uitoolbar_message.slices:after {
+	content: "Export Slices";
+}
+
+.uitoolbar_message.slices2:after {
+	content: "Export Slices";
+}
+
+.SPACEBAR-TAG:after{
+	content:"Spacebar";
+}
+.KEY-TAG:after{
+	content:"key";
+}
+
+/* This gets changed to display: none for translation branches */
+.nft {
+}
+
+/* Test class to see what a topic looks like without content not for translation */
+.nfttest {
+	display: none;
+}
+
+/* For Translation only. When branching to translated builds delete display: none; in here */
+.ft {
+	display: none;
+}
+
+.comparison:before {
+	content: "After (Click/Tap)";
+}
+
+.comparison.viewable_text:before {
+	content: "Before";
+}

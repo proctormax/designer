@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="contour, tool, vector, offset, path" />
+	<meta name="description" content="The Contour Tool is used to offset strokes on curves and shapes." />
+	<title>Contour Tool</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1><img src="../../../shared/ui/contour_tool.png" class="tool heading" width="18" height="18" alt="Contour Tool" /> Contour Tool</h1>
+
+		<p>The <span class="ui">Contour Tool</span> lets you offset the stroke of a curve or shape.</p>
+		
+	</header>
+	
+	<section class="about">
+	
+	<p>The tool offsets the object's original outline; the stroke moves with the newly offset outline but its width remains unchanged. The object's outline can be moved inwardly or outwardly (more typically) by dragging.</p>
+
+		<aside class="box tip">
+			<p>Tool shortcut <span class="KEY-TAG"></span>: <span class="key">O</span>.</p>
+		</aside>
+
+	</section>
+	
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted from the context toolbar:</p>
+		<ul>
+			<li><span class="ui">Fill</span>&#8212;click the color swatch to display a pop-up panel to update fill color.</li>
+			<li><span class="ui">Stroke</span>&#8212;click the color swatch to display a pop-up panel to update stroke color.</li>
+			<li><span class="ui">Stroke properties</span>&#8212;the line thickness in points. Type directly in the text box or drag the pop-up slider to set the value.</li>			
+			<li><span class="ui">Radius</span>&#8212;sets the radius of the contour, i.e. the distance that the object's outline will be offset.</li>			
+			<li><span class="ui">Contour type</span>&#8212;Select a contour type (Round, Bevel, or Miter) to determine the contour of sharp corners. With <span class="ui">Miter</span> joins, the <span class="ui">Miter</span> limit setting dynamically controls if beveling occurs by extending each line at the junction by the number or radius multiples. If the two outer edges meet within that limit, the result is a sharp corner; if not, you’ll get a flat (Bevel) corner.</li>
+			<li><span class="ui">Miter</span>&#8212;sets the length of the extension of Miter joins to create either sharp or flat corners.</li>
+			<li><span class="ui">Cap</span>&#8212;set the cap ends to <span class="ui">No cap</span>, <span class="ui">Round cap</span> or <span class="ui">Square cap</span>. Use on an already contoured curve's end nodes.</li>
+			<li><span class="ui">Fill</span>&#8212;set the shape's fill to <span class="ui">Auto closed</span>, <span class="ui">Force open</span> or <span class="ui">Force closed</span>.</li>
+			<li><span class="ui">Bake Appearance</span>&#8212;converts the contoured object to curves. The created contour will no longer be editable if this option is selected.</li>
+		</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../CurvesShapes/contouringShapes.html">Contouring curves and shapes</a></li>
+			<li><a href="../CurvesShapes/edit_linesAndShapes.html">Edit curves and shapes</a></li>
+			<li><a href="../CurvesShapes/draw_geometricShapes.html">Draw and edit shapes</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=tools">Keyboard shortcuts for tools</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

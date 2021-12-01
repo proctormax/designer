@@ -1,0 +1,46 @@
+.cpanel{
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px 1px rgba(0,0,0,0.1);
+  border-radius: 0pt;
+  border-style: solid;
+  border-width: 0px;
+  border-top-color: #5555;
+  border-color: #21212150;
+  padding: 1pt;
+}
+.cpanel, .cwindow{
+  font-size: 12px;
+  font-family: Segoe UI;
+}
+
+.cpanel > .header{
+  position: relative;
+  padding: 0;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  clear: both;
+}
+.cpanel > .content {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 5pt !important;
+}
+
+.cpanel .ctitle,
+.cpanel > .header > .ctitle{
+  user-select: none;
+  text-align: center;
+  padding: 1pt 2pt;
+}
+.collapsed > content{
+  display: none !important;
+}
+
+panel{
+  display: block;
+}

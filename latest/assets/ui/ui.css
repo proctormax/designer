@@ -1,0 +1,8 @@
+.popup{
+  position: absolute;
+}
+.popup.left:before{
+  content: "";
+  border-left: 12px solid red;
+  display: block;
+}

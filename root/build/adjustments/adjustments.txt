@@ -1,0 +1,66 @@
+
+
+[------------------------------
+        <<Panel>>
+        Adjustments
+-------------------------------
+    Black and White: Convert a color image to monochrome while maintaining full control over how individual colors are converted.
+    Brightness and Contrast:
+    Channel Mixer
+    Colour Balance
+    Curves
+    Exposure
+    Gradient Map
+    HSL
+    Invert
+    Lens Filter
+    Levels
+    LUT
+    OCIO (OpenColorIO)
+    Posterize
+    Recolor
+    Selective Colour
+    Shadows/Highlights
+    Soft Proof
+    Split Toning
+    Threshold
+    Vibrance
+    White Balance
+------------------------------]
+
+[------------------------------
+    <<interface>>
+     Adjustment
+------------------------------]     
+  +Delete():void    Closes the dialog and deletes the adjustment layer, removing the adjustment from the image.
+  +Merge():void     Merges the current adjustment layer with the layer immediately below it in the layer order.
+  +Reset():void     Reverts all dialog settings to default.
+  +Opacity():void   How see through the adjustment layer is.
+  +BlendMode():void Changes how the applied pixels interact with existing pixels on the layer below. Choose mode type from a pop-up menu.
+-----------------------
+
+-----------------------
+@LensFilter:{
+    settings:{        
+        FilterColor: Choose the color/tint of your lens filter.
+        OpticalDensity: Adjust the density (or strength) of the lens filter: this controls how much of the tint is blended into the image.
+        PreserveLuminosity: When checked, prevents the change in color from affecting the luminance channel of the image. If unchecked, increasing the optical density will typically reduce the luminosity of the image.
+    }
+}
+
+
+Brightness and Contrast adjustment:
+- Info:
+    -Adjust the values in the shadows and highlights, and the overall tonal range, of images.
+-Settings:
+    +Brightness: —controls the lightness/darkness of the image. Drag the slider to the left to decrease brightness, drag to the right to increase it.
+    +Contrast:   —controls the tonal range of the image. Drag the slider to the left to decrease the contrast between dark and light areas, drag to the right to increase it.
+    +Linear:     —by default, the adjustment prevents shadow and highlight clipping by modifying pixels relative to their original lightness value. When selected, this option modifies pixels using absolute values and clipping may occur.
+
+Channel Mixer adjustment:
+-Adjust the color of individual channels to produce effects not easily achieved with other color adjustment tools.
+    Output Channel:
+        Select a color mode from the first pop-up menu.
+        Specify a single color channel to apply the adjustment to, including the layer's alpha channel. Select from the second pop-up menu.
+    The sliders control the contribution of the named color to the selected output channel. Drag the slider to the left to decrease the level of the named color, drag the slider to the right to increase it.
+    Offset—controls the overall influence the selected output channel has on the image as a whole. Drag the slider to the left to decrease the output channel's contribution, drag the slider to the right to increase it.

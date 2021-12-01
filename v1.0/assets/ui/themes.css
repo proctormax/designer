@@ -1,0 +1,56 @@
+
+
+body{
+  font-family: Segoe UI;
+  font-size: 12px;
+}
+
+.btn:not(.disabled):hover{
+  transition: color 0.3s;
+}
+
+.cwindow,
+.cpanel{
+  border-radius: 3px;
+}
+
+
+/*
+states: (H)over, (A)ctive, (D)efault,(F)ocus
+attribs: (F)ill, (S)troke, (T)ext
+syntax: H(F,S,T) --> H_0_ => hover:BG = color0
+colors: base | Dark | highlight | alternate | light
+code: [state][attrib][value]
+values:C003, _
+property-[state]-[attrib]-[values]
+property-[active]-[bg-mg-fg]-[values]
+
+
+
+
+
+
+
+
+
+*/
+
+
+.fs-sm{
+  font-size: 10px;
+}
+.fs-normal{
+  font-size: 12px;
+}
+.text-bold{ font-weight: bold;}
+.text-italic{ font-style: italic;}
+.text-white{ color: #fff;}
+.fill-white{ background-color: #fff;}
+.stroke-white{ border-color: #fff;}
+.text-dark{ color: #333;}
+.text-black{ color: #000;}
+.text-lime{ color: #5D5;}
+.text-accent{ color: rgb(253,227,21);}
+.theme-bright{ background-color: #E5c300;}
+.highlight-alpha{ background-color: rgba(253,277,21,0.5);}
+.cursor-default{ cursor: default;}

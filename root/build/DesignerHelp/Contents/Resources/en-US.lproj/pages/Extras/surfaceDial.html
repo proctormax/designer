@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="Surface, Surface Pro, Surface Dial, input devices" />
+	<meta name="description" content="Microsoft's Surface Dial can provide fast access to the Affinity commands and controls you need the most." />
+	<title>Using Surface Dial with your Affinity Windows apps</title>
+</head>
+
+<body>
+<x-win32>
+
+	<header>
+		<h1>Using Surface Dial</h1>
+		<p>Microsoft's Surface Dial enables you to invoke Affinity menu commands and adjust tool settings by clicking and turning a rotary control.</p>
+		<p>To use it with your Affinity app, first follow <a href="https://support.microsoft.com/help/4023515">Microsoft's instructions</a> to connect it to your PC, then enable support in your Affinity app's preferences: select <span class="ui">Tools</span> and tick <span class="ui">Enable Dial support</span>.</p>
+	</header>
+	
+	<section class="about">
+		<h2>Integration with your Affinity app</h2>
+		<p>After restarting the app, turning the dial while the <span class="ui">Move Tool</span> is selected will rotate the document in the view. Click the dial to reset the document's orientation.</p>
+		<p>With one of the Pixel, Erase or various other pixel-based brush tools selected, click Surface Dial to choose which attribute (brush width, accumulation, flow, and hardness) is adjusted by rotating the Dial. These tools display a large graphical overlay that provides clear feedback.</p>
+
+		<figure class="nft">
+			<p><img src="../../images/surfaceDialOnScreenDisplays.jpg" class="screenshot" alt="Surface Dial on-screen displays" /></p>
+			<figcaption>Examples of on-screen displays when controlling brush attributes (left) and selecting custom commands (right).</figcaption>
+		</figure>
+
+		<p>If a tool does not provide predefined Surface Dial gestures, you can assign choices in Windows' Settings app. Your custom commands are available from an on-screen menu, which appears when you press and hold down on the Dial.</p>
+
+		<aside class="box note">
+			<p>Some commands in your Affinity app do not have keyboard shortcuts assigned to them by default. You will need to give them shortcuts in the app's Keyboard Shortcuts preferences before configuring Surface Dial to invoke them.</p>
+		</aside>
+		
+		<h2>Example custom commands for Surface Dial in Affinity apps</h2>
+		<p>Below are examples of how you might use Surface Dial in your workflow to control brush size and layer order. The walkthroughs at the bottom of this page explain how to implement these and other personalizations.</p>
+		
+		<figure class="nft">
+			<p><img src="../../images/surfaceDialCommands.png" height="372" alt="An example setup of a Brush Size command for Surface Dial" /></p>
+			<figcaption>Example custom commands for controlling layer order and vector brush size using Surface Dial.</figcaption>
+		</figure>
+
+		<p>In the left example above, rotating the Dial moves the current layer back or forward progressively in the layer stack, while clicking it sends the layer all the way to the back.</p>
+		<p>In the right example, rotating the Dial adjusts brush size (as long as the appropriate tool is selected). The <span class="ui">Click shortcut</span> toggles the Brushes Panel; normally there is no keyboard shortcut assigned to this action, so you'll need to set the same key combination in your Affinity app's preferences.</p>
+	</section>
+	
+	<section class="howto">
+		<h2>Customize Surface Dial integration</h2>
+		<details open="open">
+			<summary>To assign a tool to Surface Dial's on-screen menu:</summary>
+			<ol>
+				<li>Do one of the following:<ul>
+						<li>Select <span class="ui">Settings</span> from the <span class="ui">Start menu</span>, select <span class="ui">Devices</span> and then select <span class="ui">Bluetooth &amp; other devices</span>.</li>
+						<li>Click the Bluetooth icon in the taskbar's notification area and select <span class="ui">Show Bluetooth Devices</span>.</li>
+					</ul>
+				</li>
+				<li>On the left, select <span class="ui">Wheel</span>.</li>
+				<li>Under <span class="ui">App tools</span> on the right, click <span class="ui">Add an app</span>.</li>
+				<li>Select your Affinity app from the list.</li>
+				<li>Select <span class="ui">Add a tool</span>.</li>
+				<li>Type a custom tool name. This will be displayed in Surface Dial's on-screen menu.</li>
+				<li>Beneath <span class="ui">Rotate right shortcut</span>, <span class="ui">Rotate left shortcut</span>, or <span class="ui">Click shortcut</span>, set the keyboard shortcut for the Affinity tool/command you want to access using Surface Dial's on-screen menu.</li>
+				<li>(Optional) Repeat the previous step for the other two gestures.</li>
+				<li>Click <span class="ui">Done</span>.</li>
+			</ol>
+		</details>
+		
+		<details open="open">
+			<summary>To invoke a custom Surface Dial command:</summary>
+			<ol>
+				<li>Click the Surface Dial.</li>
+				<li>Rotate the Dial so your command is highlighted.</li>
+				<li>Click the Dial to select the command.</li>
+				<li>Rotate left, rotate right or click the Dial to invoke the required command. Repeated rotation is interpreted as a repeated key press.</li>
+			</ol>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Workspace/customizingWorkspace.html">Customizing the workspace</a></li>
+			<li><a href="surfacePen.html">Using Surface Pen with your Affinity Windows apps</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+
+</x-win32>
+</body>
+</html>

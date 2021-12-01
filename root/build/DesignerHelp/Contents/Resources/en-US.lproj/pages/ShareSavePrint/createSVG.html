@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="workspaces" />
+	<meta name="description" content="SVGs are a versatile type of vector file that can be easily adapted and optimized for use on the web and with cutting machines." />
+	<title>Working with SVGs</title>
+</head>
+
+<body>
+
+	<header>
+		
+			<h1>Working with SVGs</h1>
+
+			<p>SVGs, or Scalable Vector Graphics, are a versatile type of vector file that can be easily adapted and optimized for use on the web and with cutting machines.</p>
+
+	</header>
+
+	<section class="about">
+		
+			<h2>About SVGs</h2>
+			
+			<p>SVGs are an XML-based vector graphic format used to display images. The difference between the SVG file format and other image formats, such as PNG or JPEG, is that SVG code can be easily read and manipulated via CSS and Javascript, allowing a web browser or program to create the graphic instead of just displaying it. Because SVGs are vector based this makes them very flexible, allowing you to manipulate the graphic in ways that can't be done with other image formats.</p>
+			
+			<aside class="box note">
+				<p>Despite SVGs being a predominately vector based format, raster objects within files will still degrade on resize.</p>
+			</aside>
+			
+			<h3>Using SVGs for web design</h3>
+			
+			<p>SVGs are generally considered the best file format for putting illustrations, icons and logos on the web. Because SVGs are so flexible, they can be resized without losing any quality, looking crisp at all resolutions. This flexibility also allows you to keep the file sizes small and allows for easy editing to optimize your graphics for different web layouts.</p>
+
+			<aside class="box note">
+				<p>Despite SVGs being a predominately vector based format, raster objects within files will still degrade on resize.</p>
+			</aside>		
+			
+			<h3>Using SVGs with cutting machines</h3>
+
+			<p>SVGs are the preferred file type for use with cutting machines such as Cricut, Silhouette, Eclips, Brother, and Cameo. This is for a number of reasons:</p>
+				<ul>
+					<li>They contain directional information (or paths) that help guide the cutting machine in the right direction when cutting out the image.</li>
+					<li>The lines in SVG files are very precise, and will not lose quality even if you completely resize them.</li>
+					<li>SVGs can be easily edited from the cutting program itself.</li>
+				</ul>
+
+	</section>
+			
+	<section class="howto">
+
+		<details open="open">
+			<summary>To prepare an SVG file for export to the web:</summary>
+
+				<ul>
+					<li>Ensure the design is sitting in an area of whole pixels (e.g., no decimal points) to keep the image crisp.</li>
+					<li>The SVG export settings may automatically alter the DPI of the file to ensure a reasonable file size. For a file that is to be viewed on a retina screen, a DPI of 144 or higher is preferred.</li>
+					<li>Ensure <span class="ui">Export text as curves for font independence</span> is checked to ensure your file is displayed precisely as intended.</li>
+				</ul>
+		</details>
+		
+		<details open="open">
+			<summary>To prepare an SVG file for export to a cutting program:</summary>
+
+				<ul>
+					<li>Ensure your document is set to 72 DPI.</li>
+					<li>Your cutting machine's application may push all layers within your document to the edge of the material when cutting to prevent material wastage. To add padding around the edges of your document, create a new rectangle layer underneath your curve layers.</li>
+					<li>Your cutting machine's application may take all layers within your document and reorder them before cutting to prevent material wastage. If your design contains multiple curve layers but you want to retain the layout of your document, you will need to merge all of the separate curve layers into a single curve layer. You can do this by selecting each of the curve layers and going to <span class="ui">Layer&gt;Geometry&gt;Merge curves</span>.</li>
+					<li>We advise that you export to SVG using the default settings.</li>
+				</ul>
+			
+		</details>
+
+	</section>
+	
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../ShareSavePrint/export.html">Export</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+
+</body>
+</html>

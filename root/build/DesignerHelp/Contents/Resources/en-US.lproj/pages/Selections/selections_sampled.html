@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="selection, pixel, raster, sampled color, sampled color" />
+	<meta name="description" content="Create a pixel selection by sampling colors from your image." />
+	<title>Sampled color pixel selections</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Sampled color pixel selections</h1>
+
+		<p>You can create a pixel selection by sampling colors from a pixel layer.</p>
+	</header>
+	
+	<section class="settings">
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted from the dialog:</p>
+		<ul>
+			<li><span class="ui">Tolerance</span>&#8212;determines how closely pixels must match the selected color to be included in the selection. For lower tolerance settings, pixels must be very close in value to the clicked pixel. For higher tolerance settings, pixel color can vary widely from the clicked pixel. Drag the slider to set the value.</li>
+			<li><span class="ui">Model</span>&#8212;determines the color model used when sampling. Select from the pop-up menu.</li>
+		</ul>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To create a pixel selection from a sampled color:</summary>
+			<ol>
+				<li>Select a pixel layer.</li>
+				<li>From the <span class="ui">Select</span> menu, choose <span class="ui">Select Sampled Color</span>.</li>
+				<li>Click on your pixel layer to select the sampled color.</li>
+				<li>Adjust the settings in the dialog.</li>
+				<li>Click <span class="ui">Apply</span></li>
+			</ol>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="selections_create.html">Creating pixel selections</a></li>
+			<li><a href="selections_range.html">Range pixel selections</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

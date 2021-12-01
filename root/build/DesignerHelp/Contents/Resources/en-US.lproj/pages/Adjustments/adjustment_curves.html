@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="adjustment, curves" />
+	<meta name="description" content="Adjust the color and tone of images using curves." />
+	<title>Curves adjustment</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Curves adjustment</h1>
+
+		<p>Adjust the color, tone and alpha channels with the curves adjustment, either on individual channels or by adjusting the master curve.</p>
+
+		<figure>
+			<div class="comparison"><img src="../../../shared/adjustment_base.jpg" alt="Before" /><div><img src="../../../shared/adjustment_curves.jpg" alt="After" /></div>
+			</div>
+		</figure>
+	</header>
+
+	<section class="about">
+	
+		<p><img src="../../../shared/ui/LayersTabAdustmentIcon.png" class="tool" width="16" height="16" alt="Adjustments" /> Apply this adjustment via the <span class="ui">Adjustment</span> button on the <span class="ui">Layers</span> panel or via <span class="ui">Layer</span> &gt; <span class="ui">New Adjustment</span>.</p>
+
+		<aside class="box tip">
+			<p>Adjustments can be made in any color mode, regardless of the document's current color mode.</p>
+		</aside>
+
+		<aside class="box note">
+			<p>You can also adjust the tonal range of images using the <span class="ui">Levels</span> and <span class="ui">Brightness and Contrast</span> adjustments.</p>
+		</aside>
+
+	</section>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted in the dialog:</p>
+		<ul>
+			<li>Select a color mode (<span class="ui">GREY/RGB/CMYK/LAB</span>) from the first pop-up menu.</li>
+			<li>Specify a single color channel to apply the adjustment to, including the layer's alpha channel. <span class="ui">Master</span> (the default choice) applies the adjustment to all channels. Select from the second pop-up menu.</li>
+			<li><span class="ui">Picker</span>&#8212;allows you to drag on the image to modify the adjustment. The initial click will place a node on the curve in relation to the pixel selected. Dragging up will lighten the image while dragging down will darken it. The curve graph will update accordingly.</li>
+			<li><span class="ui">X</span>&#8212;accurately positions any added and currently selected node on the X-axis of the graph.</li>
+			<li><span class="ui">Y</span>&#8212;accurately positions any added and currently selected node on the Y-axis of the graph.</li>
+			<li><span class="ui">Min</span> and <span class="ui">Max</span> are the input minimums and input maximums. These are useful for 32-bit documents with out of range tonal values, but can also be used to fine tune the manipulated tonal range in 8-bit and 16-bit documents:<ul>
+					<li><span class="ui">Input minimum</span>&#8212;specify, in float, a minimum value to use as tonal input.</li>
+					<li><span class="ui">Input maximum</span>&#8212;specify, in float, a maximum value to use as tonal output.</li>
+				</ul>
+			</li>
+		</ul>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To adjust a curves graph:</summary>
+				<p>On the curves graph, do any of the following:</p>
+				<ul>
+					<li>In the dialog, click <span class="ui">Picker</span> and then drag up or down on the page.</li>
+					<li>Drag the curve to adjust the tonal range of the image.</li>
+					<li>Click on the curve to add additional nodes.</li>
+					<li class="osx">Click to select a node and then press the <span class="key BACKSPACE"></span> <span class="KEY-TAG"></span> to remove it.</li>
+					<li class="win32">Click to select a node and then press the <span class="key BACKSPACE-WIN"></span> <span class="KEY-TAG"></span> to remove it.</li>
+				</ul>
+		</details>
+
+		<aside class="box tip">
+			<p>In general:</p>
+			<ul>
+				<li>Drag the curve downwards to correct overexposure.</li>
+				<li>Drag the curve upwards to correct underexposure.</li>
+				<li>Create a gentle S-shape by adding nodes (see above) and dragging the curve in opposite directions to correct washed out images.</li>
+			</ul>
+		</aside>
+		
+		<aside class="box tip">
+			<p>To fine-tune node positions, try nudging a selected node by pressing the left, right, up, or down arrow key (or alter <span class="ui">X</span> and <span class="ui">Y</span> values).</p>
+		</aside>
+		
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="adjustment_applying.html">Applying adjustments</a></li>
+			<li><a href="adjustment_levels.html">Levels adjustment</a></li>
+			<li><a href="adjustment_brightnessContrast.html">Brightness and Contrast adjustment</a></li>
+			<li><a href="adjustment_shadowsHighlights.html">Shadows / Highlights adjustment</a></li>
+		</ul>
+	</section>
+	
+	<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

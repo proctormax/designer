@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="file formats, import, export, supported images" />
+	<meta name="description" content="Lists file formats that can be imported and/or exported" />
+	<title>Import and export file formats</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Import and export file formats</h1>
+
+		<p>Affinity Designer is capable of opening many raster and vector file formats directly. Designer also imports PDF and Adobe PSD files, and exports a range of raster file formats and the PSD file format.</p>
+		
+	</header>
+
+	<table class="shortcut">
+		<tr>
+			<th>File type</th>
+			<th>Import</th>
+			<th>Export</th>
+		</tr>
+		<tr>
+			<td>Affinity template</td>
+			<td></td>
+			<td>x</td>
+		</tr>
+		<tr>
+			<td>Adobe Illustrator (AI)</td>
+			<td>x<sup>1</sup></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Adobe Freehand (10 and MX)</td>
+			<td>x<sup>2</sup></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Adobe PhotoShop (PSD)</td>
+			<td>x</td>
+			<td>x<sup>8</sup></td>
+		</tr>
+		<tr>
+			<td>BMP</td>
+			<td>x</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>EPS</td>
+			<td>x</td>
+			<td>x</td>
+		</tr>
+		<tr>
+			<td>GIF</td>
+			<td>x</td>
+			<td>x</td>
+		</tr>
+		<tr>
+			<td>HEIF</td>
+			<td>x<sup>3</sup></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>JPEG</td>
+			<td>x</td>
+			<td>x</td>
+		</tr>
+		<tr>
+			<td>J2K,JP2</td>
+			<td>x</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>JPEG-XR/JXR (WDP/HDP)</td>
+			<td>x<sup>9</sup></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>PDF</td>
+			<td>x<sup>1,7</sup></td>
+			<td>x<sup>8</sup></td>
+		</tr>
+		<tr>
+			<td>PNG</td>
+			<td>x</td>
+			<td>x<sup>4</sup></td>
+		</tr>
+		<tr>
+			<td>RAW</td>
+			<td>x<sup>5</sup></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>SVG</td>
+			<td>x</td>
+			<td>x</td>
+		</tr>
+		<tr>
+			<td>TGA</td>
+			<td>x<sup>4</sup></td>
+			<td>x</td>
+		</tr>
+		<tr>
+			<td>TIFF</td>
+			<td>x<sup>6</sup></td>
+			<td>x<sup>4</sup></td>
+		</tr>
+		<tr>
+			<td>WEBP</td>
+			<td>x</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>OpenEXR</td>
+			<td>x</td>
+			<td>x</td>
+		</tr>
+		<tr>
+			<td>Radiance HDR</td>
+			<td>x</td>
+			<td>x</td>
+		</tr>
+	</table>
+<p><sup>1</sup> Multi-page files can be imported, with each page being placed on its own artboard.</p>
+<x-osx><p><sup>2</sup> Multi-page Freehand files open with each page concatenated onto a single page. Add file extensions .fh10 or .fh11 in Finder to import. Text import is not supported.</p></x-osx>
+<x-win32><p><sup>2</sup> Multi-page Freehand files open with each page concatenated onto a single page. Add file extensions .fh10 or .fh11 in Explorer to import. Text import is not supported.</p></x-win32>
+<p><sup>3</sup> Includes depth map, loaded as second layer. Depth maps are upsampled.</p>
+<p><sup>4</sup> Supports transparency.</p>
+<p><sup>5</sup> For a comprehensive up-to-date list of RAW file support, please see the following links:</p>
+<ul>
+	<li><a href="https://affin.co/rawserif" target="_blank">SerifLabs RAW</a> (Mac &amp; Windows)</li>
+	<li><a href="https://affin.co/rawapple" target="_blank">Apple Core Image RAW</a> (Mac only)</li>
+</ul>
+<p><sup>6</sup>12 bit TIFF (RGB or Mono) included.</p>
+<p><sup>7</sup>JBIG2 PDF encoding is supported.</p> 
+<p><sup>8</sup> Text will be rasterized on export.</p>
+<p><sup>9</sup> Includes JPEG-XR 101010 (e.g. XBOX screen captures).</p>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

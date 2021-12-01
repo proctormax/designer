@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="artboards, pages, add, delete, remove, convert" />
+	<meta name="description" content="How to add, remove and convert artboards." />
+	<title>Adding and removing artboards</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Adding and removing artboards</h1>
+
+		<p>Artboards can be created with new documents or added to your current document at a preset or custom size at any time.</p>
+		
+	</header>
+
+	<section class="about">
+
+		<h2>Adding artboards</h2>
+
+		<p>When <a href="../GetStarted/NewDocument.html">creating a new document</a>, you can automatically create your first artboard using the settings in the New Document dialog.</p>
+		<p>Once you have an <a href="../GetStarted/openDocument.html">document open</a>, you can add artboards using the <a href="../Tools/tools_artboard.html">Artboard Tool</a>.</p>
+		<p>Artboards can be created:</p>
+		<ul>
+			<li>using the original document's dimensions&#8212;perfect for creating multi-page documents</li>
+			<li>using preset sizes&#8212;perfect for device-specific designing</li>
+			<li>using the current selection's dimensions</li>
+			<li>at a custom size</li>
+			<li>by copying or <a href="../ObjectControl/duplicate.html">duplicating</a> other artboards</li>
+			<li>by converting a selected object</li>
+		</ul>
+
+		<h2>Removing artboards</h2>
+
+		<p>Artboards can be deleted from your project at any time. Any objects placed on the artboard will be deleted as well.</p>
+		<p>As an alternative to deleting an artboard, you can convert it into a standard object. In this situation, any objects on the artboard will be nested within the new object, thereby preserving your design.</p>
+
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary>To create a new document with an artboard:</summary>
+			<ol>
+				<li>From the <span class="ui">File</span> menu, click <span class="ui">New</span>.</li>
+				<li>From the dialog, select the <span class="ui">Create artboard</span> option.</li>
+				<li>Adjust the settings in the dialog.</li>
+				<li>Click <span class="ui">Create</span>.</li>
+			</ol>
+			
+			<aside class="box note">
+				<p>The <span class="ui">Page Preset</span> or <span class="ui">Page Width</span> and <span class="ui">Page Height</span> settings set in step 3 above will be adopted by the artboard and become the default size for future artboards.</p>
+			</aside>
+
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/move_tool.png" class="tool" width="18" height="18" alt="Move Tool" /> <img src="../../../shared/ui/artboardtool.png" class="tool" width="18" height="18" alt="Artboard Tool" /> To add artboards at preset dimensions:</summary>
+			<ol>
+				<li>(Optional) With the <span class="ui">Move Tool</span>, select one or more objects.</li>
+				<li>On the <span class="ui">Tools</span> panel, select the <span class="ui">Artboard Tool</span>.</li>
+				<li>On the context toolbar, from the <span class="ui">Size</span> pop-up menu, select:<ul>
+						<li><span class="ui">Document</span>&#8212;to add an artboard at the current document's dimensions to the canvas.</li>
+						<li><span class="ui">Selection</span>&#8212;to add an artboard at the top of the layer stack at the same size and position as the selected object(s).</li>
+						<li>any other preset&#8212;to add another artboard at a device-specific preset's dimensions.</li>
+					</ul>
+				</li>
+				<li>On the context toolbar, click <span class="ui">Insert Artboard</span>.</li>
+			</ol>
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/artboardtool.png" class="tool" width="18" height="18" alt="Artboard Tool" /> To add custom size artboards:</summary>
+			<ul>
+				<li>With the <span class="ui">Artboard Tool</span> selected, drag on the pasteboard (or inside another artboard to create a nested artboard).</li>
+			</ul>
+
+			<aside class="box note">
+				<h3>Modifier keys</h3>
+				<p>When using the Artboard Tool, the following modifier keys can be used:</p>
+				<ul>
+					<li>The <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> constrains the artboard's proportions at the time of creation (to a square) or when resizing.</li>
+					<li>The <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> resizes the artboard from its center.</li>
+					<li class="osx">The <span class="key CTRL-TAG"></span> <span class="KEY-TAG"></span> lets you rotate an artboard about its opposite handle.</li>
+					<li class="win32">Pressing the right mouse button lets you rotate an artboard about its opposite handle.</li>
+				</ul>
+			</aside>
+
+		</details>
+
+		<details>
+			<summary><img src="../../../shared/ui/move_tool.png" class="tool" width="18" height="18" alt="Move Tool" /> <img src="../../../shared/ui/artboardtool.png" class="tool" width="18" height="18" alt="Artboard Tool" /> To copy or duplicate an artboard:</summary>
+			<ul>
+				<li>With an artboard selected, do one of the following:<ul>
+						<li>With the <span class="ui">Move Tool</span> or <span class="ui">Artboard Tool</span>, <span class="key CMD-TAG"></span>-drag the artboard.</li>
+						<li>From the <span class="ui">Edit</span> menu, select <span class="ui">Duplicate</span>.</li>
+					</ul>
+				</li>
+			</ul>
+		
+		</details>
+
+		<details>
+			<summary>To convert an object to an artboard:</summary>
+			<ul>
+				<li>With the single object selected, from the <span class="ui">Layer</span> menu, select <span class="ui">Convert Object to Artboard</span>.</li>
+			</ul>
+			
+			<aside class="box tip">
+				<p>If an object has been converted to an artboard, that artboard remains editable as if it was the original object. For example, an artboard converted from a closed shape can still be edited as a closed shape and an artboard converted from artistic text can still be edited as text.</p>
+			</aside>
+		
+		</details>
+
+		<details>
+			<summary><img src="../../../shared/ui/artboardtool.png" class="tool" width="18" height="18" alt="Artboard Tool" /> <img src="../../../shared/ui/LayersTabSubtractIcon.png" class="tool" width="16" height="16" alt="Remove Layers" /> To remove an artboard:</summary>
+			<ol>
+				<li>Do one of the following:<ul>
+						<li>Using the <span class="ui">Artboard Tool</span>, click to select a single artboard or <span class="key SHIFT-TAG"></span>-click to select multiple artboards.</li>
+						<li>On the <span class="ui">Layers</span> panel, select one or more artboards.</li>
+					</ul>
+				</li>
+				<li>Do one of the following:<ul>
+						<li class="osx">Press the <span class="key BACKSPACE"></span> <span class="KEY-TAG"></span>.</li>
+						<li class="win32">Press the <span class="key BACKSPACE-WIN"></span> <span class="KEY-TAG"></span>.</li>
+						<li>On the <span class="ui">Layers</span> panel, click <span class="ui">Remove Layer</span>.</li>
+					</ul>
+				</li>
+			</ol>
+		</details>
+
+		<details>
+			<summary>To convert an artboard to an object:</summary>
+			<ul>
+				<li>With the single artboard selected, from the <span class="ui">Layer</span> menu, select <span class="ui">Convert Artboard to Object</span>.</li>
+			</ul>
+
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Tools/tools_artboard.html">Artboard Tool</a></li>
+			<li><a href="artboards_moveResize.html">Selecting, moving and resizing artboards</a></li>
+			<li><a href="../GetStarted/NewDocument.html">Create new documents</a></li>
+			<li><a href="../GetStarted/openDocument.html">Open documents and images</a></li>
+			<li><a href="../ObjectControl/duplicate.html">Duplicating objects</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

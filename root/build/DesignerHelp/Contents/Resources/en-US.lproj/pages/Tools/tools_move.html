@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="pointer, select, tool, move, rotate, resize" />
+	<meta name="description" content="The Move Tool allows you to select, move, rotate, and resize objects." />
+	<title>Move Tool</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1><img src="../../../shared/ui/move_tool.png" class="tool heading" width="18" height="18" alt="Move Tool" /> Move Tool</h1>
+		
+		<p>The <span class="ui">Move Tool</span> allows you to select objects on your page. Once selected, the Move Tool allows you to move, rotate, and resize your selected object, as well as change its properties.</p>
+		
+		<aside class="box note">
+			<p>Use the Shift key with the tool to constrain objects to Vertical, Horizontal or diagonal (45&#176;).</p>
+		</aside>
+		
+		<aside class="box tip">
+			<p>Tool shortcut <span class="KEY-TAG"></span>: <span class="key">V</span>.</p>
+		</aside>
+		
+	</header>
+
+	<section class="settings">
+		<h3>Settings</h3>
+
+		<p>The following settings are available on the context toolbar when <span class="ui">no objects</span> are selected:</p>
+		<ul>
+			<li><span class="ui">Document Setup</span>&#8212;displays a pop-up panel for adjusting document settings.</li>
+			<li><span class="ui">Preferences</span>&#8212;provides access to the Preferences dialog for advanced application settings.</li>
+		</ul>
+
+		<p>The following settings are available on the context toolbar when <span class="ui">individual objects</span> are selected (other settings are shown conditional on the type of object selected):</p>
+		<ul>
+			<li><span class="ui">Fill</span>&#8212;click the color swatch to display a pop-up panel to update fill color.</li>
+			<li><span class="ui">Stroke</span>&#8212;click the color swatch to display a pop-up panel to update stroke color.</li>
+			<li><span class="ui">Stroke properties</span>&#8212;set the stroke style, width, joins, cap ends, order and arrowhead settings via a pop-up panel.</li>
+			<li>Line style&#8212;click to display a pop-up panel to set the <span class="ui">Width</span> and line style.</li>
+			<li><span class="ui">Lock Children</span>&#8212;when checked, any child object(s) of a selected ungrouped object cannot be altered when the selected object is transformed. Great for maintaining the size, position and aspect ratio of a clipped picture when resizing its parent object.</li>
+			<li><img src="../../../shared/ui/rotationcntr.png" class="tool" width="16" height="16" alt="Enable Transform Origin" /> <span class="ui">Enable Transform Origin</span>&#8212;displays a movable transform origin about which the object can be rotated.</li>
+			<li><img src="../../../shared/ui/hideselection.png" class="tool" width="16" height="16" alt="Hide Selection" /> <span class="ui">Hide Selection while Dragging</span>&#8212;when selected, the object's selection box is temporarily hidden when transforming the object. If this option is off, the selection box remains visible during transformation. The selected behavior persists across all objects unless it is manually switched.</li>
+			<li><img src="../../../shared/ui/alignment_mode.png" class="tool" width="16" height="16" alt="Show Alignment Handles" /> <span class="ui">Show Alignment Handles</span>&#8212;when selected, displays alignment handles at the center and edges of the selected object. Hovering over these handles displays a floating guideline across the page. You can drag the handles to position the center or edges of the selected object in line with this guide.</li>
+			<li><img src="../../../shared/ui/multiple_transform.png" class="tool" width="16" height="16" alt="Transform Objects Separately" /> <span class="ui">Transform Objects Separately</span>&#8212;when selected, where multiple objects are selected, they can be be resized, rotated and sheared independently of each other instead of transforming the bounding box.</li>
+			<li><img src="../../../shared/ui/resetboundingbox.png" class="tool" width="16" height="16" alt="Cycle Selection Box" /> <span class="ui">Cycle Selection Box</span>&#8212;after reshaping, rotating, or shearing the object, this option toggles the selection box between a Base box (honors the transform), Regular bounds (ignores transform) or Planar bounds (fitting to an isometric grid if active).</li>
+			<li><img src="../../../shared/ui/converttocurves.png" class="tool" width="16" height="16" alt="Convert to Curves" /> <span class="ui">Convert to Curves</span>&#8212;converts the selected object into a series of connected lines and nodes.</li>
+			<li><span class="ui">Align Horizontal</span>&#8212;align objects according to <span class="ui">Left</span> or <span class="ui">Right</span> edges, or by <span class="ui">Center</span>. Single objects align in relation to page edge.</li>
+			<li><span class="ui">Align Vertical</span>&#8212;align objects according to <span class="ui">Top</span> or <span class="ui">Bottom</span> edges, or by <span class="ui">Middle</span>. Single objects align in relation to page edge.</li>
+			<li><span class="ui">Group</span>&#8212;converts selected objects into a group for easier selection and modification.*</li>
+			<li><span class="ui">Ungroup</span>&#8212;splits selected group into individual objects for focused manipulation.*</li>
+		</ul>
+
+		<aside class="box note">
+			<p>*Nested groups can be created when an existing group is part of a selection being grouped. If these nested groups are ungrouped, the previously grouped objects remain within their original group. To split a nested group into individual objects (removing all previous groups), from the <span class="ui">Layer</span> menu, select <span class="ui">Ungroup All</span>.</p>
+		</aside>
+		
+		<p>The following settings are available on the context toolbar when a placed image or document is selected:</p>
+			<ul>
+				<li>Image/document information&#8212;Displays the image's or document's native dimensions and its placed DPI and percentage scaling; use the drop-down arrow to edit DPI or scaling, or reset to original size (100% scaling).</li>
+				<li><span class="ui">PageBox</span>&#8212;choose from the following:<ul>
+						<li><span class="ui">TrimBox</span>&#8212;the page displayed to the page edge.</li>
+						<li><span class="ui">BleedBox</span>&#8212;the page with bleed or printer marks shown.</li>
+						<li><span class="ui">Minimum Content</span>&#8212;the bounding box of the object(s) in the document.</li>
+						<li><span class="ui">Minimum Visible Content</span>&#8212;As for Minimum Content but the bounds of any hidden objects are also taken into account.</li>
+						<li><span class="ui">Maximum Content</span>&#8212;the bounding box of the object(s) including the object's control handles outside the box.</li>
+						<li><span class="ui">Maximum Visible Content</span>&#8212;As for Maximum Content but the bounds of any hidden objects are also taken into account.</li>
+					</ul>
+				</li>
+				<li><span class="ui">Artboard</span>&#8212;select an artboard to display (Designer document).</li>
+				<li><span class="ui">Spread</span>&#8212;select a spread to display (PDF or Publisher document).</li>
+				<li><span class="ui">Edit Image</span>/<span class="ui">Edit Document</span>&#8212;click to open a separate window from which you can edit your placed (or framed) image or document.</li>
+				<li><span class="ui">Replace Image</span>/<span class="ui">Replace Document</span>&#8212;click to display a pop-up panel from which you can select a file to replace the current placed (or framed) image or document.</li>
+			</ul>	
+
+		<aside class="box note">
+			<p>Under <span class="ui">Preferences&gt;Tools</span>, the <span class="ui">Move Tool Aspect Constrain</span> option can be used to specify whether or not to constrain the aspect ratio by default when resizing. The option can also be set to automatic, letting the software decide based on the selected content.</p>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../ObjectControl/select.html">Selecting objects</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=tools">Keyboard shortcuts for tools</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

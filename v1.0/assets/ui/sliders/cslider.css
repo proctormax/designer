@@ -1,0 +1,64 @@
+.cslider{
+  position: relative;
+  display: block;
+  min-width: 50px;
+  height: auto;
+  background-color: #444;
+  cursor: ew-resize;
+  border-radius: 3px;
+  overflow: hidden;
+  font-size: 75%;
+  padding: 2pt 0;
+  font-family: Segoe UI;
+  text-align: center;
+}
+.cslider > .cslider-range{
+  user-select: none;
+  background-color: orangered;
+  height: 100%;
+  width: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.cslider > .cslider-text{
+  margin:0 6pt;
+  user-select: none;
+  position: relative;
+}
+
+.cslider > .cslider-value{
+  position: relative;
+  user-select: none;
+  font-weight: bold;
+}
+
+
+.thumbSlider{
+  height: 8pt;
+  margin: 3pt 0;
+  overflow: visible;
+  border-radius: 10px;
+  padding: 0;
+}
+.thumbSlider  .cslider-thumb{
+  display: block;
+  position: absolute;
+  width: 6pt;
+  height: 6pt;
+  border: solid 4px #ccc;
+  border-radius: 15px;
+  cursor: default;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 100%;
+}
+.thumbSlider > .cslider-range{
+  height: 8pt;
+  top: 25%;
+  left: 0%;
+  transform: translate(-0%,-25%);
+  max-width: 80%;
+  border-radius: 10px 0 0 10px;
+}

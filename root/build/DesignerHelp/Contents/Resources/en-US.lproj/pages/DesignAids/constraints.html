@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="constraints" />
+	<meta name="description" content="Use constraints to control scaling and anchoring of a child object when scaling their parent object." />
+	<title>Constraints</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Constraints</h1>
+		<p>A child object can be prevented from being scaled when resizing its parent and be anchored to its parent in different ways. This ensures that designs can be presented in different layouts quickly and easily. The feature is perfect for designing UI mockups, e.g., to envisage how dialogs can be resized without affecting the position of every dialog control.</p>
+		
+		<figure>
+			<div class="comparison"><img src="../../../shared/constraints-before.png" alt="Before" /><div><img src="../../../shared/constraints-after.png" alt="After" /></div>
+			</div>
+			<figcaption>Scaling has been disabled for all objects except the text, trophy button and the top lines. Anchoring has been applied to most objects except the text and trophy button.</figcaption>
+		</figure>
+	</header>
+
+	<section class="about">
+	
+		<p>Using constraints gives you the freedom to design without worrying that design rework will be adversely affected by unwanted object rescaling. By controlling selectively which objects will/won't be scaled and anchored, your design will always respond correctly to scaling.</p>
+		<p>Constraints only work in parent - child object relationships, i.e. where a parent object (container) contains nested content. A child object's scaling and anchoring is always in relation its container. For example, in UI design, a device mockup could have parent - child object relationships such as artboard - panel, panel - button, etc.</p>		
+		<p>Constraining is exclusively carried out from the <span class="ui">Constraints</span> panel. The panel controls:</p>
+		<ul>
+			<li>horizontal and vertical scaling in relation to its parent's size</li>
+			<li>anchoring of an object by its top, left, right and/or bottom edge in relation to its parent object's equivalent edge.</li>
+		</ul>
+
+		<p>By default, nested content will scale when its container is resized. A child object is <em>not</em> anchored by default.</p> 
+
+		<h2>Locking aspect ratio</h2>
+		
+		<p>To prevent a child object losing its aspect ratio when its parent is scaled disproportionately, you can set it to <span class="ui">Min Fit</span> or <span class="ui">Max Fit</span>.</p>
+		<ul>
+			<li><img src="../../../shared/ui/constraints_minfit.png" width="18" height="18" alt="Constraints Min fit" /> Min Fit&#8212;when the parent object is resized disproportionately, the child object may scale so it always fits within its parent object (if unanchored). Use on text to ensure it always fully displays.</li>
+			<li><img src="../../../shared/ui/constraints_maxfit.png" width="18" height="18" alt="Constraints Max fit" /> Max Fit&#8212;when the parent object is resized disproportionately, the child object may scale. The child object can become bigger than its parent object, potentially clipping content from view. Using a web banner mockup as an example, a child object (e.g., an image) will always fully fill the containing banner area (avoiding white letterboxing) but may be subject to clipping.</li>
+		</ul>
+
+		<p>In both cases, if the parent object is resized proportionately, the child object will also scale proportionally.</p>
+		
+		<aside class="box note">
+			<p>If a child object is set to <span class="ui">Min Fit</span> and its parent object is resized wider, the child object will not scale. However, if the parent object is later made taller, the child object will begin scale to honor its original aspect ratio and size with respect to it parent.</p>
+		</aside>
+
+	</section>
+	
+	<section class="howto">
+		<details open="open">
+			<summary>To prevent a child object from scaling:</summary>
+			<ol>
+				<li>Select a child object.</li>
+				<li>On the <span class="ui">Constraints</span> panel, click the horizontal or vertical solid double arrow (or both) in the panel's inner square. A grayed-out dashed arrow means that scaling won't occur when its parent object is resized.</li>
+			</ol>
+			
+		<aside class="box note">
+			<p>An artboard, when resized, will not scale its contents by default. To allow constraints to operate as for other parent - child objects, uncheck <span class="ui">Lock Children</span> on the context toolbar.</p>
+		</aside>
+			
+		</details>
+
+		<details open="open">
+			<summary>To anchor a child object to its parent's boundaries:</summary>
+			<ol>
+				<li>Select a child object.</li>
+				<li>On the <span class="ui">Constraints</span> panel, click a grayed-out dashed line between the inner and outer square to anchor the object to its parent in that direction (top, bottom, left, or right). A solid line means anchoring is being applied.</li>
+			</ol>	
+		</details>
+
+		<details open="open">
+			<summary>To maintain a child object's aspect ratio:</summary>
+			<ol>
+				<li>Select a child object.</li>
+				<li>On the <span class="ui">Constraints</span> panel, click <span class="ui">Min Fit</span> or <span class="ui">Max Fit</span>.</li>
+			</ol>	
+		</details>
+
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../ObjectControl/transform.html">Transforming objects</a></li>
+			<li><a href="../Panels/constraintsPanel.html">Constraints panel</a></li>
+		</ul>
+	</section>
+
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+.ALT-TAG:after{
+	content:"Alt";
+}
+.CMD-TAG:after{
+	content:"Ctrl";
+}
+.CTRL-TAG:after{
+	content:"\\";
+}
+.DEL-TAG:after{
+	content:"Delete";
+}
+.ESC-TAG:after{
+	content:"Esc";
+}
+.SHIFT-TAG:after{
+	content:"Shift";
+}
+.TAB-TAG:after{
+	content:"Tab";
+}
+.RETURN-TAG:after{
+	content:"Return";
+}
+.UP-TAG:after{
+	content:"Up";
+}
+.DOWN-TAG:after{
+	content:"Down";
+}
+.LEFT-TAG:after{
+	content:"Left";
+}
+.RIGHT-TAG:after{
+	content:"Right";
+}
+.BACKSPACE:after {
+	content: "Backspace";
+}
+.CLICK-TAG:after {
+  content: "Right";
+}
+.PGUP:after {
+	content:"PgUp";
+}
+.PGDOWN:after {
+	content:"PgDn";
+}
+.HOME:after {
+	content:"Home";
+}
+.END:after {
+	content: "End";
+}

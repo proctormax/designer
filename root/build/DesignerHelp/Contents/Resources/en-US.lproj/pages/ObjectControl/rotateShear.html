@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="rotating, shearing, rotate, skew" />
+	<meta name="description" content="Objects can be rotated and sheared directly on the page using the Move tool." />
+	<title>Rotating and shearing objects</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Rotating and shearing objects</h1>
+		<p>Objects can be rotated and sheared directly on the page using the <span class="ui">Move Tool</span>.</p>
+		
+		<figure>
+			<p><img src="../../../shared/rotate_shear.png" class="responsive" alt="Rotate and shear" /></p>
+			<figcaption>(A) original object, (B) original object rotated, (C) original object sheared.</figcaption>
+		</figure>
+
+	</header>
+
+	<section class="about">
+
+		<p>Positioning the cursor over particular areas of an object, multiple selection, or group and then dragging will allow you to rotate or shear. Feedback is provided by the following cursors.</p>
+		<p><img src="../../../shared/cursor/cursor_rotate_45.png" width="23" height="24" alt="Rotate cursor" /> <img src="../../../shared/cursor/cursor_rotate_225.png" width="23" height="23" alt="Rotate cursor" /> <img src="../../../shared/cursor/cursor_shear_90.png" width="24" height="28" alt="Shear cursor" /> <img src="../../../shared/cursor/cursor_shear_0.png" width="28" height="24" alt="Shear cursor" /></p>
+		<p>Rotation is also possible about a custom transform origin positioned on your page.</p>
+
+	</section>
+
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/move_tool.png" class="tool" width="18" height="18" alt="Move Tool" /> To rotate objects:</summary>
+			<ol>
+				<li>With the <span class="ui">Move Tool</span>, select one or more objects.</li>
+				<li>Do one of the following:<ul>
+						<li>Drag the object's rotation handle.</li>
+						<li>Position the cursor close to one of the object's corner handles and drag on the page when the cursor changes.</li>
+					</ul>
+				</li>
+			</ol>
+
+			<aside class="box note">
+				<p>You can rotate with more precision using the transform options on the Toolbar or <span class="ui">Transform</span> panel.</p>
+			</aside>
+			
+		</details>
+		
+		<details open="open">
+			<summary>To undo the rotation:</summary>
+			<ul>
+				<li>Double-click at any corner handle when you see the rotation cursor.</li>
+			</ul>
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/rotationcenter.png" class="tool" width="18" height="18" alt="Transform Origin" /> To move the transform origin:</summary>
+			<ol>
+				<li>Select one or more objects.</li>
+				<li>Select the <span class="ui">Move Tool</span>, then click <span class="ui">Enable Transform Origin</span> on the context toolbar. The origin shows centrally within the object or selection.</li>
+				<li>Drag the origin to a new position in the selected object, another object, or anywhere on the page.</li>
+			</ol>
+			<p>Once you've moved the origin, you can rotate your object(s) about it as described above. If using the <span class="ui">Transform</span> panel, rotation is about this custom origin unless you choose to override this and use the panel's Anchor point selector instead.</p>
+
+			<aside class="box note">
+				<p>You can snap the origin to the bounding box, center, key points, or the geometry of other objects (or even the same object).</p>
+				<x-osx>
+				<p>To retain its relative positioning and snapping, you can move an object by its custom transform origin; <span class="key CLICK-TAG"></span>-click <em>after</em> you start dragging the origin.</p>
+				</x-osx>
+			</aside>
+
+		</details>
+
+		<details open="open">
+			<summary>To reset the transform origin back to its original position:</summary>
+			<ul>
+				<li>Double-click the transform origin.</li>
+			</ul>
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/move_tool.png" class="tool" width="18" height="18" alt="Move Tool" /> To shear objects:</summary>
+			<ol>
+				<li>With the <span class="ui">Move Tool</span>, select one or more objects.</li>
+				<li>Position the cursor close to one of the object or selection's side handles and drag on the page.</li>
+			</ol>
+
+			<aside class="box note">
+				<p>You can shear objects with more precision using the <span class="ui">Transform</span> panel; this can optionally be about a custom transform origin.</p>
+			</aside>
+		</details>
+		
+		<details open="open">
+			<summary>To undo the shear:</summary>
+			<ul>
+				<li>Double-click at any edge handle when you see the shear cursor.</li>
+			</ul>
+		</details>
+
+		<aside class="box note">
+			<h3>Modifier keys</h3>
+			<p>When using the Move Tool, the following modifier keys can be used to aid rotating and shearing:</p>
+			<ul>
+				<li>The <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> constrains rotation to 15&#176; increments.</li>
+				<li>The <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> shears the opposite edge in the opposite direction by the same value.</li>
+				<li class="osx">When rotating from an object or selection's corner handle, the <span class="key CTRL-TAG"></span> <span class="KEY-TAG"></span> temporarily repositions the transform origin to the opposite corner.</li>
+				<li class="win32">When rotating from an object or selection's corner handle, holding the right mouse button temporarily repositions the transform origin to the opposite corner.</li>
+			</ul>
+		</aside>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="transform.html">Transforming objects</a></li>
+			<li><a href="../Panels/transformPanel.html">Transform panel</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=operations">Keyboard shortcuts for transforming operations</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

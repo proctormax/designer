@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="appearance, ui" />
+	<meta name="description" content="Create keyboard shortcuts which suit your style of working." />
+	<title>Customizing keyboard shortcuts</title>
+</head>
+
+<body>
+	<header>
+		<h1>Customizing keyboard shortcuts</h1>
+		<p>While the default keyboard shortcuts broadly follow industry standards and common use in other applications, it's possible to customize your keyboard shortcuts exactly to your liking.</p>
+	</header>
+
+	<section class="about">
+		<p>You can customize shortcuts on an application-wide or on a per-Persona basis. Shortcuts can be customized for tools, menu items, panel switch on/off, and tool operations, either being added as new shortcuts or replacing existing shortcuts.</p>
+		<x-osx><p>You can optionally save your customized shortcuts to a file (.affshortcuts) that can be shared with other users or backed up for safe keeping.</p></x-osx>
+		<x-win32><p>You can optionally save your customized shortcuts to a file (.afshort) that can be shared with other users or backed up for safe keeping.</p></x-win32>
+	</section>
+
+	<section class="settings">
+		<p>Available settings are as follows:</p>
+			<ul>
+				<li>Persona&#8212;The pop-up menu sets the Persona for shortcut customization.</li>
+				<li>UI Element&#8212;The pop-up menu displays the menus, commands and operations for the currently selected Persona. A Miscellaneous category groups shortcuts for commonly performed operations and lets you switch on/off panels via shortcuts.</li>
+				<li><span class="ui">Apply to all</span>&#8212;If checked, the shortcut applied to a UI element is shared across every Persona. If unchecked, you can uniquely assign a custom shortcut to work just within the currently selected Persona in the initial Persona pop-up menu.</li>
+				<li><span class="ui">Ignore Modifier</span>&#8212;Lets you create shortcuts using a single letter designation instead of using keyboard modifiers.</li>
+				<li class="win32"><span class="ui">Reset</span>&#8212;All customized shortcuts are reset back to default.</li>
+				<li class="osx"><span class="ui">Serif Defaults</span>&#8212;All customized shortcuts are reset back to default.</li>
+				<li class="osx"><span class="ui">Apple Defaults</span>&#8212;All customized shortcuts are reset back to default with some exceptions: shortcuts for adjusting character spacing, baseline and paragraph leading, moving the insertion point within text and selecting text are set to macOS defaults.</li>
+				<li><span class="ui">Clear All Shortcuts</span>&#8212;All default and customized shortcuts are removed.</li>
+				<li class="osx"><span class="ui">Load</span>&#8212;Loads a previously saved .affshortcuts file. This will overwrite your current keyboard shortcut allocations.</li>
+				<li class="win32"><span class="ui">Load</span>&#8212;Loads a previously saved .afshort file. This will overwrite your current keyboard shortcut allocations.</li>
+				<li class="osx"><span class="ui">Save</span>&#8212;Saves the current set of shortcuts to a .affshortcuts file for sharing or backup.</li>
+				<li class="win32"><span class="ui">Save</span>&#8212;Saves the current set of shortcuts to a .afshort file for sharing or backup.</li>
+			</ul>
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To assign (re-assign) a keyboard shortcut:</summary>
+			<ol>
+				<li class="osx">From the <span class="ui">Affinity Designer</span> menu, select <span class="ui">Preferences</span>.</li>
+				<li class="win32">From the <span class="ui">Edit</span> menu, select <span class="ui">Preferences</span>.</li>
+				<li>Select the <span class="ui">Keyboard Shortcuts</span> tab.</li>
+				<li>From the initial two pop-up menus, filter shortcuts by Persona and then by UI Element, respectively.</li>
+				<li>From the lower shortcut list, click in the box (containing empty or existing shortcut) at the end of a shortcut entry for the shortcut you want to change.</li>
+				<li>Press your chosen keyboard key(s) to assign. This adds the new shortcut or overwrites the assigned shortcut.</li>
+			</ol>
+
+			<aside class="box note">
+				<p>If your chosen shortcut has already been assigned, a warning triangle (<img src="../../../shared/ui/pref_keyboardShortcutsWarning.png" width="17" height="17" alt="Remove shortcut" />) shows next to the shortcut. To resolve, assign a different shortcut.</p>
+			</aside>
+
+			<aside class="box note">
+				<p>Some shortcuts show a symbol (<img src="../../../shared/ui/pref_keyboardShortcutsSharedShortcut.png" width="17" height="17" alt="Remove shortcut" />) next to them. This indicates that the shortcut is shared between several tools. Hover over the symbol to see other tools.</p>
+			</aside>
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/pref_keyboardShortcutsRemove.png" width="17" height="17" alt="Remove shortcut" /> To delete a keyboard shortcut:</summary>
+			<ul>
+				<li>Click the cross-hair icon at the end of the shortcut entry.</li>
+			</ul>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="shortcuts.html">Keyboard shortcuts</a></li>
+			<li><a href="preferences.html">Preferences</a></li>
+			<li><a href="../Introduction/about_Personas.html">Personas</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

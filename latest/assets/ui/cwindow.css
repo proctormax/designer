@@ -1,0 +1,54 @@
+.cwindow{
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #212121;
+  border-width: 1px;
+}
+.cwindow,
+.shadow-soft{
+  box-shadow: 0 1px 4px 1px rgba(0,0,0,0.1);
+}
+.shadow-normal{
+  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.2);
+}
+.cwindow-header{
+  display: block;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  height: auto;
+}
+.cwindow-content{
+  display: block;
+  position: relative;
+  box-sizing:border-box;
+}
+
+.cwindow-close::before{
+  content: "";
+  display: block;
+  width:  10px;
+  height: 10px;
+  border: solid 3px orangered;
+  border-radius: 10px;
+  box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+.cwindow-close{
+  width:  18px;
+  height: 18px;
+  position: relative;
+  float: right;
+  overflow: hidden;
+  display: block;
+}

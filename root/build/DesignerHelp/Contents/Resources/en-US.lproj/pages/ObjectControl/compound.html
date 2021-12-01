@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="joining objects, combine, xor, union, difference, operations, geometry, boolean, operators" />
+	<meta name="description" content="Compounds provide a flexible, non-destructive approach to creating a variety of shapes from separate objects." />
+	<title>Creating compounds</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Creating compounds</h1>
+		<p>Compounds provide a flexible approach to creating a variety of shapes from separate objects using Boolean operations.</p>
+	</header>
+
+	<section class="about">
+
+		<p>Unlike <a href="join.html">joining objects</a>, creating a Compound is a non-destructive process. This means a Compound can be added to, or broken apart, at any time. Objects within the Compound can also be removed and modified without restriction, if and when desired.</p>
+
+		<p>Objects within a Compound interact with each other depending on their individual compound mode. This mode can be changed at any time; each mode can be previewed in realtime on selection.</p>
+
+		<aside class="box note">
+			<p>By default, the Compound adopts the properties of the lowest object when the Compound is created. However, once a Compound is in place its individual properties can be modified, as with any object.</p>
+		</aside>
+
+
+		<h2>Compound modes</h2>
+
+		<p>There are various operations available:</p>
+
+		<p><span class="ui">Add</span>&#8212;expands Compound by adding the object's area to all objects below. This is the default mode.</p>
+		<figure>
+			<p><img src="../../../shared/add_illus.png" class="responsive" alt="Add" /></p>
+			<figcaption>Objects before and after operation.</figcaption>
+		</figure>
+		
+		<p><span class="ui">Intersect</span>&#8212;modifies Compound by only showing overlapping areas of selected object and objects below.</p>
+		<figure>
+			<p><img src="../../../shared/intersect_illus.png" class="responsive" alt="Intersect" /></p>
+			<figcaption>Objects before and after operation.</figcaption>
+		</figure>
+
+		<p><span class="ui">Subtract</span>&#8212;reduces Compound by removing the object's area from all objects below.</p>
+		<figure>
+			<p><img src="../../../shared/subtract_illus.png" class="responsive" alt="Subtract" /></p>
+			<figcaption>Objects before and after operation.</figcaption>
+		</figure>
+
+		<p><span class="ui">Xor</span>&#8212;modifies Compound by creating a composite shape, with transparent areas where object overlaps with objects below.</p>
+		<figure>
+			<p><img src="../../../shared/combine_illus.png" class="responsive" alt="Xor" /></p>
+			<figcaption>Objects before and after operation.</figcaption>
+		</figure>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/combineadd.png" class="tool" width="18" height="18" alt="Add" /> <img src="../../../shared/ui/combinesubtract.png" class="tool" width="18" height="18" alt="Subtract" /> <img src="../../../shared/ui/combineintersect.png" class="tool" width="18" height="18" alt="Intersect" /> <img src="../../../shared/ui/combine.png" class="tool" width="18" height="18" alt="Xor" /> To create a Compound:</summary>
+			<ol>
+				<li>Select multiple objects.</li>
+				<li>Do one of the following:<ul>
+						<li>From the <span class="ui">Layer</span> menu, select <span class="ui">Create Compound</span>. The compound mode of each object is set to <span class="ui">Add</span>.</li>
+						<li class="osx">Hold down the <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span>, select <span class="ui">Layer&gt;Geometry</span>, and then select <span class="ui">Add (Compound)</span>, <span class="ui">Subtract (Compound)</span>, <span class="ui">Intersect (Compound)</span> or <span class="ui">Xor (Compound)</span>.</li>
+						<li>Hold down the <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span>. On the Toolbar, select <span class="ui">Add</span>, <span class="ui">Subtract</span>, <span class="ui">Intersect</span> or <span class="ui">Xor</span>.</li>
+					</ul>
+				</li>
+			</ol>
+		</details>
+
+		<details open="open">
+			<summary>To change the compound mode of individual objects:</summary>
+			<ol>
+				<li>On the <span class="ui">Layers</span> panel, click the object's compound mode icon.</li>
+				<li>Select a compound mode from the pop-up menu.</li>
+			</ol>
+		</details>
+
+		<details open="open">
+			<summary>To add an object to a Compound:</summary>
+			<ul>
+				<li>On the <span class="ui">Layers</span> panel, drag the object on top of the compound object.</li>
+			</ul>
+			<p>The object is included in the Compound using the default Add mode.</p>
+		</details>
+
+		<details>
+			<summary>To remove an object from a Compound:</summary>
+			<ul>
+				<li>On the <span class="ui">Layers</span> panel, drag the object from inside the compound object to a layer.</li>
+			</ul>
+		</details>
+
+		<details>
+			<summary>To break up a Compound:</summary>
+			<ol>
+				<li>Select the Compound.</li>
+				<li>From the <span class="ui">Layer</span> menu, select <span class="ui">Release Compound</span>.</li>
+			</ol>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="join.html">Joining objects</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

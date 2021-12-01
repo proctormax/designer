@@ -1,0 +1,58 @@
+.ctabbar > layout > item > .ctab,
+.padded-h{
+  padding-left:4pt;
+  padding-right:4pt;
+}
+.item_padded > item,
+.padded-xs{
+  padding: 2pt;
+}
+.padded-sm{
+  padding: 4pt 8pt;
+}
+.padded{
+  padding: 2pt 4pt;
+}
+.padded-lg{
+  padding: 8pt;
+}
+.padded-xl{
+  padding: 12pt;
+}
+.no-padding{padding:none;}
+
+/* 
+.padded-h,
+.padded-r
+{padding-right:4pt;}
+.padded-h,
+.padded-l
+{padding-left:4pt;}
+
+.padded-v,
+.padded-b
+{padding-bottom:4pt;}
+
+.padded-v,
+.padded-t
+{padding-top:4pt;}
+
+.padded-h-2{
+  padding-left: 6pt;
+  padding-right:6pt;
+}
+.padded-v-2,
+.padded-b-2
+{padding-bottom:6pt;}
+
+.padded-v-2,
+.padded-t-2
+{padding-top: 6pt;}
+.padded{
+  padding: 2pt 4pt;
+}
+.padded-2{
+  padding: 4pt 6pt;
+}
+.no-padding{padding:none;}
+*/

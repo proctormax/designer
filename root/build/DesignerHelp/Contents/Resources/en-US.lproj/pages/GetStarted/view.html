@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="View Tool, view mode, split, mirror, zoom mode, preview" />
+	<meta name="description" content="Different viewing options allow you maximum flexibility when creating your designs." />
+	<title>Viewing</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Viewing</h1>
+
+		<p>There are a variety of viewing options available which lets you preview your designs before output using view modes, make mode comparisons and arrange your document view.</p>
+
+	</header>
+
+	<section class="about">
+		<h2>View modes</h2>
+		
+		<figure>
+			<div class="single"><img src="../../../shared/view_modes.png" alt="View Modes" /></div>
+			<figcaption>(A) Pixel, (B) Retina Pixel and (C) Outline View Modes.</figcaption>
+		</figure>
+
+		<h4>Vector</h4>
+		<p>Drawn objects are displayed as vectors by default. This means that, regardless of the current zoom level, objects (and applied effects) are always presented with smooth, vector edges and transitions.</p>
+
+		<h4>Pixel (A)</h4>
+		<p>During design, vector objects are presented as if they are constructed from individual pixels. This is an accurate representation of how your design will appear once exported and viewed as an image.</p>
+
+		<h4>Retina Pixel (B)</h4>
+		<p>As for Pixel mode above, but represents viewing on retina and high DPI displays.</p>
+
+		<h4>Outline (C)</h4>
+		<p>During design, page objects are presented as paths only (with no fills or strokes). All otherwise obscured paths are exposed, and selection behavior changes so grouped objects can immediately be selected just like ungrouped ones.</p>
+
+		<h3>View</h3>
+
+		<h4>Single View</h4>
+		<p>Presents the selected mode in isolation on a single page.</p>
+
+		<h4>Split View</h4>
+		<p>Presents two modes simultaneously on the same page. A sliding divider can be repositioned to view different areas of the design in either mode.</p>
+		</section>
+
+	<section class="about">
+		<h2>Clip to Canvas</h2>
+
+		<p>This option, set by default, restricts the document view, so you can only see objects which are placed on the page. If objects extend beyond the page, the area which lies on the page is visible while the area which lies on the pasteboard is hidden. Objects which are entirely on the pasteboard are hidden.</p>
+		<p>When <span class="ui">Clip to Canvas</span> is switched off, the pasteboard is visible, as are all the objects placed on it.</p>
+		<p>Clip to Canvas can be used in conjunction with any of the above view options.</p>
+
+		<aside class="box note">
+			<p>This option is unavailable in documents containing <a href="../Artboards/artboards_about.html">artboards</a>.</p>
+		</aside>
+
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/pixel_draw_mode_2.png" class="tool" width="18" height="18" alt="Pixel viewing mode" /> <img src="../../../shared/ui/retina_pixel_draw_mode_2.png" class="tool" width="18" height="18" alt="Retina pixel viewing mode" /> <img src="../../../shared/ui/outline_mode.png" class="tool" width="18" height="18" alt="Outline viewing mode" /> To display specific modes:</summary>
+			<p>From the toolbar, do one of the following:</p>
+			<ul>
+				<li>Click <span class="ui">Pixel view mode</span> to display vector designs as individual pixels.</li>
+				<li>Click <span class="ui">Retina pixel view mode</span> to display vector designs as individual pixels. Use for Retina displays.</li>
+				<li>Click <span class="ui">Outline view mode</span> to display design as paths only. In complex designs, this can be used for more easily targeting unlocked and locked objects for selection.</li>
+				<li>Ensure all icons are deselected to return to Vector mode.</li>
+			</ul>
+
+			<aside class="box note">
+			<p>You can also switch between View modes via the <span class="ui">View</span> menu (<span class="ui">View Mode</span> sub-menu).</p>
+		</aside>
+
+		</details>
+
+		<details open="open">
+			<summary>To work in Split View:</summary>
+			<ol>
+				<li>From the <span class="ui">View</span> menu's <span class="ui">View Mode</span> sub-menu, select <span class="ui">Split View</span>.</li>
+				<li>
+					<p>Click one side of the divider.</p>
+					<p>The divider label displays as black for the selected side (otherwise displayed as gray).</p>
+				</li>
+				<li>From the Toolbar or <span class="ui">View</span> menu, select a mode.</li>
+			</ol>
+
+		</details>
+
+	</section>
+
+		<x-osx>
+			<section class="about">
+				<h2>Full Screen Display</h2>
+				<p>You can jump to full screen view easily via a window button, menu option or a keyboard shortcut.</p>
+			</section>
+
+			<section class="howto">
+				<details open="open">
+					<summary>To display full screen:</summary>
+					<p>Do one of the following:</p>
+					<ul>
+						<li>Click the Full Screen button at the top of your window (this is the top-left green button).</li>
+						<li>From the <span class="ui">Window</span> menu, select <span class="ui">Toggle Full Screen</span>.</li>
+					</ul>
+				</details>
+			</section>
+		</x-osx>
+		
+		<x-win32>
+			<section class="about">
+				<h2>Arranging open documents side-by-side</h2>
+				<p>You can arrange two tabbed documents so they sit side-by-side.</p>
+			</section>
+
+			<section class="howto">
+				<details open="open">
+					<summary>To arrange documents side-by-side:</summary>
+					<p>With two documents open and tabbed, do the following:</p>
+					<ol>
+						<li>Drag one of your tabs so that it is floating and then move it to the left side of the screen.</li>
+						<li>Other windows you have open (including those belonging to other apps) will be arranged on the right side of the screen. Click one of those windows and drag to tile it on the right side of the screen beside your document.</li>
+					</ol>
+				</details>
+			</section>
+		</x-win32>
+		
+		<x-osx>
+			<section class="about">
+				<h2>Arranging open documents side-by-side</h2>
+				<p>You can arrange two tabbed documents so they sit side-by-side.</p>
+			</section>
+
+			<section class="howto">
+				<details open="open">
+					<summary>To arrange documents side-by-side:</summary>
+					<p>With two documents open and tabbed, do the following:</p>
+					<ol>
+						<li>From the <span class="ui">Window</span> menu, select <span class="ui">Separated Mode</span>.</li>
+						<li>Hover over the green button on one of the document windows until an additional set of options appear.</li>
+						<li>Choose <span class="ui">Tile Window to Left of Screen</span> or <span class="ui">Tile Window to Right of Screen</span> to display your document on the left or right side of the screen.</li>
+						<li>Other windows you have open (including those belonging to other apps) will be arranged on the remaining side of the screen. Click one of those windows to tile it on that side of the screen beside your document.</li>
+					</ol>
+				</details>
+			</section>
+		</x-osx>
+
+	<section class="about">
+		<h2>New View</h2>
+
+		<p>There are times when it is useful to view a design at different zoom levels simultaneously. This can be achieved by opening your current project in a New View. The views can then be set to different zoom levels. Changes made to any view are replicated in the other.</p>
+
+		<aside class="box tip">
+			<p>The New View can also be set to different View and Zoom modes.</p>
+		</aside>
+
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary>To open the current project in a new view:</summary>
+			<ul>
+				<li>From the <span class="ui">View</span> menu, select <span class="ui">New View</span>. The project opens in a new tab/window which includes a numerical reference in its title.</li>
+			</ul>
+		</details>
+
+		<x-osx>
+			<details open="open">
+				<summary>To switch between open projects and views:</summary>
+				<p>Do one of the following:</p>
+				<ul>
+					<li>Click a project/view tab.</li>
+					<li>Click a project/view window header in <a href="../Workspace/workspaceModes.html">Separated mode</a>.</li>
+					<li>From the <span class="ui">View</span> menu, select a project/view from the <span class="ui">Views</span> sub-menu.</li>
+				</ul>
+			</details>
+		</x-osx>
+		
+		<aside class="box prefs">
+			<h3>Preferences</h3>
+			<p>Related behaviors can be adjusted from <a href="../Workspace/preferences.html">the app's preferences</a>:</p>
+			<ul>
+				<li><span class="ui">Performance&gt;View Quality</span></li>
+			</ul>			
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Workspace/workspaceModes.html">About workspace modes</a></li>
+			<li><a href="zoom.html">Zooming</a></li>
+			<li><a href="../Tools/tools_zoom.html">Zoom Tool</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=view">Keyboard shortcuts for the document view</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+</html>

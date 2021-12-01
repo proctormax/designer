@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="selecting, nodes, nodes, align, aligning, distribute, distributing" />
+	<meta name="description" content="Select and align a curve's or shape's nodes." />
+	<title>Selecting and aligning nodes</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Selecting and aligning nodes</h1>
+		<p>When editing curves or shapes you can select multiple nodes in different ways. With selection control, you can then align and distribute nodes as you would with multiple selected objects, as well as <a href="transform_linesAndShapes.html">transform</a> selected nodes.</p> 
+ 
+		<figure>
+			<p><img src="../../../shared/node_Select.png" class="screenshot responsive" alt="node select" /></p>
+			<figcaption>Selecting node-by-node, by marquee and by lasso.</figcaption>
+		</figure>
+		
+		<figure>
+			<p><img src="../../../shared/node_SelectAlignDistribute.png" class="screenshot responsive" alt="node align distribute" /></p>
+			<figcaption>Aligning and distributing selected nodes.</figcaption>
+		</figure>
+
+	<aside class="box note">
+		<p>Use the [ and ] keys to jump forwards and backwards through nodes on a curve.</p>
+	</aside>
+
+	</header>
+	
+	<section class="howto">
+	
+		<details open="open">
+			<summary><img src="../../../shared/ui/node_tool.png" class="tool heading" width="18" height="18" alt="Node Tool" /> To select multiple nodes:</summary>
+				<ul>
+					<li>With the <span class="ui">Node Tool</span> and curve/shape selected, do one of the following:<ul>
+							<li>Node-by-node selection: With the <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> pressed, click individual nodes in turn.</li>
+							<li>Marquee selection: Drag a marquee selection area over nodes to include them in your selection.</li>
+							<li>Lasso selection: With the <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span> pressed, either:<ul>
+									<li>Draw freehand around nodes to encompass them in the blue selection area.</li>
+									<li>Draw a polygonal area around nodes taking a click-by-click approach.</li>
+								</ul>
+							</li>	 
+						</ul>
+					</li>
+				</ul>
+			<aside class="box note">
+				<p>To deselect a node from a multiple selection, click it while the <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> is pressed.</p>
+			</aside>
+
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/arrange.png" class="tool" width="18" height="18" alt="Alignment" /> To align/distribute multiple nodes:</summary>
+				<ol>
+					<li>With the <span class="ui">Node Tool</span> and curve/shape selected, select one or more nodes on the curve or shape as above.</li>
+					<li>On the Toolbar, click <span class="ui">Alignment</span>, set the <span class="ui">Align To</span> option, then an <span class="ui">Align Horizontally</span> or <span class="ui">Align Vertically</span> option from the pop-up panel. To distribute, choose a <span class="ui">Space Horizontally</span> or <span class="ui">Space Vertically</span> option from the end of the icon row.</li>
+					<li>Click <span class="ui">Apply</span>.</li> 
+				</ol>
+
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Tools/tools_node.html">Node Tool</a></li>
+			<li><a href="transform_linesAndShapes.html">Transforming curves and shapes</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

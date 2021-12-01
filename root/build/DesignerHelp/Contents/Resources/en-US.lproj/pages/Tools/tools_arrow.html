@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="pre-made, shape, arrow, arrow tool" />
+	<meta name="description" content="The Arrow Tool makes it easy to quickly add arrows to your design." />
+	<title>Arrow Tool</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1><img src="../../../shared/ui/Shape_Arrow.png" class="tool heading" width="18" height="18" alt="Arrow" /> Arrow Tool</h1>
+		<p>The <span class="ui">Arrow Tool</span> makes it easy to quickly add arrows to your design.</p>
+	</header>
+
+	<figure>
+		<p><img src="../../../shared/shapes_arrow1.png" class="responsive" alt="arrow default" /></p>
+		<figcaption>Default shape and handle position (in red) before customization.</figcaption>
+	</figure>
+
+	<section class="about">
+		<h2>Customization</h2>
+		<p>The arrow has several options on the shape and on the context toolbar to enable the body thickness and the shape and size of the arrow head to be controlled.</p>
+
+		<figure>
+			<p><img src="../../../shared/shapes_arrow2.png" class="responsive"  alt="arrow alternatives" /></p>
+			<figcaption>Two possible outcomes when the options are customized.</figcaption>
+		</figure>
+
+		<h3>Fixed head proportions option</h3>
+
+		<p>When <span class="ui">Proportional</span> is selected, if the shape is resized horizontally, the arrow head retains its proportions and the body shrinks or stretches.</p>
+
+		<figure>
+			<p><img src="../../../shared/shapes_arrow3.png" class="responsive" alt="arrow resized with and without fixed head proportions" /></p>
+			<figcaption>This example shows what happens when you resize an arrow (A) with (B), and without (C), <span class="ui">Fixed head proportions</span> selected.</figcaption>
+		</figure>
+
+	</section>
+
+	<section class="settings">
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted from the context toolbar:</p>
+		<ul>
+			<li><span class="ui">Fill</span>&#8212;click the color swatch to display a pop-up panel to update fill color.</li>
+			<li><span class="ui">Stroke</span>&#8212;click the color swatch to display a pop-up panel to update stroke color.</li>
+			<li><span class="ui">Stroke properties</span>&#8212;set the stroke style, width, joins, cap ends, order and arrowhead settings via a pop-up panel.</li>
+			<li><span class="ui">Style</span>&#8212;click to display a pop-up panel displaying additional style settings.</li>
+			<li><span class="ui">Thickness</span>&#8212;controls the height of the arrow body.</li>
+			<li><span class="ui">Ends</span>&#8212;sets the 'head' style on either end of the arrow.</li>
+			<li><span class="ui">Proportional</span>&#8212;For Left or Right ends, when checked (default), the head proportions remain fixed when the arrow is resized. If this option is off, the head resizes with the design.</li>
+			<li><img src="../../../shared/ui/rotationcntr.png" class="tool" width="16" height="16" alt="Enable Transform Origin" /> <span class="ui">Enable Transform Origin</span>&#8212;displays a movable transform origin about which the shape can be rotated.</li>
+			<li><img src="../../../shared/ui/hideselection.png" class="tool" width="16" height="16" alt="Hide Selection while Dragging" /> <span class="ui">Hide Selection while Dragging</span>&#8212;when selected, the object's selection box is temporarily hidden when transforming the object. If this option is off, the selection box remains visible during transformation. The selected behavior persists across all objects unless it is manually switched.</li>
+ 			<li><img src="../../../shared/ui/alignment_mode.png" class="tool" width="16" height="16" alt="Show Alignment Handles" /> <span class="ui">Show Alignment Handles</span>&#8212;when selected, displays alignment handles at the center and edges of the selected object. Hovering over these handles displays a floating guideline across the page. You can drag the handles to position the center or edges of the selected object in line with this guide.</li>
+ 			<li><img src="../../../shared/ui/multiple_transform.png" class="tool" width="16" height="16" alt="Transform Objects Separately" /> <span class="ui">Transform Objects Separately</span>&#8212;when selected, where multiple objects are selected, they can be be resized, rotated and sheared independently of each other instead of transforming the bounding box.</li>
+			<li><img src="../../../shared/ui/resetboundingbox.png" class="tool" width="16" height="16" alt="Cycle Selection Box" /> <span class="ui">Cycle Selection Box</span>&#8212;after reshaping, rotating, or shearing the object, this option toggles the selection box between a Base box (honors the transform), Regular bounds (ignores transform) or Planar bounds (fitting to an isometric grid if active).</li>
+			<li><img src="../../../shared/ui/converttocurves.png" class="tool" width="16" height="16" alt="Convert to Curves" /> <span class="ui">Convert to Curves</span>&#8212;converts the selected object into a series of connected lines and nodes.</li>
+			<li><span class="ui">Select new object</span>&#8212;when enabled (default), the new shape layer will be selected on creation.</li>
+		</ul>
+
+		<p>Context toolbar options update depending on the <span class="ui">Ends</span> style selected (see above). Settings may include the following:</p>
+		<ul>
+			<li><span class="ui">Length</span>&#8212;controls the length of the arrow head/tail.</li>
+			<li>A control for the depth and shape of the end style.</li>
+			<li><span class="ui">Size</span>&#8212;controls the horizontal width of the arrow tail. (When Proportional is set, 100% represents a perfect circle, square or diamond.)</li>
+		</ul>
+
+		<aside class="box note">
+			<p>To reset any red handle to its default position, simply double-click the handle.</p>
+		</aside>
+		
+		<aside class="box prefs">
+			<h3>Preferences</h3>
+			<p>Related behaviors can be adjusted from <a href="../Workspace/preferences.html">the app's preferences</a>:</p>
+			<ul>
+				<li><span class="ui">Tools&gt;Adjust tool handle size</span></li>
+			</ul>			
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../CurvesShapes/about_geometricShapes.html">About geometric shapes</a></li>
+			<li><a href="../CurvesShapes/draw_geometricShapes.html">Draw and edit shapes</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

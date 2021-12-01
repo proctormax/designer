@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="expression, shortcuts" />
+	<meta name="description" content="Expressions list for field input." />
+	<title>Expressions for field input</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Expressions for field input</h1>
+		<p>Instead of adding absolute values into input fields, you can add expressions. These allow you create new values based on percentages, mathematical symbols, and another field's value.</p>
+	</header>
+
+	<section class="about">
+	
+	<aside class="box note">
+		<p>The expression or variable presented after the comma can be used as alternative, often shortform, versions of the expression or variable.</p>
+	</aside>
+	
+	<h2>Field input validation</h2>
+	
+	<p>When adding an expression into a field, the following colors may appear, providing feedback on the validity of the expression:</p>
+	
+		<ul>
+			<li>Red&#8212;this denotes an error (examples include unrecognized units, unexpected character, unexpected token, unknown keyword, incomplete argument)</li>
+			<li>Green&#8212;the variable has been recognized</li>
+			<li>Orange&#8212;valid input awaiting Return key</li>
+		</ul>
+	
+	<h2 class="table">Sizing expression examples</h2>
+	
+	<p>Use when resizing a document or transforming an object via the <span class="ui">Transform</span> panel.</p>
+
+		<table class="shortcut">
+			<tr>
+				<th>Input</th>
+				<th>Result</th>
+			</tr>
+			<tr>
+				<td>+=20</td><td>Increase value by 20.</td>
+			</tr>
+			<tr>
+				<td>-=20</td><td>Decrease value by 20.</td>
+			</tr>
+			<tr>
+				<td>*2</td><td>Double size.</td>
+			</tr>
+			<tr>
+				<td>/2</td><td>Divide in half.</td>
+			</tr>
+			<tr>
+				<td>50%, *0.5</td><td>Decrease by half.</td>
+			</tr>
+			<tr>
+				<td>120%, *1.2</td><td>20% bigger.</td>
+			</tr>
+		</table>
+
+	<h2 class="table">Relational expression examples</h2>
+	
+	<p>Use when resizing a document or transforming an object via the <span class="ui">Transform</span> panel.</p>
+
+		<table class="shortcut">
+			<tr>
+				<th>Input</th>
+				<th>Result</th>
+			</tr>
+			<tr>
+				<td>w+20</td><td>Scales based on addition of other input value. <em>Example entered into Height box to set height as width plus 20 pixels.</em></td>
+			</tr>
+			<tr>
+				<td>w-20</td><td>Scales based on subtraction of other input value. <em>Example entered into Height box to set height as width minus 20 pixels.</em></td>
+			</tr>
+			<tr>
+				<td>2*w</td><td>Scaling based on a multiple of other input value. <em>Example is entered into Height box to set height to double the width.</em></td>
+			</tr>
+			<tr>
+				<td>w/2</td><td>Scaling based on a division of other input value. <em>Example entered into Height box to set height to half the width.</em></td>
+			</tr>			
+			<tr>
+				<td>w^3</td><td>Scales based on a power of other input value. <em>Example entered into Height box to set height as the width to the power of three.</em></td>
+			</tr>
+			<tr>
+				<td>12pt / x</td><td>Sets the text's x-height to 12pt.</td>
+			</tr>
+		</table>
+
+		<h2 class="table">Mathematical constants</h2>
+		
+		<p>For general use throughout the user interface.</p>
+
+		<table class="shortcut">
+			<tr>
+				<th>Input</th>
+				<th>Constant</th>
+			</tr>
+			<tr>
+				<td>pi,π</td><td>For Pi</td>
+			</tr>
+			<tr>
+				<td>phi, gr, φ</td><td>For golden ratio</td>
+			</tr>
+			<tr>
+				<td>root2, rad, rt</td><td>For Pythagoras’s constant</td>
+			</tr>
+			<tr>
+				<td>e</td><td>Euler’s constant</td>
+			</tr>		
+		</table>
+	
+	<h2 class="table">Transform variables</h2>
+	
+		<p>Use when moving, scaling, rotating or shearing objects via the <span class="ui">Transform</span> panel.</p>
+
+		<table class="shortcut">
+			<tr>
+				<th>Input</th>
+				<th>Variable</th>
+			</tr>
+			<tr>
+				<td>xposition, x</td><td>X position</td>
+			</tr>
+			<tr>
+				<td>yposition, y</td><td>Y position</td>
+			</tr>
+			<tr>
+				<td>width, w</td><td>Width</td>
+			</tr>
+			<tr>
+				<td>height, h</td><td>Height</td>
+			</tr>
+			<tr>
+				<td>rotation, r</td><td>Rotation</td>
+			</tr>
+			<tr>
+				<td>shear, s</td><td>Shear</td>
+			</tr>
+		</table>
+
+	<h2 class="table">Document variables</h2>
+	
+		<p>Use when setting dimensions using the New Document or Document Setup dialogs.</p>
+
+		<table class="shortcut">
+			<tr>
+				<th>Input</th>
+				<th>Variable</th>
+			</tr>
+			<tr>
+				<td>spreadwidth, w</td><td>Document width</td>
+			</tr>
+			<tr>
+				<td>spreadheight, h</td><td>Document height</td>
+			</tr>
+			<tr>
+				<td>marginleft, l</td><td>Left document margin</td>
+			</tr>
+			<tr>
+				<td>marginright, r</td><td>Right document margin</td>
+			</tr>
+			<tr>
+				<td>margintop, t</td><td>Top document margin</td>
+			</tr>
+			<tr>
+				<td>margin, b</td><td>Bottom document margin</td>
+			</tr>
+		</table>
+
+	<h2 class="table">Typographical variables</h2>
+	
+		<p>Use when setting the size of text.</p>
+
+		<table class="shortcut">
+			<tr>
+				<th>Input</th>
+				<th>Variable</th>
+			</tr>
+			<tr>
+				<td>xheight, x</td><td>X-height</td>
+			</tr>
+			<tr>
+				<td>ascent, a</td><td>Ascent</td>
+			</tr>
+			<tr>
+				<td>capheight, c</td><td>Cap height</td>
+			</tr>
+		</table>
+
+		<h2 class="table">Transform panel variables</h2>
+		
+		<p>Use when sizing and positioning content using the <span class="ui">Transform</span> panel in relation to the document (i.e. page spread).</p>
+				
+		<table class="shortcut">
+			<tr>
+				<td>spreadwidth, sprw, sw</td><td>The width of the current spread</td>
+			</tr>
+			<tr>
+				<td>spreadheight, sprh, sh</td><td>The height of the current spread</td>
+			</tr>
+			<tr>
+				<td>spreadleft, sprl, sl</td><td>The position of the left edge of the current spread</td>
+			</tr>
+			<tr>
+				<td>spreadright, sprr, sr</td><td>The position of the right edge of the current spread</td>
+			</tr>
+			<tr>
+				<td>spreadtop, sprt, st</td><td>The position of the top edge of the current spread</td>
+			</tr>
+			<tr>
+				<td>spreadbottom, sprb, sb</td><td>The position of the bottom edge of the current spread</td>
+			</tr>
+			<tr>
+				<td>marginsizeleft, mgnszl, msl</td><td>The size of the left margin on the current spread</td>
+			</tr>
+			<tr>
+				<td>marginsizeright, mgnszr, msr</td><td>The size of the right margin on the current spread</td>
+			</tr>
+			<tr>
+				<td>marginsizetop, mgnszt, mst</td><td>The size of the top margin on the current spread</td>
+			</tr>
+			<tr>
+				<td>marginsizebottom, mgnszb, msb</td><td>The size of the bottom margin on the current spread</td>
+			</tr>
+
+			<tr>
+				<td>marginleft, mgnl, ml</td><td>The position of the left margin on the current spread</td>
+			</tr>
+			<tr>
+				<td>marginright, mgnr, mr</td><td>The position of the right margin on the current spread</td>
+			</tr>
+			<tr>
+				<td>margintop, mgnt, mt</td><td>The position of the top margin on the current spread</td>
+			</tr>
+			<tr>
+				<td>marginbottom, mgnb, mb</td><td>The position of the bottom margin on the current spread</td>
+			</tr>
+
+			<tr>
+				<td>designareawidth, areawidth, aw</td><td>The space between the left and right margins on the current spread</td>
+			</tr>
+			<tr>
+				<td>designareaheight, areaheight, ah</td><td>The space between the top and bottom margins on the current spread</td>
+			</tr>
+			
+		</table>
+
+	<h2 class="table">Advanced mathematical expressions</h2>
+	
+		<p>For general use throughout the user interface.</p>
+		
+		<table class="thirtythree">
+			<tr>
+				<th>Function/Usage</th>
+				<th>Notes</th>
+			</tr>
+			<tr>
+				<td>abs(x)</td><td>Absolute value</td>
+			</tr>
+			<tr>
+				<td>idiv(x,y)</td><td>Results in the integer (whole number) of <em>x</em> divided by <em>y</em> (no rounding is applied)</td>
+			</tr>
+			<tr>
+				<td>irem(x,y)</td><td>Results in the remainder of <em>x</em> divided by <em>y</em></td>
+			</tr>
+			<tr>
+				<td>sin(a)</td><td>Sine</td>
+			</tr>
+			<tr>
+				<td>asin(a)</td><td>Inverse Sine</td>
+			</tr>
+			<tr>
+				<td>cos(a)</td><td>Cosine</td>
+			</tr>
+			<tr>
+				<td>acos(a)</td><td>Inverse Cosine</td>
+			</tr>
+			<tr>
+				<td>tan(a)</td><td>Tangent</td>
+			</tr>
+			<tr>
+				<td>atan(a)</td><td>Inverse Tangent</td>
+			</tr>
+			<tr>
+				<td>atan2(a, b)</td><td>Arctangent</td>
+			</tr>
+			<tr>
+				<td>average(a, b, ...)</td><td>Average of arguments</td>
+			</tr>
+			<tr>
+				<td>clamp(a, lo, hi)</td><td>a if it is between lo and hi, otherwise lo or hi</td>
+			</tr>
+			<tr>
+				<td>clampmin(n, min)</td><td>clamp values below minimum</td>
+			</tr>
+			<tr>
+				<td>clampmax(n, max)</td><td>clamp values above maximum</td>
+			</tr>
+			<tr>
+				<td>copysign(t, t sign)</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>dim(t x, t y)</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>fma(t a, t b, t c)</td>
+				<td>Computes (a*b) + c</td>
+			</tr>
+			<tr>
+				<td>fmod(t, t)</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>fraction(t)</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>lerp(a, b, f)</td><td>Linear interpolation (a + (b - a) f)</td>
+			</tr>
+			<tr>
+				<td>min(a, b, ...)</td><td>Smaller of values</td>
+			</tr>
+			<tr>
+				<td>max(a, b, ...)</td><td>Larger of values</td>
+			</tr>
+			<tr>
+				<td>mid(a, b)</td><td>Average of a and b</td>
+			</tr>
+			<tr>
+				<td>noise(seed / x, y)</td><td>Generate 1D noise either from a seed or based on X/Y input.</td>
+			</tr>
+			<tr>
+				<td>round(n)</td><td>Round to integer</td>
+			</tr>
+			<tr>
+				<td>roundup(b), ceil(n)</td><td>Round up to integer</td>
+			</tr>
+			<tr>
+				<td>rounddown(b), floor(n)</td><td>Round down to integer</td>
+			</tr>
+			<tr>
+				<td>trunc(t)</td>
+				<td>Shorthand for <span class="ui">truncate</span></td>
+			</tr>
+			<tr>
+				<td>truncate(n)</td><td>Truncate <span class="ui">n</span> places after decimal point.</td>
+			</tr>
+			<tr>
+				<td>whole(t)</td>
+				<td></td>
+			</tr>
+	</table>
+		
+	</section>
+	
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../GetStarted/DocumentSetup.html">Document setup</a></li>
+			<li><a href="../Panels/transformPanel.html">Transform panel</a></li>
+			<li><a href="../CurvesShapes/draw_geometricShapes.html">Draw and edit shapes</a></li>
+		</ul>
+	</section>	
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

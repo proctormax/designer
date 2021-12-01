@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="fill mode, fill rule, polycurve, svg, web" />
+	<meta name="description" content="Shapes which have been constructed using self-intersecting lines can be filled in two different ways." />
+	<title>Fill modes</title>
+</head>
+
+<body>
+	<header>
+
+		<h1>Fill modes</h1>
+		
+		<p>Shapes which have been constructed using self-intersecting lines can be filled in two different ways: <span class="ui">Alternate</span> or <span class="ui">Winding</span>.</p>
+		
+		<figure>
+			<p><img src="../../../shared/fillmode.png" class="responsive" alt="Fill Mode example" /></p>
+			<figcaption>Unfilled shape, and filled shapes showing Alternate and Winding fill modes, respectively.</figcaption>
+		</figure>
+		
+	<aside class="box note">
+		<p>The last shape's red-line indicator leading up to the end node shows drawing direction. This can be enabled to help identify the start node position and winding orientation - in this case, clockwise.</p>
+	</aside>
+		
+	<section class="about">
+	
+	<p>Fill mode is a property of any polycurve that has intersecting lines. Because a polycurve is a complex shape, what is considered inside and outside the shape can becomes unclear. The fill mode is an algorithm that decides the shape's inside and outside so that filling can be understood when exporting complex shapes to SVG document fragments for use in web applications.</p>
+	
+		<ul>
+			<li>The <span class="ui">Alternative</span> mode determines whether a segment of the shape will be filled by drawing a ray from that point to infinity in any direction, and counting the number of segments within the given shape that the ray crosses through. If this number is odd, the segment exists in the fill region; if even, the segment is outside the fill region.</li>
+
+			<li>The <span class="ui">Winding</span> mode determines whether a segment of the shape will be filled by drawing a ray from that point to infinity in any direction, and counting the number of instances in which a segment of the shape crosses the ray. Starting from zero, one count is added each time a segment crosses the ray from left to right and one count is subtracted each time a path segment crosses the ray from right to left, from the perspective of the ray. After the number of crossings has been counted, if the result is zero, then the point is considered to be outside the fill path. Otherwise, it is inside the path.</li>
+		</ul>
+		
+		<aside class="box note">
+			<p>Imported Adobe Illustrator objects will have the <span class="ui">Winding</span> mode set by default.</p>
+		</aside>
+		
+		</section>
+
+	</header>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To set Fill Mode:</summary>
+			<ul>
+				<li>With the object selected, from the <span class="ui">Layer</span> menu, select an option from the <span class="ui">Fill Mode</span> sub-menu.</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+			<summary>To show the winding orientation:</summary>
+			<ul>
+				<li>On the Pen or Node Tool context toolbar, check <span class="ui">Show Orientation</span>. The end of the segment leading up to the start node will show in red; the drawing direction is away from the red-line indicator.</li>
+			</ul>
+		</details>
+		
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="about_linesAndShapes.html">About lines, curves and shapes</a></li>
+			<li><a href="edit_linesAndShapes.html">Edit vector curves and shapes</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

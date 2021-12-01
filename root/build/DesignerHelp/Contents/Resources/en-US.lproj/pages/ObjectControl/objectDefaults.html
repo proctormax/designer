@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="object defaults, synchronizing, default font, default fill, default line" />
+	<meta name="description" content="Customize object defaults to improve design productivity." />
+	<title>Object defaults</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Object defaults</h1>
+		
+		<p>When you create new objects, their appearance is initially determined by the default settings for the particular object you are creating.</p>
+
+	</header>
+
+	<section class="about">
+		<p>These defaults can be changed in the current document, saved globally for future documents or returned to factory settings at any time. Synchronizing defaults lets you base a new default on the currently selected object, with the option to save the defaults or revert to saved defaults if needed.</p>
+		
+		<aside class="box note">
+			<p>Object defaults are stored separately for stroke and fill attributes, artistic text attributes, and frame text attributes.</p>
+		</aside>
+	</section>
+
+	<section class="howto">
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/SyncDefaults.png" class="tool" width="18" height="18" alt="Synchronize defaults to current selection" /> To synchronize defaults to current selection:</summary>
+			<ol>
+				<li>Select an object with the attributes you wish to save as default settings.</li>
+				<li>From the Toolbar, select <span class="ui">Synchronize defaults from selection</span>.</li>
+			</ol>
+			<p>Synchronized defaults override saved defaults for this document only. This is a great way to work with a set of defaults temporarily for a single document without having to save them.</p>
+		</details>
+
+		<details open="open">
+			<summary>To save defaults:</summary>
+			<ul>
+				<li>From the <span class="ui">Edit</span> menu, select <span class="ui">Defaults</span>, then <span class="ui">Save</span>.</li>
+			</ul>
+			<p>The defaults used for this document become the global defaults for all future documents.</p>
+		</details>
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/ResetDefaults.png" class="tool" width="18" height="18" alt="Revert Defaults" /> To revert synchronized defaults back to saved defaults:</summary>
+			<ul>
+				<li>
+					<p>From the Toolbar, select <span class="ui">Revert defaults</span>.</p>
+					<p>If an object is currently selected, its attributes revert to the default settings.</p>
+				</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+			<summary>To reset defaults to factory settings:</summary>
+			<ul>
+				<li>
+					<p>From the <span class="ui">Edit</span> menu, select <span class="ui">Defaults</span>, then <span class="ui">Factory Reset</span>.</p>
+				<p>If an object is currently selected, its attributes revert to the default settings.</p>
+				</li>
+			</ul>
+		</details>
+		
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Workspace/toolbar.html">Toolbar</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1239 @@
+body, html {
+	font-family: "-apple-system", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	background-color: white;
+	text-align: left;
+	color: #404040;
+	width: 96%;
+	}
+
+/*
+Responsive classes, meant for use mainly with images that you want to scale with the browser window size.
+
+Set class="responsive" for an image that will scale to a maximum of its width and height specified in the img element and will shrink if the viewer's browser window becomes smaller than the image's dimensions.
+
+Eg <img class="responsive" width="1280" height="720" src="../../filename.jpg" alt="Alternate Text">
+*/
+
+.videopadding {
+  padding: 16px;
+}
+
+video {
+  object-fit: contain;
+  max-width: 100% !important;
+}
+
+#panorama {
+	width: 50em;
+	height: 50em;
+}
+
+.responsive {
+	max-width: 100%;
+	height: auto;
+	}
+
+.responsive.ui {
+	max-width: 50% !important;
+}
+
+.cropping {
+	position: relative;
+	max-width: 800px;
+	max-height: 577px;
+	width: 100%;
+	height: 577px;
+	font-size: 80%;
+
+}
+
+.cropimage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	transition: opacity 0.1s ease-in-out;
+	opacity: 1;
+	max-width: 100%;
+	z-index: 901;
+}
+
+.cropimage.hidden {
+	opacity: 0;
+}
+
+.crop {
+	display: inline-block;
+	z-index: 902;
+	position: relative;
+	top: 1.2%;
+	left: 1.2%;
+	color: #666 !important;
+}
+
+.crop:hover {
+	color: #fff !important;
+}
+
+.crop.nohover:hover {
+	color: #666 !important;
+}
+
+.crop.portrait:original ~ .cropimage.original {
+	opacity: 1;
+}
+
+.crop.portrait:hover ~ .cropimage.portrait {
+	opacity: 1;
+}
+
+.crop.rotate:hover ~ .cropimage.rotate {
+	opacity: 1;
+}
+
+.crop.ratio:hover ~ .cropimage.ratio {
+	opacity: 1;
+}
+
+.crop.absolute:hover ~ .cropimage.absolute {
+	opacity: 1;
+}
+
+.crop.print:hover ~ .cropimage.print {
+	opacity: 1;
+}
+
+.fill {
+	width: 100% !important;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/* html element styling */
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #2878D4;
+	-webkit-transition: color 0.25s ease-in;
+	transition: color 0.25s ease-in;
+	}
+
+a:hover {
+	color: #465C75;
+	}
+
+h1 {
+	padding-bottom: 0.2em;
+	border-bottom: #bfbfbf 0.1em solid;
+	font-size: 115%;
+}
+
+h2 {
+	margin-top: 1.5em;
+	font-size: 105%;
+}
+
+h3 {
+	margin-top: 1.5em;
+	font-size: 90%;
+}
+
+h4 {
+	margin-top: 1em;
+	font-size: 80%;
+}
+
+figure {
+	margin-left: 0.75em;
+}
+
+figcaption {
+	font-size: 80%;
+	font-style: italic;
+	padding-top: 1em;
+}
+
+img {
+	border: none;
+}
+
+hr {
+	border: none;
+	height: 0.1em;
+	background-color: #e9e9e9;
+}
+
+hr.center-break {
+	width: 20%;
+}
+
+ol, ul {
+	padding-left: 1.2em;
+}
+
+.tools li {
+	line-height: 2em;
+}
+
+li, p {
+	font-size: 90%;
+	margin: 0.5em 0em;
+	line-height: 138%;
+}
+
+li p {
+	font-size: 100%;
+}
+
+/* Make nested lis the same font size as parent lis */
+
+ol li li {
+	font-size: 100%;
+}
+
+ul li ul li {
+	font-size: 100%;
+}
+
+ol li ul li {
+	font-size: 100%;
+}
+
+details {
+	margin-top: 1.5em; /* the space around the outside of the box */
+	margin-bottom: 1.5em;
+	outline: none;
+}
+
+details ol, ul {
+	margin: 0.5em 0em;
+}
+
+details p {
+	margin: 0.6em 0em;
+}
+
+ /* used to add a, b, c, etc to nested ol lists */
+ol.alphabetical {
+	list-style-type: lower-alpha;
+}
+
+/* used to add i, ii, iii etc to nested ol lists */
+ol.nested {
+	list-style-type: lower-roman;
+}
+
+/* this class is used within 'see also' links */
+ul.plain {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+summary {
+	margin-top: 1.3em;
+	font-size: 80%;
+	font-weight: bold;
+}
+
+/* use for the first instance a term is introduced */
+.term {
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* highlight formatting when referring to part of the UI
+* not to be used when referring to keys on the keyboard
+*/
+.ui {
+	color: #555;
+	font-weight: bold;
+}
+
+/* section styling */
+
+/* ID - this is a unique element that can only appear once per topic */
+#also {
+	margin-top: 1.5em; /* the space before the section line */
+	border-top: #bfbfbf 0.1em solid;
+}
+
+/* used to place UI style formatting on buttons and icons from the toolbars and panels */
+img.tool {
+	margin-top: -0.3em;
+	margin-bottom: -0.3em;
+	border: 0.1em solid #494949;
+	padding: 0.2em;
+	background-color: #434343;
+	-webkit-border-radius: 0.3em;
+}
+
+/* this corrects the padding when used inline with an h1 element */
+img.heading{
+	margin-bottom: 0em;
+}
+
+/* standard div container */
+.box {
+	margin-top: 1.5em; /* the space around the outside of the box */
+	margin-bottom: 1.5em;
+	padding-top: 0.5em; /* internal box padding */
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 0.5em;
+	width: 85%;
+}
+
+/*
+ * reduce padding from heading styles used in div box
+ */
+
+.box h2 {
+	margin-top: 1em;
+}
+
+.box h3 {
+	margin-top: 0.5em;
+}
+
+/* formatting for a div box of links */
+.links {
+	background-color: #f9f9f9;
+	border: #bfbfbf 0.03em solid;
+	-webkit-border-radius: 0.2em;
+	-webkit-box-shadow: 0 0.1em 0.3em #d0d0d0;
+}
+
+/* formatting for a div note box */
+.note {
+	background-color: #f5f5ff;
+	background-image: url(../../shared/note.png);
+	background-repeat: no-repeat;
+	background-size: 1em 1em;
+	background-position: 0.5em 1em;
+	border: #bfbfbf 0.03em solid;
+	-webkit-border-radius: 0.3em;
+	-webkit-box-shadow: 0 0.1em 0.3em #d0d0d0;
+	padding-left: 2em; /* text padding */
+	-webkit-transition: background-color 0.15s ease-in;
+	transition: all 0.15s ease-in;
+}
+
+.note:hover {
+	background-color: #f1f1f0;
+	border: 0.03em solid;
+}
+
+/* formatting for a div tip box */
+.tip
+{
+	background-color: #efefef;
+	background-image: url(../../shared/tip.png);
+	background-repeat: no-repeat;
+	background-size: 1em 1em;
+	background-position: 0.5em 1em;
+	border: #bfbfbf 0.03em solid;
+	-webkit-border-radius: 0.3em;
+	-webkit-box-shadow: 0 0.1em 0.3em #d0d0d0;
+	padding-left: 2em;
+	-webkit-transition: background-color 0.15s ease-in;
+	transition: all 0.15s ease-in;
+}
+
+.tip:hover {
+	background-color: #f1f1f0;
+	border: 0.03em solid;
+}
+
+/* formatting for a div warning box */
+.warning {
+	background-color: #fcf8ec;
+	background-image: url(../../shared/warning.png);
+	background-repeat: no-repeat;
+	background-size: 1em 1em;
+	background-position: 0.5em 1em;
+	border: #bfbfbf 0.03em solid;
+	-webkit-border-radius: 0.3em;
+	-webkit-box-shadow: 0 0.1em 0.3em #d0d0d0;
+	padding-left: 2em; /* text padding */
+	-webkit-transition: background-color 0.15s ease-in;
+	transition: all 0.15s ease-in;
+}
+
+.warning:hover {
+	background-color: #f1f1f0;
+	border: 0.03em solid;
+}
+
+.task {
+	background-color: #f9f9f9;
+	border: #bfbfdf 0.03em solid;
+	-webkit-border-radius: 0.3em;
+	-webkit-box-shadow: 0 0.1em 0.3em #d0d0d0;
+}
+
+.script {
+	background-color: #f9f9f9;
+	border: #bfbfdf 0.03em solid;
+	-webkit-border-radius: 0.3em;
+	-webkit-box-shadow: 0 0.1em 0.3em #d0d0d0;
+}
+
+.inset {
+	margin-left: 1em;
+}
+
+/* FAQ border box */
+.faq {
+	border: #bfbfbf 0.1em solid;
+	-webkit-border-radius: 0.03em;
+	-webkit-box-shadow: 0 0.1em 0.3em #d0d0d0;
+}
+
+/* highlight formatting when refering to a key */
+.key {
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+/* changes the font weight to normal and encloses text in parentheses */
+.small-key {
+	font-weight: normal;
+	font-size: 75%;
+	color: #aaa;
+}
+
+.small-key:before {
+	content: '(';
+}
+
+.small-key:after {
+	content: ')';
+}
+
+
+/* ================ OS dependent function modifiers =============== */
+.ALT-TAG:after{
+	content:"⌥";
+}
+.CMD-TAG:after{
+	content:"⌘";
+}
+.CTRL-TAG:after{
+	content:"⌃(ctrl)";
+}
+.DEL-TAG:after{
+	content:"⌦";
+}
+.ESC-TAG:after{
+	content:"esc";
+}
+.SHIFT-TAG:after{
+	content:"⇧";
+}
+.TAB-TAG:after{
+	content:"⇥";
+}
+.RETURN-TAG:after{
+	content:"↵";
+}
+.UP-TAG:after{
+	content:"↑";
+}
+.DOWN-TAG:after{
+	content:"↓";
+}
+.LEFT-TAG:after{
+	content:"←";
+}
+.RIGHT-TAG:after{
+	content:"→";
+}
+.BACKSPACE:after {
+	content: "⟵";
+}
+.CLICK-TAG:after {
+	content:"⌃(ctrl)";
+}
+
+/* Creates a heading style when introducing tables */
+h2.table{
+	border-bottom: #bfbfbf 0.1em solid;
+	padding-bottom: 0.5em;
+}
+
+/* table formatting - summary table */
+table.summary {
+	margin: 0;
+}
+
+table.summary td:first-child {
+	font-weight: bold;
+	text-align: right;
+	white-space: nowrap;
+	padding-right: 0.3em;
+}
+
+table.summary td:first-child:after {
+	content: ":";
+}
+
+table.summary td {
+	vertical-align: baseline;
+}
+
+table.summary td p {
+	margin: 0;
+}
+
+table.summary td p+p {
+	margin-top: 0.3em;
+}
+
+/* table formatting - shortcuts table */
+table.shortcut {
+	width:65%;
+	margin: 0;
+	padding-right: 0.5em;
+	text-align: left;
+/* 	white-space: nowrap; */
+}
+
+table.shortcut th {
+	font-size: 85%;
+	padding-right: 1em;
+	text-align: left;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+
+table.shortcut td {
+	font-size: 80%;
+	vertical-align: top;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+
+table.shortcut td:first-child {
+	width: 70%;
+	padding-right: 0.5em;
+}
+
+table.shortcut td p {
+	margin: 0;
+}
+
+table.shortcut td p+p {
+	margin-top: 0.3em;
+}
+
+table.shortcut tr {
+	-webkit-transition: background-color 0.15s ease-in;
+	transition: background-color 0.15s ease-in;
+}
+
+table.shortcut tr:nth-child(even) {
+	background-color: #eee;
+}
+
+table.shortcut tr:hover {
+	background-color: #ddd;
+}
+
+table.shortcut td:nth-child(1) {
+	width: 60%;
+}
+
+/* table formatting - tools table */
+table.tools {
+	width:100%;
+	margin: 0;
+	padding-right: 0.5em;
+	text-align: left;
+/* 	white-space: nowrap; */
+}
+
+table.tools th {
+	font-size: 85%;
+	padding-right: 1em;
+}
+
+table.tools td {
+	font-size: 80%;
+	vertical-align: top;
+}
+
+table.tools td:first-child {
+	font-weight: bold;
+}
+
+table.tools td p {
+	margin: 0;
+}
+
+table.tools td p+p {
+	margin-top: 0.3em;
+}
+
+.comparison, .single {
+	position: relative;
+	display: inline-block;
+	line-height: 0;
+}
+
+.comparison img, .single img {
+	user-select: none;
+	max-width: 60em;
+	z-index: 2;
+}
+
+.comparison div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	max-width: 60em;
+	z-index: 3;
+}
+
+/* .comparison:hover div {
+	opacity: 0;
+	display: none;
+} */
+
+.viewable {
+	opacity: 0;
+}
+
+.vertical, .vertical img {
+	max-width: auto !important;
+	max-height: 40em !important;
+}
+
+.comparison:before {
+	font-size: 95%;
+	color: rgb(240,240,240);
+	text-shadow: 0.1em 0.1em 0.1em #222;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	bottom: 1em;
+	z-index: 99;
+}
+
+.comparison:hover:before {
+	font-size: 95%;
+	color: rgb(240,240,240);
+	text-shadow: 0.1em 0.1em 0.1em #222;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	bottom: 1em;
+}
+
+#spacer {
+	display: block;
+	width: 100%;
+	height: 500px;
+	clear: both;
+}
+
+.hideme {
+	position: absolute;
+	opacity: 0;
+	width: 90%;
+}
+
+#spacer:after {
+	content: " ";
+}
+
+
+#anchor_assistant:target {
+	background-color: #edeeee;
+	border: #bfbfbf 0.1em solid;
+	-webkit-border-radius: 0.4em;
+	-webkit-box-shadow: 0 0.1em 0.2em #d0d0d0;
+	padding-left: 1em;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	padding-top: 0.25em;
+}
+
+#anchor_assistant:target:before {
+	font-size: 80%;
+	font-weight: bold;
+	content: "Highlighted";
+}
+
+
+/* Tab classes for visual reference */
+
+.tabs input[type=radio] {
+	position: absolute;
+	top: -500em;
+	left: -500em;
+}
+
+.tabs {
+	width: 100%;
+	height: 100%;
+	float: left;
+	list-style: none;
+	position: relative;
+	padding: 0;
+}
+
+.tabs li {
+	float: left;
+}
+
+.tabs label {
+    display: block;
+    padding: 0.5em 1em;
+    background: rgba(255,255,255,0.2);
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.tabs label:hover {
+    background: rgba(120,120,120,0.5);
+}
+
+[id^=tab]:checked + label {
+    background: #333;
+    color: #fff;
+}
+
+[id^=tab]:checked ~ [id^=tab-content] {
+    display: block;
+}
+
+.tab-content {
+	z-index: 2;
+	display: none;
+	text-align: left;
+	width: 100%;
+	height: auto;
+	color: #000;
+	position: absolute;
+	margin-top: 0em;
+	left: 0;
+	float: left;
+	box-sizing: border-box;
+}
+
+.tab_overlay {
+	display: block;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-top: 0em;
+	box-sizing: border-box;
+	z-index: 10;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.uitoolbar {
+	display: block;
+	background: #fff;
+	opacity: 0.1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	transition: all 0.3s ease-in-out;
+	z-index: 22;
+}
+
+.uitoolbar:hover {
+	opacity: 0.55;
+}
+
+.uitoolbar:hover ~ .tab_overlay {
+	opacity: 0.7;
+}
+
+.uitoolbar_message {
+	display: block;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	height: auto;
+	box-sizing: border-box;
+	z-index: 11;
+	transition: all 0.3s ease-in-out;
+	color: #fff;
+	opacity: 0;
+	font-size: 200%;
+	line-height: 1.5em;
+	transition: all 0.3s ease-in-out;
+	background: rgba(128,128,128,0.5);
+	padding: 0.6em;
+	width: 40%;
+	-webkit-filter: drop-shadow(0.4em 0.4em 0.9em black);
+	text-align: center;
+}
+
+.uitoolbar.persona {
+	width: 14.6%;
+	height: 5.2%;
+	margin-left: 1.4%;
+	margin-top: 2.2%;
+}
+
+.uitoolbar.persona:hover ~ .uitoolbar_message.persona {
+	opacity: 0.9;
+}
+
+.uitoolbar.persona.designer {
+	width: 8.9% !important;
+}
+
+/* */
+
+.uitoolbar.rawinfo {
+	width: 82.2%;
+	height: 5.2%;
+	margin-left: 16.9%;
+	margin-top: 2.2%;
+}
+
+
+
+.uitoolbar.rawinfo:hover ~ .uitoolbar_message.rawinfo {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.phototoolbar {
+	width: 79%;
+	height: 5.2%;
+	margin-left: 19.7%;
+	margin-top: 2.2%;
+}
+
+
+
+.uitoolbar.phototoolbar:hover ~ .uitoolbar_message.phototoolbar {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.drawtoolbar {
+	width: 87.5%;
+	height: 5.2%;
+	margin-left: 11.5%;
+	margin-top: 2.2%;
+}
+
+
+
+.uitoolbar.drawtoolbar:hover ~ .uitoolbar_message.drawtoolbar {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.photocontext {
+	width: 67%;
+	height: 3.8%;
+	margin-left: 0%;
+	margin-top: 5.75%;
+}
+
+.uitoolbar.photocontext:hover ~ .uitoolbar_message.photocontext {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.drawcontext {
+	width: 43%;
+	height: 3.8%;
+	margin-left: 0%;
+	margin-top: 5.75%;
+}
+
+.uitoolbar.drawcontext:hover ~ .uitoolbar_message.drawcontext {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.liquifytoolbar {
+	width: 65%;
+	height: 5.2%;
+	margin-left: 34%;
+	margin-top: 2.2%;
+}
+
+
+
+.uitoolbar.liquifytoolbar:hover ~ .uitoolbar_message.liquifytoolbar {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.exporttoolbar {
+	width: 16.5%;
+	height: 5.2%;
+	margin-left: 82.25%;
+	margin-top: 2.2%;
+}
+
+
+
+.uitoolbar.exporttoolbar:hover ~ .uitoolbar_message.exporttoolbar {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.tonemappingtoolbar {
+	width: 10%;
+	height: 5.2%;
+	margin-left: 89.1%;
+	margin-top: 2.2%;
+}
+
+
+
+.uitoolbar.tonemappingtoolbar:hover ~ .uitoolbar_message.tonemappingtoolbar {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.toolsraw {
+	width: 3.07%;
+	height: 39.5%;
+	margin-left: 0%;
+	margin-top: 8.25%;
+}
+
+
+
+.uitoolbar.toolsraw:hover ~ .uitoolbar_message.toolsraw {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.toolsphoto {
+	width: 3.1%;
+	height: 80.9%;
+	margin-left: 0%;
+	margin-top: 7.8%;
+}
+
+
+.uitoolbar.toolsphoto:hover ~ .uitoolbar_message.toolsphoto {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.toolsdraw {
+	width: 3.1%;
+	height: 80%;
+	margin-left: 0%;
+	margin-top: 8%;
+}
+
+
+.uitoolbar.toolsdraw:hover ~ .uitoolbar_message.toolsdraw {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.toolsliquify {
+	width: 3.07%;
+	height: 47.4%;
+	margin-left: 0%;
+	margin-top: 8.25%;
+}
+
+
+
+.uitoolbar.toolsliquify:hover ~ .uitoolbar_message.toolsliquify {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.toolsexport {
+	width: 3.07%;
+	height: 18%;
+	margin-left: 0%;
+	margin-top: 8.25%;
+}
+
+
+
+.uitoolbar.toolsexport:hover ~ .uitoolbar_message.toolsexport {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.toolstonemapping {
+	width: 3.18%;
+	height: 22.25%;
+	margin-left: 0%;
+	margin-top: 8.25%;
+}
+
+.uitoolbar.toolstonemapping:hover ~ .uitoolbar_message.toolstonemapping {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.panels {
+	width: 20.7%;
+	height: 85%;
+	margin-left: 79.3%;
+	margin-top: 8%;
+}
+
+
+
+.uitoolbar.panels:hover ~ .uitoolbar_message.panels {
+	opacity: 0.9;
+}
+
+/* */
+
+.uitoolbar.slices {
+	width: 24.5%;
+	height: 41.3%;
+	margin-left: 19.4%;
+	margin-top: 13.7%;
+}
+
+
+
+.uitoolbar.slices:hover ~ .uitoolbar_message.slices {
+	opacity: 0.9;
+}
+
+.uitoolbar.slices.designer {
+	width: 16.5% !important;
+	height:  26.5% !important;
+	margin-left: 37.8% !important;
+	margin-top: 11.7% !important;
+}
+
+.uitoolbar.slices2.designer {
+	width: 49% !important;
+	height:  44.25% !important;
+	margin-left: 20.7% !important;
+	margin-top: 24% !important;
+}
+
+/* */
+
+.uitoolbar.slices2 {
+	width: 18.7%;
+	height: 61.1%;
+	margin-left: 45.1%;
+	margin-top: 13.7%;
+}
+
+.uitoolbar.slices2:hover ~ .uitoolbar_message.slices2 {
+	opacity: 0.9;
+}
+
+.height_500 {
+	max-width: auto;
+	max-height: 500px;
+}
+
+.height_400 {
+	max-width: auto;
+	max-height: 400px;
+}
+
+.clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clear {
+	zoom: 1;
+}
+
+*:first-child+html .clear {
+	zoom: 1;
+}
+
+/* Gesture styling */
+
+.gestureimage {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	left: 1em;
+	top: 1em;
+}
+
+.gesturetext {
+	position: absolute;
+	left: 2.5em;
+	top: 17em;
+}
+
+.gesture {
+	opacity: 0;
+	transition: all 0.25s ease-in-out;
+}
+
+.active {
+	opacity: 1;
+}
+
+.contentpad {
+	padding: 0;
+}
+
+.subhovers {
+	list-bullet-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 117%;
+}
+
+.gesturelink {
+	position: absolute;
+	left: 16em;
+}
+
+.subhovers li {
+	display: block;
+	float: left;
+	clear: both;
+	margin: 1em;
+}
+
+.first {
+}
+
+.first.active {
+	opacity: 0;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 72em) {
+	.comparison img, .comparison, .comparison div, .single, .single img {
+		max-width: 42em;
+	}
+
+	table.shortcut {
+		width: 90%;
+		padding-right: 1%;
+	}
+}
+
+@media screen and (max-width: 40em) {
+	body {
+		font-size: 100%;
+	}
+
+	.comparison img, .comparison, .comparison div, .single, .single img {
+		max-width: 100%;
+	}
+
+	details summary {
+		font-size: 90%;
+	}
+
+	.tab-content {
+		margin-top: 3.5em;
+	}
+
+	.tab-gesture {
+		margin-top: 1em;
+	}
+
+	#spacer {
+		height: 410px;
+	}
+
+	table.shortcut {
+		width: 99%;
+		padding-right: 1%;
+	}
+
+	.gesturetext {
+		top: 13.5em;
+		left: 0;
+	}
+
+	.subhovers li {
+		display: inline;
+		margin: 0.2em;
+	}
+
+	.gestureimage {
+		top: 0;
+		left: 0;
+	}
+
+	.gesturelink {
+		position: relative;
+		left: 14em;
+		font-size: 90%;
+	}
+}
+
+@media screen and (max-width: 28em) {
+	.gesturelink {
+		left: 0;
+		top: 18em;
+	}
+
+	.gestureimage {
+		top: 3em;
+	}
+
+	.gesturetext {
+		top: 0;
+		left: 0.45em;
+		font-size: 80%;
+	}
+}
+
+@media print {
+	body {
+		width: 100% !important;
+		height: auto !important;
+		padding-top: 0 !important;
+		padding-left: 0 !important;
+		margin: 0 auto !important;
+		overflow: scroll !important;
+	}
+}

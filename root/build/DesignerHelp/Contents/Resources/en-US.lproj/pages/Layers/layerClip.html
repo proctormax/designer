@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="clipping objects, clipping layers, clipped objects, nested, nesting, child, parent, masking, paths, clipping paths" />
+	<meta name="description" content="Clipping involves masking part of an object by placing it inside another object." />
+	<title>Layer clipping</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Layer clipping</h1>
+
+		<p>Clipping involves positioning one object inside another. The path of the parent object becomes the new boundaries for the child object. Any areas of the child object which lie outside the parent object's path are masked (hidden).</p>
+		
+	<figure>
+		<div class="comparison"><img src="../../../shared/clipping_before.jpg" alt="Clipping before" /><div><img src="../../../shared/clipping_after.jpg" alt="Clipping after" /></div>
+		</div>
+		<figcaption>Pixel brush strokes clipped within the fish's vector outline.</figcaption>
+	</figure>
+
+	</header>
+
+	<section class="about">
+		<h2>About clipping</h2>
+		<p>Any object can act as a parent or child in clipping relationships. Both vector objects and pixel layer content can be either clipped or clipping objects. In Affinity Designer, it is popular to clip pixel brush textures to a vector object's outline (see example above).</p>
+		<p>When scaling a parent object, child (clipped) objects scale to maintain the correct aspect ratio. Scaling a clipped object has no effect on the parent object. A clipped object can be edited independently from its parent, e.g. adjusting color, opacity, and/or blend mode.</p>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To clip objects:</summary>
+			<ol>
+				<li>On the page, position the object to be clipped so it overlaps the object which will perform the clipping.</li>
+				<li>Do one of the following, with the object to be clipped being selected:<ul>
+						<li>On the <span class="ui">Layers</span> panel, drag it on top of the object which is to perform the clipping.</li>
+						<li>On the <span class="ui">Layer</span> menu, select <span class="ui">Arrange&gt;Move Inside</span>. This moves the object inside the object above it on the <span class="ui">Layers</span> panel.</li> 
+					</ul>
+				</li> 
+			</ol>
+		</details>
+
+		<details open="open">
+			<summary>To unclip an object:</summary>
+			<p>Do one of the following:</p> 
+			<ul>
+				<li>On the <span class="ui">Layers</span> panel, drag the clipped object from inside the parent object to a layer.</li>
+				<li>Select the clipped object, then select <span class="ui">Layer&#62;Arrange&#62;Move Outside</span>.</ul>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../ObjectControl/target.html">Targeting objects</a></li>
+			<li><a href="../Panels/layersPanel.html">Layers panel</a></li>
+			<li><a href="layerBlendModes.html">Layer blending</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

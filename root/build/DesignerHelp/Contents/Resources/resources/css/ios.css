@@ -1,0 +1,225 @@
+body, html {
+  background-color: rgb(30,30,30);
+  color: #eee;
+}
+
+x-ios, .ios {
+  visibility: visible !important;
+}
+
+#navigation {
+  background: rgb(40,40,40);
+}
+
+#menu {
+  color: #eee;
+  font-size: 80%;
+  padding-right: 0.1em;
+}
+
+.buttons_container {
+  background: rgb(40,40,40);
+}
+
+.activelink {
+  color: #999 !important;
+}
+
+a:link, a:visited {
+  color: #ccc;
+}
+
+a:active, a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.book a:link, .book a:visited {
+  color: #ccc;
+}
+
+.caret li {
+  line-height: 2.2em;
+}
+
+.caret li a {
+  background-image: url('../../shared/caret_white.png');
+	background-repeat: no-repeat;
+	background-position: 0 0.42em;
+  padding-left: 1.5em;
+  margin-left: 0em;
+	background-size: 1.1em 1.1em;
+  font-size: 105%;
+}
+
+.subcaret li > a.book.selected {
+  background-image: url('../../shared/caret_down_white.png') !important;
+}
+
+.subcaret li ul li .book {
+  background-image: url('../../shared/caret_white.png') !important;
+}
+
+.mlink {
+  list-style-type: circle !important;
+  background-image: none !important;
+  margin-left: -1.75em !important;
+  font-weight: normal;
+}
+
+.selected {
+	background-image: url('../../shared/caret_down_white.png') !important;
+	background-repeat: no-repeat;
+	background-position: 0 0.42em;
+	background-size: 1.1em 1.1em;
+	font-weight: bold;
+  }
+
+.subcaret .book {
+  background-image: url('../../shared/caret_white.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: 0 0.42em !important;
+  background-size: 1.1em 1.1em !important;
+}
+
+.caret li:nth-child(even), .caret li:nth-child(even) ul li, .caret li:nth-child(even) ul li ul li {
+	background-color: rgb(50,50,50);
+}
+
+.caret li:nth-child(odd), .caret li:nth-child(odd) ul li, .caret li:nth-child(odd) ul li ul li {
+  background-color: rgb(40,40,40);
+}
+
+.nosubcaret {
+  background-color: rgb(40,40,40);
+}
+
+.nosubcaret .mlink {
+  margin-left: 0em !important;
+}
+
+.activelink {
+  color: rgb(120,120,180) !important;
+}
+
+.bottom1 {
+  color: #ccc;
+}
+
+.ui {
+  color: #ccc;
+}
+
+img.tool {
+  background-color: #666;
+}
+
+.links {
+  background-color: #333;
+}
+
+.note, .tip, .warning, .task, .script {
+  background-color: #333;
+  -webkit-transition: none;
+	transition: none;
+  -webkit-border-radius: 0.15em;
+  border: 0.1em solid rgba(0,0,0,0);
+  -webkit-box-shadow: none;
+}
+
+.note:hover, .tip:hover, .warning:hover {
+  border: 0.1em solid rgba(255,255,255,0.5);
+  background-color: #333;
+}
+
+table.shortcut tr:nth-child(even) {
+	background-color: #333;
+}
+
+table.shortcut tr:hover {
+	background-color: #666;
+}
+
+.offcanvas_icon {
+  width: 1.2em;
+  height: 1.2em;
+  display: block !important;
+  position: absolute;
+  background-image: url('../../shared/icon_menu_white.png');
+  background-size: 1.2em 1.2em;
+  background-position: top left;
+  left: 0.5em;
+  top: 1em;
+}
+
+.offcanvas_icon:after {
+  content: "TAP";
+  margin-left: 1.8em;
+}
+
+.version_topic {
+  visibility: hidden;
+}
+
+#navigation {
+  display: block;
+  width: 18em;
+}
+
+#navigation:target {
+  display: none !important;
+  width: 0 !important;
+}
+
+#navigation:target ~ #topics {
+  margin: 0 auto !important;
+  width: 100% !important;
+  padding-top: 1.5em;
+  left: 0;
+}
+
+#navigation:target ~ #topics .version_topic {
+  display: block !important;
+  visibility: visible;
+}
+
+#menu {
+  padding-top: 1.25em;
+}
+
+.offcanvas_topic, .offcanvas_menu {
+  display: block;
+  width: 100%;
+  height: 1.5em;
+}
+
+iframe {
+  width: 100%;
+  margin: 0 auto !important;
+  display: block;
+  -webkit-overflow-scrolling: auto !important;
+  overflow: auto !important;
+}
+
+#topics, #topic {
+  -webkit-overflow-scrolling: auto !important;
+  overflow: auto !important;
+}
+
+.collapse_button {
+    background-image: url('../../shared/collapse_white.png');
+	}
+
+.expand_button {
+    background-image: url('../../shared/expand_white.png');
+	}
+
+.print_button {
+    background-image: url('../../shared/print_white.png');
+	}
+
+@media screen and (max-width: 80em), (max-height: 80em) {
+	.bottom2 {
+		display: none;
+	}
+}

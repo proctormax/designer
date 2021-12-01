@@ -1,0 +1,117 @@
+ Live Adjustment Layers
+    Levels
+    White Balance
+    HSL (with hue colour ranges and colour picker)
+    Recolour
+    Black and White
+    Brightness and Contrast
+    Posterise
+    Vibrance
+    Exposure
+    Shadows/Highlights (improved)
+    Threshold
+    Curves
+    Channel Mixer
+    New
+    Gradient Map with global colour support (with hardware acceleration)
+    Selective Colour
+    Colour Balance
+    Invert
+    Soft Proof
+    3D LUT (3D Look Up Table for adjustments)
+    Lens Filter
+    Split Toning
+    Shareable LUTs
+
+Live Filter Layers
+    Gaussian Blur
+    Box Blur
+    Median Blur
+    Bilateral Blur
+    Motion Blur
+    Radial Blur
+    Lens Blur
+    Elliptical Depth of Field
+    Tilt Shift Depth of Field
+    Field Blur
+    Diffuse Glow
+    Maximum/Minimum Blur
+    Clarity
+    Unsharp Mask
+    High Pass
+    Ripple
+    Twirl
+    Spherical
+    Displace
+    Pinch/Punch
+    Lens Distortion
+    Perspective
+    Liquify (using Liquify Persona)
+    Denoise
+    Add Noise
+    Diffuse
+    Dust & Scratches
+    Vignette
+    Defringe
+    Lighting
+    Shadows/Highlights
+    Halftone
+    Procedural Texture (with advanced presets)
+    Voronoi
+
+
+Non-Destructive Editing
+-----------------------------------
+    Live, editable filters, adjustments, layer fx, and blend modes
+    See effects, blend modes and adjustments instantly, no lag
+    Apply to any image layer, group—even to vector art
+    Edit any time, make changes without using Undo
+    Edit blend modes per layer, per adjustment, per filter, object etc.
+    Act on client requests without costly reworking
+
+Live Layer Effects
+    Gaussian Blur
+    Outer Shadow
+    Inner Shadow
+    Outer Glow
+    Inner Glow
+    Outline
+    3D
+    Bevel/Emboss
+    Colour Overlay
+    Gradient Overlay
+    Layer Effects now work with global colours
+
+Live Blend Modes
+    Normal
+    Darken
+    Darker Colour
+    Multiply
+    Colour Burn
+    Linear Burn
+    Lighten
+    Lighter Colour
+    Screen
+    Colour Dodge
+    Add
+    Overlay
+    Soft Light
+    Hard Light
+    Vivid Light
+    Pin Light
+    Linear Light
+    Hard Mix
+    Difference
+    Exclusion
+    Subtract
+    Divide
+    Hue
+    Saturation
+    Luminosity
+    Colour
+    Average
+    Negation
+    Reflect
+    Glow
+    Contrast Negate
+    Erase

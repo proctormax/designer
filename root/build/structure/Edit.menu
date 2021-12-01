@@ -1,0 +1,36 @@
+
+[---------------------------------
+         <<menu>>
+	   File
+---------------------------------
+Undo <action>,	Ctrl+Z
+Redo,	Ctrl+U
+---------------------------------
+Cut, 	Ctrl+X
+Copy,	Ctrl+C
+Paste,	Ctrl+V
+Paste Special...,	
+Paste Style,	Ctrl+Shift+V
+Paste FX,	Alt+Shift+V
+Paste Inside,	Ctrl+Alt+V
+Paste Without Format,	Ctrl+Alt+Shift+V
+Duplicate Selection,	Ctrl+J
+Delete,	Backspace
+---------------------------------
+Defaults >
+Create Style
+---------------------------------
+Preferences...,	Ctrl+,
+---------------------------------]
+
+
+
+[---------------------------------
+            <<menu>>
+	   Edit>Defaults
+---------------------------------
+Synchronize from Selection
+Save
+Revert
+Factory Reset
+---------------------------------]

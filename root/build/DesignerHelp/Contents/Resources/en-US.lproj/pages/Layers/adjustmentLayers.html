@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="adjustment layers, adjustments, non-destructive, layer, mask, masking" />
+	<meta name="description" content="Adjustment layers make non-destructive corrections and enhancements to your layers." />
+	<title>Using adjustment layers</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Using adjustment layers</h1>
+
+		<p>Use adjustment layers to apply an adjustment to your vector/pixel layer (or object). This is carried out non-destructively (i.e., without permanently affecting the original layer or object).</p>
+
+		<figure>
+			<div class="comparison"><img src="../../../shared/adjustmentlayer_before.png" alt="Before" /><div><img src="../../../shared/adjustmentlayer_after.png" alt="After" /></div>
+			</div>
+			<figcaption>Adjustment layer applied to an image.</figcaption>
+		</figure>
+
+	</header>
+
+	<section class="about">
+		<h2>About adjustment layers</h2>
+		<p>The <span class="ui">Layers</span> panel provides a range of adjustments directly from the panel. When an item is selected, the adjustment layer is applied to just that item, i.e. it is <a href="layerClip.html">clipped</a>. With no selection in place, the adjustment is applied to the entire spread.</p>
+		<p>Adjustment layers also have mask layer properties. Areas of an adjustment layer can be revealed or hidden in the same way as with a mask layer.</p>
+
+		<aside class="box note">
+			<p>If you have a <a href="../Selections/selections_create.html">pixel selection</a> in place when you add an adjustment layer, the area selected is automatically masked. If you have a vector object selected, then the adjustment layer is created as a child of the object layer. This behavior can be changed in the Assistant Manager options.</p>
+		</aside>
+		
+		<aside class="box note">
+			<p>Adjustment layers can have a unique <a href="../Layers/layerBlendModes.html">blend mode</a> assigned.</p>
+		</aside>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/LayersTabAdustmentIcon.png" class="tool" width="16" height="16" alt="Adjustments" /> To apply an adjustment:</summary>
+			<ol>
+				<li>On the <span class="ui">Layers</span> panel, do one of the following:<ul>
+						<li>Select a layer to add the adjustment as a child of the layer. It will affect all objects on the selected layer.</li>
+						<li>Select an object, group or image to add the adjustment to the item, affecting just that item only.</li>
+						<li>Deselect all items to add the adjustment at the top of the layer stack, applying the adjustment to all items below it (the entire spread).</li>
+					</ul>
+				</li>
+				<li>Click <span class="ui">Adjustments</span> and select an adjustment from the pop-up menu.</li>
+				<li>If a dialog appears for the adjustment, follow the steps below:<ol class="nested">
+						<li>Adjust the settings in the dialog.</li>
+						<li>Click <span class="ui">Close</span>.</li>
+					</ol>
+				</li>
+			</ol>
+		</details>
+
+		<details>
+			<summary>To modify, merge or delete an adjustment layer:</summary>
+
+			<ol>
+				<li>In the <span class="ui">Layers</span> panel, double-click the adjustment layer that you want to modify.</li>
+				<li>Adjust the settings in the dialog.</li>
+				<li>Click <span class="ui">Close</span> to apply the changes, <span class="ui">Merge</span> to apply the changes and merge the adjustment with the layer beneath, or <span class="ui">Delete</span> to remove the adjustment layer entirely.</li>
+			</ol>
+		</details>
+
+		<details>
+			<summary>To move an adjustment layer:</summary>
+
+			<p>Do one of the following:</p>
+			<ul>
+				<li>Drag the adjustment to the top of the <span class="ui">Layers</span> panel so it affects all layers below it.</li>
+				<li>Drag the adjustment above or below objects within a layer to affect more or fewer objects on the layer.</li>
+				<li>Drag the adjustment onto an object to make it a child of that object and confine the affect of the adjustment to that object only.</li>
+			</ul>
+		</details>
+
+		<details>
+			<summary><img src="../../../shared/ui/erase_brush.png" class="tool" width="18" height="18" alt="Erase Brush tool" /> <img src="../../../shared/ui/paint_brush.png" class="tool" width="18" height="18" alt="Paint Brush" /> To mask an adjustment layer:</summary>
+
+			<ol>
+				<li>In the <span class="ui">Layers</span> panel, select the Adjustment layer.</li>
+				<li>Do any of the following:<ul>
+						<li>To 'erase' from the mask, paint with the <span class="ui">Erase Brush Tool</span>.</li>
+						<li>To 'restore' the mask, select the <span class="ui">Paint Brush</span> and paint.</li>
+						</ul>
+				</li>
+			</ol>
+
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Adjustments/adjustment_applying.html">Applying adjustments</a></li>
+			<li><a href="LayerMasks.html">Layer masking</a></li>
+			<li><a href="../Selections/selections_create.html">Creating pixel selections</a></li>
+			<li><a href="../DesignAids/AssistantManager.html">Assistant Manager</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

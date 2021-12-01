@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="pen, tool, vector, lines, shapes, draw, straight line" />
+	<meta name="description" content="The Pen tool is used to draw very precise curves and shapes." />
+	<title>Pen Tool</title>
+</head>
+
+<body>
+	<header>
+
+		<h1><img src="../../../shared/ui/vector_pen_tool.png" class="tool heading" width="18" height="18" alt="Pen Tool" /> Pen Tool</h1>
+
+		<p>The <span class="ui">Pen Tool</span> is used to precisely draw curves, closed shapes and straight lines.</p>
+		
+		<figure>
+		<p><img src="../../../shared/node_types.png" class="responsive" alt="Node Types" /></p>
+		<figcaption>Pen Mode, Smart Mode, Polygon Mode, Line Mode</figcaption>
+		</figure>
+	
+	</header>
+
+	<section class="about">
+		<p>It lets you draw straight lines or curves as a single segment (like a section) or multiple segments. Segments are delimited by 'on-curve' nodes which possess 'off-curve' control handles. These handles can lengthened, shortened and moved to control the shape of the curve.</p>
+
+		<aside class="box tip">
+			<p>Tool shortcut <span class="KEY-TAG"></span>: <span class="key">P</span></p>
+		</aside>		
+
+		<p>It has seven modes which are available to select in the context toolbar. Each mode changes how the line is drawn.</p>
+
+		<h3><img src="../../../shared/ui/penmode.png" class="tool" width="18" height="18" alt="Pen Mode" /> Pen mode</h3>
+		<p>The most powerful and precise mode used to create bézier curves and shapes with smooth or sharp corners and nodes.</p>
+
+		<h3><img src="../../../shared/ui/smartmode.png" class="tool" width="18" height="18" alt="Smart Mode" /> Smart mode</h3>
+		<p>Easily create flowing curves and shapes by clicking and placing nodes.</p>
+
+		<h3><img src="../../../shared/ui/polygonmode.png" class="tool" width="18" height="18" alt="Polygon Mode" /> Polygon mode</h3>
+		<p>Used to draw straight lines with sharp nodes and shapes with straight edges.</p>
+		
+		<h3><img src="../../../shared/ui/linemode.png" class="tool" width="18" height="18" alt="Line Mode" /> Line mode</h3>
+		<p>Used to draw single-segment straight lines that self terminate.</p>
+		
+		<h3><img src="../../../shared/ui/preserveselectionmode.png" class="tool" width="18" height="18" alt="Preserve selection" /> Preserve selection when creating new curves</h3>
+		<p>Used in conjunction with any one of the other modes, it keeps the previously drawn curve(s) selected so that their nodes and geometry can be more easily snapped to as you draw.</p>
+		
+		<h3><img src="../../../shared/ui/addtocurvesmode.png" class="tool" width="18" height="18" alt="Add New Curve" /> Add new curve to selected curves object</h3>
+		<p>Used in conjunction with any one of the other modes, it creates additional curves on the same layer as the initial curve.</p>
+		
+		<h3><img src="../../../shared/ui/rubberbandmode.png" class="tool" width="18" height="18" alt="Rubber Band Mode" /> Rubber Band mode</h3>
+		<p>Used in conjunction with any one of the other modes, it previews the next segment to be drawn before placement of the new node. Your cursor position is followed.</p>
+
+	</section>
+
+	<section class="settings">
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted from the context toolbar:</p>
+		<ul>
+			<li><span class="ui">Fill</span>&#8212;click the color swatch to display a pop-up panel to update fill color.</li>
+			<li><span class="ui">Stroke</span>&#8212;click the color swatch to display a pop-up panel to update stroke color.</li>
+			<li><span class="ui">Stroke properties</span>&#8212;the line thickness in points. Type directly in the text box or drag the pop-up slider to set the value.</li>
+			<li><span class="ui">Mode</span>&#8212;switches between the available modes (see above).</li>
+			<li><img src="../../../shared/ui/Sharp%20Corner.png" class="tool" width="16" height="16" alt="Sharp Corner" /> <img src="../../../shared/ui/Smooth%20Corner.png" class="tool" width="16" height="16" alt="Smooth Corner" /> <img src="../../../shared/ui/Smart%20Corner.png" class="tool" width="16" height="16" alt="Smart Corner" /> <span class="ui">Convert</span>&#8212;converts the selected node into a <span class="ui">Sharp</span>, <span class="ui">Smooth</span>, or <span class="ui">Smart node</span>.</li>
+			<li><span class="ui">Action</span>&#8212;Manipulates the curve(s):<ul>
+					<li><img src="../../../shared/ui/Break%20Curve.png" class="tool" width="16" height="16" alt="Break Curve" /> <span class="ui">Break Curve</span> opens the shape at the selected node.</li>
+					<li><img src="../../../shared/ui/Close%20Curve.png" class="tool" width="16" height="16" alt="Close Curve" /> <span class="ui">Close Curve</span> joins the start and end nodes to create an enclosed shape.</li>
+					<li><img src="../../../shared/ui/Smooth%20Curve.png" class="tool" width="16" height="16" alt="Smooth Curve" /> <span class="ui">Smooth Curve</span> modifies a line or shape, by adding and removing nodes, to make it rounder and softer.</li>
+					<li><img src="../../../shared/ui/Join%20Curves.png" class="tool" width="16" height="16" alt="Join Curves" /> <span class="ui">Join Curves</span> connects two separate curves together to make one curve. Curves need to be both selected with the <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> using either the Node Tool or <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> as you draw.</li>
+					<li><img src="../../../shared/ui/reversecurves.png" class="tool" width="16" height="16" alt="Reverse Curves" /> <span class="ui">Reverse Curves</span> reverses the direction the curve was drawn in.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Snap</span>&#8212;Controls node snapping:<ul>
+					<li><img src="../../../shared/ui/snap_selected_curves.png" class="tool" width="16" height="16" alt="Align to nodes of selected curves" /> <span class="ui">Align to nodes of selected curves</span>&#8212;will horizontally or vertically align any node you drag to any other node on the same or a different curve.</li>
+					<li><img src="../../../shared/ui/SnapSelectedGeometry.png" class="tool" width="16" height="16" alt="Snap to geometry of selected curves" /> <span class="ui">Snap to geometry of selected curves</span>&#8212;will snap dragged nodes to the same or different curve's path (or node).</li>
+					<li><img src="../../../shared/ui/snap_all_nodes.png" class="tool" width="16" height="16" alt="Snap all selected nodes when dragging" /> <span class="ui">Snap all selected nodes when dragging</span>&#8212;will snap multiple selected nodes, when dragging, to a &#34;target&#34; node on any selected curves.</li>
+					<li><img src="../../../shared/ui/SnapCurveHandlePosition.png" class="tool" width="16" height="16" alt="Align handle positions using snapping options" /> <span class="ui">Align handle positions using snapping options</span>&#8212;will snap a control handle using any of the snapping criteria currently set in Global snapping, e.g. to grid, guide, object geometry, key points, spread, margin, etc.</li>
+					<li><img src="../../../shared/ui/SnapCurveConstruction.png" class="tool" width="16" height="16" alt="Perform construction snapping" /> <span class="ui">Perform construction snapping</span>&#8212;allows control handle snapping:<ul>
+							<li>inline with adjacent node.</li>
+							<li>to 90&#176; from inline.</li>
+							<li>to reflected angle with adjacent control handle.</li>
+							<li>parallel to adjacent control handle.</li>
+							<li>90&#176; to parallel control handle.</li>
+							<li>to logical triangle.</li>
+						</ul>
+					</li>
+				</ul>
+		<p>These options are independent of the global <a href="../DesignAids/snapping.html">snapping</a> options, except <span class="ui">Align handle positions using snapping options</span>.</p>
+			</li>
+			<li><span class="ui">Show Orientation</span>&#8212;displays the segment leading up to the end node in red to help visualize the start of a closed shape when winding fill mode is active.</li>
+			<li><span class="ui">Use Fill</span>&#8212;When checked, the concave area of the line is filled with the currently set fill color (from <span class="ui">Color</span> panel) as you draw.</li>
+		</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Tools/tools_node.html">Node Tool</a></li>
+			<li><a href="../CurvesShapes/draw_linesAndShapes.html">Draw curves and shapes</a></li>
+			<li><a href="../CurvesShapes/edit_linesAndShapes.html">Edit curves and shapes</a></li>
+			<li><a href="../DesignAids/snapping.html">Snapping</a></li>
+			<li><a href="../DesignAids/grids.html">Grids</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=tools">Keyboard shortcuts for tools</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

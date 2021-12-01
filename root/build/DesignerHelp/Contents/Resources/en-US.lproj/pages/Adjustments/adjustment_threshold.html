@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="adjustment, threshold" />
+	<meta name="description" content="Create two-tone, black and white images using the Threshold adjustment." />
+	<title>Threshold adjustment</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Threshold adjustment</h1>
+
+		<p>Create a two-tone, black and white image from grayscale or color images based on a pixel intensity threshold.</p>
+
+		<figure>
+			<div class="comparison"><img src="../../../shared/adjustment_base.jpg" alt="Before" /><div><img src="../../../shared/adjustment_threshold.jpg" alt="After" /></div>
+			</div>
+		</figure>
+	</header>
+
+	<section class="about">
+
+		<p>Any pixels lighter than the threshold are converted to white; any pixels darker than the threshold are converted to black.</p>
+
+	</section>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted in the dialog:</p>
+		<ul>
+			<li><span class="ui">Threshold</span>&#8212;controls the transition point between pixels being converted to black or white. Drag the slider to the left to convert more pixels to white, drag the slider to the right to convert more pixels to black.</li>
+		</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="adjustment_applying.html">Applying adjustments</a></li>
+			<li><a href="adjustment_blackAndWhite.html">Black and White adjustment</a></li>
+		</ul>
+	</section>
+	
+	<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

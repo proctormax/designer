@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="page, bleed, trimbox, crop marks, trim, bleed color" />
+	<meta name="description" content="Use bleed to extend your printable area to accommodate page elements that can be better trimmed." />
+	<title>Setting bleed</title>
+</head>
+<body>
+
+	<header>
+		
+		<h1>Setting bleed</h1>
+		
+		<p>For professional printing, bleed extends the printable area beyond the page edge to allow artwork to be trimmed. You can set bleed on document setup, display bleed guides (so you can more easily design into the bleed area) and assign colors to them and then include bleed at print or export time.</p>
+		
+ 
+	<figure class="nft">
+		<p><img src="../../images/bleedguide.png" class="responsive" alt="Bleed guides" /></p>
+		<figcaption>3 mm bleed guides with a placed image snapped to them.</figcaption>
+	</figure>
+	
+	</header>
+	
+	<section class="about">
+		<p>To allow for inaccuracies in the trimming process in professional printing, it's a good idea to extend these elements beyond the 'trim edge' (TrimBox), i.e. the page dimensions defined in Document Setup.</p>
+		<p>Bleed guides are a visual aid only which assist you in positioning 'bleed' elements (typically images) that you want to run to the edge of a trimmed page. With bleed guides switched on, you can display the printable area extended by the Bleed distance you specify.</p>
+		
+		<p>An <span class="ui">Include bleed</span> setting in the Export PDF or Print dialog includes the bleed in the actual output page size.</p>
+		
+			<figure class="nft">
+				<p><img src="../../images/bleedoutput.png" class="responsive" alt="Bleed on output" /></p>
+				<figcaption>Bleed enabled on PDF export, extending over crop marks.</figcaption>
+			</figure>
+			
+	</section>			
+	 
+	<section class="howto">
+
+		<details open="open">
+			<summary>To set bleed for new documents:</summary>
+				<ul>
+					<li>From the <span class="ui">File</span> menu, click <span class="ui">New</span>.</li>
+					<li>Select the <span class="ui">Bleed</span> tab, and do one of the following:<ul>
+							<li>For different bleed values: Set the <span class="ui">Left Bleed</span>, <span class="ui">Right Bleed</span>, <span class="ui">Top Bleed</span>, and <span class="ui">Bottom Bleed</span>.</li>
+							<li><img src="../../../shared/ui/ChainLink.png" class="tool" width="12" height="24" alt="Link" /> For the same bleed value: Enable the Link symbol at right, and set any bleed value; all other values will update to this.</li>
+						</ul>
+					</li>
+				</ul>
+				
+		</details>
+		
+		<details open="open">
+			<summary>To modify your bleed settings:</summary>
+			<ol>
+				<li>From the default context toolbar (or <span class="ui">File</span> menu), select <span class="ui">Document Setup</span>.</li>
+				<li>Change bleed values from the Bleed tab.</li>
+			</ol>
+		</details>
+		
+		<details open="open">
+			<summary>To view bleed guides:</summary>
+				<ul>
+					<li>From the <span class="ui">View</span> menu, select <span class="ui">Show Bleed</span>.</li>
+				</ul>
+			<p>The guides are shown as an outline that extends beyond the page edge by the chosen Bleed value.</p>
+		</details>
+		
+		<details open="open">
+			<summary>To change the color of bleed guides:</summary>
+				<ul>
+					<li>From the <span class="ui">File</span> menu, select <span class="ui">Document Setup</span>.</li>
+					<li>Click the color swatch to display a pop-up panel to update the bleed color.</li>
+				</ul>
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/guidessnapping.png" class="tool" width="18" height="18" alt="Snapping" /> To snap objects to bleed guides:</summary>
+				<ul>
+					<li>From the main toolbar, enable <span class="ui">Snapping</span>, then click the Snapping down arrow and ensure <span class="ui">Snap to Spread</span> is checked.</li>
+				</ul>
+			<p>The Snap to Spread option snaps to page edge and bleed equally.</p>
+		</details>
+				
+		<details open="open">
+			<summary>To switch on bleed marks on export:</summary>
+			<p>Do one of the following:</p>
+			<ul>
+				<li class="osx">For print: From the <span class="ui">File</span> menu, select <span class="ui">Print</span>. Click <span class="ui">Show Details</span>, then <span class="ui">Bleed and Marks</span>, and check <span class="ui">Include bleed</span>.</li>
+				<li class="win32">For print: From the <span class="ui">File</span> menu, select <span class="ui">Print</span>. Select <span class="ui">Bleed and Marks</span> and check <span class="ui">Include bleed</span>.</li>
+				<li>For pro PDF output: From the <span class="ui">File</span> menu, select <span class="ui">Export</span>, then <span class="ui">PDF</span>. Choose any PDF/X <span class="ui">Preset</span>, then check <span class="ui">Include bleed</span>.</li>
+			</ul>
+		</details>
+		
+	</section>		
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../GetStarted/NewDocument.html">Create new documents</a></li>
+			<li><a href="../GetStarted/DocumentSetup.html">Document setup</a></li>
+			<li><a href="export.html">Export</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=file">Keyboard shortcuts for file/document management</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

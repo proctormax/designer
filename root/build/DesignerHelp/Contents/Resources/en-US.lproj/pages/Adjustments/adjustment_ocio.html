@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="adjustment, ocio, opencolorio, managed, workflow, 3d lut, look-up table, .cube, .csp, .3dl, .look" />
+	<meta name="description" content="The OCIO adjustment performs color transforms to help with a color managed workflow." />
+	<title>OpenColorIO adjustment</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>OpenColorIO adjustment</h1>
+
+	</header>
+
+	<section class="about">
+
+		<p>The <span class="ui">OpenColorIO</span> adjustment is designed to help with OpenColorIO color-managed workflows by allowing color transforms between source and destination color spaces. See <a href="../Clr/ocio.html">Using OpenColorIO</a> for more information.</p>
+
+		<figure>
+			<div class="comparison"><img src="../../../shared/adjustment_ocio_before.jpg" alt="Before" /><div><img src="../../../shared/adjustment_ocio_after.jpg" alt="After" /></div>
+			</div>
+			<figcaption>Before and after OCIO adjustments applied to convert logo to the same color space as the background render.</figcaption>
+		</figure>
+
+	</section>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted:</p>
+		<ul>
+			<li><span class="ui">Source Color Space</span>&#8212;sets the input color space to use for transforming.</li>
+			<li><span class="ui">Destination Color Space</span>&#8212;sets the output color space.</li>
+		</ul>
+
+		<aside class="box tip">
+			<p>This adjustment requires a valid OpenColorIO configuration in order to be usable. See <a href="../Clr/ocio.html">Using OpenColorIO</a> for instructions on setting up a configuration.</p>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="adjustment_applying.html">Applying adjustments</a></li>
+			<li><a href="../Clr/ocio.html">Using OpenColorIO</a></li>
+		</ul>
+	</section>
+
+	
+	<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

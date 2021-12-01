@@ -1,0 +1,29 @@
+.cpane{
+  position:relative;
+  display:block;
+  width: auto;
+  height: auto;
+}
+.cpane >.cpane-header{
+  position:relative;
+  display:block;
+  z-index:1;
+  background-color: inherit;
+  clear:both;
+}
+.cpane >.cpane-content{
+  position:relative;
+  display:none;
+  z-index:0;
+  width: auto;
+  height: auto;
+}
+
+.cpane.expanded >.cpane-content{
+  display:block;
+}
+.cpane-header > .ctitle{
+  user-select: none;
+  display:inline-block;
+  padding: 2pt;
+}

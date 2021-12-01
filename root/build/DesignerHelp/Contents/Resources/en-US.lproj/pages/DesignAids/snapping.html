@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="design aids, snapping, snap to grid, snap to spread, snap to guides, snap to pixel selection bounds" />
+	<meta name="description" content="Snapping simplifies placing, creating and aligning objects without the need to set up rulers or guides." />
+	<title>Snapping</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Snapping</h1>
+
+		<p>Snapping simplifies the positioning of new and existing objects by 'magnetizing' moved or resized objects to other objects or document elements.</p>
+	</header>
+
+	<section class="about">
+
+		<p>Snapping causes images, brush strokes, lines, shapes, and selection areas to align to nearby grid lines, guides, margins, artboards or spreads, or any combination of these. You can also snap to object bounding boxes, key points on shapes, and to an object's geometry. Text can also snap to the baseline of other text (the first line only for text frames) and artistic text objects can snap to the height of previously created artistic text.</p>
+		<p>To help understand snapping behavior, colored dynamic guides and target nodes display when you snap to objects. The colors used are:</p>
+			<ul>
+				<li>Red line: Object snaps to target horizontally.</li>
+				<li>Green line: Object snaps to target vertically.</li>
+				<li>Yellow node: Object snaps to shape's key points horizontally and vertically.</li>
+				<li>Purple node: A curve's node snaps to a shape's key points.</li>
+				<li>Blue line: Object snaps to third plane when using triangular projection grid.</li>
+				<li>Orange line: Object snaps to target horizontally or vertically if a projection grid is active.</li>
+			</ul>
+		
+		<aside class="box note">
+			<p>Dynamic guides work in conjunction with snapping to provide a visual aid when aligning. Dynamic guides also include labels which report the distance between the snapping objects (measured in the document's set units).</p>
+		</aside>	
+		
+		<aside class="box tip">
+			<p>For web graphic development, you may wish to use <a href="pixelAlign.html">Force Pixel Alignment</a>. This complements any active snapping settings.</p>
+		</aside>
+
+		<figure class="nft">
+			<p><img src="../../images/panel_snapping.png" class="responsive panel" alt="Snapping options" /></p>
+			<figcaption>The range of snapping options.</figcaption>
+		</figure>
+
+		<h2>Snapping candidates</h2>
+
+		<p>Snapping candidates are page objects which are available for you to snap to. You can specify which objects are used in the snap, and eliminate the ones you are not interested in. Alternatively, you can construct your document in a more hierarchical way by using <span class="ui">Immediate layers</span>. You can set how candidates are created using the following settings:</p>
+		
+		<ul>
+			<li><span class="ui">Candidate List</span>&#8212;limits the number of objects which are snapping candidates to the number you set. Creating a new object, or hovering over an existing object, designates it as a snapping candidate in this case. Only the active snapping candidates can be snapped to.</li>
+			<li><span class="ui">Immediate layers</span>&#8212;limits the number of candidates to only the current layer, layers that are siblings or the immediate parent layer.</li>
+			<li><span class="ui">Immediate layers and children</span>&#8212;limits the number of candidates to the objects on the current layer and any of the layer's subordinate child layers.</li>
+			<li><span class="ui">All layers</span>&#8212;does not limit the number of snapping candidates in the document.</li>
+		</ul>
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/guidessnapping.png" class="tool" width="18" height="18" alt="Snapping" /> To activate/deactivate snapping:</summary>
+			<ul>
+				<li>Click <span class="ui">Snapping</span> on the main toolbar.</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+ 			<summary>To temporarily override snapping:</summary>
+			<ul>
+				<li>Press the <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span> while you're positioning an object. Snapping won't occur while the <span class="KEY-TAG"></span> is depressed.</li>
+			</ul>
+		</details>
+
+		<details open="open">
+			<summary>To exclude an object from being a snapping candidate:</summary>
+			<ul>
+				<li>On the <span class="ui">Layers</span> panel, <span class="key CLICK-TAG"></span>-click the object entry and select <span class="ui">Exclude From Snapping</span>.</li>
+			</ul>
+			<p>A symbol appears on the layer entry to indicate this exclusion.</p>
+		</details>
+		
+	<h2>Snapping presets</h2>
+	
+		<p>A powerful and comprehensive set of snapping options are available to you. To make snapping setup quick and easy, one of several snapping presets can be chosen which group recommended snapping options according to how you plan to work (e.g., for UI design, curve drawing, etc.).</p>
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/guidessnapping.png" class="tool" width="18" height="18" alt="Snapping" /> To select a snapping preset:</summary>
+			<ol>
+				<li>Click the <span class="ui">Snapping</span> option's arrow.</li>
+				<li>From the <span class="ui">Preset</span> pop-up menu, select a preset.</li>	
+			</ol>
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/guidessnapping.png" class="tool" width="18" height="18" alt="Snapping" /> To customize a snapping preset:</summary>
+				<ol>
+					<li>Click the <span class="ui">Snapping</span> option's arrow.</li>
+					<li>Select a preset on which to base your new snapping options.</li>
+					<li>Check individual options on/off to override the current preset's options.</li>
+				</ol>
+			<p>The options will be in effect immediately.</p>
+		</details>
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/moremenuicon.png" class="tool" width="15" height="11" alt="Presets menu" /> To save as a custom preset for future use:</summary>
+				<ol>
+					<li>Click the button adjacent to the <span class="ui">Presets</span> pop-up menu.</li>
+					<li>Select <span class="ui">Create preset</span>.</li>
+				</ol>
+			<p>The custom preset is in effect immediately.</p>
+		</details>
+
+	</section>
+	
+	<section class="settings">
+		
+		<h3>Snapping options</h3>
+
+		<p>Individual snapping options can be switched on or off to suit your needs, drawing style, and the project you are working on. The preset that you initially adopted will be customized in the process.</p>
+
+		<p>The following options are available from the pop-up dialog:</p>
+
+		<ul>
+			<li><span class="ui">Screen tolerance</span>&#8212;controls the distance you have to be to an object before snapping occurs.</li>
+			<li><span class="ui">Enable snapping</span>&#8212;when checked, objects will snap to specified criteria. This must be selected to change other options.</li>
+			<li><span class="ui">Presets</span>&#8212;Select a preset which is a grouping of snapping options for specific ways of working.<ul>
+					<li>Page layouts&#8212;for designs to be printed, where snapping to placed guides, margins, and spreads is important.</li>
+					<li>Page layouts with objects&#8212;as above but with additional object-to-object alignment.</li>
+					<li>Object creation&#8212;perfect for simple object-to-object alignment to bounding boxes and their midpoints, plus for aligning some shapes to key points. Key points are automatically added points on some objects, e.g. where a shape's corner is made rounded, key points are placed at the start and end of the rounded corner.</li>
+					<li>Curve drawing&#8212;the setup for non-geometric use (i.e., drawing with the pen/pencil/brush tools).</li>
+					<li>UI design&#8212;for UI/web design for pixel accuracy when using snapping to fixed guides and grid.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Candidates</span>&#8212;sets how candidates are created. Select from the pop-up menu.<ul>
+					<li><span class="ui">Maximum</span>&#8212;limits the number of active candidates when <span class="ui">Candidate List</span> is selected (see above). If you reach this limit, new candidates replace older candidates in chronological order.</li>
+					<li><span class="ui">Show snapping candidates</span>&#8212;when checked, highlights the active snapping candidates, i.e. objects that can be snapped to by prior selection or hover over. Candidates will display a 'purple halo'.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Only snap to visible objects</span>&#8212;when checked, only visible objects are snapped to.</li>
+			<li><span class="ui">Force pixel alignment</span>&#8212;identical to the Toolbar option&#8212;see <a href="pixelAlign.html">Force Pixel Alignment</a>.<ul>
+					<li><span class="ui">Move by whole pixels</span>&#8212;identical to the Toolbar option&#8212;see <a href="pixelAlign.html">Force Pixel Alignment</a>.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Snap to grid</span>&#8212;when checked, content snaps to a line grid (if switched on from the <span class="ui">View</span> menu). Not available when using Force Pixel Alignment.</li>
+			<li><span class="ui">Snap to guides</span>&#8212;when checked, content snaps to guides (if switched on from the <span class="ui">View</span> menu).</li>
+			<li><span class="ui">Snap to spread</span>&#8212;when checked, content snaps to the edge of the document (ignoring margins).<ul>
+					<li><span class="ui">Include spread mid points</span>&#8212;when checked, content snaps to vertical or horizontal center of the page. This option is only available if the above option is selected.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Snap to margin</span>&#8212;when checked, content snaps to page margins (if switched on from the <span class="ui">View</span> menu).<ul>
+					<li><span class="ui">Include margin mid points</span>&#8212;when checked, content snaps to vertical or horizontal center of the page margin. This option is only available if the above option is selected.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Snap to object bounding boxes</span>&#8212;when checked, objects can be aligned based on its bounding box.<ul>
+					<li><span class="ui">Include bounding box mid points</span>&#8212;when checked, objects snap to vertical or horizontal center of a target object. This option is only available if the above option is selected.</li>
+					<li><span class="ui">Snap to gaps and sizes</span>&#8212;when checked, arrows represent matched gaps between snapping candidates and matched horizontal and/or vertical sizes.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Snap to shape key points</span>&#8212;when checked, objects can be aligned to key points on shapes, such as the start and end of a rounded corner.</li>
+			<li><span class="ui">Snap to object geometry</span>&#8212;when checked, curves can be snapped to vertices and not simply to the bounding box or key points. Vertices are object corners or intersections, such as the points of a star, within a shape's bounding box.</li>
+			<li><span class="ui">Snap to pixel selection bounds</span>&#8212;when checked, objects can be snapped to the bounds of a pixel selection. For example, using the Flood Select Tool, a pixel selection drawn over image 'edges', which would otherwise not be snappable, will expose those edges for snapping.</li>
+		</ul>
+		
+
+		<aside class="box note">
+			<p>Snapping always snaps to the currently set measurement unit as defined in <span class="ui">File&#62;Document Setup</span>.</p>
+		</aside>
+			
+		<aside class="box note">
+			<p>You can also access the above settings from the <span class="ui">Snapping Manager</span> via the <span class="ui">View</span> menu.</p>
+		</aside>
+
+		<aside class="box warning">
+			<p>If you have a document with a high number of objects or layers and activate the <span class="ui">All layers</span> snapping candidate option, you may experience performance issues when moving or resizing objects due to the shear number of snapping candidates.</p>
+		</aside>
+		
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="pixelAlign.html">Force Pixel Alignment</a></li>
+			<li><a href="dynamicGuides.html">Dynamic guides</a></li>
+			<li><a href="grids.html">Grids</a></li>
+			<li><a href="guides.html">Guides</a></li>
+			<li><a href="margins.html">Margins</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

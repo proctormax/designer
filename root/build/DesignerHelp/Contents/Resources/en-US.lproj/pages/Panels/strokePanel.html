@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="line, panel, outlines" />
+	<meta name="description" content="The Stroke panel lets you set the properties of lines, curves, shape outlines and vector brush strokes." />
+	<title>Stroke panel</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Stroke panel</h1>
+
+		<p>The <span class="ui">Stroke</span> panel lets you set the properties of lines and curves, as well as shape outlines and vector brush strokes.</p>
+
+
+	</header>
+
+	<section class="about">
+		<h2>About the Stroke panel</h2>
+
+		<p>Every object can take a stroke around its bounding box which can take on various properties, e.g. width, color, opacity, line style, etc.</p>
+
+		<figure class="nft overrideDE overrideFR">
+			<p><img src="../../images/panel_stroke.png" class="responsive panel" alt="Stroke panel" /></p>
+			<figcaption>The Stroke panel showing properties applied to an object.</figcaption>
+		</figure>
+
+		<p>The following controls are found on the panel:</p>
+
+		<ul>
+			<li><span class="ui">Style</span>&#8212;Select a line style button to change how the line is drawn. Choose from None, Solid Line Style, Dash Line Style, and Texture Line Style, respectively. The last option applies the currently selected brush in the Brushes panel to the stroke.</li>
+			<li><span class="ui">Width</span>&#8212;Drag to change the width (thickness) of the selected line.</li>
+			<li><span class="ui">Cap</span>&#8212;Select one of the cap style buttons (Round, Butt, or Square) to vary the contour of the line end.</li>
+			<li><span class="ui">Join</span>&#8212;Select a setting (Round, Bevel, or Miter) to determine the contour of sharp corners on the stroke. With <span class="ui">Miter</span> joins, the <span class="ui">Miter</span> setting dynamically controls if beveling occurs by extending each line at the junction by the number of line widths. If the two outer edges meet within that limit, the result is a sharp corner; if not, you’ll get a flat (Bevel) corner.</li>
+			<li><span class="ui">Miter</span>&#8212;Sets the length of the extension of Miter joins to create either sharp or flat corners.</li>
+			<li><span class="ui">Align</span>&#8212;Select one of the align buttons to control where the stroke is placed in relation to the object edge, i.e. centered, or on its inside or outside.</li>
+			<li><span class="ui">Order</span>&#8212;Select one of the order buttons to control where the stroke is placed in relation to the object. <span class="ui">Draw stroke behind</span> hides the inner half of the object's outline behind a closed shape&#8212;useful with very small objects or when shrinking outlined text. <span class="ui">Draw stroke in front</span> always reveals the whole line.</li>
+			<li><span class="ui">Scale with Object</span>&#8212;Check to scale both line and shape together when resizing a closed shape. Uncheck to keep line width constant.</li>
+			<li><span class="ui">Start</span>/<span class="ui">End</span>&#8212;Select an arrowhead style for the start/end stops of the stroke from the pop-up menu. Choose where to position the start and end styles from <span class="ui">Place arrow within the line</span> and <span class="ui">Place arrow at the end of the line</span>.</li>
+			<li><span class="ui">Percentage</span>&#8212;With styles selected, you can enter a percentage to adjust the size of your selected arrowheads in proportion with the stroke width.</li>
+			<li><img src="../../../shared/ui/ChainLink.png" class="tool" width="12" height="24" alt="Link" /> Link&#8212;When enabled, the selected <span class="ui">Start</span> and <span class="ui">End</span> arrowheads are adjusted in proportion to each other, maintaining the current aspect ratio. When deselected, they can be adjusted independently.</li>
+			<li><span class="ui">Swap arrow head with tail</span>&#8212;Select to swap the <span class="ui">Start</span> and <span class="ui">End</span> arrowhead styles.</li> 
+			<li><span class="ui">Properties</span>&#8212;Click to edit the brush used as your Texture Line Style via a Brush dialog.</li>
+			<li><span class="ui">Pressure</span>&#8212;Displays your current pressure profile after applying a line or brush stroke. Clicking the profile lets you edit the profile and save it for future use.</li>
+			<li><span class="ui">Dash</span>&#8212;When Dash Line Style is selected, this option allows you to set the design of the dot or dash (see below for details).</li>
+			<li><span class="ui">Phase</span>&#8212;When Dash Line Style is selected, this option allows you to set the starting point of the dash design (see below for details).</li>
+		</ul>
+
+		<aside class="box note">
+			<p>To change the line color, use the Color or Swatches panel.</p>
+		</aside>
+		
+		<p>Dot and dash line styles can be created using the <span class="ui">Stroke</span> panel. For more information, see <a href="../CurvesShapes/draw_linesAndShapes.html">Draw curves and shapes</a>.</p>
+
+		<aside class="box prefs">
+			<h3>Preferences</h3>
+			<p>Related behaviors can be adjusted from <a href="../Workspace/preferences.html">the app's preferences</a>:</p>
+			<ul>
+				<li><span class="ui">Miscellaneous&gt;Reset Brushes</span></li>
+				<li><span class="ui">User Interface&gt;Show brush previews</span></li>
+				<li><span class="ui">User Interface&gt;Always show brush crosshair</span></li>
+			</ul>			
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../CurvesShapes/draw_linesAndShapes.html">Draw curves and shapes</a></li>
+			<li><a href="../CurvesShapes/edit_linesAndShapes.html">Edit curves and shapes</a></li>
+			<li><a href="../Panels/clrPanel.html">Color panel</a></li>
+			<li><a href="../Panels/swatchesPanel.html">Swatches panel</a></li>
+			<li><a href="../Workspace/customizingWorkspace.html">Customizing the workspace</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

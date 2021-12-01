@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="transforming objects, flipping, rotating, rotate, arrange, nudge, nudging, point transform" />
+	<meta name="description" content="Objects can be flipped, rotated, positioned and sized accurately." />
+	<title>Transforming objects</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Transforming objects</h1>
+		<p>Objects can be flipped, rotated, positioned and sized on the page or with absolute precision using the <span class="ui">Transform</span> panel.</p>
+		
+		<figure>
+			<p><img src="../../../shared/transform.png" class="screenshot responsive" alt="transform" /></p>
+			<figcaption>The background object has been rotated left, while the foreground object has been flipped horizontally.</figcaption>
+		</figure>
+		
+		<p>You can also transform an object about a point on its own geometry, another object's geometry or a point on the page.</p>
+		
+		<figure>
+			<div class="single"><img src="../../../shared/transforming_objects.png" class="screenshot responsive" alt="Point Transforming" /></div>
+			<figcaption>The text object is rotated about its repositioned transform origin using the Point Transform Tool.</figcaption>
+		</figure>
+		
+	</header>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/flip_horizontal.png" class="tool" width="18" height="18" alt="Flip Horizontal" /> <img src="../../../shared/ui/flip_vertical.png" class="tool" width="18" height="18" alt="Flip Vertical" /> <img src="../../../shared/ui/rotate_anti_clockwise.png" class="tool" width="18" height="18" alt="Rotate Anti-clockwise" /> <img src="../../../shared/ui/rotate_clockwise.png" class="tool" width="18" height="18" alt="Rotate Clockwise" /> To flip or rotate objects:</summary>
+				<ol>
+					<li>Select one or more objects.</li>
+					<li>Do one of the following:<ul>
+							<li>On the Toolbar, select a flip or rotate option.</li>
+							<li>From the <span class="ui">Layer</span> menu's <span class="ui">Transform</span> sub-menu, select a flip or rotate option.</li>
+						</ul>
+					</li>
+				</ol>
+
+			<aside class="box note">
+				<p>You can also <a href="rotateShear.html">rotate objects</a> directly on the page by dragging the selection's rotate handle or by using the <span class="ui">Transform</span> panel.</p>
+			</aside>
+
+		</details>
+
+		<details open="open">
+			<summary>To position objects accurately:</summary>
+				<ol>
+					<li>Select one or more objects.</li>
+					<li>On the <span class="ui">Transform</span> panel, change <span class="ui">X</span> and/or <span class="ui">Y</span> values.</li>
+				</ol>
+
+		</details>
+
+		<details open="open">
+			<summary>To nudge objects:</summary>
+				<ol>
+					<li>Select one or more objects.</li>
+					<li>Do one of the following:<ul>
+							<li>For nudging by a single unit of measurement: Press an arrow key.</li>
+							<li>For 10x the single unit of measurement: Press an arrow key with the <span class="key SHIFT-TAG"></span> pressed.</li>
+						</ul>
+					</li>
+				</ol>
+
+				<aside class="box note">
+					<p>As you nudge, dynamic measuring guides appear in the direction of travel.</p>
+					<x-osx><p>You can change nudge distances via <span class="ui">Affinity Designer&gt;Preferences&gt;Tools</span></p></x-osx>
+					<x-win32><p>You can change nudge distances via <span class="ui">Edit&gt;Preferences&gt;Tools</span></p></x-win32>
+				</aside>
+
+		</details>
+
+		<details open="open">
+			<summary>To size objects accurately:</summary>
+				<ol>
+					<li>Select one or more objects.</li>
+					<li>On the <span class="ui">Transform</span> panel, change <span class="ui">W</span> and/or <span class="ui">H</span> values.</li>
+				</ol>
+				
+			<aside class="box note">
+				<p>You can scale objects from a custom transform origin (rather than an anchor point) that has been placed prior to transforming.</p>
+			</aside>
+
+		</details>
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/transformtool.png" class="tool heading" width="18" height="18" alt="Point Transform Tool" /> To transform a selected object about a specific point:</summary>
+				<ol>
+					<li>With the <span class="ui">Point Transform Tool</span> selected, reposition the transform origin to your chosen 'pivot' point on the current or another object's path (or specific node), or even a random point on the page.</li>
+					<li>(Optional) Reposition the shape so its transform origin snaps onto another object's geometry or node.</li> 
+					<li>Transform the selected shape by dragging from a chosen node.</li>
+				</ol>
+
+				<aside class="box tip">
+					<p>While using the tool, the <span class="ui">Transform</span> panel changes functionality to allow you to enter distances (&#916;X, &#916;Y), scaling percentage (S) and angle (&#916;R) in relation to the current transform origin.</p>
+				</aside>
+
+				<aside class="box note">
+					<h3>Modifier keys</h3>
+					<p>When using the Point Transform Tool, the following modifiers can be used:</p>
+					<ul>
+						<li><span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> scales the object only.</li>
+						<li><span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> rotates the object only.</li>
+						<li><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> rotates the object only (in 15° intervals).</li>
+						<li class="osx"><span class="key CTRL-TAG"></span> <span class="KEY-TAG"></span> moves the object.</li>
+						<li class="win32">Additional press of right-hand mouse button moves the object.</li>
+					</ul>
+				</aside>
+		</details>
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/multiple_transform.png" class="tool" width="16" height="16" alt="Transform Objects Separately" /> To transform selected objects separately:</summary>
+				<ol>
+					<li>Select multiple objects.</li>
+					<li>With the <span class="ui">Move Tool</span> selected, select <span class="ui">Transform Objects Separately</span> from the context toolbar.</li>
+					<li>Transform any object.</li>
+				</ol>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="rotateShear.html">Rotating and shearing objects</a></li>
+			<li><a href="../Panels/transformPanel.html">Transform panel</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=operations">Keyboard shortcuts for transforming operations</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

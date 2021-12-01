@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="layer effects, fx, bevel, emboss, 3D" />
+	<meta name="description" content="The Bevel/Emboss effect is used to add rounded-edges and shadows to give a 3D impression." />
+	<title>Bevel/Emboss</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Bevel/Emboss</h1>
+
+		<p>The Bevel/Emboss effect is used to add rounded edges and shadows to give a 3D impression.</p>
+
+		<figure>
+			<div class="comparison vertical"><img src="../../../shared/layerfx_base.jpg" alt="Before" /><div><img src="../../../shared/layerfx_bevelemboss_02.jpg" alt="After" /></div>
+			</div>
+		</figure>
+
+	</header>
+
+	<section class="about">
+
+		<p>Depending on the type of bevel or emboss set, the rounded-edge might be inside or outside an object, convex or concave, and may include a shadow.</p>
+		<p>For all bevel/emboss effects you can adopt a preset or custom profile that defines the bevel/emboss edge.</p>
+
+	</section>
+
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings are shown on the <span class="ui">Effects</span> panel:</p>
+
+		<ul>
+			<li><span class="ui">Opacity</span>&#8212;controls the transparency of the effect.</li>
+			<li><span class="ui">Radius</span>&#8212;controls the extent of the effect.</li>
+			<li><img src="../../../shared/ui/cogicon.png" class="tool" width="15" height="15" alt="Layers Effects Icon" /> <span class="ui">Layer Effects</span>&#8212;provides access to the <span class="ui">Layer Effects</span> dialog for more advanced settings and controls.</li>
+
+		</ul>
+
+		<aside class="box note">
+			<p>By default, you'll apply a Pillow Emboss effect when using the Effects panel. For an inner/outer bevel and a basic emboss effect, use the Layer Effects dialog.</p>
+		</aside>
+
+		<p>The following advanced settings can be adjusted in the <span class="ui">Layer Effects</span> dialog:</p>
+
+		<ul>
+			<li><span class="ui">Type</span>&#8212;sets an Inner bevel, Outer bevel, Emboss or Pillow emboss effect. Select from the pop-up menu.</li>
+			<li><span class="ui">Depth</span>&#8212;sets the depth of the effect. This can be linked to Radius or set independently.</li>
+			<li><span class="ui">Soften</span>&#8212;blurs the shadows and highlights.</li>
+			<li><span class="ui">Profile</span>&#8212;defines how the light is applied and sculpts the ridges, valleys, and bumps that are shaded in the process.</li>
+			<li><span class="ui">Invert</span>&#8212;reverses the effect of the lighting profile.</li>
+			<li><span class="ui">Remove Profile</span>&#8212;returns the profile to the default setting where light is applied evenly.</li>
+			<li><span class="ui">Direction</span>&#8212;represents the position of the light source, shadow or gradient. Click or drag to adjust the direction (and set the <span class="ui">Azimuth</span> and <span class="ui">Elevation</span> automatically).</li>
+			<li><span class="ui">Azimuth</span>&#8212;defines the direction of the light source, shadow or gradient.</li>
+			<li><span class="ui">Highlight</span>&#8212;sets the blend mode, color and opacity for the highlight. Blend mode defaults to screen.</li>
+			<li><span class="ui">Shadow</span>&#8212;sets the blend mode, color and opacity for the shadow. Blend mode defaults to multiply.</li>
+			<li><span class="ui">Scale with Object</span>&#8212;when selected, the effect scales in proportion to the object if the object is resized. If this option is off, the effect's scale remains unchanged when the object is resized.</li>
+			<li><span class="ui">Fill Opacity</span>&#8212;sets the opacity of the layer contents without affecting the applied effects.</li>
+		</ul>
+
+	</section>
+
+	<section class="howto">
+		<details>
+			<summary>To a preset or custom profile:</summary>
+
+			<ol>
+				<li>Click the Profile thumbnail.</li>
+				<li>In the pop-up panel, choose either:<ul>
+						<li>One of the Standard profile thumbnails.</li>
+						<li>A custom profile: Click on the curve to add a node, drag a node or portion of the curve to shape it.</li>
+					</ul>
+				</li>
+				<li>Select the Linear checkbox to create a sharp curve or deselect to create a smooth curve.</li>
+				<li>Click away from the pop-up panel to apply the profile.</li>
+			</ol>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="create_layerFX.html">Using layer effects</a></li>
+		</ul>
+	</section>
+	
+	<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

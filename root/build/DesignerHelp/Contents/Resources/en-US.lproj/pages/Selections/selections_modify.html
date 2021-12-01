@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="selection, pixel, raster, marquee, modifying, grow, shrink, feather, smooth" />
+	<meta name="description" content="Modify your pixel selection using grow, shrink, feather and smooth." />
+	<title>Modifying pixel selections</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Modifying pixel selections</h1>
+
+		<p>Once you have a pixel selection in place, it can be modified in several ways.</p>
+	</header>
+	
+	<section class="about">
+		<p>You can modify your pixel selection by enlarging or shrinking it, applying a feather to its edge, and/or by smoothing its curve. These options are available from the <span class="ui">Select</span> menu as <span class="ui">Grow/Shrink</span>, <span class="ui">Feather</span>, and <span class="ui">Smooth</span>, respectively.</p>
+	</section>
+
+	<section class="settings">
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted from the relevant dialogs:</p>
+		<ul>
+			<li><span class="ui">Radius</span>&#8212;controls the extent of the effect.<ul>
+					<li>Negative values for <span class="ui">Grow/Shrink</span> will shrink the selection while positive values enlarge it.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Circular</span>&#8212;if this option is unchecked (default), resizing honors the original selection shape. When checked, the selection shape is made more rounded with increasing Radius values.</li>
+		</ul>
+
+		<aside class="box tip">
+			<p>Feathering can also be applied to a selection from the context toolbar.</p>
+		</aside>
+		
+		<aside class="box note">
+			<p>In addition to the modifications discussed here, you can also <a href="selections_refine.html">refine the edges of your selection</a>. This option is available from the context toolbar and the <span class="ui">Select</span> menu.</p>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="selections_create.html">Creating pixel selections</a></li>
+			<li><a href="selections_refine.html">Refining pixel selection edges</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

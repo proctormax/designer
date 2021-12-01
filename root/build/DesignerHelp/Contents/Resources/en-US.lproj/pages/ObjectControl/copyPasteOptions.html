@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="copy, paste, objects, inkscape, svg, unicode" />
+	<meta name="description" content="The Edit menu provides multiple ways to copy and paste objects or specific copied object properties." />
+	<title>Copying and pasting objects</title>
+</head>
+
+<body>
+	<header>
+
+		<h1>Copying and pasting objects</h1>
+		
+		<p>The <span class="ui">Edit</span> menu provides multiple ways to copy and paste objects. Pasted objects can include/exclude specific copied object properties.</p>
+		
+		<figure>
+			<p><img src="../../../shared/pasteOptions.png" class="screenshot responsive" alt="Paste options" /></p>
+			<figcaption>(A) Paste, (B) Paste Inside, (C) Paste Style (Stroke, Fill and Outer Shadow), (D) Paste FX (Outer Shadow layer effect only), (E) Paste Without Format (retains target formatting), (F) Paste Special (Windows only); pastes as a choice of clipboard formats such as SVG, Device Independent Bitmap, etc.</figcaption>
+		</figure>
+		
+	</header>
+
+	<section class="about">
+	
+	<h2>About copying</h2>
+	
+	<p>You can copy content throughout the application or externally to third-party apps. Both need a reciprocal pasting operation to add the content to the target page.</p>
+	
+	<p>The <span class="ui">Copy items as SVG</span> preference (accessed via <span class="ui">Preferences&gt;General</span>) copies objects in SVG format in readiness for pasting to external apps.</p>
+
+	
+	<h2>About pasting</h2>
+	
+	<p>As well as the commonly used Paste command, other paste commands can be used to selectively control which object's properties are included/excluded in the paste operation.</p>
+
+		<table class="thirtythree">
+			<tr>
+				<th>Paste option</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>Paste</td>
+				<td>Pastes objects, preserving the copied object's look and formatting.</td>
+			</tr>
+			<tr>
+				<td>Paste Inside</td>
+				<td>Pastes an object inside another object.</td>
+			</tr>
+			<tr>
+				<td>Paste Style</td>
+				<td>Pastes an object's stroke, fill and layer effect(s) to another object.</td>
+			</tr>
+			<tr>
+				<td>Paste FX</td>
+				<td>Pastes only layer effect(s) to another object.</td>
+			</tr>
+			<tr>
+				<td>Paste Without Format</td>
+				<td>Pastes unformatted text by stripping the formatting from the copied text. When pasted, the target text will retain its text formatting.</td>
+			</tr>
+			<tr class="win32">
+				<td>Paste Special</td>
+				<td>Pastes copied content into and out of your Affinity app using a choice of clipboard formats that show dynamically by the type of content copied externally or within Affinity.</td>
+			</tr>
+		</table>
+		
+	<x-win32>
+		<h2>About Paste Special</h2>
+	
+		<p>When using <span class="ui">Paste Special</span> you will be offered a choice of clipboard formats to use for pasting. These options are dependent on the type of content copied and will dynamically change accordingly.</p>
+		
+		<p>For example, for copied curves and shapes your formats are:</p>
+			<ul>
+				<li>image/x-inkscape-svg <sup>1</sup></li>
+				<li>SVG <sup>1</sup></li>
+				<li>Portable Document Format</li>
+				<li>PNG</li>
+				<li>Device Independent Bitmap</li>
+				<li>Serif Persona Nodes <sup>2</sup></li>
+			</ul>
+			
+		<p>For text, the available choices will be different, and may include:</p>
+			<ul>
+				<li>Unicode text</li>
+				<li>Rich Text Format</li>
+				<li>Serif Persona Story <sup>2</sup></li>
+			</ul>
+			
+		<p><sup>1</sup> These clipboard formats are available when <span class="ui">Copy items as SVG</span> is enabled via <span class="ui">Preferences&gt;General</span>.</p>
+		<p><sup>2</sup> These are proprietary Affinity formats that retain the highest level of fidelity to the original copied object. This format is used by default when copying and pasting between Affinity apps.</p>
+	</x-win32>
+	
+		</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To copy objects:</summary>
+
+			<ol>
+				<li>Select one or more objects.</li>
+				<li>From the <span class="ui">Edit</span> menu, select <span class="ui">Copy</span>.</li>
+			</ol>
+		</details>	
+	
+		<details open="open">
+			<summary>To paste objects:</summary>
+
+			<ol>
+				<li>Select one or more objects.</li>
+				<li>From the <span class="ui">Edit</span> menu, select one of the paste options.</li>
+			</ol>
+		</details>
+
+		<aside class="box note">
+			<p>*Alternatively, you can cut (rather than copy) the object. From the <span class="ui">Edit</span> menu, select <span class="ui">Cut</span>.</p>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="target.html">Targeting objects</a></li>
+			<li><a href="../Layers/layerClip.html">Layer clipping</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

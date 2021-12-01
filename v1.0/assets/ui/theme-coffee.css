@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+/* THEME-coffee:
+dark      = #191515
+base      = #211C1C
+light     = #443b3b
+accent    = #4e3f3f
+primary   = #443737
+highlight = #E5c300
+shade1
+shade2
+shade3
+shade4
+*/
+.theme-coffee .fill-dark{ background-color: #191515;}
+.theme-coffee .fill-base{ background-color: #211C1C;}
+.theme-coffee .fill-light{ background-color: #443b3b;}
+.theme-coffee .fill-accent{ background-color: #E5c300;}
+.theme-coffee .fill-primary{ background-color: #7e6262;}
+.theme-coffee .fill-highlight{ background-color: #724a4a;}
+
+.theme-coffee .stroke-dark{ border-color: #191515;}
+.theme-coffee .stroke-base{ border-color: #211C1C;}
+.theme-coffee .stroke-light{ border-color: #3f3f3f;}
+.theme-coffee .stroke-accent{ border-color: #E5c300;}
+.theme-coffee .stroke-primary{ border-color: #7e6262;}
+.theme-coffee .stroke-highlight{ border-color: #724a4a;}
+
+.theme-coffee .text-dark{ color: #191515;}
+.theme-coffee .text-base{ color: #211C1C;}
+.theme-coffee .text-light{ color: #443b3b;}
+.theme-coffee .text-accent{ color: #E5c300;}
+.theme-coffee .text-primary{ color: #7e6262;}
+.theme-coffee .text-highlight{ color: #724a4a;}

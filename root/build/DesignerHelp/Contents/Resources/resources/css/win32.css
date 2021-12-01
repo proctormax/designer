@@ -1,0 +1,3 @@
+x-ios, x-osx, .ios, .osx {
+  display: none !important;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="refining edges, selection, refine" />
+	<meta name="description" content="Refine the edges of your pixel selections using various settings." />
+	<title>Refining pixel selection edges</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Refining pixel selection edges</h1>
+
+		<p>Once a selection has been created, you can refine its edges to ensure your selection is as accurate as needed.</p>
+		<p>For very fine selection, e.g. of hair against a colored background, use an adjustment brush as part of the refinement to 'brush-in' fine detail.</p>
+	</header>
+
+	<section class="settings">
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted from the dialog:</p>
+		<ul>
+			<li><span class="ui">Preview</span>&#8212;sets the way your selection and page display. Select from the pop-up menu.</li>
+			<li><span class="ui">Matte Edges</span>&#8212;when selected (default), the selection area closely follows image edges. If this option is off, selection doesn't follow image edges which is useful for more accurately refining straight selection edges.</li>
+			<li><span class="ui">Border width</span>&#8212;expands the selection by adjusting the width of its border. Drag the slider to set the value.</li>
+			<li><span class="ui">Smooth</span>&#8212;determines the curvature of the selection's edge. Drag the slider to set the value.</li>
+			<li><span class="ui">Feather</span>&#8212;determines the softness (opacity) of the transition at the edge of the selection. Drag the slider to set the value.</li>
+			<li><span class="ui">Ramp</span>&#8212;In areas where there is a gradual&#160;transition from&#160;opaque to transparent pixels it makes the transition sharper and moves the selection in or out, depending on which direction you drag the slider. Fully opaque and fully transparent pixels are unaffected.</li>
+			<li><span class="ui">Adjustment brush</span>&#8212;determines the adjustment brush's refinement mode.<ul>
+					<li><span class="ui">Matte</span>&#8212;re-analyses the selection and attempts to separate foreground detail from the background. Great for selecting hair at the edges of photos, etc.</li>
+					<li><span class="ui">Foreground</span>&#8212;adds to the selection (revealing more of the foreground).</li>
+					<li><span class="ui">Background</span>&#8212;deletes from the selection (revealing more of the background).</li>
+					<li><span class="ui">Feather</span>&#8212;softens the alpha edge of the selection.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Width</span>&#8212;sets the width of the brush tip. Type directly in the text box or drag the pop-up slider to set the value.</li>
+			<li><span class="ui">Output</span>&#8212;determines how the selection is applied upon exiting the dialog. Select from the pop-up menu.<ul>
+					<li><span class="ui">Selection</span>&#8212;applies the refinement directly to the selection.</li>
+					<li><span class="ui">Mask</span>&#8212;applies the refinement to the selection as a mask.</li>
+					<li><span class="ui">New Layer</span>&#8212;applies the refinement to the selection in a new layer.</li>
+					<li><span class="ui">New Layer With Mask</span>&#8212;applies the refinement to the selection as a mask in a new layer.</li>
+				</ul>
+			</li>	
+		</ul>
+		
+	</section>
+	
+	<section class="howto">
+		<details open="open">
+			<summary>To refine pixel selection edges:</summary>
+			<ol>
+				<li>Do one of the following:<ul>
+						<li>From any selection tool's context toolbar, click <span class="ui">Refine</span>.</li>
+						<li>From the <span class="ui">Select</span> menu, select <span class="ui">Refine Edges</span>.</li>
+					</ul>
+				</li>
+				<li>Adjust the settings in the dialog.</li>
+				<li>If you wish to adjust the selection edges by painting, drag on the preview.</li>
+				<li>Click <span class="ui">Apply</span>.</li>
+			</ol>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="selections_create.html">Creating pixel selections</a></li>
+			<li><a href="selections_modify.html">Modifying pixel selections</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

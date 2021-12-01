@@ -1,0 +1,106 @@
+/*
+<span class="action icn_cursor_moveHorizontal"></span>
+<span class="A334"></span>
+*/
+.actions{
+  display: inline-block;
+  background-color: #262626;
+}
+.actions > section{
+  padding: 4pt;
+  width: 360pt;
+  display: none;
+}
+.actions > section> .group-content{
+  color: white;
+  margin-top: 5pt;
+}
+
+.actions > .active{
+  display: block;
+}
+
+.caction_ {
+  position: relative;
+  color: #333;
+  overflow: hidden;
+  background-color: #222;
+  border: solid 1px #4442;
+  padding: 0;
+}
+.caction{
+  display: inline-block;
+  width:  24px;
+  height: 24px;
+  margin-top: 2pt;
+  margin-left: 1pt;
+  border-radius: 3px;
+}
+.caction:hover
+{
+  border-color: #1115;
+  overflow: visible;
+}
+.caction.active
+{
+  background-color: #1115;
+}
+
+.caction:hover>span{
+  z-index: 999999;
+  display: block;
+}
+.caction >span{
+  display: none;
+  padding: 5px;
+  background-color: #222;
+  position: absolute;
+  top: 150%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  box-shadow: 0 1px 5px 1px rgba(0,0,0,0.5);
+  width: auto;
+  display: none;
+  color: #fff;
+}
+
+#toolsbox .caction{
+  float: left;
+}
+* > .caction{
+  clear: both;
+  width:  20px;
+  height: 20px;
+  margin: 2pt;
+  padding: 1pt;
+  box-sizing: content-box;
+  text-align: center;
+}
+.caction:not(.active):not(:hover){
+  background-color: transparent;
+}
+.caction>.icn{
+  position: relative;
+  overflow: hidden;
+  padding-top: 0pt;
+}
+.caction::before{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.caction.tight{
+  margin: none !important;
+  display: inline;
+}
+.caction.tight > .icn{
+  margin: none !important;
+  padding: none !important;
+}
+.caction.tight > .icn::before{
+  margin: none !important;
+}
+.caction.tight > .icn::before{
+  transform: translateY(25%);
+}

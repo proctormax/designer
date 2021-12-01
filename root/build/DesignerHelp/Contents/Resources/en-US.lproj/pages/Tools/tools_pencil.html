@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="pencil, raster, tool, vector, lines, shapes" />
+	<meta name="description" content="The Pencil Tool allows you to create hand-drawn lines and shapes." />
+	<title>Pencil Tool</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1><img src="../../../shared/ui/pencil_tool.png" class="tool heading" width="18" height="18" alt="Pencil tool" /> Pencil Tool</h1>
+
+		<p>With the <span class="ui">Pencil Tool</span> you can create a hand-drawn look by drawing freehand, variable width, lines as if you were drawing on paper.</p>
+
+	</header>
+	
+	<figure>
+		<p><img src="../../../shared/pencil_example.png" alt="Pencil Tool" /></p>
+		<figcaption>Stabilised pencil strokes.</figcaption>
+	</figure>
+
+	<section class="about">
+	
+		<p>As you draw, nodes are created automatically along the stroke which can optionally be smoothed as you draw by enabling the <span class="ui">Stabiliser</span> feature. A <span class="ui">Sculpt</span> mode also lets you reform or continue your pencil stroke at any time, although you can use the <span class="ui">Node Tool</span> to edit too. When using a combination of sculpting and Use Fill, you can form conjoined pencil strokes that can take a fill with the stroke's concave area.</p>
+
+		<p>Its variable width lines can be controlled either by velocity&#8212;most useful when drawing with a mouse&#8212;or by pressure&#8212;for use when drawing with a pressure sensitive pen tablet.</p>
+
+		<h2>Adjusting the tool's appearance</h2>
+		
+		<p>Line styles are applied using the <span class="ui">Stroke</span> panel. For brush textures, pick a brush from the <span class="ui">Brushes</span> panel.</p>
+
+	</section>
+
+	<section class="settings">
+		<h3>Settings</h3>
+		
+		<p>The following settings can be adjusted from the context toolbar:</p>
+			<ul>
+				<li><span class="ui">Stroke</span>&#8212;the color of your stroke. Click the color swatch to select from solid colors, a picked color, color gradients or from your preset or custom color swatches.</li>
+				<li><span class="ui">Width</span>&#8212;the line thickness in points. Type directly in the text box or drag the pop-up slider to set the value.</li>
+				<li><span class="ui">Sculpt</span>&#8212;when enabled, any selected pencil stroke can be reshaped or continued; the former by drawing new start and end stops anywhere along the pencil stroke, the latter by drawing from either stroke end node.</li>
+				<li><span class="ui">Controller</span>&#8212;controls whether the tool is sensitive to real pressure ('Pressure') or speed of mouse movement ('Velocity' or 'Inverse Velocity'). Select 'None' to use neither.</li>
+				<li><span class="ui">Stabilizer</span>&#8212;enables stroke stabilization using either a <span class="ui">Rope stabilizer</span> or <span class="ui">Window stabilizer</span> mode; the former drags the stroke end by a 'rope' to smooth the stroke but lets you introduce sharp corners at increasing rope <span class="ui">Length</span> (radius) values by redirecting the slackened rope; the latter will smooth the stroke by averaging sampled input positions within a <span class="ui">Window</span> whose size is configurable.</li>
+				<li><span class="ui">Use Fill</span>&#8212;when checked, the concave area of the stroke is filled with the currently set fill color (from <span class="ui">Color</span> panel) as you draw. In Sculpt mode, continuing strokes remains as one object, which allows the fill to be applied along the stroke's length.</li>
+			</ul>
+		
+	</section>
+	
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../CurvesShapes/draw_linesAndShapes.html">Draw curves and shapes</a></li>
+			<li><a href="../CurvesShapes/edit_linesAndShapes.html">Edit curves and shapes</a></li>
+			<li><a href="tools_node.html">Node Tool</a></li>
+			<li><a href="../Tools/tools_Brush.html">Vector Brush Tool</a></li>
+			<li><a href="tools_pen.html">Pen Tool</a></li>
+			<li><a href="../Panels/strokePanel.html">Stroke panel</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=tools">Keyboard shortcuts for tools</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

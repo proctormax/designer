@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="cusp, fillet, chamfer, scallop" />
+	<meta name="description" content="The Corner tool rounds sharp corners on any closed shape." />
+	<title>Cornering shapes</title>
+</head>
+
+<body>
+	<header>
+
+		<h1>Cornering shapes</h1>
+
+		<p>Cornering lets you selectively round sharp corners on closed shapes.</p>
+
+		<p><img src="../../../shared/corner_example.png" class="responsive" alt="Corner example" /></p>
+	</header>
+
+	<section class="about">
+
+		<p>Ideal for rounding corners on geometric shapes or on closed shapes drawn with the Pen tool, the tool let you selectively apply cornering as and when you need it. A pre-requisite is that the corner must be a sharp corner, so geometric shapes such as polygons, stars, and triangles are great candidates for corner rounding.</p>
+		<p>Using an on-screen red &#34;shaping&#34; ring you can control the size of the corner by dragging; the corner will shape itself around the ring's circumference for precise and perfect results. You'll see the ring only as you drag from a sharp corner node.</p>
+		
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/cornertool.png" class="tool heading" width="18" height="18" alt="Corner Tool" /> To create a rounded corner:</summary>
+			<ol>
+				<li>From the <span class="ui">Tools</span> panel, select the <span class="ui">Corner Tool</span>.</li>
+				<li>(Optional) Adjust the context toolbar settings.</li>
+				<li>Hover over the sharp corner node to be rounded and drag inwards or outwards. A ring is shown around which the corner will be automatically rounded. The more you drag, increasing the radius, the more pronounced the corner.</li>
+			</ol>
+
+			<aside class="box tip">
+				<p>You can apply rounded corners simultaneously to multiple nodes that have been selected previously.</p>
+			</aside>
+			
+			<aside class="box note">
+				<p>Applying a rounded corner to a shape created with any of Affinity's Shape tools will convert that shape to curves. From that point, you won't be able to make use of the Shape tool's inherent 'morphing' behavior.</p>
+			</aside>
+
+		</details>
+
+		<details open="open">
+			<summary>To edit a rounded corner:</summary>
+			<ol>
+				<li>Select the shape.</li>
+				<li>Click on the sharp corner node. (Although the corner is already rounded, the original shape's outline is retained.)</li>
+				<li>Drag the center of the ring to resize the corner as needed.</li>
+			</ol>
+
+			<aside class="box tip">
+				<p>By default, the shape's outline is not affected by the tool (apart from at the corner). However, dragging the shape's outline with the <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> pressed will reshape the shape; the corner radius is not affected by reshaping.</p>
+			</aside>
+
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Tools/tools_corner.html">Corner Tool</a></li>
+			<li><a href="about_geometricShapes.html">About geometric shapes</a></li>
+			<li><a href="edit_linesAndShapes.html">Edit curves and shapes</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

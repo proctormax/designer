@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="grouping objects, groups" />
+	<meta name="description" content="Group objects together for easier management." />
+	<title>Grouping objects</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Grouping objects</h1>
+		<p>Objects can be grouped together to assist with design composition. One or more groups can also belong to a 'parent' group.</p>
+		
+		<figure>
+			<div class="single"><img src="../../../shared/grouping_objects.png" alt="Grouped objects" /></div>
+			<figcaption></figcaption>
+		</figure>
+
+	</header>
+
+	<section class="about">
+	
+		<p>Grouped objects remain together so they can be easily selected, moved, copied, and edited as if they are a single object.</p>
+		<p>Groups, and nested groups, can be broken apart at a later date into their separate components or objects. Ungrouping can be activated on individual groups, or across multiple or nested groups using a single command.</p>
+		<p>Furthermore, a group can be converted to layer at a later date (if needed) to assist with design organization.</p>
+		
+		<aside class="box note">
+			<p>Grouped objects display as nested Group layers on the <span class="ui">Layers</span> panel.</p>
+		</aside>
+		
+		<x-osx>
+			<aside class="box tip">
+				<p>To select nested content directly from the document view, select the <span class="ui">Move Tool</span>, then hold the <span class="CTRL-TAG"></span> and <span class="CMD-TAG"></span> <span class="KEY-TAG"></span>s and click an object in the view. From the contextual menu that appears, select any content contained in the same group as (or deeper than) the object you clicked.</p>
+			</aside>
+		</x-osx>
+
+		<x-win32>
+			<aside class="box tip">
+				<p>To select nested content directly from the document view, select the <span class="ui">Move Tool</span>, then hold the <span class="CMD-TAG"></span> <span class="KEY-TAG"></span> and right-click an object in the view. From the contextual menu that appears, select any content contained in the same group as (or deeper than) the object you clicked.</p>
+			</aside>
+		</x-win32>		
+	</section>
+
+
+	<section class="howto">
+		<details open="open">
+			<summary>To create a group:</summary>
+			<ol>
+				<li>Select multiple objects.</li>
+				<li>Do one of the following:<ul>
+						<li>On the context toolbar, click <span class="ui">Group</span>.</li>
+						<li>From the <span class="ui">Layer</span> menu, select <span class="ui">Group</span>.</li>
+					</ul>
+				</li>
+			</ol>
+		</details>
+		
+		<details open="open">
+			<summary>To ungroup objects:</summary>
+			<ol>
+				<li>Select the group.</li>
+				<li>Do one of the following:<ul>
+						<li>On the context toolbar, click <span class="ui">Ungroup</span>.</li>
+						<li>From the <span class="ui">Layer</span> menu, select <span class="ui">Ungroup</span>.</li>
+					</ul>
+				</li>
+			</ol>
+		</details>
+		
+		<details open="open">
+			<summary>To release a grouped object:</summary>
+			<ol>
+				<li>Select the object you wish to move out of the group.</li>
+				<li>Right click on the object in the <span class="ui">Layers</span> panel, and from the menu, choose <span class="ui">Release</span>.</li>
+			</ol>
+		</details>
+
+		<details open="open">
+			<summary>To ungroup all grouped objects:</summary>
+			<ol>
+				<li>Select grouped objects.</li>
+				<li>From the <span class="ui">Layer</span> menu, select <span class="ui">Ungroup All</span>.</li>
+			</ol>
+			
+			<aside class="box note">
+				<p>All groups and nested groups are ungrouped, leaving all previously grouped objects as separate, single objects.</p>
+			</aside>
+			
+		</details>
+		
+		<details open="open">
+			<summary>To select objects (or groups) in a group:</summary>
+			<ul>
+				<li>Double-click on the object. If the object itself is in a group, the group will be selected first&#8212;double-clicking again will select the object.</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+			<summary>To promote a group to a layer:</summary>
+			<ul>
+				<li>From the <span class="ui">Layer</span> menu, select <span class="ui">Promote Group to Layer</span>.</li>
+			</ul>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="target.html">Targeting objects</a></li>
+			<li><a href="../Panels/layersPanel.html">Layers panel</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=objectControl">Keyboard shortcuts for object control</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

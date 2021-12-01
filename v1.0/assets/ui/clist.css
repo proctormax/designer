@@ -1,0 +1,54 @@
+.clist{
+  position: relative;
+  display: block;
+  width: auto;
+  height: auto;
+  cursor: default;
+  border: 0px solid #2225;
+}
+.clist.beveled{
+  border-radius:0 0 3px 3px;
+}
+
+.clist > .cli:last-child{
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.clist > .cli:first-child{
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.clist > .cli{
+  width: auto;
+  height: auto;
+  position: relative;
+  display: block;
+  padding: 2pt 6pt;
+  clear: both;
+  color: white;
+}
+
+.clist.masked{
+  z-index: 999999;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.icon-tiny > .icn{
+  width: 12px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  display: block;
+  float: right;
+  margin-top: 2pt;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.icon-tiny > .icn::before{
+  transform: translateX(-20%);
+}
+.icon-tiny > .icn::before{
+  background-size: 5px 4px;
+  background-position: center center;
+}

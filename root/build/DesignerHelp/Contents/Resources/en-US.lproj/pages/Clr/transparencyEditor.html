@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="transparency editor" />
+	<meta name="description" content="The Transparency Editor dialog lets you customize transparency gradients for object fills and strokes." />
+	<title>Transparency editing</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Transparency editing</h1>
+
+		<p>Using the same principles as gradient editing, transparency editing lets you customize a gradient but just on the alpha channel in your design. This allows for more complex transparency gradients to be made, and then applied to object fills and strokes.</p>
+
+		<p>You can introduce more than two alpha levels along the gradient path, adjust where each stop is positioned and/or control alpha transitions. You can do this in two ways.</p>
+
+			<ul>
+				<li>Directly on the object.</li>
+				<li>Via the tool's context toolbar.</li>
+			</ul>
+
+		<p>Using the former, you modify the transparency gradient by eye; the latter lets you design with precision and absolute control.</p>
+
+		<figure>
+			<p><img src="../../images/transparency.png" class="screenshot responsive" alt="Transparency example" /></p>
+			<figcaption>Complex gradient applied directly on the object and then adjusted using the pop-up panel from the context toolbar.</figcaption>
+		</figure>
+	</header>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted in the dialog:</p>
+
+		<ul>
+			<li><span class="ui">Type</span>&#8212;determines the gradient type used. Select from the pop-up menu.</li>
+			<li><span class="ui">Position</span>&#8212;controls the position of the stop along the gradient from left (0%) to right (100%), with 50% representing a central point.</li>
+			<li><span class="ui">Mid Point</span>&#8212;adjusts the alpha spread between the selected stop and the stop to its right.</li>
+			<li><span class="ui">Opacity</span>&#8212;controls how see through the stop is. 100% represents fully opaque, 0% represents fully transparent.</li>
+			<li><span class="ui">Insert</span>&#8212;adds a new stop between the selected stop and the stop to its right. The stop adopts an alpha level at its new position.</li>
+			<li><span class="ui">Copy</span>&#8212;duplicates the selected stop, positioning it between the selected stop and the stop to its right.</li>
+			<li><span class="ui">Delete</span>&#8212;removes the selected stop from the gradient.</li>
+			<li><span class="ui">Reverse</span>&#8212;the gradient is reversed, i.e. like a mirror image.</li>
+
+		</ul>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+		<summary>To modify the gradient (directly on an object):</summary>
+			<ul>
+				<li>See the <a href="gradientEditor.html">Gradient editing</a> topic for the procedure but use the Transparency Tool instead of the Fill Tool.</li>
+			</ul>
+		</details>
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To modify the gradient directly (via context toolbar):</summary>
+				<ul>
+					<li>See the <a href="gradientEditor.html">Gradient editing</a> topic for the procedure but use the Transparency Tool instead of the Fill Tool.</li>
+				</ul>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="transparency.html">Transparency</a></li>
+			<li><a href="gradientEditor.html">Gradient editing</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

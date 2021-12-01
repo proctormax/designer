@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="embed, embedded, link, image, picture, media, photo, missing, PSD, Adobe, AI, PostScript, FH" />
+	<meta name="description" content="A look at embedding vs linking of resources." />
+	<title>Embedding vs linking</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Embedding vs linking</h1>
+
+		<p>When placing content you have control over whether files are embedded within the document or linked from their original disk locations.</p>
+		
+ 
+		<figure>
+			<p><img src="../../../shared/embedded_vs_linking.png" class="responsive" alt="Embedding vs linking" /></p>
+			<figcaption></figcaption>
+		</figure>
+
+	</header>
+
+	<section class="about">
+		<h2>Embedding</h2>
+		<p>A copy of the original file is embedded into the document. As a result, there is no means of checking if the original file is modified at a later date, but the file will be kept with the document when it is moved.</p>
+		
+		<h2>Linking</h2>
+		<p>Instead of embedding, a link is created between the document and the file on disk to allow it to update (via Resource Manager) if changed on disk. The linked file is never stored in the document.</p>
+		<p>If one or more linked files have been moved or renamed since you last opened your document, you'll be prompted to locate the file the next time the document is opened.</p>
+		
+	<aside class="box tip">
+		<p>It's good practice to keep your linked files in a subfolder within your documents folder. Not only does it keep your images in one place for easier management, but if you move your project to a new location, the links to your files will always be maintained.</p>
+	</aside>
+		
+		<h2>File sizes and embedding/linking</h2>
+		
+		<p>Embedding resources means the document is portable at the expense of a greater file size&#8212;all the resources are stored in the document. Linked resources give a much smaller document file size as only link information is stored.</p>
+		
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To set the default content placement policy:</summary>
+				<ol>
+					<li>From the <span class="ui">File</span> menu, click <span class="ui">New</span>.</li>
+					<li>From the dialog, choose an <span class="ui">Image Placement Policy</span>. The <span class="ui">Prefer Embedded</span> option stores the file in your document; <span class="ui">Prefer Linked</span> does not embed but maintains a link to the file, still in its original location.</li>
+				</ol>
+		<p>You can change the policy at any time via <span class="ui">File&gt;Document Setup</span>.</p>
+		</details>
+
+		<details open="open">
+			<summary>To automatically update linked content:</summary>
+				<ol>
+					<li class="osx">From the <span class="ui">Affinity Designer</span> menu, select <span class="ui">Preferences</span>.</li>
+					<li class="win32">From the <span class="ui">Edit</span> menu, select <span class="ui">Preferences</span>.</li>
+					<li>On the <span class="ui">General</span> tab, check <span class="ui">Automatically update linked resources when modified externally</span>.</li>
+				</ol>
+
+		</details>	
+
+		<details open="open">
+			<summary>To change an embedded file to a linked file:</summary>
+				<ol>
+					<li>From the <span class="ui">View</span> menu, select <span class="ui">Resource Manager</span>.</li>
+					<li>From the manager, select the file to be linked and click <span class="ui">Make linked</span>.</li>
+					<li>Use the dialog to navigate to a folder to which you want the embedded file to be saved out to and click <span class="ui">Link</span>.</li>
+				</ol>
+
+		<aside class="box note">
+			<p>If an embedded file is made linked its location will be remembered unless it has since been moved.</p>
+		</aside>
+		
+		<aside class="box note">
+			<p>When replacing placed content using the <span class="ui">Replace Image</span> or <span class="ui">Replace Document</span> options on the context toolbar, clicking <span class="ui">Options</span> on the file browser window that appears allows you to choose a placement option for your replacement file. The placement option you select will override the document's <span class="ui">Image Placement Policy</span> in this instance.</p>
+		</aside>
+
+		</details>	
+		
+		<aside class="box prefs">
+			<h3>Preferences</h3>
+			<p>Related behaviors can be adjusted from <a href="../Workspace/preferences.html">the app's preferences</a>:</p>
+			<ul>
+				<li><span class="ui">General&gt;Automatically update linked resources when modified externally</span></li>
+			</ul>			
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="placeImages.html">Placing content</a></li>
+			<li><a href="../Tools/tools_placeimage.html">Place Image Tool</a></li>
+			<li><a href="../Media/resourceManager.html">Resource Manager</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

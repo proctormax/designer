@@ -1,0 +1,85 @@
+
+.ctab{
+  display: inline-block;
+  user-select: none;
+  border-color: transparent;
+  border-style: solid;
+}
+
+tabs{
+  position: relative;
+  display: block;
+}
+tabs > item{
+  position: relative;
+}
+tabs.horizontal > item{
+  display: inline-block;
+}
+tabs.vertical > item{
+  display: block;
+  width: auto;
+}
+
+.ctab.active{
+  color: ghostwhite;
+}
+.ctab:not(.active):hover{
+  color: white;
+}
+.active-border > .active{
+  border-color:#159;
+}
+.active-border-top > .active{
+  border-top-color:#159;
+}
+.active-border-bottom > .active{
+  border-bottom-color:#159;
+}
+.active-border-left > .active{
+  border-left-color:#159;
+}
+.active-border-right > .active{
+  border-right-color:#159;
+}
+
+.active-filled > .active,
+.active-filled-base > .active,
+.active-filled-dark > .active,
+.active-filled-light > .active,
+.active-filled-accent > .active,
+.active-filled-primary > .active,
+.behavior-tabular,
+.behavior-toggle,
+.behavior-menu,
+.tab-items item{
+  position: relative;
+}
+.items_padded > item{
+ padding: 4px;
+}
+.items_spaced > item{
+ margin: 4px;
+}
+.ctabbar{
+  cursor: default;
+  position: relative;
+  display: block;
+}
+.ctab-content{
+  position: relative;
+  display: block;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+.ctab-content > .ctab-page{
+  display: none;
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+.ctab-content.all > .ctab-page,
+.ctab-content > .ctab-page.ctab-active{
+  display: block;
+}

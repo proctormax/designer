@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="stylus, brush, pressure" />
+	<meta name="description" content="Use a pen tablet, Force Touch device or simulated pressure via mouse for pressure-sensitive line and brush work" />
+	<title>Pressure sensitivity</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Pressure sensitivity</h1>
+
+		<x-osx><p>Affinity Designer offers complete flexibility when using pen tablets or Force Touch-enabled devices for real pressure-sensitive drawing and painting. If you prefer a mouse or trackpad (not Force Touch), Affinity Designer offers simulated pressure sensitivity.</p></x-osx>
+
+		<x-win32><p>Affinity Designer offers complete flexibility when using pen tablets for real pressure-sensitive drawing and painting. If you prefer a mouse, Affinity Designer offers simulated pressure sensitivity.</p></x-win32>
+		
+	</header>
+
+
+	<section class="about">
+		<p>Whether you're using vector-based Pen, Pencil or Brush tools, or pixel-based Brush or Retouch tools, you can simply connect your device and you're ready to go.</p>
+		<p>For mouse users, Affinity Designer lets your mouse become velocity sensitive by default. The same brush tools can be used but with simulated pressure sensitivity based on the speed (velocity) of your mouse movements.</p>
+		<p>This automatic response is governed by the brush controller which is set to automatic by default&#8212;it senses the type of input device and varies brush size, flow, etc. as you paint according to a particular input: 'Pressure', 'Velocity', 'Brush Defaults', or 'None'. If set to 'None', the brush is always a fixed size, flow setting, etc. Otherwise, the brush stroke properties will vary from a minimum to maximum amount (e.g. the full brush width).</p>
+		<p>While you get the response you need from either input, you'll still be able to fine-tune brush settings for pressure/velocity.</p>
+			<ul>
+				<li>For vector brush settings: jitter options let you control how brush size and flow are affected by your pressure-sensitive device or mouse.</li>
+				<li>Pixel brush settings: as for vector brush options, but additional jitter options are provided that affect brush hardness, shape, color, and the scatter and rotation of nozzles.</li>
+			</ul>
+		<p>If you want to create a custom pressure profile that can be applied to a previously drawn stroke, you can design it and apply it from the Stroke panel. This can be optionally saved as is, or modified before saving.</p>
+
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary>To create a pressure profile:</summary>
+			
+			
+				<ol>
+					<li>On the <span class="ui">Stroke</span> panel, click the <span class="ui">Pressure</span> input box.</li>
+					<li>Using the displayed chart, do one of the following:<ul>
+							<li>Drag either end node downwards to reduce the stroke width uniformly along the stroke length.</li>
+							<li>Select either end node twice (or press the <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span>), then drag it downwards to taper the stroke in that direction. The stroke will taper linearly.</li>
+							<li>Drag either end node downwards, then click halfway along the profile line to add a node which can be dragged upwards to taper the stroke according to the curvature of the graph.</li>
+							<li>Drag either end node downwards, then click repeatedly along the profile line to add multiple nodes which can be positioned vertically and horizontally to form a variable width stroke.</li>
+						</ul>
+					</li>
+					<li>Begin drawing your pen or pencil strokes.</li>
+				</ol>				
+				<figure>
+					<p><img src="../../../shared/panel_stroke_pressureprofilequad.png" class="screenshot responsive" width="640" alt="Pressure profile" /></p>
+					<figcaption>Example pressure profiles created via instructions above, all superimposed with expected stroke.</figcaption>
+				</figure>
+		</details>
+
+		<details open="open">
+			<summary>To save a pressure profile:</summary>
+				<ul>
+					<li>Under the chart, click <span class="ui">Save Profile</span>. The profile shows under the chart.</li>
+				</ul>
+		</details>
+
+		<details open="open">
+			<summary>To apply a custom pressure profile to a selected stroke:</summary>
+				<ol>
+					<li>From the <span class="ui">Stroke</span> panel, click the <span class="ui">Pressure</span> option.</li>
+					<li>Select a custom profile from below the chart. The chart will update, showing the chosen profile.</li>
+				</ol>
+				<figure>
+					<p><img src="../../images/panel_stroke_pressureprofile.png" class="screenshot responsive" width="413" height="465" alt="Custom pressure profile" /></p>
+				</figure>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="painting.html">Painting brush strokes</a></li>
+			<li><a href="pixel_painting.html">Painting pixel brush strokes</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

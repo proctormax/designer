@@ -1,0 +1,221 @@
+ui_move_tool:{    
+  selectionToolbar
+}
+ui_artboardtool:{
+  artboardToolbar
+}
+ui_node_tool:{
+  fillToolbar
+  -----------------------------
+  strokeToolbar  
+  -----------------------------
+  convertNodeToolbar
+  -----------------------------
+  nodeActionToolbar
+  -----------------------------
+  snapNodeToolbar  
+}
+ui_corner_tool:{
+  fillToolbar
+  -----------------------------
+  strokeToolbar  
+  -----------------------------
+  cornerTypeToolbar
+  -----------------------------
+  cornerRadiusToolbar  
+  -----------------------------
+  bakeCorners  
+}
+ui_pencil_tool:{
+  fillToolbar:CWidget
+  -----------------------------
+  strokeToolbar:CWidget  
+  -----------------------------
+  penModeToolbar:CWidget
+  -----------------------------
+  convertNodeToolbar:CWidget  
+  -----------------------------
+  nodeActionToolbar:CWidget  
+  -----------------------------
+  nodeSnapToolBar:CWidget
+  -----------------------------
+  nodeUseFill:CWidget  
+}
+ui_vector_pen_tool:{
+  strokeToolbar  
+  -----------------------------
+  ropeModeToolbar
+  -----------------------------
+  nodeUseFill
+}
+ui_vector_brush:{
+  @strokeToolbar:
+  CColorInput(Color: #FF9)  
+  -----------------------------
+  @brushToolbar:
+  RANGE( Width: 12%)
+  RANGE( Opacity: 12%)
+  CButton(More: brushDialog)
+  -----------------------------
+  @dragLatency
+  Toggle(Stabilizer: True )
+  Toggles( RopeMode | WindowMode)
+  RANGE( Window: 25)
+  SELECT( Blend Mode: BlendModeType )
+  -----------------------------
+  SELECT( Controller: BrushControllerType )
+ 
+}
+ui_gradient_tool:{
+  SELECT( Context: PaintContextType )
+  SELECT( Type: GradientType )
+  SELECT( fill_rotate_gradient:int )
+  Toggle( fill_reverse_gradient )
+  Toggle( lock_aspect_ratio )
+}
+ui_vector_transparency_tool:{
+  SELECT( Type: GradientType )
+  -----------------------------
+  CColorInput(#194)
+  RANGE(Icon(fill_rotate_gradient))
+  Toggle(Icon(fill_reverse_gradient))
+  Toggle(Icon(lock_aspect_ratio) )
+}
+ui_arttext_tool:{
+  FontInput(Font: Arial)
+  RangeEdit(12pt)
+  SELECT(FontStyleType)
+  Toggles( B | I | U )
+  -----------------------------
+  SELECT(c:CharaterStyleType)
+  SELECT(p:ParagaraphStyleType)
+  -----------------------------
+  SELECT(Icon(text_align_left)|Icon(text_align_center)|Icon(text_align_right)|IconType(TextAlignJustifyType)) 
+  SELECT(" ":VerticalAlignType)
+  -----------------------------
+  BUTTON(Character:charactersPane)
+  BUTTON(Paragraph:paragraphPane)
+  -----------------------------
+  FILL(#899)
+  STROKE(#899|strokeCombo)
+}
+ui_column_marquee_tool:{
+    
+}
+ui_elliptical_marquee_tool:{
+
+}
+ui_frametexttool:{
+
+}
+ui_freehand_selection_tool:{
+
+}
+ui_shape_arrow:{
+
+}
+ui_shape_calloutellipse:{
+
+}
+ui_shape_calloutrectangle:{
+
+}
+ui_shape_cat:{
+
+}
+ui_shape_cloud:{
+
+}
+ui_shape_cog:{
+
+}
+ui_shape_crescent:{
+
+}
+ui_shape_diamond:{
+
+}
+ui_shape_dnut:{
+
+}
+ui_shape_doublestar:{
+
+}
+ui_shape_ellipse:{
+
+}
+ui_shape_heart:{
+
+}
+ui_shape_pie:{
+
+}
+ui_shape_polygon:{
+
+}
+ui_shape_rectangle:{
+
+}
+ui_shape_roundedrectangle:{
+
+}
+ui_shape_segment:{
+
+}
+ui_shape_squarestar:{
+
+}
+ui_shape_star:{
+
+}
+ui_shape_tear:{
+
+}
+ui_shape_trapezoid:{
+
+}
+ui_shape_triangle:{
+
+}
+ui_pantool:{
+
+}
+ui_placeimagetool:{
+
+}
+ui_rectangular_marquee_tool:{
+
+}
+ui_row_marquee_tool:{
+
+}
+ui_slicecreationtool:{
+
+}
+ui_vectorcroptool:{
+
+}
+ui_blurbrushtool:{
+
+}
+ui_burnbrushtool:{
+
+}
+ui_dodgebrushtool:{
+
+}
+ui_sharpenbrushtool:{
+
+}
+ui_smudgebrushtool:{
+
+}
+ui_erase_brush:{
+
+}
+ui_paint_brush:{
+
+}
+ui_selection_brush:{
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="input devices, graphics tablet, pen tablet, WinTab, Windows Ink, stylus" />
+	<meta name="description" content="Use a pen tablet for a natural drawing experience." />
+	<title>Using pen tablets</title>
+</head>
+
+<body>
+
+
+	<header>
+		<h1>Using pen tablets</h1>
+		
+		<p>Using a pen tablet with your Affinity apps provides a more natural drawing experience.</p>
+
+	<figure>
+		<div class="single"><img src="../../../shared/pentablet.png" class="responsive" alt="Pen tablet" /></div>
+		<figcaption></figcaption>
+	</figure>
+
+	</header>
+
+	<section class="about">
+		
+		<h2>Working with pen tablets</h2>
+		
+		<p>Your pen tablet is probably the most common peripheral you will use after your mouse. Tablets enhance the design experience in Affinity products, with the tablet pen (or pen stylus) providing a natural drawing experience, just like a household pen.</p>
+		
+		<aside class="box note">
+			<p>Affinity does not officially support non-Wacom tablets. Please consult the original manufacturer for assistance with their tablet products.</p>
+		</aside>
+	
+		<aside class="box note">
+			<p>For optimal performance, you should ensure you have the latest drivers installed for your pen tablet. To download the latest drivers, visit your tablet provider's website or use a search engine to find drivers for your tablet.</p>
+		</aside>
+
+		<x-osx>
+		<p>Once the latest drivers are installed, it is a good idea to re-calibrate your tablet pen. This can be done from <span class="ui">Apple&gt;System Preferences</span>.</p>
+		</x-osx>
+		
+		<x-win32>
+		<p>Once the latest drivers are installed, it is a good idea to re-calibrate your tablet pen. This can be done from the <span class="ui">Control Panel</span>.</p>
+		</x-win32>
+		
+		<p>Tablet pen capabilities may vary depending on the pen you are using, with pen rotation and stylus wheel settings only supported on certain Wacom pens. For example:</p>
+			<ul>
+				<li>Barrel rotation is supported when using the Wacom Art Pen.</li>
+				<li>The finger wheel is supported for Wacom Airbrush users.</li>
+			</ul>
+
+		<p>For some tablet pens, using the pen's eraser (found on the opposite end of the pen) will activate the <span class="ui">Erase Brush Tool</span>.</p>
+		
+		<h2>Affinity tools and pen tablets</h2>
+		
+		<p>A number of Affinity tools and settings can be used to provide perfect precision when using a pen tablet.</p>		
+		
+		<p>When drawing with a pressure-sensitive pen tablet, the <span class="ui">Pen</span> Tool, <span class="ui">Vector Brush</span> Tool and <span class="ui">Pencil Tool</span> stroke's variable width lines will automatically match the level of pressure applied. This can be controlled by adjusting the <a href="../Painting/pressure.html">pressure sensitivity or pressure profile</a> settings.</p>
+
+		<p>When using the <span class="ui">Paint Brush Tool</span>, a number of <a href="../Painting/pixel_modify.html">controller options</a> on the <span class="ui">Brushes</span> panel can also be adjusted to work alongside your tablet pen.</p>
+		
+		<x-win32>
+		<h2>Tablet input preferences</h2>
+			
+		<p>To adjust the quality of your pen tablet's input when working with Affinity apps, you can use one of the tablet input options.</p>
+		</x-win32>
+		
+	</section>
+
+	<x-win32>
+	<section class="howto">
+		<details open="open">
+			<summary>To set a preferred pen tablet input method:</summary>
+			<ol>
+				<li>From the <span class="ui">Edit</span> menu, select <span class="ui">Preferences</span>.</li>
+				<li>On the <span class="ui">Tools</span> tab, under <span class="ui">Tablet input method</span>, select one of the available input methods.<ul>
+					<li><span class="ui">High Precision</span>&#8212;provides the best quality high-resolution input data from pen tablets that support it. This input method is not compatible with Wacom's Mouse Mode and certain makes of pen tablet.</li>
+					<li><span class="ui">Low Precision</span>&#8212;provides low-resolution input data if results from using High Precision and Windows Ink are not ideal. This is enabled by default.</li>
+					<li><span class="ui">Windows Ink</span>&#8212;provides similar quality to High Precision but is used for tablets which don't support High Precision. Windows Ink mode must be enabled in the tablet driver settings.</li>
+				</ul>
+				</li>
+			</ol>
+		</details>
+	<aside class="box note">
+		<p>Most modern pen tablets can use the <span class="ui">High Precision</span> input method. If you are having performance difficulties when using your tablet, changing the method to <span class="ui">Low Precision</span> may improve this.</p>
+	</aside>
+	
+	</section>	
+	</x-win32>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Workspace/preferences.html">Preferences</a></li>
+			<li><a href="../Painting/pressure.html">Pressure sensitivity</a></li>
+			<li><a href="../Painting/pixel_modify.html">Modifying pixel brushes</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+
+
+</body>
+</html>

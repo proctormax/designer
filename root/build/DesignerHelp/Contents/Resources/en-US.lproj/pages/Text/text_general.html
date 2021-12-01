@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="text, typography, select, selecting, text" />
+	<meta name="description" content="There are three varieties of text, Art, Frame and Path, to give you flexibility when working with typography." />
+	<title>Working with text</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Working with text</h1>
+		<p>There are several varieties of text, Art, Frame, Path and Shape, to give you flexibility when working with typography.</p>
+	</header>
+
+	<section class="about">
+
+		<p>Text objects contain both character and paragraph elements, making it easy to modify standard text attributes such as font, size, format, and alignment. All text types have quick access settings on the context toolbar and supporting panels and dialogs for more extensive, advanced options.</p>
+
+		<p>When <a href="../DesignAids/snapping.html">snapping</a> is switched on, the baseline of the first line in a text object will snap to the baseline of the first line in other text objects.</p>
+
+		<p>When performing text editing, Designer supports all standard text selection and formatting techniques and shortcuts.</p>
+
+		<p>The unique features of artistic text, frame text and path text are discussed in the <a href="artText.html">Artistic text</a>, <a href="frameText.html">Frame text</a>, <a href="pathText.html">Text on a path</a> and <a href="shapeText.html">Shape text</a> topics.</p>
+
+		<aside class="box note">
+			<p>If you're opening Affinity documents or vector images (containing text) from another computer, the original fonts used may be missing from your computer. If so, you'll get a <span class="ui">Document Contains Missing Fonts</span> alert. The font will be substituted for a replacement system font at this time.</p>
+			<p>When text using the missing font is selected in your document, its font name will be prefixed with a '?' on the context toolbar.</p>
+		<x-osx>
+		<p>When opening a document which uses a <em>downloadable</em> font (not installed locally in macOS by default), you'll get a prompt to download it&#8212;simply click <span class="ui">Download</span> to install to macOS. Affinity Designer will then use the installed font as it would with any other font.</p>
+		</x-osx>
+		</aside>
+
+		<aside class="box tip">
+			<p>If you're designing before full copy has been written, you can use placeholder (filler) text within your text frames to help you progress with your project. Filler text can be inserted from the <span class="ui">Text</span> menu.</p>
+		</aside>
+
+		<aside class="box tip">
+			<p>By default, the size of text is expressed in points, regardless of the units set within your document. If you wish text size to reflect document units, this can set in <a href="../Workspace/preferences.html">Preferences</a>.</p>
+		</aside>
+
+		<aside class="box note">
+			<p>By default, all text objects are created with a blend gamma of 1.45. This can be changed in <a href="../Workspace/preferences.html">Preferences&#62;Tools</a> or <a href="../Layers/layerBlendRanges.html">modified for individual objects</a>.</p>
+		</aside>
+		
+		<aside class="box note">
+			<p>If there's too much text to fit in a frame, any overflowing text will be stored in an invisible overflow area. To indicate overflowing text, an adjacent eye icon appears, allowing you to show or hide the overflowing text.</p>
+		</aside>
+		
+		<figure>
+			<div><img src="../../../shared/overflowingtext.png" class="screenshot responsive" alt="Overflowing text" /></div>
+			<figcaption></figcaption>
+		</figure>
+
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/move_tool.png" class="tool" width="18" height="18" alt="Move Tool" /> <img src="../../../shared/ui/arttexttool.png" class="tool" width="18" height="18" alt="Artistic Text Tool" /> <img src="../../../shared/ui/frametexttool.png" class="tool" width="18" height="18" alt="Frame Text Tool" /> To select text objects for formatting:</summary>
+			<ul>
+				<li>With the <span class="ui">Move Tool</span> selected, do one of the following:<ul>
+						<li>Click a text object to make formatting changes to all the text within the text object.</li>
+						<li>Double-click a text object to make formatting changes to sections of text within the text object.</li>
+					</ul>
+				</li>
+				<li>With either of the text tools selected, click a text object to make formatting changes to sections of text within the text object.</li>
+			</ul>
+		</details>
+
+		<details open="open">
+		<summary>To select text on the page:</summary>
+			<p>Do one of the following:</p>
+				<table class="thirtythree">
+					<tr>
+						<th>To select...</th>
+						<th>Action</th>
+						<th>Example</th>
+					</tr>
+					<tr>
+						<td>a single word</td><td>double-click</td><td><img src="../../../shared/text_select_single.png" class="screenshot" alt="Single word select" /></td>
+					</tr>
+					<tr>
+						<td>multiple words</td><td>double-click with the <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> pressed</td><td><img src="../../../shared/text_select_multiple.png" class="screenshot" alt="Multiple word select" /></td>
+					</tr>
+					<tr>
+						<td>a line</td><td>triple-click</td><td><img src="../../../shared/text_select_line.png" class="screenshot" alt="Single line select" /></td>
+					</tr>
+					<tr>
+						<td>a text range</td><td>drag with cursor. Use Shift key to select text between two insertion points.</td><td><img src="../../../shared/text_select_range.png" class="screenshot" alt="Text range select" /></td>
+					</tr>
+					<tr>
+						<td>a paragraph</td><td>quadruple-click</td><td><img src="../../../shared/text_select_paragraph.png" class="screenshot" alt="Single paragraph select" /></td>
+					</tr>
+					<tr>
+						<td>all paragraphs</td><td>quintuple-click</td><td><img src="../../../shared/text_select_all.png" class="screenshot" alt="All paragraph select" /></td>
+					</tr>
+
+				</table>
+		</details>
+		
+		<details open="open">
+		<summary>To move text:</summary>
+			<ul>
+				<li>With a single word, paragraph, or portion of text selected, drag and drop it where you would like to place it.</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+		<summary>To edit text on the page:</summary>
+			<ol>
+				<li>Do one of the following:<ul>
+						<li>Select any text tool, then click (or drag) in the text object. A standard insertion point appears at the click position.</li>
+						<li>Select a single word, paragraph or portion of text (see above).</li>
+					</ul>
+				</li>
+				<li>Type to insert new text or overwrite selected text, respectively.</li>
+			</ol>
+		</details>
+		
+		<aside class="box prefs">
+			<h3>Preferences</h3>
+			<p>Related behaviors can be adjusted from <a href="../Workspace/preferences.html">the app's preferences</a>:</p>
+			<ul>
+				<li><span class="ui">Miscellaneous&gt;Reset Fonts</span></li>
+				<li><span class="ui">User Interface&gt;Show Text in points</span></li>
+				<li><span class="ui">User Interface&gt;Always use white background for Font dropdown</span></li>
+			</ul>			
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="artText.html">Artistic text</a></li>
+			<li><a href="frameText.html">Frame text</a></li>
+			<li><a href="importText.html">Importing text</a></li>
+			<li><a href="pathText.html">Path text</a></li>
+			<li><a href="shapeText.html">Shape text</a></li>
+			<li><a href="characters.html">Character formatting</a></li>
+			<li><a href="paragraphs.html">Paragraph formatting</a></li>
+			<li><a href="../Tools/tools_artText.html">Artistic Text Tool</a></li>
+			<li><a href="../Tools/tools_frameText.html">Frame Text Tool</a></li>
+			<li><a href="../Panels/glyphPanel.html">Glyph Browser panel</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=text">Keyboard shortcuts for working with text</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

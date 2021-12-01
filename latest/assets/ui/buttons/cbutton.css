@@ -1,0 +1,127 @@
+
+.btn-toolbar{
+  user-select: none;
+  cursor: default;
+  border-bottom: 0 solid #111;
+  text-align: justify;
+}
+.btn-group {
+  display: inline-block;
+  margin: 0 4pt;
+  padding: 0 !important;
+  height: auto;
+}
+
+/* @button-size */
+
+.btn-sm > .btn,
+.btn-sm > .btn-group > .btn,
+.btn-sm
+{
+  padding: 2pt 4pt;
+  font-size: 10px !important;
+}
+
+.btn-xs > .btn,
+.btn-xs > .btn-group > .btn,
+.btn.btn-xs
+{
+  padding: 1pt 3pt;
+  font-size: 10px;
+}
+
+.btn-lg > .btn,
+.btn-lg > .btn-group > .btn,
+.btn.btn-lg
+{
+  padding: 8pt 10pt;
+  font-size: 16px;
+}
+.btn-xxl > .btn,
+.btn-xxl > .btn-group > .btn,
+.btn.btn-xxl
+{
+  padding: 18pt 20pt;
+  font-size: 16px;
+}
+.btn-group.scattered .btn{
+  margin: 2pt 4pt;
+}
+
+.btn{
+  font-size: 12px;
+
+  outline: none;
+  border: none;
+
+  color: inherit;
+  cursor: default;
+  position: relative;
+  user-select: none;
+  margin: 0;
+}
+
+.btn-toolbar:not(.btn-flat) > .btn,
+.btn-group:not(.btn-flat) > .btn,
+.btn::before:not(.btn-flat){
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: solid 1px #4445;
+  border-bottom: solid 1px #222;
+}
+
+.btn-toolbar:not(.btn-flat) > .btn::after,
+.btn-group:not(.btn-flat)   > .btn::after,
+.btn:not(.btn-flat)::after{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2pt;
+  left: 0;
+  box-shadow: 0 1px 2px 0px #159;
+  width: 100%;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+
+}
+.btn-group > .btn{
+  display: inline-block;
+  margin-right: -5px;
+}
+
+/* @corners */
+.btn-toolbar:not(.btn-flat) > .btn,
+.btn:not(.btn-flat):first-child{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.btn-toolbar:not(.btn-flat) > .btn:not(.btn-flat),
+.btn:not(.btn-flat):last-child{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+
+/* @button-state */
+.btn:not(.disabled):hover{
+  color: #fff;
+}
+.btn.active:not(.disabled),
+.btn:not(.disabled):active{
+  background-color: #202020;
+  border-color: #111111;
+}
+.block, .btn-toolbar{
+   display: block;
+   font-family: Segoe UI;
+}
+
+.btn.disabled{
+  color: #888;
+}

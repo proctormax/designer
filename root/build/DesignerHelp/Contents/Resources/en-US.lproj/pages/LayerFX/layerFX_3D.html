@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="layer effects, fx, 3D, three dimensional" />
+	<meta name="description" content="The 3D effect is used to create the impression of a textured surface." />
+	<title>3D Effect</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>3D Effect</h1>
+
+		<p>The 3D effect is used to create the impression of a textured surface.</p>
+
+		<figure>
+			<div class="comparison vertical"><img src="../../../shared/layerfx_base.jpg" alt="Before" /><div><img src="../../../shared/layerfx_3deffect_02.jpg" alt="After" /></div>
+			</div>
+		</figure>
+
+	</header>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings are shown on the <span class="ui">Effects</span> panel:</p>
+
+		<ul>
+			<li><span class="ui">Opacity</span>&#8212;controls the transparency of the effect.</li>
+			<li><span class="ui">Radius</span>&#8212;controls the extent of the effect.</li>
+			<li><img src="../../../shared/ui/cogicon.png" class="tool" width="15" height="15" alt="Layers Effects Icon" /> <span class="ui">Layer Effects</span>&#8212;provides access to the <span class="ui">Layer Effects</span> dialog for more advanced settings and controls.</li>
+		</ul>
+
+		<p>The following advanced settings can be adjusted in the <span class="ui">Layer Effects</span> dialog:</p>
+
+		<ul>
+			<li><span class="ui">Depth</span>&#8212;sets the depth of the effect. This can be linked to Radius or set independently.</li>
+			<li><span class="ui">Soften</span>&#8212;blurs the shadows and highlights.</li>
+			<li><span class="ui">Profile</span>&#8212;defines how the light is applied and sculpts the ridges, valleys, and bumps that are shaded in the process.</li>
+			<li><span class="ui">Remove Profile</span>&#8212;returns the profile to the default setting where light is applied evenly.</li>
+			<li><span class="ui">Diffuse</span>&#8212;sets the amount of diffuse color reflected from the object's surface when lit by the <span class="ui">Light source</span>. A high setting will give a matt appearance, while a low setting will give a gloss appearance.</li>
+			<li><span class="ui">Specular</span>&#8212;sets the intensity of specular color reflected from the object's surface when lit by the <span class="ui">Light source</span>. A high setting will give a gloss appearance, while a low setting will give a matt appearance.</li>
+			<li><span class="ui">Shininess</span>&#8212;sets the amount of specular color reflected from the object's surface when lit by the <span class="ui">Light source</span>. A high setting gives sharper highlights, while a low setting will give widespread highlights.</li>
+			<li><span class="ui">Specular color</span>&#8212;sets the specular color. Click the color box to choose the color from the pop-up panel.</li>
+			<li><span class="ui">Ambient</span>&#8212;sets the intensity of ambient light.</li>
+			<li><span class="ui">Ambient light color</span>&#8212;sets the color of the ambient light. Click the color box to choose the color from the pop-up panel.</li>
+			<li><span class="ui">Light source</span>&#8212;select a light source from the pop-up menu. You can then adjust the settings below for the selected light source.</li>
+			<li><span class="ui">Add</span>&#8212;applies an additional light source to the effect.</li>
+			<li><span class="ui">Remove</span>&#8212;deletes the selected light source. If there is only one light source it cannot be removed.</li>
+			<li><span class="ui">Direction</span>&#8212;represents the position of the light source, shadow or gradient. Click or drag to adjust the direction (and set the <span class="ui">Azimuth</span> and <span class="ui">Elevation</span> automatically).</li>
+			<li><span class="ui">Azimuth</span>&#8212;defines the direction of the light source, shadow or gradient.</li>
+			<li><span class="ui">Elevation</span>&#8212;defines the 'height' of the light source.</li>
+			<li><span class="ui">Color</span>&#8212;sets the color of the selected light source. Click the color box to choose the color from the pop-up panel.</li>
+			<li><span class="ui">Scale with Object</span>&#8212;when selected, the effect scales in proportion to the object if the object is resized. If this option is off, the effect's scale remains unchanged when the object is resized.</li>
+			<li><span class="ui">Fill Opacity</span>&#8212;sets the opacity of the layer contents without affecting the applied effects.</li>
+		</ul>
+
+	</section>
+
+	<section class="howto">
+		<details>
+			<summary>To apply a (custom) profile:</summary>
+
+			<ol>
+				<li>Click the Profile thumbnail.</li>
+				<li>In the pop-up panel, choose one of the Standard profiles.</li>
+				<li>(Optional) Click on the curve to add a node, drag to shape the curve.</li>
+				<li>Select the Linear checkbox to create a sharp curve or deselect to create a smooth curve.</li>
+				<li>Click away from the pop-up panel to apply the profile.</li>
+			</ol>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="create_layerFX.html">Using layer effects</a></li>
+		</ul>
+	</section>
+
+	
+	<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="blend mode, blending, layers, multiply, screen, overlay, divide, color burn" />
+	<meta name="description" content="Discussion of how layers can be blended together using the controls on the Layer panel." />
+	<title>Layer blending</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Layer blending</h1>
+
+		<p>A layer's blend mode determines how the layer or object's pixels blend with the pixels on the layer beneath.</p>
+
+		<figure>
+			<div class="single"><img src="../../../shared/layer_blending.png" alt="Blend Modes" /></div>
+			<figcaption>Common blend modes: (A) Normal, (B) Multiply, (C) Screen, (D) Overlay, (E) Color Burn.</figcaption>
+		</figure>		
+
+	</header>
+
+	<section class="about">
+		<h2>Blend mode types</h2>
+
+		<p>Affinity Designer supports an impressive selection of different blend modes. The most commonly used blend modes are as follows:</p>
+
+		<ul>
+			<li><span class="ui">Normal</span>&#8212;The default blend mode. The top pixels display over underlying pixels according to the level of top layer opacity.</li>
+			<li><span class="ui">Multiply</span>&#8212;The blending result is a combination of the top and bottom color at each pixel position, always producing a darker value.</li>
+			<li><span class="ui">Screen</span>&#8212;The opposite of Multiply, where the blending result is a combination of the inverse of the top and bottom color at each pixel position, always producing a lighter value.</li>
+			<li><span class="ui">Overlay</span>&#8212;Applies either Multiply or Screen blend mode, depending on the bottom color at each pixel position. If the bottom layer pixels are &lt;50% gray, it multiplies; if &gt;50% it screens.</li>
+			<li><span class="ui">Divide<sup>1</sup></span>&#8212;Lower layers are lightened by luminance on the upper layer. White has no effect. Lightness is increased progressively by gray through to black.</li>
+			<li><span class="ui">Color Burn<sup>1</sup></span>&#8212;Darkens the bottom color pixels relative to the values of the top color pixels.</li>
+		</ul>
+		
+		<p>Other available blend modes include Darken, Darker Color, Linear Burn, Lighten, Lighter Color, Color Dodge<sup>1</sup>, Add, Soft Light, Hard Light, Vivid Light, Pin Light, Linear Light, Hard Mix, Difference<sup>1</sup>, Exclusion<sup>1</sup>, Subtract, Hue<sup>2</sup>, Saturation<sup>2</sup>, Luminosity, Color<sup>2</sup>, Average<sup>1</sup>, Negation<sup>1</sup>, Reflect<sup>1</sup>, Glow<sup>1</sup>, Contrast Negate, Erase and Passthrough.</p>
+		
+		<p><sup>1</sup> Not available in Lab16 mode.</p>
+		<p><sup>2</sup> Not available in Grayscale mode.</p>
+		
+		<aside class="box note">
+			<p>Any layer or object can have a blend mode assigned, including mask and adjustment layers. The default blend mode is 'Normal'&#8212;no special compositing is applied. For a group, the default is 'Passthrough'. When set, the group itself has no special blend properties of its own, and passes on the blend mode of its parent layer.</p>
+		</aside>
+
+		<aside class="box note">
+			<p>Layer blend modes applied to child layers produce isolated blending which will not affect the parent layer or any other layers in the layer stack.</p>
+		</aside>
+
+		<aside class="box note">
+			<p>The same blend modes can be utilized on layer effects and pixel brushes.</p>
+		</aside>
+		
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To change the blend mode of a layer (or object):</summary>
+
+			<ol>
+				<li>In the <span class="ui">Layers</span> panel, select a layer (or object).</li>
+				<li>Choose a blend mode from the pop-up menu on the panel.</li>
+			</ol>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="layerBlendRanges.html">Layer blend ranges</a></li>
+			<li><a href="../LayerFX/create_layerFX.html">Layer effects</a></li>
+			<li><a href="../Painting/painting.html">Painting brush strokes</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="discard" />
+	<meta name="description" content="Rolls back/forward to operations made during session." />
+	<title>Using undo, redo and history</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Using undo, redo and history</h1>
+
+		<p>It's easy to revert changes to a file when you've either made a mistake or if you simply don't like the result.</p>
+	</header>
+
+	<section class="about">
+
+	<p>Any edits you make to your document are stored in the <a href="../Panels/historyPanel.html">History panel</a>. You can then use this, or keyboard shortcuts, to undo an edit. You can also redo an edit which you have recently undone.</p>
+	
+	<aside class="box tip">
+		<p>A document's history can be saved along with the document, so earlier edits can be returned to even if the document is closed and reopened.</p>
+	</aside>
+	
+	<p>Using the panel, if you undo back to a step in history and you continue editing from that step you can reinstate your redo history that would otherwise be lost. This might be because you changed your mind or if you made an edit that accidentally removed your redo history. Two branches in the history are created:<p>
+		<ul>
+			<li>a visible new branch containing any new edits.</li>
+			<li><img src="../../../shared/ui/cycle_futures.png" class="tool" width="18" height="18" alt="Cycle Futures" /> a hidden branch (viewable via a Cycle Futures icon) storing the redo history.</li>
+		</ul>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To undo or redo a change:</summary>
+			<p>Do one of the following:</p>
+			<ul>
+				<li>From the <span class="ui">Edit</span> menu, click <span class="ui">Undo</span> to go back one step, or <span class="ui">Redo</span> to redo the step previously undone.</li>
+				<li>On the <span class="ui">History</span> panel, click one of the entries in the list to jump to that step.</li>
+				<li>On the <span class="ui">History</span> panel, drag the slider left to undo a change, right to redo a change.</li>
+			</ul>
+			
+		<aside class="box tip">
+			<p>Shortcuts:</p>
+			<ul>
+				<li class="osx">Undo: <span class="key CMD-TAG"></span><span class="key">Z</span></li>
+				<li class="win32">Undo: <span class="key CMD-TAG"></span>+<span class="key">Z</span></li>
+				<li class="osx">Redo: <span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">Z</span></li>
+				<li class="win32">Redo: <span class="key CMD-TAG"></span>+<span class="key">Y</span></li>
+			</ul>
+		</aside>
+		
+		</details>
+
+		<details open="open">
+			<summary>To return to root:</summary>
+
+			<ul>
+				<li>On the <span class="ui">History</span> panel, drag the slider to the farthest position to the left.</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+			<summary>To save history with a document:</summary>
+
+			<ol>
+				<li>From the <span class="ui">File</span> menu, select <span class="ui">Save History With Document</span>.</li>
+				<li>In the <span class="ui">Saving With History</span> dialog, click <span class="ui">Yes</span> to accept the conditions discussed in the dialog.</li>
+				<li><a href="../ShareSavePrint/save.html">Save your document.</a></li>
+			</ol>
+
+			<aside class="box warning">
+				<p>Saving your document's history with your document may significantly increase the size of your project file.</p>
+			</aside>
+
+			<aside class="box note">
+				<p>You can switch off the save history feature by repeating step 1 of the procedure above.</p>
+			</aside>
+			
+		</details>
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/cycle_futures.png" class="tool" width="18" height="18" alt="Cycle Futures" /> To reinstate your redo history:</summary>
+			<ul>
+				<li>Click <span class="ui">Cycle futures</span> at the history step where you want to reinstate your original redo history. This history is hidden 'within' the icon, and will be reinstated on clicking.</li>
+			</ul>
+			
+		</details>
+
+		<details>
+			<summary>To set the History panel preferences:</summary>
+			<ol>
+				<li class="osx">In the <span class="ui">Affinity Designer</span> menu, click <span class="ui">Preferences</span>.</li>
+				<li class="win32">In the <span class="ui">Edit</span> menu, click <span class="ui">Preferences</span>.</li>
+				<li>Click <span class="ui">Performance</span>.</li>
+				<li>Drag the <span class="ui">Undo Limit</span> slider left to reduce the number of stored changes, right to increase the number of stored changes.</li>
+				<li>Click <span class="ui">Close</span>.</li>
+			</ol>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Panels/historyPanel.html">History panel</a></li>
+			<li><a href="../ShareSavePrint/save.html">Save</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

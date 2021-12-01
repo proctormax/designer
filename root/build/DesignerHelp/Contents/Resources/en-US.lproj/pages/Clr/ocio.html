@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="ocio, managed, workflow, hdr, openexr, float, unbounded, 32bit" />
+	<meta name="description" content="Use OCIO for color managed workflows." />
+	<title>Using OpenColorIO</title>
+</head>
+
+<body>
+
+	<header>
+		<h1>Using OpenColorIO</h1>
+
+		<p>In addition to 32-bit editing support, Affinity Designer also implements OpenColorIO; a color management system that provides a full color-managed workflow. It is predominantly used for motion picture production but can be used for any situation where accurate end-to-end color management is required.</p>
+	</header>
+
+	<section class="howto">
+		<h2>Setting up OpenColorIO</h2>
+		<p>By default, Designer's OpenColorIO features are not immediately usable. An <span class="ui">.ocio</span> configuration file is required alongside a number of supporting files such as lookup tables.</p>
+		<p>The OpenColorIO website (http://www.opencolorio.org) contains some sample configurations that provide a number of suitable input and output profiles, including several Academy Color (ACES) configurations.</p>
+		<details open="open">
+			<summary>To configure OpenColorIO:</summary>
+			<ol>
+				<li>Download and extract your chosen OpenColorIO configuration to a folder.</li>
+				<li class="osx">From the <span class="ui">Affinity Designer</span> menu, select <span class="ui">Preferences</span>.</li>
+				<li class="win32">From the <span class="ui">Edit</span> menu, select <span class="ui">Preferences</span>.</li>
+				<li>On the <span class="ui">Color</span> tab, under <span class="ui">OpenColorIO Configuration File</span>, choose <span class="ui">Select</span> and navigate to the extracted directory. Choose the <span class="ui">.ocio</span> configuration file.</li>
+				<li class="osx">Under <span class="ui">OpenColorIO Search Folder</span>, click <span class="ui">Select</span> and choose the extracted directory (it should already be the current highlighted directory from when the <span class="ui">.ocio</span> configuration file was selected).</li>
+				<li>You will be prompted to restart the app, which is necessary for the OpenColorIO settings to take effect.</li>
+			</ol>
+		</details>
+	</section>
+
+	<section class="howto">
+		<h2>Using OpenColorIO</h2>
+		<p>OpenColorIO is exposed through two methods:</p>
+		<ul>
+			<li>The <span class="ui">32-bit Preview</span> panel contains a <span class="ui">Display Transform</span> option that only becomes available with a valid OpenColorIO configuration. This can be used to achieve a non-destructive, color managed workflow. See <a href="../Panels/32bitPanel.html">32-bit Preview</a> for more information.</li>
+			<li>An <span class="ui">OCIO</span> adjustment layer (see <a href="../Adjustments/adjustment_ocio.html">OCIO Adjustment</a>) can be added to losslessly convert between color spaces. You can have multiple <span class="ui">OCIO</span> adjustment layers within a document, which allows you to accommodate composite layers from different color spaces. An example layer stack might be (in hierarchical order):<ul>
+					<li><span class="ui">OCIO Adjustment</span>&#8212;from <span class="ui"><i>Utility - Linear - sRGB</i></span> back to <span class="ui"><i>Role - scene_linear</i></span></li>
+					<li><span class="ui">sRGB Pixel Layer</span>&#8212;composite element</li>
+					<li><span class="ui">OCIO Adjustment</span>&#8212;from <span class="ui"><i>Role - scene_linear</i></span> to <span class="ui"><i>Utility - Linear - sRGB</i></span></li>
+					<li><span class="ui">Pixel Layer</span>&#8212;original layer</li>
+				</ul>
+			</li>
+		</ul>
+
+		<figure class="nft">
+			<p><img src="../../images/adjustment_ocio.png" class="responsive" alt="OCIO Adjustment" /></p>
+			<figcaption>An OCIO Adjustment layer going from <span class="ui">Role - scene_linear</span> to <span class="ui">Utility - Linear - sRGB</span>.</figcaption>
+		</figure>
+
+		<aside class="box note">
+			<p>When loading OpenEXR documents, Designer always converts from the source color space to <span class="ui">scene_linear</span>. With a valid OpenColorIO configuration, Designer will also present a message to let you know which color profile it has converted from. This is usually determined by a filename affix, for example <span class="ui">&#34;render_acescg.exr&#34;</span>.</p>
+		</aside>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Panels/32bitPanel.html">32-bit Preview</a></li>
+			<li><a href="../Adjustments/adjustment_ocio.html">OCIO Adjustment</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

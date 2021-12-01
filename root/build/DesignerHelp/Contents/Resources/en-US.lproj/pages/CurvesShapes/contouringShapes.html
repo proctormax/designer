@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="contour, outline, join, offset, path" />
+	<meta name="description" content="Contouring lets you offset the outline and stroke of a curve or shape." />
+	<title>Contouring curves and shapes</title>
+</head>
+
+<body>
+	<header>
+
+		<h1>Contouring curves and shapes</h1>
+
+		<p>Contouring lets you offset the object outline and stroke of a curve or shape non-destructively.</p>
+
+			<figure>
+				<p><img src="../../../shared/contouring_shapes.png" class="responsive" alt="Contouring shapes" /></p>
+				<figcaption></figcaption>
+			</figure>
+		
+	</header>
+		
+	<section class="about">
+
+		<p>With contouring, the object outline can be grown or shrunk in relation to the original outline&#8212;if a stroke is applied to the object it will also appear offset as it follows the object outline.</p>
+		
+		<p>You can control the size of the contour by dragging; the stroke will resize itself and be offset as you drag inwards or outwards. You can also adjust the stroke's joins and alter the fill type of a shape, making it hollow or closed.</p>
+		
+		<p>The underlying geometry is outlined to offer a better understanding of the effects of contouring and to optionally help you edit your object with the <span class="ui">Node Tool</span>.</p> 
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/contour_tool.png" class="tool heading" width="18" height="18" alt="Contour Tool" /> To create a contour:</summary>
+			<ol>
+				<li>From the <span class="ui">Tools</span> panel, select the <span class="ui">Contour Tool</span>.</li>
+				<li>With the curve or shape selected, drag left or right anywhere on the page to contract or expand the contour, respectively. For example, the more you drag right, increasing the radius, the more pronounced the contour.</li>
+				<li>(Optional) Adjust the context toolbar settings to:<ul>
+						<li>Set a precise amount of contouring (<span class="ui">Radius</span>).</li>
+						<li>Control the join appearance on sharp nodes on the already contoured curve or shape (<span class="ui">Contour type</span>).</li>
+						<li>(With <span class="ui">Miter Joins</span> contour type selected) Adjust the extension of joins to create either sharp or flat corners.</li>
+						<li>Control the line ending appearance on curves (<span class="ui">Cap</span>).</li>
+						<li>Control how the shape is filled (see below).</li>			
+					</ul>
+				</li>
+			</ol>
+
+		</details>
+		
+		<details open="open">
+			<summary>To make a shape hollow or filled:</summary>
+			<ol>
+				<li>Select the already contoured shape.</li>
+				<li>From the context toolbar, select <span class="ui">Force open</span> or <span class="ui">Force closed</span>.</li>
+			</ol>
+			
+			<aside class="box note">
+				<p>The Force commands let you achieve different results, and change how the contour is performed.</p>
+			</aside>
+			
+		</details>
+		
+		<details open="open">
+			<summary>To reset the contours:</summary>
+			<ol>
+				<li>Select the shape.</li>
+				<li>From the context toolbar, set the <span class="ui">Radius</span> option to 0 px.</li>
+			</ol>
+			
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Tools/tools_contour.html">Contour Tool</a></li>
+			<li><a href="about_geometricShapes.html">About geometric shapes</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

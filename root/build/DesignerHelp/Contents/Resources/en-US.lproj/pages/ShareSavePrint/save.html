@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="save" />
+	<meta name="description" content="Save your design project file to protect changes and store for later editing." />
+	<title>Save</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Save</h1>
+		<p>When you save your document all project information is preserved, allowing you to edit it at a later date. The design project is saved as a single file with the extension <span class="ui">.afdesign</span>.</p>
+	</header>
+
+	<section class="about">
+
+		<p>The first time you save your document, you'll be asked to give the project a name and save location. Following this, future saves will overwrite the previous version.</p>
+		<p>Optionally, you can save a current project as a new project. In this case, the new file will not overwrite the saved version.</p>
+		<p class="win32">Unsaved changes to a document are indicated by <span class="ui">[Modified]</span> to the right of the document's name at the top of its tab/window.</p>
+		<p class="osx">Unsaved changes to a document are indicated by <span class="ui">[Modified]</span> or <span class="ui">[M]</span> to the right of the document's name at the top of its tab/window, and (in <a href="../Workspace/workspaceModes.html">Normal mode</a>) by a star to the right of the current document's name at the top of the app's window.</p>
+
+	<aside class="box tip">
+		<p>A document's history can be saved along with the document, so earlier edits can be returned to even if the document is closed and reopened.</p>
+	</aside>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To save as a new project:</summary>
+			<ol>
+				<li>From the <span class="ui">File</span> menu, select <span class="ui">Save As</span>.</li>
+				<li>Adjust the dialog settings as required.</li>
+				<li>Click <span class="ui">Save</span>.</li>
+			</ol>
+		</details>
+
+		<details open="open">
+			<summary>To save the current project:</summary>
+			<ul>
+				<li>From the <span class="ui">File</span> menu, select <span class="ui">Save</span>.</li>
+			</ul>
+
+			<aside class="box note">
+				<p>If you have only made modifications that are supported by an image file type (for example, a JPEG or PNG), then using the <span class="ui">Save</span> function will simply save over the top of the current file. If you have made modifications that are not supported, such as adding layers, then you can save the image as a project file or flatten and merge the changes to the existing file.</p>
+			</aside>
+
+		</details>
+
+		<details>
+			<summary>To save history with a document:</summary>
+
+			<ol>
+				<li>From the <span class="ui">File</span> menu, select <span class="ui">Save History With Document</span>.</li>
+				<li>In the <span class="ui">Saving With History</span> dialog, click <span class="ui">Yes</span> to accept the conditions discussed in the dialog.</li>
+				<li>Save your document.</li>
+			</ol>
+
+			<aside class="box warning">
+				<p>Saving your document's history with your document may significantly increase the size of your project file.</p>
+			</aside>
+
+			<aside class="box note">
+				<p>You can switch off the save history feature by repeating step 1 of the procedure above.</p>
+			</aside>
+
+		</details>
+		
+		<x-win32>
+			<details open="open">
+				<summary>To save the current project as a template:</summary>
+				<ul>
+					<li>From the <span class="ui">File</span> menu, select <span class="ui">Save As</span>.</li>
+					<li>Save your file with a .aftemplate extension.</li>
+				</ul>
+
+			</details>
+		</x-win32>
+		
+		<aside class="box prefs">
+			<h3>Preferences</h3>
+			<p>Related behaviors can be adjusted from <a href="../Workspace/preferences.html">the app's preferences</a>:</p>
+			<ul>
+				<li><span class="ui">General&gt;Save thumbnails with document</span></li>
+			</ul>			
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="export.html">Export</a></li>
+			<li class="osx"><a href="share.html">Share</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=file">Keyboard shortcuts for file/document management</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

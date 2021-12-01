@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="artboards, export, Export Persona" />
+	<meta name="description" content="Discussion of exporting artboards and documents with artboards." />
+	<title>Exporting artboards</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Exporting artboards</h1>
+
+		<p>Artboards can be exported as individual images or all the artboards in a document can be exported together as a single image.</p>
+		
+	</header>
+
+	<section class="about">
+
+		<p>If you select an artboard before proceeding to export, the selected artboard will automatically be selected in the Export dialog. However, all artboards in the current document are available for exporting from the Export dialog at any time, regardless of selection.</p>
+		
+		<p>If you choose to export the entire document, all artboards in the document will be included in the exported image. The resulting image dimensions will be based on the smallest possible size relative to each artboard's size and position on the pasteboard. In other words, the smaller the artboard sizes and the closer they are together, the smaller the overall image's dimensions. For this reason, we advise exporting artboards in separate documents for print, web, and apps.</p>
+		
+		<p>For more information on exporting an entire document, see the <a href="../ShareSavePrint/export.html">Export</a> topic.</p>
+
+		<h2>Export Persona</h2>
+
+		<p>Slices (export areas) are automatically created for individual artboards, allowing you to access all the features available in <a href="../ExportPersona/exportPersona.html">Export Persona</a>.</p>
+		
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary>To export an individual artboard:</summary>
+			
+				<ol>
+					<li>(Optional) <a href="artboards_moveResize.html">Select an artboard</a>.</li>
+					<li>From the <span class="ui">File</span> menu, select <span class="ui">Export</span>.</li>
+					<li>Adjust the settings in the dialog.</li>
+					<li>From the <span class="ui">Area</span> pop-up menu, select a named artboard. (This step is not necessary if the above optional step was followed.)</li>
+					<li>Click <span class="ui">Export</span>.</li>
+				</ol>
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/export.png" class="tool heading" width="12" height="16" alt="Export" /> To export an artboard using Export Persona:</summary>
+			<ol>
+				<li>(Optional) On the <a href="../ExportPersona/exportOptionsPanel.html"><span class="ui">Export Options</span> panel</a>, adjust export settings as appropriate for artboard slices selected in the Slices panel.</li>
+				<li>On the <a href="../ExportPersona/slicesPanel.html"><span class="ui">Slices</span> panel</a>, adjust settings as appropriate for each artboard slice by expanding the artboard slice entry. You can:<ul>
+						<li>Add other file formats for export.</li>
+						<li>Add additional size scalings (e.g., x3) or absolute sizes (100w) for the slice's export format.</li>
+						<li>Rename files for export.</li>
+						<li>Export specific sizes and formats selectively.</li>
+					</ul>
+				</li>
+				<li>Click <span class="ui">Export Slices (<i>n</i>)</span> at the bottom of the panel to export all checked items.</li>
+				<li>Navigate to and select the storage folder for the exported image(s) and then click <span class="ui">Export</span>.</li>
+				<li>(Optional) On the <span class="ui">Slices</span> panel, select <span class="ui">Continuous</span> if you want to automatically re-export export areas if the document is subsequently changed. This option is only available if <span class="ui">Export Slices (<i>n</i>)</span> was selected above.</li>
+			</ol>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="artboards_about.html">Artboards</a></li>
+			<li><a href="../ShareSavePrint/export.html">Export</a></li>
+			<li><a href="../ExportPersona/exportPersona.html">Exporting using Export Persona</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

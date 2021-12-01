@@ -1,0 +1,54 @@
+@import "ui/clayout.css";
+@import "ui/buttons/cbutton.css";
+@import "ui/buttons/ctabbar.css";
+@import "ui/sliders/cslider.css";
+@import "ui/cwindow.css";
+@import "ui/cpanel.css";
+@import "ui/clist.css";
+@import "utils/alignments.css";
+@import "utils/utils.css";
+@import "ui/combo/combo.css";
+@import "utils/sizes.css";
+@import "ui/cpane.css";
+@import "ui/cmenus.css";
+@import "ui/cscrollview.css";
+@import "ui/themes.css";
+@import "ui/theme-penguin.css";
+@import "ui/theme-dark.css";
+@import "ui/theme-coffee.css";
+@import "icons.css";
+@import "ui/caction.css";
+@import "utils/utils.css";
+
+#header{
+  padding: 0;
+  height: auto;
+}
+
+#content{
+  height: 900px;
+}
+
+#statusbar{
+  min-height: 20px;
+  height: auto;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+#test-wnds > .cwindow-content{
+  max-width: 389pt;
+  width: auto;
+  min-height: 20pt;
+  height: auto;
+}
+
+.ui-layer.active{
+ border-bottom-color: rgb(38, 43, 55) !important;
+}
+.layer-hidden{
+  background-color: transparent !important;
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<link href="../../../resources/css/keyFeatures.css" rel="stylesheet" media="all">
+	<script src="../../../resources/js/keyFeatures.js"></script>
+	<meta name="keywords" content="features" />
+	<meta name="description" content="An overview of Affinity Designer key features." />
+	<title>Features</title>
+</head>
+
+<body onload="showRequestedList()"><!-- Function defaults to ?list=allFeatures if no query string is provided --><header>
+		<h1>Features of Affinity Designer</h1>
+		<p>Here's an overview of the features of Affinity Designer. Choose a category from the menu below, which includes options to view all features, or only those that are new in this version&mdash;marked with a red bullet (<span style="color: red; font-weight: bold; width: 1em;">&#9642;</span>).</p>
+	</header>
+
+	<select name="categories" id="catSelector" onChange="updatePage(this.value)" >
+		<option value="allFeatures">All features</option>
+		<option value="newFeatures">New in v1.9/1.10</option>
+		<option value="catPower">Power, performance and compatibility</option>
+		<option value="catTool">Solid graphic design tools</option>
+		<option value="catLayers">Powerful layer management</option>
+		<option value="catResources">External resource management</option>
+		<option value="catObject">Professional object control</option>
+		<option value="catColour">Professional color support</option>
+		<option value="catVector">Vector brushes with stretch and corner control</option>
+		<option value="catText">Text and typography</option>
+		<option value="catInterface">User interface</option>
+		<option value="catDesign">Design aids</option>
+		<option value="catPixel">Pixel-based designs</option>
+		<option value="catInteroperability">Interoperability</option>
+		<option value="catImport">Document control, Import, Export and Printing</option>
+	</select>
+
+	<section class="about">
+
+		<h2 id="catPower">Power, performance and compatibility:</h2>
+		<ul>
+			<li>Optimized for:<ul>
+					<li class="osx">Grand Central Dispatch (GCD)</li>
+					<li class="osx">OpenGL</li>
+					<li class="osx">Core Graphics</li>
+					<li class="win32">Direct3D</li>
+					<li>64-bit engine</li>
+					<li class="osx">GPU hardware acceleration (Metal) for integrated, discrete and external GPUs (macOS 10.13 High Sierra and above)</li>
+					<li class="new win32"><a href="../Extras/hardwareAcceleration.html">Hardware GPU acceleration</a> (OpenCL) for integrated, discrete and external GPUs</li>
+				</ul>
+			</li>
+			<li>Create massive gigapixel-sized documents</li>
+			<li>16-bits per channel editing</li>
+			<li>Sub-pixel accuracy</li>
+			<li class="osx">Mac with Apple M1 chip or Intel processor</li>
+			<li class="osx">OS X Mavericks 10.9 or later (Supported up to macOS Big Sur 11.0)</li>
+			<li>64-bit plug-in support</li>
+			<li>Up to date Tablet support</li>
+			<li>Multi-touch support</li>
+			<li class="win32">Surface Studio with Surface Pen and Surface Dial support</li>
+			<li class="osx">Force Touch support (Magic Trackpad 2/MacBook/MacBook Pro)</li>
+			<li class="osx">Touch Bar support (MacBook Pro)</li>
+			<li class="new">Improved performance (from v1.10) with:<ul>
+					<li class="new">Heavily layered documents (faster rendering during panning and text reflow)</li>
+					<li class="new">Placed images</li>
+					<li class="new">Embedded documents</li>
+					<li class="new">Low-memory conditions</li>
+				</ul>
+			</li>
+		</ul>
+
+		<h2 id ="catTool">Solid graphic design tools:</h2>
+		<ul>
+			<li>Artboards</li>
+			<li>Intuitive Move tool moves, scales, transforms</li>
+			<li class="new"><a href="../ObjectControl/select.html">Select multiple objects</a> by type, color, stroke weight, transparency, and more</li>			
+			<li>Rotate/transform from movable origin</li>
+			<li>Customizable nudge distances</li>
+			<li>Precise Pen tool</li>
+			<li class="new">Precision straight line length and rotation angle via <a href="../Panels/transformPanel.html">Transform panel</a></li>			
+			<li class="new"><a href="../CurvesShapes/contouringShapes.html">Contouring</a> with new <a href="../Tools/tools_contour.html">Contour tool</a></li>	
+			<li>Arrowheads (and tails)</li>
+			<li>Multiple strokes and fills per object</li>
+			<li>Node tool for fine tuning vectors</li>
+			<li>Freeform Pencil Tool with Sculpt mode</li>
+			<li>Stroke stabilizer for smooth pen, pencil and brush strokes</li>
+			<li>Raster finishing without switching apps</li>
+			<li>Smooth gradients (skew, scale and planar aware)</li>
+			<li>Add noise to fills and strokes as a solid or graduated attribute</li>
+			<li>Assets for object storage</li>
+			<li class="new"><a href="../Panels/assetsPanel.html">Sort assets by date</a> in Assets panel</li>
+			<li>Customizable, saveable stroke styles</li>
+			<li>Styles presets</li>
+		</ul>
+			
+		<h2 id="catLayers">Powerful layer management</h2>
+		<ul>
+			<li>Drag and drop layers</li>
+			<li>Non-destructive adjustment layers</li>
+			<li>Apply adjustments and blend modes at the stack, layer, group, selection or object level</li>
+			<li class="new">Precise node control in <a href="../Adjustments/adjustment_curves.html">Curves adjustment</a></li>			
+			<li>Clipping within layers</li>
+			<li class="new">Use global colors in <a href="../Adjustments/adjustment_gradientMap.html">Gradient Map adjustments</a></li>			
+			<li>Clipping within layers</li>
+			<li>High quality layer effects</li>
+			<li class="new"><a href="../LayerFX/create_layerFX.html">Layer effects</a> work with global colors</li>
+			<li>Pixel adjustments and effects on vectors</li>
+			<li>Blend modes</li>
+			<li class="new"><a href="../Layers/layerBlendModes.html">Divide</a> blend mode</li>
+			<li>Layer and object Blend ranges (linear and non-linear)</li>
+			<li>Per-object Blend gamma control</li>
+			<li class="new"><a href="../Layers/layerBlendRanges.html">Per-object hierarchical antialiasing</a></li>
+			<li>Lock child layer positions</li>
+			<li>Colored layer entry tagging for easy identification</li>
+		</ul>
+		
+		<h2 id="catResources">External resource management</h2>
+		<ul>
+			<li class="new"><a href="../Media/embeddingVsLinking.html">Linked resources</a></li>
+			<li class="new">Set <a href="../GetStarted/NewDocument.html">embedded/linked resource policy</a> on new document creation</li>
+			<li class="new"><a href="../Media/resourceManager.html">Resource Manager</a></li>
+			<li class="new"><a href="../Media/resourceManager.html">Resource Manager</a> improvements (from v1.10):<ul>
+					<li class="new">Relink multiple missing 'same folder' images in one operation</li>
+					<li class="new">Switch on/off columns</li>
+					<li class="new">New File Type column</li>
+					<li class="new">EPS files can be linked</li>
+					<li class="new">Improvements when managing placed documents</li>
+				</ul>
+			</li>
+			<li><a href="../Media/resourceManager.html">Collect linked resources</a></li>
+			<li class="new"><a href="../ShareSavePrint/aboutPackaging.html">Packaging</a> for project portability</li>
+		</ul>
+		
+		<h2 id="catObject">Professional object control</h2>
+		<ul>
+			<li>Symbols</li>
+			<li>Corner Tool</li>
+			<li>Boolean operations (Add, Subtract, Intersect, Divide, Xor)</li>
+			<li>Live-preview non-destructive compounds (Boolean operations)</li>
+			<li>Convert shapes and text to fully editable curves</li>
+			<li>Duplicate and transform objects with precision</li>
+			<li>Transform objects separately</li>
+			<li>Point Transform Tool to scale/rotate about movable transform origin</li>
+			<li>Customizable geometric shapes</li>
+			<li>Select multiple objects by <a href="../ObjectControl/select.html">type, color, stroke weight, transparency, and more</a></li>
+			<li>Multi-node selection using polygon or freehand (lasso) drawing</li>
+			<li>Multi-node selection, alignment and transform</li>
+			<li>Control handle snapping to angles and distances</li>
+		</ul>
+
+		<h2 id="catColour">Professional color support</h2>
+		<ul>
+			<li>16-bits per pixel color depth</li>
+			<li>CMYK, Lab, Grayscale and RGB color modes</li>
+			<li>Color panel (RGB, HSL, LAB, CMYK, Grayscale)</li>
+			<li class="osx">Swatches panel (Apple, System, Web Safe colors, Crayons)</li>
+			<li class="win32">Swatches panel (System, Web Safe colors, Crayons)</li>
+			<li>Color Picker Tool (color mode aware, pick from anywhere on screen)</li>
+			<li>Global colors</li>
+			<li>Color tints</li>
+			<li>Professional color support</li>
+			<li>PANTONE® color support</li>
+			<li>ICC color profiling</li>
+			<li>Import Adobe Swatch Exchange (ASE) color palettes (including spot colors)</li>
+			<li>Drag-and-drop colors from Chroma app (SoftPress)</li>
+		</ul>
+				
+		<h2 id="catVector">Vector brushes with stretch and corner controls</h2>
+		<ul>
+			<li>High quality brush galleries</li>
+			<li>Change brush size, hardness, and opacity on the fly</li>
+			<li>Import/export brushes, including ABR file import</li>
+			<li>Custom brushes (including image-based brushes)</li>
+			<li>Multi-controller support including pressure and velocity</li>
+			<li>Controller-specific brush dynamics</li>
+			<li>Customizable controller ramps</li>
+			<li class="new"><a href="../Panels/brushesPanel.html">Sort vector brushes by date</a> in Brushes panel</li>
+		</ul>
+			
+		<h2 id="catText">Text and typography</h2>
+		<ul>
+			<li>Artistic and frame text</li>
+			<li>Character and Paragraph panels</li>
+			<li>Text styles</li>
+			<li>Text on a path</li>
+			<li class="new"><a href="../Text/pathText.html">Path text overflow control</a></li>
+			<li>Flowing text</li>
+			<li>Spellchecking</li>
+			<li>Advanced typography including ligatures</li>
+			<li>OpenType font features</li>
+			<li>Comprehensive bullets and numbering</li>
+			<li class="new">Improved IME text editing for JA and ZH-HANS languages (from v1.10)</li>
+			<li class="new">Added support for emojis (from v1.10)</li>
+		</ul>
+
+		<h2 id="catUI">User interface</h2>
+		<ul>
+			<li>Persona task-orientated workspaces</li>
+			<li>Customizable tabbed workspace</li>
+			<li>High DPI (retina) support</li>
+			<li>Multiple document views</li>
+			<li class="osx">Windowed, Full Screen, and Separated modes</li>
+			<li>Docked or floating panels</li>
+			<li>Comprehensive keyboard shortcuts and modifiers</li>
+			<li>Customizable keyboard shortcuts</li>
+			<li>Customizable toolbars</li>
+			<li class="new"><a href="../Workspace/customizingWorkspace.html">Saveable Studio panel presets</a></li>
+		</ul>
+
+		<h2 id="catDesign">Design Aids</h2>
+		<ul>
+			<li>Pixel, Retina, and Outline view modes with Split View support</li>
+			<li>Constraints for intelligent object scaling/anchoring</li>
+			<li>Rotate canvas</li>
+			<li class="new"><a href="../DesignAids/rotateCanvas.html">Rotate document view (canvas) with mouse scroll wheel</a></li>
+			<li>Incredible zoom range</li>
+			<li>Intuitive panning</li>
+			<li>Saveable zoom viewpoints</li>
+			<li class="new">Customizable <a href="../DesignAids/margins.html">margin colors</a></li>
+			<li class="new">Customizable <a href="../ShareSavePrint/bleed.html">bleed colors</a></li>
+			<li>Powerful snapping control</li>
+			<li class="new"><a href="../DesignAids/snapping.html">Snap to pixel selection bounds</a></li>
+			<li>Dynamic snapping guides for precise alignment</li>
+			<li>Fixed guides and column guides</li>
+			<li>Rulers with spread origin control</li>
+			<li>Multi-object alignment and distribution</li>
+			<li>On-object alignment handles</li>
+			<li>Pixel-accurate alignment for web graphics and website mockups</li>
+			<li>Managers for Brushes, Grids, Snapping and other operations</li>
+			<li>Automatic, fixed and projection grids (with color/opacity control)</li>
+			<li>Context toolbar and hintline</li>
+			<li>Fluid document History &lt;8192 steps with branching control</li>
+			<li>Save history with document (multi-session)</li>
+			<li>Snapshots</li>
+			<li>Keyboard modifiers for on-the-fly tool changes</li>
+			<li>Mixed-mode assistant eases vector and pixel mode switching according to the user’s preferences</li>
+			<li>Defaults (document and global)</li>
+			<li>Isometric grids<ul>
+					<li>Isometric Panel for easy grid creation, as-you-draw transforms and plane switching</li>
+					<li>On-page draggable grid origin with grid axis scaling and angle adjustment</li>
+					<li>Presets for Grid and Axis Manager</li>
+					<li>Cube mode for custom grids from transformable cube</li>
+				</ul>
+			</li>
+			<li class="new">Added 'Limit Initial Zoom to 100&#37;' preferences option (from v1.10)</li>
+		</ul>
+
+		<h2 id="catPixel">Pixel-based designs</h2>
+		<ul>
+			<li>Seamlessly switch to and from pixel editing mode to apply finish to vector artwork</li>
+			<li>Pixel brushes for high-quality textures<ul>
+					<li>Import/export brushes, including ABR file import</li>
+					<li>Custom brushes</li>
+					<li class="new"><a href="../Painting/pixel_customBrushes.html">Create image brushes</a> from any pixel selection</li>
+					<li class="new"><a href="../Painting/pixel_customBrushes.html">Create intensity brushes</a> from any mask's pixel selection</li>
+					<li>Change brush size and color on the fly</li>
+					<li>Sub-brushes (combined brushes)</li>
+					<li>Brush symmetry and mirroring</li>
+					<li>Choice of brush and nozzle controllers/ramps</li>
+					<li class="new"><a href="../Panels/brushesPanel.html">Sort pixel brushes by date</a> in Brushes panel</li>
+				</ul>
+			</li>
+			<li>Pixel selection tools<ul>
+					<li>Shaped selections</li>
+					<li class="new"><a href="../Tools/tools_marquee.html">Elliptical Marquee Tool</a> draws from center</li>
+					<li>Smart selection brush works over pixel and vector data</li>
+					<li>Refine selections to capture fine detail</li>
+					<li class="new"><a href="../Tools/tools_floodSelect.html">Flood Select Tool</a> selects pixels of a similar color</li>
+				</ul>
+			</li>
+			<li>Pixel adjustment brushes<ul>
+					<li>Dodge and Burn brushes</li>
+					<li>Smudge, Blur and Sharpen brushes</li>
+				</ul>
+			</li>
+			<li>Masks</li>
+			<li>Pixel flood fill tool</li>
+			<li>Pixel and vector artwork exported in harmony<ul>
+					<li>Pixel artwork scaled if required on output</li>
+					<li>Nearest Neighbor, Bilinear, Bicubic and Lanczos 3 pixel scaling available</li>
+					<li>Set export areas and file formats during or after the design process</li>
+				</ul>
+			</li>
+		</ul>
+
+		<h2 id="catInteroperability">Interoperability:</h2>
+		<ul>
+			<li>Retention of vector design elements when cutting and pasting between Affinity Designer and other applications</li>
+			<li>Affinity Designer files can be opened in other Affinity products and vice versa</li>
+			<li class="osx">iCloud sync and merge</li>
+			<li class="new">In-app <a href="../GetStarted/registerAndSync.html">registration</a></li>
+			<li class="new"><a href="../GetStarted/registerAndSync.html">Content sync</a> of <a href="https://affinity.serif.com/store/" target="_blank">Affinity Store</a> purchases</li>
+		</ul>
+
+		<h2 id="catImport">Document control, Import, Export and Printing</h2>
+		<ul>
+			<li>Easy Document Setup with preset thumbnails and template support</li>
+			<li>Affinity Designer, Affinity Photo, Affinity Publisher file placement</li>
+			<li class="new"><a href="../Media/placeImages.html">Scaling control</a> for placed documents (PDFs, PSDs and Affinity documents)</li>
+			<li>High-quality Adobe® Photoshop® PSD import, place and export</li>
+			<li>Adobe Illustrator (.ai) import and place</li>
+			<li>PDF import</li>
+			<li class="new"><a href="../Media/placeImages.html">PDF passthrough</a> for absolute display/output fidelity</li>
+			<li>Place images (PNG, JPEG, GIF, TIFF, SVG, EPS, EXR, HDR)</li>
+			<li class="new">Alt/Option-dragging files gives placement options via Place Images panel (v1.10)</li>
+			<li>SVG import and export, including Inkscape extended SVG support</li>
+			<li class="new">SVG import/export improvements (from v1.10)</li>
+			<li>Stock Panel for free and royalty-free image resources</li>
+			<li class="new"><a href="../Appendix/fileformat.html">JPEG-XR 101010 import</a></li>
+			<li>Export slices, layers, pages, and artboards to PNG, JPEG, TIFF, GIF, EPS, SVG and PDF</li>
+			<li>Preserve layers in exported TIFF images</li>
+			<li>Export automatically to retina sizes (@2x and @3x)</li>
+			<li>Set export areas and file formats during or after designing</li>
+			<li>Export document or current selection(s) to many raster image formats, PSD, PDF, EPS and more</li>
+			<li class="new"><a href="../ShareSavePrint/export.html">Export Preview</a> which updates to changed settings</li>
+			<li>Desktop printing with Layout, Paper Handling, Feed, and Duplexing control</li>
+			<li>Web-ready PDFs (Acrobat) with presets</li>
+			<li>Professional hi-res PDF/X printing (CMYK) with presets</li>
+			<li>Spot colors and overprint control</li>
+			<li>Bleed (with preview) and printers marks</li>
+		</ul>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="about_designer.html">Affinity Designer</a></li>
+			<li><a href="about_Personas.html">Personas</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+</html>

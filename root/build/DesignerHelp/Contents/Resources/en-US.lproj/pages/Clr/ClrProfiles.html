@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="color management, color profiles, color spaces" />
+	<meta name="description" content="Set up color profiles for color management." />
+	<title>Color management</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Color management</h1>
+
+		<p>The color and tonal information in a digital document is stored as numbers. When we share these documents between devices, the device has to work out how to display the color. As not all devices can display the same color gamut it can lead to colors looking different on each device.</p>
+
+		<figure>
+			<p><img src="../../../shared/clr_profiles_before.png" class="responsive" alt="Color profiles" /></p>
+			<figcaption>Documents without color profiles (or with unsupported color profiles) may not look the same across each device.</figcaption>
+		</figure>
+
+		<p>To ensure that the color looks the same on each device, we use color profiles to tell the device how to display or render the color information.</p>
+
+		<figure>
+			<p><img src="../../../shared/clr_profiles_after.png" class="responsive" alt="Color profiles" /></p>
+			<figcaption>Documents with the correct profile for a calibrated device should closely match.</figcaption>
+		</figure>
+
+		<p>In Affinity Designer, an opened file's color profile is honored by default. You have the option to convert it to the current working color space. When placing images into an existing document, the image's embedded color profile will always be converted to the document's current working space.</p>
+		<p>On export, you can choose to embed the document's or a named color profile to ensure accurate color management. Alternatively, the exported file can be unprofiled by not embedding the document or named profile.</p>
+
+	</header>
+
+	<section class="about">
+		<h2>Assigning color profiles</h2>
+
+		<p>Affinity Designer lets you choose global default color profiles, assign a color profile as you create a document, or at any point during your session.</p>
+
+		<aside class="box note">
+			<p>Most commercial printers will accept sRGB as they'll be able to do their own profiling at the print stage to get the best results for your work.</p>
+			<p>For the CMYK color model, it's best to consult your print partner for an appropriate CMYK color profile recommendation.</p>
+		</aside>
+
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary>To select default global color profiles:</summary>
+			<ul>
+				<li class="osx">From <span class="ui">Affinity Designer&gt;Preferences</span> (Color option), select an RGB, CMYK, Grayscale or LAB color profile from the pop-up menus.</li>
+				<li class="win32">From <span class="ui">Edit&gt;Preferences</span> (Color option), select an RGB, CMYK, Grayscale or LAB color profile from the pop-up menus.</li>
+				<li>Choose a <span class="ui">Rendering intent</span> option and check <span class="ui">Black Point compensation</span>.</li>
+			</ul>
+
+		<aside class="box note">
+			<p>The chosen profile will be used as the current working space and will be offered when creating new documents, or will be used if you choose to convert an opened file's color space (discarding its own color profile).</p>
+		</aside>
+
+		</details>
+
+		<details open="open">
+			<summary>To select a new document's color profile:</summary>
+			<ul>
+				<li>As you create a <a href="../GetStarted/NewDocument.html">new document</a>, select an option from the <span class="ui">Color Profile</span> pop-up menu.</li>
+			</ul>
+
+		</details>
+
+		<details open="open">
+			<summary>To convert the color space of file to be opened to the current working space:</summary>
+			<ul>
+				<li class="osx">Prior to opening the file, from <span class="ui">Affinity Designer&gt;Preferences</span> (Color option), check the <span class="ui">Convert opened files to working space</span> option.</li>
+				<li class="win32">Prior to opening the file, from <span class="ui">Edit&gt;Preferences</span> (Color option), check the <span class="ui">Convert opened files to working space</span> option.</li>
+			</ul>
+			<p>Options exist to warn that a file's working space will be converted, or that an unprofiled file will be assigned the current working space's profile.</p>
+
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/move_tool.png" class="tool heading" width="18" height="18" alt="Move Tool" /> To change your document's color profile at any time:</summary>
+			<ol>
+				<li>From the <span class="ui">File</span> menu, select <span class="ui">Document Setup</span>.</li>
+				<li>From the dialog:<ul>
+						<li>Select the <span class="ui">Color</span> tab.</li>
+						<li>From the <span class="ui">Color Profile</span> pop-up menu, select a profile.</li>
+						<li>Select <span class="ui">Assign</span> or <span class="ui">Convert</span>.<br /> <span class="ui">Assign</span> adopts the new profile but leaves the values of the colors/pixels as is. <span class="ui">Convert</span> converts each color from the old profile to the new one&#8212;color/pixel values may change as a result.</li>
+						<li>Click <span class="ui">OK</span>.</li>
+					</ul>
+				</li>
+			</ol>
+
+			<aside class="box note">
+				<p>Common color profiles used in design include sRGB IEC61966-2.1 and Adobe RGB 1998, the former for on-screen display.</p>
+			</aside>
+
+		</details>
+
+				<details open="open">
+			<summary>To embed a color profile on file export:</summary>
+			<ol>
+				<li>With Export Persona active, choose your <span class="ui">Preset</span> in the Export Options panel.</li>
+				<li>(Optional) Select a different <span class="ui">ICC profile</span> from the pop-up menu. Otherwise, the document's color profile will be embedded.</li>
+				<li>Check <span class="ui">Embed ICC profile</span>.</li>
+			</ol>
+
+			<aside class="box note">
+				<p>You can also embed an ICC profile via <span class="ui">File&#62;Export</span> (click <span class="ui">More&#62;</span> in the dialog).</p>
+			</aside>
+
+		</details>
+
+	</section>
+
+	<section class="about">
+
+		<h2>About soft proofing</h2>
+		<p>Soft proofing simulates output as you design with respect to the color profile and the paper medium you intend to print on.</p>
+		<p>In Affinity Designer, this can be done by applying a <span class="ui">Soft Proof</span> adjustment to your design. You can then preview how your output will appear, preventing any nasty surprises at print time.</p>
+		<p>Because soft proofing is applied as an adjustment you can apply multiple adjustments, and therefore produce soft proofs for multiple output devices.</p>
+
+		<p>As an example, if you want to create several different output types, you might want to start with a color profile on document creation with a wide gamut (e.g., Adobe RGB 1998), and then change the profile to match the output destination. However, color information may be thrown away if changing to a smaller color gamut&#8212;simply changing back to a profile with a wider gamut will not restore the additional color information. By applying a soft proof adjustment you prevent this, allowing you to work in a wider gamut until you are ready to change to your chosen output profile.</p>
+
+	</section>
+
+	<section class="about">
+		<h2>Installing ICC color profiles</h2>
+		<p>Affinity Designer detects and can use ICC color profiles installed on your operating system when exporting files. No special steps have to be taken in the app to make profiles available for its use when exporting files; installed profiles are available from the ICC profile pop-up menu of the Export dialog.</p>
+		<p>Your operating system includes software to assign an installed profile to your printer.</p>
+	</section>
+	
+	<section class="howto">
+		<details>
+			<summary>To install a color profile:</summary>
+			<ul class="osx">
+				<li>Place the .icc file in /Library/ColorSync/Profiles.</li>
+			</ul>
+			<ol class="win32">
+				<li>Open the <span class="ui">Color Management</span> control panel.</li>
+				<li>Select the <span class="ui">All Profiles</span> tab.</li>
+				<li>Select <span class="ui">Add</span>.</li>
+				<li>Browse to the .icc file and select <span class="ui">Add</span>.</li>
+			</ol>				
+		</details>
+		
+		<details>
+			<summary>To assign an installed color profile with your printer:</summary>
+			<ol class="osx">
+				<li>In Finder, select <span class="ui">Go&gt;Utilities</span> and open ColorSync Utility.</li>
+				<li>Select the <span class="ui">Devices</span> tab.</li>
+				<li>Select the printer with which to associate the profile.</li>
+				<li>Select the profile from the pop-up menu next to <span class="ui">Current Profile</span>.</li>
+			</ol>
+			<ol class="win32">
+				<li>Open the <span class="ui">Color Management</span> control panel.</li>
+				<li>Select the <span class="ui">Devices</span> tab.</li>
+				<li>Select the device with which to associate the profile.</li>
+				<li>Select <span class="ui">Use my settings for this device</span>.</li>
+				<li>Select <span class="ui">Add</span>, then the profile you want to use for this device, then <span class="ui">OK</span>.</li>
+				<li>(Optional) To make the profile the default for this device, select it and then <span class="ui">Set as Default Profile</span>.</li>
+			</ol>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../GetStarted/NewDocument.html">Create new documents</a></li>
+			<li><a href="../ExportPersona/exportOptionsPanel.html">Export Options panel</a></li>
+			<li><a href="../ShareSavePrint/export.html">Export</a></li>
+			<li><a href="../Adjustments/adjustment_softProof.html">Soft proof adjustment</a></li>
+			<li><a href="ClrModels.html">Color models</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

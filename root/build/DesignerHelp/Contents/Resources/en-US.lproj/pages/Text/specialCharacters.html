@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="symbols, maths, quotation, dashes, hyphens, spaces, tabs, breaks, text, typography, special characters, unicode, glyph, invisibles" />
+	<meta name="description" content="Add special characters and glyphs to your text." />
+	<title>Special characters and glyphs</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Special characters and glyphs</h1>
+		<p>Special characters and glyphs can be added to your text from any font installed on your computer. You can add via menu, use the <span class="ui">Glyph Browser</span> panel or insert Unicode/Glyph code at a chosen insertion point.</p>
+	</header>
+
+	<section class="about">
+
+		<x-osx>
+		<p>Special characters and symbols are available for insertion into text from the <span class="ui">Text</span> and <span class="ui">Edit</span> menus. These characters include line breaks, non-breaking spaces, and copyright and trademark symbols.</p>
+		</x-osx>
+		
+		<x-win32>
+		<p>Special characters are available for insertion into text from the <span class="ui">Text</span> menu. These characters include line breaks, dash types, different spaces and hyphens.</p>
+		</x-win32>
+		
+		<p>The following characters can be added from the <span class="ui">Text</span> menu's <span class="ui">Insert Character</span> section:</p>
+		<ul>
+			<li>Line Break</li>
+			<li>Em Dash</li>
+			<li>En Dash</li>
+			<li>Figure Dash</li>
+			<li>Em Space</li>
+			<li>En Space</li>
+			<li>Zero Width Space</li>
+			<li>Non-Breaking Space</li>
+			<li>Non-Breaking Hyphen</li>
+			<li>Soft Hyphen</li>
+		</ul>
+		
+		<p>The <span class="ui">Glyph Browser</span> panel lets you insert glyphs, Unicode characters or Unicode characters with alternates. Instead, if you're familiar with, or have reference to, Glyph/Unicode character codes you can insert these characters directly into your text by toggling the entered Hex code into its displayed character.</p>
+		
+	</section>
+
+	<section class="howto">
+		<x-osx>
+			<details open="open">
+				<summary>To add special characters:</summary>
+				<ol>
+					<li>Click for an insertion point in your text.</li>
+					<li>Do one of the following:<ul>
+							<li>From the <span class="ui">Text</span> menu, select <span class="ui">Insert Character</span>, then a special character entry from a chosen category.</li>
+							<li>From the <span class="ui">Edit</span> menu, select <span class="ui">Emoji &amp; Symbols</span>, select a category by clicking the icons at the left of the pop-up dialog, then double-click a displayed symbol.</li>
+						</ul>
+					</li>				
+				</ol>
+			
+			</details>
+		</x-osx>
+		
+		<details open="open">
+			<summary>To insert glyphs/Unicode characters from browser:</summary>
+			<ol>
+				<li>Click for an insertion point in your text.</li>
+				<li>From the <span class="ui">View</span> menu, select <span class="ui">Studio&gt;Glyph Browser</span>.</li>
+				<li>Select a Font, Font style and Subset from the pop-up menu options.</li>
+				<li>Double-click a glyph to add it to the text at the insertion point.</li>
+			</ol>
+		
+		<aside class="box tip">
+			<p>Glyphs of the same hexadecimal character code may be different between fonts.</p>
+		</aside>			
+			
+		</details>
+		
+		<details open="open">
+			<summary>To insert glyphs/Unicode characters directly using Hex code:</summary>
+			<ol>
+				<li>Click for an insertion point in the text.</li>
+				<li>Do one of the following:<ul>
+						<li>For a <em>glyph</em>: Type 'G+' then enter the Hex code, e.g. '02F5' or '2F5'.</li>
+						<li>For a <em>Unicode character</em>: Type 'U+' then the Hex code, e.g. '0040', '040' or '40'.</li>
+					</ul>
+				</li>
+				<li>Toggle from code to displayed character by using <span class="ui">Text&gt;Toggle Unicode</span>. Toggle back to Hex code using the same command; keep insertion point at end of character.</li>
+			</ol>
+			
+		<aside class="box note">
+			<p>Glyphs of the same hexadecimal character code may be different between fonts. Applying a new font to text may cause some characters to be displayed as rectangles or not at all, which indicates no glyph is defined for the affected character codes within that font.</p>
+		</aside>
+
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="text_general.html">Working with text</a></li>
+			<li><a href="../Panels/glyphPanel.html">Glyph Browser panel</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

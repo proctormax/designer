@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="design aids, snapping" />
+	<meta name="description" content="Force Pixel Alignment snaps to full pixels when objects are created, moved or modified." />
+	<title>Force Pixel Alignment</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Force Pixel Alignment</h1>
+
+		<p>Force Pixel Alignment will snap objects, nodes and handles, and pixel selection areas to full pixels when created, moved or modified. If this option is switched off, objects and selections can occupy partial pixels.</p>
+		
+		<p>This snapping method works together with other forms of snapping. If you snap to an object that is not aligned to a pixel, then the resulting snap will not be pixel aligned. To snap only to pixels, be sure to switch off other modes of non-pixel snapping, such as grids and guides if they are not on-pixel.</p>
+
+		<aside class="box tip">
+			<p>Force Pixel Alignment is particularly useful for web graphic development.</p>
+		</aside>
+
+	</header>
+
+	<section class="about">
+
+		<h2>Move By Whole Pixels</h2>
+
+		<p>In addition to Force Pixel Alignment, the <span class="ui">Move By Whole Pixels</span> option allows you to constrain the movement of objects, nodes and handles to whole pixels.</p>
+		
+		<p>Move By Whole Pixels is particularly useful for repositioning an object by a particular pixel distance while also maintaining the relevant partial pixels an object occupies.</p>
+
+		<aside class="box warning">
+			<p>If you deactivate <span class="ui">Move By Whole Pixels</span> but have <span class="ui">Force Pixel Alignment</span> active, moving an object which occupies partial pixels will also transform it marginally.</p>
+		</aside>
+
+		<aside class="box note">
+			<p>Force Pixel Alignment complements any active <a href="snapping.html">snapping</a> settings.</p>
+		</aside>
+		
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/forcepixelalignment.png" class="tool" width="18" height="18" alt="Force Pixel Alignment" /> To activate/deactivate Force Pixel Alignment:</summary>
+			<ul>
+				<li>Click <span class="ui">Force Pixel Alignment</span> on the Toolbar.</li>
+			</ul>
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/movebywholepixels.png" class="tool" width="18" height="18" alt="Move By Whole Pixels" /> To activate/deactivate Move By Whole Pixels:</summary>
+			<ul>
+				<li>With <span class="ui">Force Pixel Alignment</span> active, click <span class="ui">Move By Whole Pixels</span> on the Toolbar.</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+			<summary>To temporarily override snapping:</summary>
+			<ul>
+				<li>Press the <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span> while you're positioning. Snapping won't occur while the <span class="KEY-TAG"></span> is depressed.</li>
+			</ul>
+		</details>
+		
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="snapping.html">Snapping</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

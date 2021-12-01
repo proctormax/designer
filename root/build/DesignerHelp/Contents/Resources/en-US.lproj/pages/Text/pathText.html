@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="path, text, text on a path, curve, overflowing text" />
+	<meta name="description" content="Use path text to follow a drawn path or the outline of a shape." />
+	<title>Text on a path</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Text on a path</h1>
+		<p>Path text is a variation of Artistic text which follows a line, curve or outline of a shape.</p>
+
+		<figure>
+			<div class="single"><img src="../../../shared/pathtext.png" class="responsive" alt="Text on a path" /></div>
+			<figcaption>Before and after conversion to path text (and final design example).</figcaption>
+		</figure>
+	</header>
+
+	<section class="about">
+
+		<p>Applying text to a path allows you to explore a whole range of diverse typographical designs. The path can be created from any line, curve or shape drawn using any of the line or shape tools. These include, but are not limited to, the <a href="../Tools/tools_pen.html">Pen Tool</a>, <a href="../Tools/tools_pencil.html">Pencil Tool</a>, and <a href="../Tools/tools_ellipse.html">Ellipse Tool</a>. The only criterion is that a line, curve or shape must exist on the page before path text can be implemented.</p>
+
+		<aside class="box warning">
+			<p>When a line, curve or shape is converted to a path to accommodate text, the original object is discarded. If you wish to retain the original object, we recommend <a href="../ObjectControl/duplicate.html">duplicating</a> it first.</p>
+		</aside>
+
+		<h2>Modifying path text</h2>
+
+		<p>Once the path has been created, you can adjust the start and end handles on the path to expand or restrict the portion on which text will flow. The start and end handles are indicated by light green and orange triangles, respectively.</p>
+		
+		<figure>
+			<div class="single"><img src="../../../shared/pathtext_section1.png" alt="First path start and end handles" /></div>
+			<figcaption></figcaption>
+		</figure>
+
+		<p>If path text extends beyond the start and end handles, it will flow onto a second path (below) or wrap around to follow the path in the opposite direction. If this occurs, an additional pair of start and end handles (colored dark green and red, respectively) will become available so this new path can be adjusted separately. Both paths and pairs of handles work identically.</p>
+		
+		<figure>
+			<div class="single"><img src="../../../shared/pathtext_section2.png" alt="Second path handles" /></div>
+			<figcaption></figcaption>
+		</figure>
+		
+		<p>You can also control the distance between the text and the path (i.e., the Baseline) and the direction in which the text flows along the path. Each path section can have a different <span class="ui">Baseline</span> value.</p>
+
+		<h2>Reshaping the path object</h2>
+
+		<p>You can reshape the path object at any point using the <a href="../Tools/tools_node.html">Node Tool</a>. If your text path object originated from one of the Shape tools, you can modify it as if it was still the original geometric shape. Text already present on the path will reflow along the changing path when the object is reshaped.</p>
+		<p>For more information on reshaping a path object, see the <a href="../CurvesShapes/edit_linesAndShapes.html">Edit curves and shapes</a> and <a href="../CurvesShapes/draw_geometricShapes.html">Draw and edit shapes</a> topics.</p>
+
+	<h2>Path text and snapping</h2>
+	
+	<p>Along the path you'll encounter red perpendicular snapping lines as you drag path text handles. For example, on path text around an ellipse, you can snap to 90&deg; intervals on its circumference, then use text alignment options to precisely position text centrally.</p>
+	
+		<figure>
+			<div class="single"><img src="../../../shared/pathtext_snapping.png" alt="Path text snapping" /></div>
+			<figcaption></figcaption>
+		</figure>
+		
+   <h2>Hiding overflowing path text</h2>
+	
+	<p>Any path text extending beyond the end handle of a secondary path will be displayed by default, but you can hide this, e.g. for editing, by clicking the strikethrough red eye icon.</p>
+	
+		<figure>
+			<div class="single"><img src="../../../shared/pathtext_hiding.png" alt="Hiding path text" /></div>
+			<figcaption></figcaption>
+		</figure>
+	
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/arttexttool.png" class="tool" width="18" height="18" alt="Artistic Text Tool" /> To create path text:</summary>
+			<ol>
+				<li>Select a previously drawn line, curve or shape.</li>
+				<li>From the <span class="ui">Tools</span> panel, select the <span class="ui">Artistic Text Tool</span>.</li>
+				<li>Do one of the following:<ul>
+						<li>For text running outside a shape or above a line: Click the cursor outside (or above) the object's outline. The cursor will change to indicate path text will be created.</li>
+						<li>For text running inside a shape or below a line (right to left): Click the cursor inside (or below) the object's outline.</li>
+					</ul>
+				</li>
+				<li>On the context toolbar, set a <span class="ui">Font Size</span> (or click to use the default font size).</li>
+				<li>Do one of the following:<ul>
+						<li>Type your text.</li>
+						<li>Paste previously copied text.</li>
+						<li>From the <span class="ui">File</span> menu, select <span class="ui">Place</span>. In the pop-up dialog, navigate to and select a file, and click <span class="ui">Open</span>.</li>
+					</ul>
+				</li>
+			</ol>
+
+			<aside class="box tip">
+				<p>Alternatively, select a previously drawn line, curve or shape and then, from the <span class="ui">Layer</span> menu, select <span class="ui">Convert to Text Path</span>.</p>
+			</aside>
+
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/fill_reverse_gradient.png" class="tool" width="16" height="16" alt="Artistic Text Tool" /> To modify the flow of path text:</summary>
+			<p>With the path text selected, do one of the following:</p>
+			<ul>
+				<li>Drag one or more path text handles.</li>
+				<li>On the context toolbar, set <span class="ui">Baseline</span> to adjust distance of text baseline from path.</li>
+				<li>On the context toolbar, click <span class="ui">Reverse Text Path</span>.</li>
+			</ul>
+		</details>
+
+		<aside class="box note">
+			<h3>Modifier keys</h3>
+			<p>When positioning path text handles, the following modifier keys can be used:</p>
+			<ul>
+				<li>The <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> constrains the distance between the start and end handles, moving the entire path, both handles and text simultaneously.</li>
+				<li>The <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span> ignores snapping points along the path.</li>
+				<li>The <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> moves start and end handles symmetrically.</li>
+			</ul>
+		</aside>
+
+	</section>
+
+	<section class="about">
+
+		<h2>Resizing path object</h2>
+
+		<p>When resizing a path object you can control whether:</p>
+			<ul>
+				<li>Text remains at its set size and reflows across the path.</li>
+				<li>Text scales as the path is resized.</li>
+			</ul>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To reflow text:</summary>
+			<p>With the path object selected, do one of the following:</p>
+				<ul>
+					<li>To resize height and width simultaneously, drag the object's corner handles.</li>
+					<li>
+						<p>To resize height and width independently, drag the object's side handles.</p>
+						<p><img src="../../../shared/pathtext_reflow.png" class="screenshot responsive" alt="Reflowing path text" /></p>
+					</li>
+				</ul>
+		</details>
+
+		<details open="open">
+			<summary>To scale text:</summary>
+			<ul>
+				<li>
+					<p>With the path object selected, drag the object's scale handle (extends from the bottom-right corner of the selection).</p>
+					<p><img src="../../../shared/pathtext_scale.png" class="screenshot responsive" alt="Scaling path text" /></p>
+				</li>
+			</ul>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="importText.html">Importing text</a></li>
+			<li><a href="text_general.html">Working with text</a></li>
+			<li><a href="../Tools/tools_artText.html">Artistic Text Tool</a></li>
+			<li><a href="fillerText.html">Filler text</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="theme-dark">
+  <head>
+    <meta charset="utf-8">
+    <title>DX | CloudPC.io</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="src/core/core.js" charset="utf-8"></script>
+    <script src="src/core/CMath.js" charset="utf-8"></script>
+    <script src="src/core/Geom.js" charset="utf-8"></script>
+    <script src="src/appearance/CCSS.js" charset="utf-8"></script>
+    <script src="src/test.js" charset="utf-8"></script>
+    <script src="src/utils.js" charset="utf-8"></script>
+    <script src="src/core/events.js" charset="utf-8"></script>
+    <script src="src/core/signals.js" charset="utf-8"></script>
+    <script src="src/core/actions.js" charset="utf-8"></script>
+    <script src="src/core/commands.js" charset="utf-8"></script>
+    <script src="src/core/keybindings.js" charset="utf-8"></script>
+    <script src="src/appearance/colors.js" charset="utf-8"></script>
+    <script src="src/appearance/gradients.js" charset="utf-8"></script>
+    <script src="src/appearance/fills.js" charset="utf-8"></script>
+    <script src="src/appearance/strokes.js" charset="utf-8"></script>
+    <script src="src/typography/fonts.js" charset="utf-8"></script>
+    <script src="src/typography/typography.js" charset="utf-8"></script>
+    <script src="src/corners.js" charset="utf-8"></script>
+    <script src="src/paddings.js" charset="utf-8"></script>
+    <script src="src/margins.js" charset="utf-8"></script>
+    <script src="src/effects.js" charset="utf-8"></script>
+    <script src="src/styles.js" charset="utf-8"></script>
+    <script src="src/transform.js" charset="utf-8"></script>
+    <script src="src/ui.js" charset="utf-8"></script>
+    <script src="src/layers.js" charset="utf-8"></script>
+    <script src="src/layouts.js" charset="utf-8"></script>
+    <script src="src/scenes.js" charset="utf-8"></script>
+    <script src="src/main.js" charset="utf-8"></script>
+  </head>
+  <body onload="main(document.body);" class=" text-light oflow-hide fill-dark  text-primary select-none">
+    
+    <div id="headers" class="order-front fill-base">
+      <div id="menubar" class=" order-front cursor-default select-none  ">
+        <div class="inline padded-h mask active" id="app_tab">
+          <span class="block padded-h text-white text-bold">DX<span>
+        </div>
+        <div class="inline padded-h mask">
+          <span class="block padded-h">File<span>
+        </div>
+        <div class="inline padded-h mask">
+          <span class="block padded-h ">Edit<span>
+        </div>
+        <div class="inline padded-h mask">
+          <span class="block padded-h">View<span>
+        </div>
+        <div class="inline padded-h mask">
+          <span class="block padded-h">Select<span>
+        </div>
+        <div class="inline padded-h mask">
+          <span class="block padded-h">Object<span>
+        </div>
+        <div class="inline padded-h mask">
+          <span class="block padded-h">Text<span>
+        </div>
+        <div class="inline padded-h mask">
+          <span class="block padded-h">Effects<span>
+        </div>
+        <div class="inline padded-h mask">
+          <span class="block padded-h">Window<span>
+        </div>
+        <div id="account_tab" class="inline padded-h mask right">
+          <span class="block padded-h">Knox<span>
+        </div>
+      </div>
+      <div id="main_toolbar" class='btn-toolbar stroked-1 stroked-b stroke-dark  btn-sm padded order-back'>
+
+        <div class='btn-group'>
+          <cbtn class='btn'>Undo</cbtn>
+          <cbtn class='btn'>Redo</cbtn>
+        </div>
+        <div class='btn-group'>
+          <cbtn class='btn'>Copy</cbtn>
+          <cbtn class='btn padded-h-2'>Cut</cbtn>
+          <cbtn class='btn disabled'>Paste</cbtn>
+        </div>
+        <div class='btn-group'>
+          <cbtn class='btn'>Duplicate</cbtn>
+          <cbtn class='btn'>Clone</cbtn>
+          <cbtn class='btn disabled'>Unlink</cbtn>
+        </div>
+
+        <cbtn class='btn'>Create</cbtn>
+        <cbtn class='btn'>Delete</cbtn>
+
+        <div class='btn-group'>
+          <cbtn class='btn primary disabled'>Group</cbtn>
+          <cbtn class='btn'>Ungroup</cbtn>
+        </div>
+        <div class='btn-group'>
+          <cbtn class='btn'>Parent</cbtn>
+          <cbtn class='btn disabled'>Unparent</cbtn>
+        </div>
+        <cbtn class='btn active'>Locked</cbtn>
+        <div class='btn-group'>
+          <cbtn class='btn'>Unlock</cbtn>
+        </div>
+
+        <cbtn class='btn' id="act_layout_toggle">Horizontal</cbtn>
+        <div class='btn-group'>
+          <cbtn class='btn' id="act_layout_column">Column</cbtn>
+          <cbtn class='btn' id="act_layout_row">Row</cbtn>
+        </div>
+
+        <div class='btn-group btn-flat'>
+          <cbtn class='btn'> <span class="label">Union</span></cbtn>
+          <cbtn class='btn'>Intersect</cbtn>
+          <cbtn class='btn'>Subtract</cbtn>
+          <cbtn class='btn'>Combine</cbtn>
+          <cbtn class='btn disabled'>Divide</cbtn>
+        </div>
+
+        <cbtn class='btn '> <span class="label">Snapping</span></cbtn>
+
+        <div class='btn-group'>
+          <cbtn class='btn'> <span class="label">Align</span></cbtn>
+          <cbtn class='btn'> <span class="label">Distribute</span></cbtn>
+        </div>
+        <div class='btn-group'>
+          <cbtn class='btn'> <span class="label">Top</span></cbtn>
+          <cbtn class='btn'> <span class="label">Rise</span></cbtn>
+          <cbtn class='btn'> <span class="label">Lower</span></cbtn>
+          <cbtn class='btn'> <span class="label">Back</span></cbtn>
+        </div>
+      </div>
+      <div id="controls_toolbar" class='btn-toolbar fill-primary btn-xs fs-sm padded order-back stroked-b '>
+        <div class=' inline stroked-r spaced-r'>
+          <span class='padded-h' id="selectionText" contenteditable="true">Rectangle Shape</span>
+        </div>
+
+          <div class="ui-combo mask inline">
+            <div class="inline fillet icon-tiny h-auto sz-constraint w-100px">
+              <span class="inline padded">block</span><i class="icn icn_ui_singlearrowsmalldown inline"></i>
+            </div>
+
+            <clist id="css_display" class="clist fs-normal oflow-hide masked order-front align-bl fillet fill-base shadow-soft">
+              <cli class="cli"> <div class="padded w-100px">block</div></cli>
+              <cli class="cli"> <div class="padded w-100px">inline-block</div></cli>
+              <cli class="cli"> <div class="padded w-100px">inline-flex</div></cli>
+              <cli class="cli active"> <div class="padded w-100px">table-cell</div></cli>
+              <cli class="cli"> <div class="padded w-100px">table-row</div></cli>
+              <cli class="cli"> <div class="padded w-100px">inherit</div></cli>
+              <cli class="cli"> <div class="padded w-100px">flex</div></cli>
+              <cli class="cli"> <div class="padded w-100px">flex-item</div></cli>
+              <cli class="cli"> <div class="padded w-100px">flex-row</div></cli>
+              <cli class="cli"> <div class="padded w-100px">flex-column</div></cli>
+            </clist>
+          </div>
+          <span class='padded-l'>Mode:</span>
+        <div class='btn-group'>
+          <cbtn class='btn active'>Pen</cbtn>
+          <cbtn class='btn'>Smart</cbtn>
+          <cbtn class='btn'>Polygon</cbtn>
+          <cbtn class='btn'>Line</cbtn>
+        </div>
+
+        <span class='padded-l'>Action:</span>
+        <div class='btn-group'>
+          <cbtn class='btn'>Break</cbtn>
+          <cbtn class='btn'>Close</cbtn>
+          <cbtn class='btn'>Smooth</cbtn>
+          <cbtn class='btn padded-h-2'>Join</cbtn>
+          <cbtn class='btn'>Reverse</cbtn>
+        </div>
+        <span class='padded-l'>Convert:</span>
+        <div class='btn-group'>
+          <cbtn class='btn'>Sharp</cbtn>
+          <cbtn class='btn'>Smooth</cbtn>
+          <cbtn class='btn disabled'>Smart</cbtn>
+        </div>
+        <div class='btn-group icon-size-small'>
+          <span class="caction stroked tight"><i class="icn icn_ui_align_left_edges"></i></span>
+          <span class="caction stroked tight"><i class="icn icn_ui_align_horizontal_cntr"></i></span>
+          <span class="caction stroked tight"><i class="icn icn_ui_align_right_edges"></i></span>
+        </div>
+
+
+        <div class="inline " id="toolbar_corners">
+          <div class="inline padded-h stroked-l spaced-l">
+            <span class="inline">TopLeft:</span>
+            <div class="ui-slider relative inline text-center  fillet w-100px sz-constraint">
+              <div class="absolute fill-accent  fillet-left-inherit order-back w-25pc h-full "></div>
+              <span class="inline order-front text-bold relative">25%</span>
+            </div>
+          </div>
+          <div class="inline padded-l">
+            <div class="ui-slider relative inline  text-center  fillet w-100px sz-constraint">
+              <div class="absolute fill-accent  fillet-left-inherit order-back w-50pc h-full "></div>
+              <span class="inline order-front relative">Corners:
+                <span class="spaced-h text-bold text-accent" contenteditable="true">50%</span>
+              </span>
+            </div>
+          </div>
+          <div class="inline padded-l spaced-l " >
+            <div class="ui-slider relative inline text-center  fillet w-100px sz-constraint">
+              <div class="absolute   fillet-left-inherit order-back w-75pc h-full "></div>
+              <span class="inline order-front relative">Padding:
+                <span class="spaced-h text-bold text-light " contenteditable="true">75%</span>
+              </span>
+            </div>
+          </div>
+          <div class="inline padded-h">
+            <span class="inline">BottomLeft:</span>
+            <div class="ui-slider relative inline text-center fillet w-100px sz-constraint">
+              <div class="absolute  fillet-left-inherit order-back w-25pc h-full "></div>
+              <span class="inline order-front relative">25%</span>
+            </div>
+          </div>
+          <div class="inline padded-h clear-both">
+            <span class="inline left">BottomRight:</span>
+            <div class="ui-slider relative inline text-center fillet w-100px h-18px sz-constraint left">
+              <div class="absolute  order-back w-25pc h-25pc align-vc "></div>
+            </div>
+            <span class="inline order-front relative stroked right">25%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class=" order-back fill-inherit" id="content">
+      <!-- canvas -->
+      <div class="absolute h-full w-full align-tl" id="widgets">
+        <!-- canvas -->
+        <div class="fill-light stroked dash_stroked-accent absolute size-full " id="stage"></div>
+
+        <!-- toolsbox -->
+        <div id="toolsbox" class="vbar h-full fill-base  absolute  align-tl sz-constraint">
+          <div class="caction-group clear-both relative">
+            <div class="caction"><i class="icn icn_ui_move_tool"></i><span>ui_move_tool</span></div>
+            <div class="caction"><i class="icn icn_ui_artboardtool"></i><span>ui_artboardtool</span></div>
+            <div class="caction"><i class="icn icn_ui_node_tool"></i><span>ui_node_tool</span></div>
+            <div class="caction"><i class="icn icn_ui_cornertool"></i><span>ui_cornertool</span></div>
+            <div class="caction"><i class="icn icn_ui_pencil_tool"></i><span>ui_pencil_tool</span></div>
+            <div class="caction"><i class="icn icn_ui_vector_pen_tool"></i><span>ui_vector_pen_tool</span></div>
+            <div class="caction"><i class="icn icn_ui_vector_brush"></i><span>ui_vector_brush</span></div>
+            <div class="caction active"><i class="icn icn_ui_gradient_tool"></i><span>ui_gradient_tool</span></div>
+            <div class="caction"><i class="icn icn_ui_vectortransparencytool"></i><span>ui_vectortransparencytool</span></div>
+            <div class="mask relative theme-accent">
+              <div class="caction"><i class="icn icn_ui_arttext_tool"></i><span>ui_arttext_tool</span></div>
+              <div class="masked right absolute  h-auto w-auto">
+                <div class="caction"><i class="icn icn_ui_column_marquee_tool"></i><span>ui_column_marquee_tool</span></div>
+                <div class="caction"><i class="icn icn_ui_elliptical_marquee_tool"></i><span>ui_elliptical_marquee_tool</span></div>
+                <div class="caction"><i class="icn icn_ui_frametexttool"></i><span>ui_frametexttool</span></div>
+                <div class="caction"><i class="icn icn_ui_freehand_selection_tool"></i><span>ui_freehand_selection_tool</span></div>
+              </div>
+            </div>
+          </div>
+  
+          <div id="shapesBar" class="caction-group relative">
+            <div class="caction hidden"><i class="icn icn_ui_shape_arrow"></i><span>ui_shape_arrow</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_calloutellipse"></i><span>ui_shape_calloutellipse</span></div>
+            <div class="caction hidden disabled"><i class="icn icn_ui_shape_calloutrectangle"></i><span>ui_shape_calloutrectangle</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_cat"></i><span>ui_shape_cat</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_cloud"></i><span>ui_shape_cloud</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_cog"></i><span>ui_shape_cog</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_crescent"></i><span>ui_shape_crescent</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_diamond"></i><span>ui_shape_diamond</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_dnut"></i><span>ui_shape_dnut</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_doublestar"></i><span>ui_shape_doublestar</span></div>
+            <div class="caction"><i class="icn icn_ui_shape_ellipse"></i><span>ui_shape_ellipse</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_heart"></i><span>ui_shape_heart</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_pie"></i><span>ui_shape_pie</span></div>
+            <div class="caction"><i class="icn icn_ui_shape_polygon"></i><span>ui_shape_polygon</span></div>
+            <div class="caction"><i class="icn icn_ui_shape_rectangle"></i><span>ui_shape_rectangle</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_roundedrectangle"></i><span>ui_shape_roundedrectangle</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_segment"></i><span>ui_shape_segment</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_squarestar"></i><span>ui_shape_squarestar</span></div>
+            <div class="caction"><i class="icn icn_ui_shape_star"></i><span>ui_shape_star</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_tear"></i><span>ui_shape_tear</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_shape_trapezoid"></i><span>ui_shape_trapezoid</span></div>
+            <div class="caction"><i class="icn icn_ui_shape_triangle"></i><span>ui_shape_triangle</span></div>
+          </div>
+          <div class="caction-group relative">
+            <div class="caction"><i class="icn icn_ui_pantool"></i><span>ui_pantool</span></div>
+            <div class="caction"><i class="icn icn_ui_placeimagetool"></i><span>ui_placeimagetool</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_rectangular_marquee_tool"></i><span>ui_rectangular_marquee_tool</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_row_marquee_tool"></i><span>ui_row_marquee_tool</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_slicecreationtool"></i><span>ui_slicecreationtool</span></div>
+            <div class="caction"><i class="icn icn_ui_vectorcroptool"></i><span>ui_vectorcroptool</span></div>
+            <div class="caction"><i class="icn icn_ui_blurbrushtool"></i><span>ui_blurbrushtool</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_burnbrushtool"></i><span>ui_burnbrushtool</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_dodgebrushtool"></i><span>ui_dodgebrushtool</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_sharpenbrushtool"></i><span>ui_sharpenbrushtool</span></div>
+  
+            <div class="caction hidden"><i class="icn icn_ui_smudgebrushtool"></i><span>ui_smudgebrushtool</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_erase_brush"></i><span>ui_erase_brush</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_paint_brush"></i><span>ui_paint_brush</span></div>
+            <div class="caction hidden"><i class="icn icn_ui_selection_brush"></i><span>ui_selection_brush</span></div>
+  
+          </div>
+  
+          <div class="caction-group w-24px h-25pc stroked-t">
+          </div>
+        </div>
+        <!-- END toolsbox -->
+        <div class="block w-300px h-auto absolute align-hc dash_stroked-accent">
+
+          <row id="cool_tabs" view="main_tabs_view" class="ui-tabbar hidden item_stroke-transparent size-auto item_stroked-solid-l active_stroke-highlight item_padded fill-base" >
+            <item>item 1</item>
+            <item>item 2</item>
+            <item>
+              <column class="ui-togglebar item_padded fill-base" >
+                <item>item 1</item>
+                <item>item 2</item>
+                <item class="active">item 3</item>
+                <item>item 2</item>
+                <item>item 2</item>
+                <item>item 2</item>
+              </column>          
+            </item>
+            <item class="active">item 3</item>
+            <item>item 4</item>
+            </item>
+          </row>
+        </div>
+        <div class="block">
+
+          <layout class="ui-togglebar vertical fill-base left nowrap absolute align-center align-hc" >
+            <item><i class="icn icn_ui_shape_diamond"></i></item>
+            <item><span class="">ui_shape_diamond</span></item>
+            <item>tips?</item>
+            <item>shortcut</item>
+            <item>trigger</item>
+            <item>
+              
+
+          <div class="ui-combo mask">
+            <div class="inline fillet icon-tiny h-auto sz-constraint w-100px">
+              <span class="inline padded">block</span><i class="icn icn_ui_singlearrowsmalldown inline"></i>
+            </div>
+
+            <clist id="css_display" class="clist fs-normal oflow-hide masked order-front align-bl fillet fill-base shadow-soft">
+              <cli class="cli"> <div class="padded w-100px">block</div></cli>
+              <cli class="cli"> <div class="padded w-100px">inline-block</div></cli>
+              <cli class="cli"> <div class="padded w-100px">inline-flex</div></cli>
+              <cli class="cli active"> <div class="padded w-100px">table-cell</div></cli>
+              <cli class="cli"> <div class="padded w-100px">table-row</div></cli>
+              <cli class="cli"> <div class="padded w-100px">inherit</div></cli>
+              <cli class="cli"> <div class="padded w-100px">flex</div></cli>
+              <cli class="cli"> <div class="padded w-100px">flex-item</div></cli>
+              <cli class="cli"> <div class="padded w-100px">flex-row</div></cli>
+              <cli class="cli"> <div class="padded w-100px">flex-column</div></cli>
+            </clist>
+          </div>
+            </item>
+            <item>callback</item>
+          </layout>
+        </div>
+
+      <tabview id="main_tabs_view" controller="main_tabs" ></tabview>
+       <!--- RIGHT DOCK ---->
+       <section class="dock right fill-dark h-full">
+         <layout class="vertical">
+           <item>
+             <!-- layers -->
+             <panel class="stroked-b stroke-base" id="layers">
+               <header>
+                 <div class="ctabbar fs-normal">
+                  <layout class="horizontal">
+
+                    <item>
+                      <div class="ctab active">
+                         <span class="text">Layers</span>
+                       </div>
+                    </item> 
+  
+                     <item>
+                       <div class="ctab">
+                         <span class="text">Stroke</span>
+                       </div>
+                     </item>
+  
+                     <item>
+                       <div class="ctab">
+                         <span class="text">Fills</span>
+                       </div>
+                     </item>
+  
+                     <item>
+                       <div class="ctab">
+                         <span class="text">Flags</span>
+                       </div>
+                     </item>
+  
+                     <item>
+                       <div class="ctab">
+                         <span class="text">Effects</span>
+                       </div>
+                     </item>
+                  </layout>
+
+                 </div>
+                </header>
+                <content>
+                 <div class="toolbar fill-base padded fs-sm ">
+                   
+                   <div class="mask inline">
+                     <div class="ui-slider inline relative text-white h-18px fillet stroked icon-tiny sz-constraint w-auto">
+                       <div class="absolute fillet-tl fillet-bl block order-back h-full w-75pc fill-accent "></div>
+                       <span class=" relative inline order-front padded-h ">Opacity:</span>
+                       <span class=" relative inline order-front padded-h">100 %</span>
+                       
+                     </div>
+                   </div>
+                   <span class="inline padded-h ">Mode</span>
+                   <div class="ui-combo mask inline ">
+                     <div class="inline text-white h-18px w-100px fillet icon-tiny sz-constraint">
+                       <span class="inline padded-h">Overlay</span><i class="icn icn_ui_singlearrowsmalldown inline"></i>
+                     </div>
+       
+                     <clist id="css_display" class="clist fs-normal oflow-hide masked order-front align-br fillet fill-base shadow-soft">
+                       <cli class="cli"> <div class="padded w-100px">Normal</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Darken</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Darker Color</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Multiply</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Color Burn</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Difference</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Lighten</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Lighter Color</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Screen</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Color Dodge</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Overlay</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Add</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Soft Light</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Hard Light</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Vivid Light</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Pin Light</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Linear Light</div></cli>
+                       <cli class="cli active"> <div class="padded w-100px">Hard Mix</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Exclusion</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Subtract</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Hue</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Saturation</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Luminosity</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Color</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Average</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Negation</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Reflect</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Glow</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Contrast Negate</div></cli>
+                       <cli class="cli"> <div class="padded w-100px">Erase</div></cli>
+                     </clist>
+                 </div>
+       
+       
+                 </div>
+               </content>
+             </panel>
+             
+           </item>
+           <item>
+             <!-- sliders -->
+             <panel class="fill-dark collapsed">
+               <header>
+                 <div class="ctabbar fill-dark stroked-b stroke-base">
+                   <layout class="horizontal">
+                      <item>
+                        <span class="ctab active">Sliders</span>
+                      </item>
+                   </layout>
+                 </div>
+               </header>
+               <content>
+       
+                 <div class="block">
+                   <p>FieldSlider</p>
+                   <div class="cslider fieldSlider">
+                     <div class="cslider-range"></div>
+                     <span class="cslider-text">Opacity:</span><span class="cslider-value">75%</span>
+                   </div>
+                 </div>
+                 <div class="block">
+                   <p>ThumbSlider</p>
+                   <div class="cslider thumbSlider">
+                     <div class="cslider-range">
+                       <span class="cslider-thumb"></span>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="block">
+                   <p>AngleSlider</p>
+                   <div class="cslider angleSlider">
+                     <div class="cslider-range"></div>
+                     <span class="cslider-text">Opacity:</span><span class="cslider-value">100%</span>
+                   </div>
+                 </div>
+       
+                 <div class="block">
+                   <p class="hover_text-accent padded hover_">PopupSlider</p>
+                   <span class="cslider-text">Opacity:</span><span class="cslider-value">100%</span>
+                   <div class="cslider popupSlider">
+                     <div class="cslider-range"></div>
+                   </div>
+                 </div>
+               </content>
+             </panel>
+  
+           </item>
+           <item>
+             <!-- transform -->
+             <panel class="collapsed stroked-b stroke-base" id="geom">
+               <header>
+                 <div class="ctabbar fill-dark">
+                   <layout class="horizontal">
+                     <item>
+                       <span class="ctab padded-h fill-base active">Transform</span>
+                     </item>
+                   </layout>
+                 </div>
+               </header>
+               <content>
+                 <div class="row" id="position">
+                   <div class="one">
+                     <span>Position</span>
+                   </div>
+                   <div class="double theme_field">
+                     <span class="field_label">x</span>
+                     <input type="text" name="" value="">
+                   </div>
+                   <div class="double theme_field">
+                     <span class="field_label">y</span>
+                     <input type="text" name="" value="">
+                   </div>
+                   <div class="double theme_field">
+                     <span class="field_label">z</span>
+                     <input type="text" name="" value="">
+                   </div>
+                 </div>
+                 <div class="row" id="size">
+                   <div class="one">
+                     <span>Scale</span>
+                   </div>
+                   <div class="double theme_field">
+                     <span class="field_label">w</span>
+                     <input type="text" name="" value="">
+                     <span class="combo">
+                       <i class="icon icon-chevron-down"></i>
+                       <div class="combo-pane cpanel">
+                         <div class="row">
+                           <div class="cslider popupSlider">
+                             <div class="cslider-range"></div>
+                           </div>
+                         </div>
+                       </div>
+                     </span>
+                   </div>
+                   <div class="double theme_field">
+                     <span class="field_label">h</span>
+                     <input type="text" name="" value="">
+                   </div>
+                   <div class="double theme_field">
+                     <span class="field_label">d</span>
+                     <input type="text" name="" value="">
+                   </div>
+                 </div>
+                 <div class="row" id="rotation">
+                   <div class="one">
+                     <span>Rotation</span>
+                   </div>
+                   <div class="double theme_field">
+                     <span  class="field_label">R</span>
+                     <input type="text" name="" value="">
+                     <span class="combo">
+                       <i class="icon icon-chevron-down"></i>
+                       <div class="combo-pane cpanel">
+                         <div class="row">
+                           <div class="cslider popupSlider">
+                             <div class="cslider-range"></div>
+                           </div>
+                         </div>
+                       </div>
+                     </span>
+         
+                   </div>
+                   <div class="double label">
+                     <span>Shear</span>
+                   </div>
+                   <div class="double theme_field">
+                     <span class="field_label">S</span>
+                     <input type="text" name="" value="">
+                     <span class="combo" id="shearCombo">
+                       <div class="combo-pane cpanel">
+                         <div class="row">
+                           <div class="cslider popupSlider">
+                             <div class="cslider-range"></div>
+                           </div>
+                         </div>
+                       </div>
+                       <i class="icon icon-chevron-down"></i>
+                     </span>
+                   </div>
+                 </div>
+                 <div class="row hidden">
+                   <div class="one">
+                     <span>Type</span>
+                   </div>
+                   <div class="btn-group btn-lg inline">
+                     <cbtn class="btn active" type="cbtn" name="absolute">absolute</cbtn>
+                     <cbtn class="btn" type="cbtn" name="relative">relative</cbtn>
+                     <cbtn class="btn" type="cbtn" name="fixed">fixed</cbtn>
+                   </div>
+                   <div class="btn-group btn-lg inline">
+                     <cbtn class="btn active" type="cbtn" name="absolute">local</cbtn>
+                     <cbtn class="btn" type="cbtn" name="relative">global</cbtn>
+                   </div>
+                   <cbtn class="btn" type="cbtn" name="fixed">Bake</cbtn>
+                 </div>
+               </content>
+             </panel>
+
+           </item>
+
+           <item>
+
+             <!-- assets -->
+             <panel class="stroked-b stroke-base icon-small  collapsed" id="assets">
+               <header>
+                 <div class="ctabbar fill-dark">
+                   <layout class="horizontal">
+                     <item>
+                       <span class="ctab padded-h active">Assets</span>
+                     </item>
+                     <item>
+                       <span class="ctab padded-h">Swatches</span>
+                     </item>
+                     <item>
+                       <span class="ctab padded-h">Stroke</span>
+                     </item>
+                     <item>
+                       <span class="ctab padded-h">Brushes</span>
+                     </item>
+                     
+                   </layout>
+                 </div>
+                </header>
+                <content>
+                 <div class="block order-front fill-light text-white padded ">
+       
+                   <div class="ui-combo mask inline fillet ">
+                     <div class="inline fillet icon-tiny h-auto sz-constraint w-auto">
+                       <span class="padded-h">Actions</span><i class="icn icn_ui_singlearrowsmalldown"></i>
+                     </div>
+       
+                     <list class="clist block absolute align-bl masked fill-base oflow-hide fillet hover-fill text-left ">
+                       <cli class="block padded w-200px">Actions </cli>
+                       <cli class="cli padded">Menus</cli>
+                       <cli class="cli padded">Icons</cli>
+                       <cli class="cli padded">Widgets</cli>
+                       <cli class="cli padded">Controls</cli>
+                       <cli class="cli padded">Toolbars</cli>
+                       <cli class="cli padded">Groups</cli>
+                       <cli class="cli padded">Windows</cli>
+                       <cli class="cli padded">StatusBar</cli>
+                       <cli class="cli padded">Panels</cli>
+                     </list>
+                   </div>
+                 </div>
+                 <div class="cscrollview order-back relative">
+                   <cpane class="cpane stroked-b" id="cursors_group">
+                     <div class="cpane-header"><span class="ctitle">Cursors</span></div>
+                     <div class="cpane-content">
+                       <div class="caction"><i class="icn icn_cursor_moveHorizontal"></i><span>cursor_moveHorizontal</span></div>
+                       <div class="caction"><i class="icn icn_cursor_moveVertical"></i><span>cursor_moveVertical</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_0"></i><span>cursor_resize_0</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_105"></i><span>cursor_resize_105</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_112"></i><span>cursor_resize_112</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_120"></i><span>cursor_resize_120</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_135"></i><span>cursor_resize_135</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_15"></i><span>cursor_resize_15</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_150"></i><span>cursor_resize_150</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_157"></i><span>cursor_resize_157</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_165"></i><span>cursor_resize_165</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_22"></i><span>cursor_resize_22</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_30"></i><span>cursor_resize_30</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_45"></i><span>cursor_resize_45</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_60"></i><span>cursor_resize_60</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_67"></i><span>cursor_resize_67</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_75"></i><span>cursor_resize_75</span></div>
+                       <div class="caction"><i class="icn icn_cursor_resize_90"></i><span>cursor_resize_90</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_0"></i><span>cursor_rotate_0</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_105"></i><span>cursor_rotate_105</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_120"></i><span>cursor_rotate_120</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_135"></i><span>cursor_rotate_135</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_15"></i><span>cursor_rotate_15</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_150"></i><span>cursor_rotate_150</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_165"></i><span>cursor_rotate_165</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_180"></i><span>cursor_rotate_180</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_195"></i><span>cursor_rotate_195</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_210"></i><span>cursor_rotate_210</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_225"></i><span>cursor_rotate_225</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_240"></i><span>cursor_rotate_240</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_255"></i><span>cursor_rotate_255</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_270"></i><span>cursor_rotate_270</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_285"></i><span>cursor_rotate_285</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_30"></i><span>cursor_rotate_30</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_300"></i><span>cursor_rotate_300</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_315"></i><span>cursor_rotate_315</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_330"></i><span>cursor_rotate_330</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_345"></i><span>cursor_rotate_345</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_45"></i><span>cursor_rotate_45</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_60"></i><span>cursor_rotate_60</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_75"></i><span>cursor_rotate_75</span></div>
+                       <div class="caction"><i class="icn icn_cursor_rotate_90"></i><span>cursor_rotate_90</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shape_node_handle_adjust"></i><span>cursor_shape_node_handle_adjust</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shear_0"></i><span>cursor_shear_0</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shear_105"></i><span>cursor_shear_105</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shear_120"></i><span>cursor_shear_120</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shear_135"></i><span>cursor_shear_135</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shear_15"></i><span>cursor_shear_15</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shear_150"></i><span>cursor_shear_150</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shear_165"></i><span>cursor_shear_165</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shear_30"></i><span>cursor_shear_30</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shear_45"></i><span>cursor_shear_45</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shear_60"></i><span>cursor_shear_60</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shear_75"></i><span>cursor_shear_75</span></div>
+                       <div class="caction"><i class="icn icn_cursor_shear_90"></i><span>cursor_shear_90</span></div>
+                       <div class="caction"><i class="icn icn_node_add_cursor"></i><span>node_add_cursor</span></div>
+                       <div class="caction"><i class="icn icn_node_add_cursor2x"></i><span>node_add_cursor2x</span></div>
+                       <div class="caction"><i class="icn icn_node_click_cursor"></i><span>node_click_cursor</span></div>
+                       <div class="caction"><i class="icn icn_node_click_cursor2x"></i><span>node_click_cursor2x</span></div>
+                       <div class="caction"><i class="icn icn_node_close_cursor"></i><span>node_close_cursor</span></div>
+                       <div class="caction"><i class="icn icn_node_close_cursor2x"></i><span>node_close_cursor2x</span></div>
+                       <div class="caction"><i class="icn icn_node_cursor"></i><span>node_cursor</span></div>
+                       <div class="caction"><i class="icn icn_node_cursor2x"></i><span>node_cursor2x</span></div>
+                       <div class="caction"><i class="icn icn_node_curve_cursor"></i><span>node_curve_cursor</span></div>
+                       <div class="caction"><i class="icn icn_node_curve_cursor2x"></i><span>node_curve_cursor2x</span></div>
+                       <div class="caction"><i class="icn icn_node_delete_cursor"></i><span>node_delete_cursor</span></div>
+                       <div class="caction"><i class="icn icn_node_delete_cursor2x"></i><span>node_delete_cursor2x</span></div>
+                       <div class="caction"><i class="icn icn_node_handle_cursor"></i><span>node_handle_cursor</span></div>
+                       <div class="caction"><i class="icn icn_node_handle_cursor2x"></i><span>node_handle_cursor2x</span></div>
+                       <div class="caction"><i class="icn icn_pen_add_cursor"></i><span>pen_add_cursor</span></div>
+                       <div class="caction"><i class="icn icn_pen_add_cursor2x"></i><span>pen_add_cursor2x</span></div>
+                       <div class="caction"><i class="icn icn_pen_close_cursor"></i><span>pen_close_cursor</span></div>
+                       <div class="caction"><i class="icn icn_pen_close_cursor2x"></i><span>pen_close_cursor2x</span></div>
+                       <div class="caction"><i class="icn icn_pen_cursor"></i><span>pen_cursor</span></div>
+                       <div class="caction"><i class="icn icn_pen_cursor2x"></i><span>pen_cursor2x</span></div>
+                       <div class="caction"><i class="icn icn_pen_delete_cursor"></i><span>pen_delete_cursor</span></div>
+                       <div class="caction"><i class="icn icn_pen_delete_cursor2x"></i><span>pen_delete_cursor2x</span></div>
+                       <div class="caction"><i class="icn icn_pen_new_cursor"></i><span>pen_new_cursor</span></div>
+                       <div class="caction"><i class="icn icn_pen_new_cursor2x"></i><span>pen_new_cursor2x</span></div>
+                     </div>
+                   </cpane>
+                   <cpane class="cpane stroked-b" id="tools_group">
+                     <div class="cpane-header"><span class="ctitle">Tools</span></div>
+                     <div class="cpane-content">
+                       <div class="caction"><i class="icn icn_ui_artboardtool"></i><span>ui_artboardtool</span></div>
+                       <div class="caction"><i class="icn icn_ui_arttext_tool"></i><span>ui_arttext_tool</span></div>
+                       <div class="caction"><i class="icn icn_ui_column_marquee_tool"></i><span>ui_column_marquee_tool</span></div>
+                       <div class="caction"><i class="icn icn_ui_cornertool"></i><span>ui_cornertool</span></div>
+                       <div class="caction"><i class="icn icn_ui_elliptical_marquee_tool"></i><span>ui_elliptical_marquee_tool</span></div>
+                       <div class="caction"><i class="icn icn_ui_frametexttool"></i><span>ui_frametexttool</span></div>
+                       <div class="caction"><i class="icn icn_ui_freehand_selection_tool"></i><span>ui_freehand_selection_tool</span></div>
+                       <div class="caction"><i class="icn icn_ui_gradient_tool"></i><span>ui_gradient_tool</span></div>
+                       <div class="caction"><i class="icn icn_ui_move_tool"></i><span>ui_move_tool</span></div>
+                       <div class="caction"><i class="icn icn_ui_node_tool"></i><span>ui_node_tool</span></div>
+                       <div class="caction"><i class="icn icn_ui_pantool"></i><span>ui_pantool</span></div>
+                       <div class="caction"><i class="icn icn_ui_pencil_tool"></i><span>ui_pencil_tool</span></div>
+                       <div class="caction"><i class="icn icn_ui_placeimagetool"></i><span>ui_placeimagetool</span></div>
+                       <div class="caction"><i class="icn icn_ui_rectangular_marquee_tool"></i><span>ui_rectangular_marquee_tool</span></div>
+                       <div class="caction"><i class="icn icn_ui_row_marquee_tool"></i><span>ui_row_marquee_tool</span></div>
+                       <div class="caction"><i class="icn icn_ui_slicecreationtool"></i><span>ui_slicecreationtool</span></div>
+                       <div class="caction"><i class="icn icn_ui_vectorcroptool"></i><span>ui_vectorcroptool</span></div>
+                       <div class="caction"><i class="icn icn_ui_vectortransparencytool"></i><span>ui_vectortransparencytool</span></div>
+                       <div class="caction"><i class="icn icn_ui_vector_pen_tool"></i><span>ui_vector_pen_tool</span></div>
+                       <div class="caction"><i class="icn icn_ui_blurbrushtool"></i><span>ui_blurbrushtool</span></div>
+                       <div class="caction"><i class="icn icn_ui_burnbrushtool"></i><span>ui_burnbrushtool</span></div>
+                       <div class="caction"><i class="icn icn_ui_dodgebrushtool"></i><span>ui_dodgebrushtool</span></div>
+                       <div class="caction"><i class="icn icn_ui_sharpenbrushtool"></i><span>ui_sharpenbrushtool</span></div>
+                       <div class="caction"><i class="icn icn_ui_smudgebrushtool"></i><span>ui_smudgebrushtool</span></div>
+                       <div class="caction"><i class="icn icn_ui_erase_brush"></i><span>ui_erase_brush</span></div>
+                       <div class="caction"><i class="icn icn_ui_paint_brush"></i><span>ui_paint_brush</span></div>
+                       <div class="caction"><i class="icn icn_ui_selection_brush"></i><span>ui_selection_brush</span></div>
+                       <div class="caction"><i class="icn icn_ui_vector_brush"></i><span>ui_vector_brush</span></div>
+                     </div>
+                   </cpane>
+                   <cpane class="cpane stroked-b" id="actions_group">
+                     <div class="cpane-header"><span class="ctitle">Actions</span></div>
+                     <div class="cpane-content">
+                       <div class="caction"><i class="icn icn_ui_addfilltopalette"></i><span>ui_addfilltopalette</span></div>
+                       <div class="caction"><i class="icn icn_ui_addpersona"></i><span>ui_addpersona</span></div>
+                       <div class="caction"><i class="icn icn_ui_addtabstop"></i><span>ui_addtabstop</span></div>
+                       <div class="caction"><i class="icn icn_ui_addtopalettelink"></i><span>ui_addtopalettelink</span></div>
+                       <div class="caction"><i class="icn icn_ui_adjustmentlayer"></i><span>ui_adjustmentlayer</span></div>
+                       <div class="caction"><i class="icn icn_ui_align_bottom_edges"></i><span>ui_align_bottom_edges</span></div>
+                       <div class="caction"><i class="icn icn_ui_align_horizontal_cntr"></i><span>ui_align_horizontal_cntr</span></div>
+                       <div class="caction"><i class="icn icn_ui_align_left_edges"></i><span>ui_align_left_edges</span></div>
+                       <div class="caction"><i class="icn icn_ui_align_right_edges"></i><span>ui_align_right_edges</span></div>
+                       <div class="caction"><i class="icn icn_ui_align_top_edges"></i><span>ui_align_top_edges</span></div>
+                       <div class="caction"><i class="icn icn_ui_align_vertical_cntr"></i><span>ui_align_vertical_cntr</span></div>
+                       <div class="caction"><i class="icn icn_ui_distribute_bottom_edges"></i><span>ui_distribute_bottom_edges</span></div>
+                       <div class="caction"><i class="icn icn_ui_distribute_horizontal_cntrs"></i><span>ui_distribute_horizontal_cntrs</span></div>
+                       <div class="caction"><i class="icn icn_ui_distribute_left_edges"></i><span>ui_distribute_left_edges</span></div>
+                       <div class="caction"><i class="icn icn_ui_distribute_right_edges"></i><span>ui_distribute_right_edges</span></div>
+                       <div class="caction"><i class="icn icn_ui_distribute_top_edges"></i><span>ui_distribute_top_edges</span></div>
+                       <div class="caction"><i class="icn icn_ui_distribute_vertical_cntrs"></i><span>ui_distribute_vertical_cntrs</span></div>
+                       <div class="caction"><i class="icn icn_ui_arrange"></i><span>ui_arrange</span></div>
+                       <div class="caction"><i class="icn icn_ui_back_one"></i><span>ui_back_one</span></div>
+                       <div class="caction"><i class="icn icn_ui_break_curve"></i><span>ui_break_curve</span></div>
+                       <div class="caction"><i class="icn icn_ui_chainlink"></i><span>ui_chainlink</span></div>
+                       <div class="caction"><i class="icn icn_ui_chainlinkconnected"></i><span>ui_chainlinkconnected</span></div>
+                       <div class="caction"><i class="icn icn_ui_characterstyle"></i><span>ui_characterstyle</span></div>
+                       <div class="caction"><i class="icn icn_ui_checkboxtick"></i><span>ui_checkboxtick</span></div>
+                       <div class="caction"><i class="icn icn_ui_close_curve"></i><span>ui_close_curve</span></div>
+                       <div class="caction"><i class="icn icn_ui_clrpicker"></i><span>ui_clrpicker</span></div>
+                       <div class="caction"><i class="icn icn_ui_cogicon"></i><span>ui_cogicon</span></div>
+                       <div class="caction"><i class="icn icn_ui_combine"></i><span>ui_combine</span></div>
+                       <div class="caction"><i class="icn icn_ui_combine_add"></i><span>ui_combine_add</span></div>
+                       <div class="caction"><i class="icn icn_ui_combine_divide"></i><span>ui_combine_divide</span></div>
+                       <div class="caction"><i class="icn icn_ui_combine_intersect"></i><span>ui_combine_intersect</span></div>
+                       <div class="caction"><i class="icn icn_ui_combine_subtract"></i><span>ui_combine_subtract</span></div>
+                       <div class="caction"><i class="icn icn_ui_converttocurves"></i><span>ui_converttocurves</span></div>
+                       <div class="caction"><i class="icn icn_ui_createcharacterstyle"></i><span>ui_createcharacterstyle</span></div>
+                       <div class="caction"><i class="icn icn_ui_creategroupstyle"></i><span>ui_creategroupstyle</span></div>
+                       <div class="caction"><i class="icn icn_ui_createnewexportable"></i><span>ui_createnewexportable</span></div>
+                       <div class="caction"><i class="icn icn_ui_createparagraphstyle"></i><span>ui_createparagraphstyle</span></div>
+                       <div class="caction"><i class="icn icn_ui_create_symbol"></i><span>ui_create_symbol</span></div>
+                       <div class="caction"><i class="icn icn_ui_deletelayer"></i><span>ui_deletelayer</span></div>
+                       <div class="caction"><i class="icn icn_ui_detach_symbol"></i><span>ui_detach_symbol</span></div>
+                       <div class="caction"><i class="icn icn_ui_doublearrow"></i><span>ui_doublearrow</span></div>
+                       <div class="caction"><i class="icn icn_ui_drawpersona"></i><span>ui_drawpersona</span></div>
+                       <div class="caction"><i class="icn icn_ui_drawpersona_off"></i><span>ui_drawpersona_off</span></div>
+                       <div class="caction"><i class="icn icn_ui_editalllayers"></i><span>ui_editalllayers</span></div>
+                       <div class="caction"><i class="icn icn_ui_excl"></i><span>ui_excl</span></div>
+                       <div class="caction"><i class="icn icn_ui_excllow"></i><span>ui_excllow</span></div>
+                       <div class="caction"><i class="icn icn_ui_exclmult"></i><span>ui_exclmult</span></div>
+                       <div class="caction"><i class="icn icn_ui_expandcollapsebtn"></i><span>ui_expandcollapsebtn</span></div>
+                       <div class="caction"><i class="icn icn_ui_export_on"></i><span>ui_export_on</span></div>
+                       <div class="caction"><i class="icn icn_ui_export_part"></i><span>ui_export_part</span></div>
+                       <div class="caction"><i class="icn icn_ui_export"></i><span>ui_export</span></div>
+                       <div class="caction"><i class="icn icn_ui_exportcopyconfig"></i><span>ui_exportcopyconfig</span></div>
+                       <div class="caction"><i class="icn icn_ui_exportpaste_copy"></i><span>ui_exportpaste_copy</span></div>
+                       <div class="caction"><i class="icn icn_ui_exportpaste_add_copy"></i><span>ui_exportpaste_add_copy</span></div>
+                       <div class="caction"><i class="icn icn_ui_exportpaste_add"></i><span>ui_exportpaste_add</span></div>
+                       <div class="caction"><i class="icn icn_ui_exportpaste"></i><span>ui_exportpaste</span></div>
+                       <div class="caction"><i class="icn icn_ui_fill_reverse_gradient"></i><span>ui_fill_reverse_gradient</span></div>
+                       <div class="caction"><i class="icn icn_ui_fill_rotate_gradient"></i><span>ui_fill_rotate_gradient</span></div>
+                       <div class="caction"><i class="icn icn_ui_fliphorizontal"></i><span>ui_fliphorizontal</span></div>
+                       <div class="caction"><i class="icn icn_ui_flipvertical"></i><span>ui_flipvertical</span></div>
+                       <div class="caction"><i class="icn icn_ui_flip_horizontal"></i><span>ui_flip_horizontal</span></div>
+                       <div class="caction"><i class="icn icn_ui_flip_vertical"></i><span>ui_flip_vertical</span></div>
+                       <div class="caction"><i class="icn icn_ui_flood_fill"></i><span>ui_flood_fill</span></div>
+                       <div class="caction"><i class="icn icn_ui_forcepixelalignment"></i><span>ui_forcepixelalignment</span></div>
+                       <div class="caction"><i class="icn icn_ui_forward_one"></i><span>ui_forward_one</span></div>
+                       <div class="caction"><i class="icn icn_ui_guidessnapping"></i><span>ui_guidessnapping</span></div>
+                       <div class="caction"><i class="icn icn_ui_hideselection"></i><span>ui_hideselection</span></div>
+                       <div class="caction"><i class="icn icn_ui_insert_behind"></i><span>ui_insert_behind</span></div>
+                       <div class="caction"><i class="icn icn_ui_insert_inside"></i><span>ui_insert_inside</span></div>
+                       <div class="caction"><i class="icn icn_ui_insert_on_top"></i><span>ui_insert_on_top</span></div>
+                       <div class="caction"><i class="icn icn_ui_join_curves"></i><span>ui_join_curves</span></div>
+                       <div class="caction"><i class="icn icn_ui_layerstabaddicon"></i><span>ui_layerstabaddicon</span></div>
+                       <div class="caction"><i class="icn icn_ui_layerstabaddrastericon"></i><span>ui_layerstabaddrastericon</span></div>
+                       <div class="caction"><i class="icn icn_ui_layerstabadustmenticon"></i><span>ui_layerstabadustmenticon</span></div>
+                       <div class="caction"><i class="icn icn_ui_layerstabeditalllayersicon"></i><span>ui_layerstabeditalllayersicon</span></div>
+                       <div class="caction"><i class="icn icn_ui_layerstabfxicon"></i><span>ui_layerstabfxicon</span></div>
+                       <div class="caction"><i class="icn icn_ui_layerstablockicon"></i><span>ui_layerstablockicon</span></div>
+                       <div class="caction"><i class="icn icn_ui_layerstabmaskicon"></i><span>ui_layerstabmaskicon</span></div>
+                       <div class="caction"><i class="icn icn_ui_layerstabsubtracticon"></i><span>ui_layerstabsubtracticon</span></div>
+                       <div class="caction"><i class="icn icn_ui_linemode"></i><span>ui_linemode</span></div>
+                       <div class="caction"><i class="icn icn_ui_line_cap_butt"></i><span>ui_line_cap_butt</span></div>
+                       <div class="caction"><i class="icn icn_ui_line_cap_round"></i><span>ui_line_cap_round</span></div>
+                       <div class="caction"><i class="icn icn_ui_line_cap_square"></i><span>ui_line_cap_square</span></div>
+                       <div class="caction"><i class="icn icn_ui_line_join_bevel"></i><span>ui_line_join_bevel</span></div>
+                       <div class="caction"><i class="icn icn_ui_line_join_miter"></i><span>ui_line_join_miter</span></div>
+                       <div class="caction"><i class="icn icn_ui_line_join_round"></i><span>ui_line_join_round</span></div>
+                       <div class="caction"><i class="icn icn_ui_line_none"></i><span>ui_line_none</span></div>
+                       <div class="caction"><i class="icn icn_ui_line_solid"></i><span>ui_line_solid</span></div>
+                       <div class="caction"><i class="icn icn_ui_line_texture"></i><span>ui_line_texture</span></div>
+                       <div class="caction"><i class="icn icn_ui_locked"></i><span>ui_locked</span></div>
+                       <div class="caction"><i class="icn icn_ui_locklayericon"></i><span>ui_locklayericon</span></div>
+                       <div class="caction"><i class="icn icn_ui_lock_aspect_ratio"></i><span>ui_lock_aspect_ratio</span></div>
+                       <div class="caction"><i class="icn icn_ui_manager"></i><span>ui_manager</span></div>
+                       <div class="caction"><i class="icn icn_ui_masklayer"></i><span>ui_masklayer</span></div>
+                       <div class="caction"><i class="icn icn_ui_menubtn"></i><span>ui_menubtn</span></div>
+                       <div class="caction"><i class="icn icn_ui_moremenuicon"></i><span>ui_moremenuicon</span></div>
+                       <div class="caction"><i class="icn icn_ui_movebywholepixels"></i><span>ui_movebywholepixels</span></div>
+                       <div class="caction"><i class="icn icn_ui_move_to_back"></i><span>ui_move_to_back</span></div>
+                       <div class="caction"><i class="icn icn_ui_move_to_front"></i><span>ui_move_to_front</span></div>
+                       <div class="caction"><i class="icn icn_ui_node"></i><span>ui_node</span></div>
+                       <div class="caction"><i class="icn icn_ui_outline_mode"></i><span>ui_outline_mode</span></div>
+                       <div class="caction"><i class="icn icn_ui_paragraphstyle"></i><span>ui_paragraphstyle</span></div>
+                       <div class="caction"><i class="icn icn_ui_pdf"></i><span>ui_pdf</span></div>
+                       <div class="caction"><i class="icn icn_ui_penmode"></i><span>ui_penmode</span></div>
+                       <div class="caction"><i class="icn icn_ui_pixel"></i><span>ui_pixel</span></div>
+                       <div class="caction"><i class="icn icn_ui_pixelpersona"></i><span>ui_pixelpersona</span></div>
+                       <div class="caction"><i class="icn icn_ui_pixelpersona_off"></i><span>ui_pixelpersona_off</span></div>
+                       <div class="caction"><i class="icn icn_ui_pixel_draw_mode_2"></i><span>ui_pixel_draw_mode_2</span></div>
+                       <div class="caction"><i class="icn icn_ui_polygonmode"></i><span>ui_polygonmode</span></div>
+                       <div class="caction"><i class="icn icn_ui_pref_keyboardshortcutsremove"></i><span>ui_pref_keyboardshortcutsremove</span></div>
+                       <div class="caction"><i class="icn icn_ui_pref_keyboardshortcutssharedshortcut"></i><span>ui_pref_keyboardshortcutssharedshortcut</span></div>
+                       <div class="caction"><i class="icn icn_ui_pref_keyboardshortcutswarning"></i><span>ui_pref_keyboardshortcutswarning</span></div>
+                       <div class="caction"><i class="icn icn_ui_psd"></i><span>ui_psd</span></div>
+                       <div class="caction"><i class="icn icn_ui_reapplytextstyles"></i><span>ui_reapplytextstyles</span></div>
+                       <div class="caction"><i class="icn icn_ui_removetabstop"></i><span>ui_removetabstop</span></div>
+                       <div class="caction"><i class="icn icn_ui_resetboundingbox"></i><span>ui_resetboundingbox</span></div>
+                       <div class="caction"><i class="icn icn_ui_resetdefaults"></i><span>ui_resetdefaults</span></div>
+                       <div class="caction"><i class="icn icn_ui_retina_pixel_draw_mode_2"></i><span>ui_retina_pixel_draw_mode_2</span></div>
+                       <div class="caction"><i class="icn icn_ui_reversecurves"></i><span>ui_reversecurves</span></div>
+                       <div class="caction"><i class="icn icn_ui_rotate_anti_clockwise"></i><span>ui_rotate_anti_clockwise</span></div>
+                       <div class="caction"><i class="icn icn_ui_rotate_clockwise"></i><span>ui_rotate_clockwise</span></div>
+                       <div class="caction"><i class="icn icn_ui_rotationcenter"></i><span>ui_rotationcenter</span></div>
+                       <div class="caction"><i class="icn icn_ui_rotationcntr"></i><span>ui_rotationcntr</span></div>
+                       <div class="caction"><i class="icn icn_ui_setsnapshot"></i><span>ui_setsnapshot</span></div>
+                       <div class="caction"><i class="icn icn_ui_sharp_corner"></i><span>ui_sharp_corner</span></div>
+                       <div class="caction"><i class="icn icn_ui_singlearrowdown"></i><span>ui_singlearrowdown</span></div>
+                       <div class="caction"><i class="icn icn_ui_singlearrowsmalldown"></i><span>ui_singlearrowsmalldown</span></div>
+                       <div class="caction"><i class="icn icn_ui_singlearrowsmallup"></i><span>ui_singlearrowsmallup</span></div>
+                       <div class="caction"><i class="icn icn_ui_singlearrowtinydown"></i><span>ui_singlearrowtinydown</span></div>
+                       <div class="caction"><i class="icn icn_ui_singlearrowtinyup"></i><span>ui_singlearrowtinyup</span></div>
+                       <div class="caction"><i class="icn icn_ui_sliceset"></i><span>ui_sliceset</span></div>
+                       <div class="caction"><i class="icn icn_ui_smart_corner"></i><span>ui_smart_corner</span></div>
+                       <div class="caction"><i class="icn icn_ui_smart_mode"></i><span>ui_smart_mode</span></div>
+                       <div class="caction"><i class="icn icn_ui_smooth_corner"></i><span>ui_smooth_corner</span></div>
+                       <div class="caction"><i class="icn icn_ui_smooth_curve"></i><span>ui_smooth_curve</span></div>
+                       <div class="caction"><i class="icn icn_ui_snap_selected_geometry"></i><span>ui_snap_selected_geometry</span></div>
+                       <div class="caction"><i class="icn icn_ui_snapshotadd"></i><span>ui_snapshotadd</span></div>
+                       <div class="caction"><i class="icn icn_ui_snapshotrestore"></i><span>ui_snapshotrestore</span></div>
+                       <div class="caction"><i class="icn icn_ui_snap_all_nodes"></i><span>ui_snap_all_nodes</span></div>
+                       <div class="caction"><i class="icn icn_ui_snap_anchor_curves"></i><span>ui_snap_anchor_curves</span></div>
+                       <div class="caction"><i class="icn icn_ui_snap_selected_curves"></i><span>ui_snap_selected_curves</span></div>
+                       <div class="caction"><i class="icn icn_ui_space_horizontally"></i><span>ui_space_horizontally</span></div>
+                       <div class="caction"><i class="icn icn_ui_space_vertically"></i><span>ui_space_vertically</span></div>
+                       <div class="caction"><i class="icn icn_ui_spread"></i><span>ui_spread</span></div>
+                       <div class="caction"><i class="icn icn_ui_svg"></i><span>ui_svg</span></div>
+                       <div class="caction"><i class="icn icn_ui_syncdefaults"></i><span>ui_syncdefaults</span></div>
+                       <div class="caction"><i class="icn icn_ui_sync_symbol"></i><span>ui_sync_symbol</span></div>
+                       <div class="caction"><i class="icn icn_ui_updatecharacterstyle"></i><span>ui_updatecharacterstyle</span></div>
+                       <div class="caction"><i class="icn icn_ui_updateparagraphstyle"></i><span>ui_updateparagraphstyle</span></div>
+                       <div class="caction"><i class="icn icn_ui_vibrflt"></i><span>ui_vibrflt</span></div>
+                       <div class="caction"><i class="icn icn_ui_visible_on"></i><span>ui_visible_on</span></div>
+                       <div class="caction"><i class="icn icn_ui_visible_part"></i><span>ui_visible_part</span></div>
+                       <div class="caction"><i class="icn icn_ui_webpersona"></i><span>ui_webpersona</span></div>
+                       <div class="caction"><i class="icn icn_ui_zoom"></i><span>ui_zoom</span></div>
+                       <div class="caction"><i class="icn icn_ui_zoomin"></i><span>ui_zoomin</span></div>
+                       <div class="caction"><i class="icn icn_ui_zoomin_cursor"></i><span>ui_zoomin_cursor</span></div>
+                       <div class="caction"><i class="icn icn_ui_zoomout"></i><span>ui_zoomout</span></div>
+                       <div class="caction"><i class="icn icn_ui_zoomout_cursor"></i><span>ui_zoomout_cursor</span></div>
+                     </div>
+                   </cpane>
+                   <cpane class="cpane stroked-b" id="shapes_group">
+                     <div class="cpane-header"><span class="ctitle">Shapes</span></div>
+                     <div class="cpane-content">
+                       <div class="caction"><i class="icn icn_ui_shape_arrow"></i><span>ui_shape_arrow</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_calloutellipse"></i><span>ui_shape_calloutellipse</span></div>
+                       <div class="caction disabled"><i class="icn icn_ui_shape_calloutrectangle"></i><span>ui_shape_calloutrectangle</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_cat"></i><span>ui_shape_cat</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_cloud"></i><span>ui_shape_cloud</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_cog"></i><span>ui_shape_cog</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_crescent"></i><span>ui_shape_crescent</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_diamond"></i><span>ui_shape_diamond</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_dnut"></i><span>ui_shape_dnut</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_doublestar"></i><span>ui_shape_doublestar</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_ellipse"></i><span>ui_shape_ellipse</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_heart"></i><span>ui_shape_heart</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_pie"></i><span>ui_shape_pie</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_polygon"></i><span>ui_shape_polygon</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_rectangle"></i><span>ui_shape_rectangle</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_roundedrectangle"></i><span>ui_shape_roundedrectangle</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_segment"></i><span>ui_shape_segment</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_squarestar"></i><span>ui_shape_squarestar</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_star"></i><span>ui_shape_star</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_tear"></i><span>ui_shape_tear</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_trapezoid"></i><span>ui_shape_trapezoid</span></div>
+                       <div class="caction"><i class="icn icn_ui_shape_triangle"></i><span>ui_shape_triangle</span></div>
+                     </div>
+                   </cpane>
+                   <cpane class="cpane stroked-b" id="apps_group">
+                     <div class="cpane-header"><span class="ctitle">Apps</span></div>
+                     <div class="cpane-content"></div>
+                   </cpane>
+                 </div>
+                 <div class="block padded text-justify order-backward ">
+                   <div class=" fillet  fill-dark relative">
+                     <span contenteditable="true" class="ui-text oflow-hide outline-none sz-constraint padded block text-white w-full fillet relative align-tl h-full ">button</span>
+                     <span class="fillet absolute align-tr text-light fill-base padded btn inline-block right ">Search</span>
+                   </div>
+                 </div>
+               </content>
+             </panel>
+           </item>
+         </layout>
+       </section>
+  
+      <div class="absolute no-mouse h-full w-full" id="guides" style="background: none; position:fixed"></div>
+  
+  
+      </div>
+      
+    </section>
+        <div id="statusBar" class="absolute fill-base align-bb  text-inherit w-full sz-constraint h-auto order-front stroked-t ">
+          <div class="relative left">
+            <span id="statusTips" class="relative padded block"> <b>Click</b> an object to select it. <b>Drag</b> handles to change the selection's fill.</span>
+          </div>
+          <div class="relative right">
+            <span id="statusText" class="relative padded block"> <b>Click</b> an object to select it. <b>Drag</b> handles to change the selection's fill.</span>
+          </div>
+          <div id="statusProgressBar" class="absolute align-bb  w-full order-front stroked-b stroke-accent stroked-b-2 "></div>
+        </div>
+  </body>
+</html>

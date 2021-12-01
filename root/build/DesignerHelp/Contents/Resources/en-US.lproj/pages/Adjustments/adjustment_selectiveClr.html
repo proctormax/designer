@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="adjustment, selective color, CMYK" />
+	<meta name="description" content="The Selective Color adjustment provides a way to subtly adjust and enhance colors in your image on an individual channel basis." />
+	<title>Selective Color adjustment</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Selective Color adjustment</h1>
+
+		<p>The Selective Color adjustment provides a way to subtly adjust and enhance colors in your image on an individual channel basis. It makes a useful tool for color balance corrections.</p>
+
+		<figure>
+			<div class="comparison"><img src="../../../shared/adjustment_base.jpg" alt="Before" /><div><img src="../../../shared/adjustment_selectiveclr.jpg" alt="After" /></div>
+			</div>
+		</figure>
+	</header>
+
+	<section class="about">
+
+		<aside class="box note">
+			<p>This adjustment produces subtle effects. Even at the extreme ends of the adjustment, you shouldn't see many artefacts or saturated pixels. If you intend to make extreme adjustments, such as completely recoloring pixels, then the HSL adjustment will be more suitable.</p>
+		</aside>
+
+	</section>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted in the dialog:</p>
+		<ul>
+			<li><span class="ui">Color</span>&#8212;determines the color to be adjusted. Select from the pop-up menu.</li>
+			<li><span class="ui">Relative</span>&#8212;when selected (default), color is added or subtracted in proportion to the amount of that color present in the source pixels, giving a more natural effect. If this option is off, colors are added or subtracted based on the absolute percentage specified, regardless of the how much of that color is present in the image.</li>
+			<li>The sliders control the levels of the named color in the selected <span class="ui">Color</span>. Drag the slider to the left to decrease the level of the named color, drag the slider to the right to increase it.</li>
+		</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="adjustment_applying.html">Applying adjustments</a></li>
+			<li><a href="adjustment_HSL.html">HSL adjustment</a></li>
+		</ul>
+	</section>
+	
+	<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

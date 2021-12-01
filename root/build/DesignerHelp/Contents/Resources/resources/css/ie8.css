@@ -1,0 +1,72 @@
+li {
+  list-style-type: circle !important;
+}
+
+.caret li {
+	list-style-type: circle !important;
+	margin-left: 1em !important;
+	}
+
+.caret li a {
+  background-image: none !important;
+  padding-left: 0em !important;
+  margin-left: 0em !important;
+}
+
+.nocaret li, .subcaret li {
+	margin-left: -2em !important;
+}
+
+.selected .book {
+	background-image: none !important;
+  padding-left: 0em !important;
+  margin-left: 0em;
+  }
+
+.nocaret li, .nosubcaret {
+  list-style-type: circle !important;
+  background-image: none !important;
+  padding-left: 0;
+  margin-left: -0.5em;
+  font-weight: normal;
+  }
+
+.mlink {
+  list-style-type: circle !important;
+  background-image: none !important;
+  padding-left: 0;
+  margin-left: -2.75em;
+  font-weight: normal;
+}
+
+.subcaret li:not(.nosubcaret) {
+  margin-left: -2.1em !important;
+}
+
+.subcaret .book {
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  background-position: 0 0.42em !important;
+  background-size: 1.1em 1.1em !important;
+}
+
+.subcaret li.selected > a.book {
+  background-image: none !important;
+}
+
+.subcaret li ul li .book {
+  background-image: none !important;
+}
+
+.comparison > div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	max-width: 60em;
+	z-index: 3;
+}
+
+.comparison:hover > div {
+	display: none;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="panels" />
+	<meta name="description" content="Panel overview and settings." />
+	<title>Paragraph panel</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Paragraph panel</h1>
+
+		<p>The <span class="ui">Paragraph</span> panel allows you to control the position and flow of individual paragraphs or entire stories.</p>
+
+
+	</header>
+
+	<section class="about">
+
+		<h2>About the Paragraph panel</h2>
+		
+		<p>The <span class="ui">Paragraph</span> panel is unique in providing the ability to:</p>
+		
+		<ul>
+			<li>Control the amount of vertical space between paragraphs.</li>
+			<li>Apply left and right indentations as well as indents for first lines only.</li>
+			<li>Create multiple tab stops set at different distances&#8212;giving you the ability to have irregular spacing when tapping <span class="key TAB-TAG"></span> several times.</li>
+			<li>Adjust the behavior of justified text&#8212;giving you control over how the app calculates spacing between letters and words to allow text to be flush along both left and right margins.</li>
+		</ul>
+		
+		<figure class="nft overrideDE overrideFR">
+			<p><img src="../../images/panel_paragraph.png" class="responsive panel" alt="Paragraph panel" /></p>
+			<figcaption>The Paragraph panel.</figcaption>
+		</figure>
+
+		<p>The following panel options are available:</p>
+		
+		<ul>
+			<li><span class="ui">Left Align</span>&#8212;sets the paragraph alignment to adhere to the left margin.</li>
+			<li><span class="ui">Center Align</span>&#8212;sets the paragraph alignment to be equidistance from the left and right margins.</li>
+			<li><span class="ui">Right Align</span>&#8212;sets the paragraph alignment to adhere to the right margin.</li>
+			<li><span class="ui">Justified Left</span>&#8212;sets the paragraph alignment to both the left and right margins. The last line of a paragraph is left aligned.</li>
+			<li><span class="ui">Justified Center</span>&#8212;as with Justified Left, however, the last line of a paragraph is center aligned.</li>
+			<li><span class="ui">Justified Right</span>&#8212;as with Justified Left, however, the last line of a paragraph is right aligned.</li>
+			<li><span class="ui">Justified All</span>&#8212;as with Justified Left, however, the last line of a paragraph is justified regardless of length (sometimes known as Force-Justified).</li>
+			<li>Text Style&#8212;allows a paragraph <a href="../Text/textStyles.html">text style</a> to be applied to selected text.</li>
+		</ul>
+
+		<details open="open">
+			<summary>Spacing</summary>
+			<ul>
+				<li><span class="ui">Leading</span>&#8212;controls the distance between text baselines (vertical gap between lines) within the paragraph. Select from the pop-up menu. Options include:<ul>
+							<li><span class="ui">Default</span>&#8212;sets the line spacing to the font's default (i.e., single).</li>
+							<li><span class="ui">Exactly</span>&#8212;sets a fixed spacing (other text attributes are ignored for line spacing purposes). This can be adjusted using the presets in the pop-up menu.</li>
+							<li><span class="ui">% Height</span>&#8212;sets spacing based on a percentage of the text's size. This can be adjusted using the presets in the pop-up menu.</li>
+							<li><span class="ui">At Least</span>&#8212;sets a minimum spacing (actual line spacing may increase depending on other text attributes). This can be adjusted using the presets in the pop-up menu.</li>
+							<li><span class="ui">Multiple</span>&#8212;controls line spacing as a portion of the default. This can be adjusted using the presets in the pop-up menu.</li>
+						</ul>
+					</li>
+				<li><img src="../../../shared/ui/indent_left.png" class="tool" width="18" height="18" alt="Left indent" /> <span class="ui">Left Indent</span>&#8212;controls the left indent applied to the entire paragraph (excluding the first line).</li>
+				<li><img src="../../../shared/ui/indent_right.png" class="tool" width="18" height="18" alt="Right indent" /> <span class="ui">Right Indent</span>&#8212;controls the right indent applied to the entire paragraph.</li>
+				<li><img src="../../../shared/ui/before_paragraph.png" class="tool" width="18" height="18" alt="Space Before Paragraph" /> <span class="ui">Space Before Paragraph</span>&#8212;controls the vertical gap which precedes the paragraph. By default, this is not applied at the top of a column; this can be altered from the <span class="ui">Use space before:</span> pop-up menu.</li>
+				<li><img src="../../../shared/ui/indent_firstline.png" class="tool" width="18" height="18" alt="First Line indent" /> <span class="ui">First Line Indent</span>&#8212;controls the indent applied to the first line of the paragraph.</li>
+				<li><img src="../../../shared/ui/outdent_lastline.png" class="tool" width="18" height="18" alt="Last Line Outdent" /> <span class="ui">Last Line Outdent</span>&#8212;controls the outdent applied to the last line of the paragraph.</li>
+				<li><img src="../../../shared/ui/after_paragraph.png" class="tool" width="18" height="18" alt="Space After Paragraph" /> <span class="ui">Space After Paragraph</span>&#8212;controls the vertical gap which succeeds the paragraph.</li>
+				<li><span class="ui">Space between same styles</span>&#8212;when this checkbox is ticked, you can manually set the spacing between paragraphs of the same style.</li>
+				<li><span class="ui">Sum space before and after</span>&#8212;when this checkbox is ticked, the sum of the <span class="ui">Space Before Paragraph</span> and the <span class="ui">Space After Paragraph</span> settings are used to determine spacing between paragraphs.</li>
+				<li><span class="ui">Use space before:</span>&#8212;controls when <span class="ui">Space Before Paragraph</span> settings are applied to the text. Select from the pop-up menu.</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+			<summary>Tab Stops</summary>
+			<ul>
+				<li><span class="ui">Default Tab Stops</span>&#8212;controls the standard horizontal space added before a character when a tab (<span class="key TAB-TAG"></span>) is inserted.</li>
+				<li><span class="ui">Add New Tab Stop</span>&#8212;adds an additional tab stop position.</li>
+				<li><span class="ui">Delete Selected Tab Stop</span>&#8212;removes the selected tab stop.</li>
+				<li>Tab stop alignment&#8212;sets the alignment of the selected tab stop.</li>
+				<li>Tab stop leader&#8212;sets the characters displayed which indicates the selected tab stop.</li>
+			</ul>
+			
+			<aside class="box note">
+				<p>See the <a href="../Text/paragraphs.html">Paragraph formatting</a> topic for more information.</p>
+			</aside>
+			
+		</details>
+		
+		<details open="open">
+			<summary>Justification</summary>
+			<ul>
+				<li><span class="ui">Minimum Word Spacing</span>&#8212;sets the minimum gap allowed.</li>
+				<li><span class="ui">Desired Word Spacing</span>&#8212;sets the preferred gap between words.</li>
+				<li><span class="ui">Maximum Word Spacing</span>&#8212;sets the maximum gap allowed.</li>
+				<li><span class="ui">Minimum Letter Spacing</span>&#8212;sets the minimum tracking allowed.</li>
+				<li><span class="ui">Desired Letter Spacing</span>&#8212;sets the preferred tracking (spacing between letters) within words when a paragraph has a justified alignment.</li>
+				<li><span class="ui">Maximum Letter Spacing</span>&#8212;sets the maximum tracking allowed.</li>
+			</ul>
+
+		</details>
+		
+		<details open="open">
+			<summary>Bullets and Numbering</summary>
+			<ul>
+				<li><span class="ui">Type</span>&#8212;select a type of bullet or numbering list from the pop-up menu.</li>
+				<li><span class="ui">Level</span>&#8212;enter a list level.</li>
+				<li><span class="ui">Text</span>&#8212;allows you to adjust the symbol(s) you wish to use for your list, as well as the spacing between the symbols and the text. Click on the downward arrow or the <span class="ui">More</span> button to browse additional symbols.</li>
+				<li><span class="ui">Tabstop</span>&#8212;adjust the distance text moves by in your list when the tab key is pressed.</li>
+				<li><span class="ui">Alignment</span>&#8212;select from <span class="ui">Left Align</span>, <span class="ui">Center Align</span>, or <span class="ui">Right Align</span>.</li>
+				<li><span class="ui">Start numbering at</span>&#8212;for numbered lists, you can adjust the number the list starts from.</li>
+				<li><span class="ui">Restart numbering</span>&#8212;for numbered lists, you can restart the numbering at certain points within the list.</li>
+				<li><span class="ui">Restart numbering now</span>&#8212;tick this checkbox to immediately restart the numbering from the current point within your list.</li>
+				<li><span class="ui">Name</span>&#8212;name your list.</li>
+				<li><span class="ui">Global</span>&#8212;tick this checkbox to make this list available to be used multiple times within your design.</li>
+				<li><span class="ui">Style</span>&#8212;select a style from the pop-up menu or click <span class="ui">New</span> to create a new style using the pop-up menu.</li>		
+			</ul>
+			
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Text/paragraphs.html">Paragraph formatting</a></li>
+			<li><a href="characterPanel.html">Character panel</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

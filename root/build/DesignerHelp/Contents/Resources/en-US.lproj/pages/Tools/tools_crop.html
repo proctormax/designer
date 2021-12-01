@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="crop, vector, tool" />
+	<meta name="description" content="The Vector Crop Tool allows you to remove portions of a selected object (or grouped object)." />
+	<title>Vector Crop Tool</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1><img src="../../../shared/ui/vectorcroptool.png" class="tool heading" width="18" height="18" alt="Vector Crop Tool" /> Vector Crop Tool</h1>
+
+		<p>The <span class="ui">Vector Crop Tool</span> allows you to remove portions of a selected object (or grouped objects) non-destructively and to specific aspect ratios. Images can also be cropped.</p>
+	</header>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To apply a crop:</summary>
+			<p>With the <span class="ui">Vector Crop Tool</span> selected, do any of the following:</p>
+			<ul>
+				<li>Drag a corner handle to apply a crop from the selected corner.</li>
+				<li>Drag from an edge handle to apply a vertical or horizontal crop from the chosen edge.</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+			<summary>To reposition objects within a crop area:</summary>
+			<ul>
+				<li>With the <span class="ui">Vector Crop Tool</span> selected, drag within the crop area.</li>
+			</ul>
+		</details>
+
+		<aside class="box note">
+			<h3>Modifier keys</h3>
+			<p>When using the Vector Crop Tool, the following modifier keys can be used while applying a crop:</p>
+			<ul>
+				<li>The <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> constrains the object's aspect ratio during cropping. You can use this modifier when cropping an image from an edge handle.</li>
+				<li>The <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span> temporarily disables snapping.</li>
+				<li>The <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> applies the crop from the center.</li>
+				<li class="osx">The <span class="key CTRL-TAG"></span> <span class="KEY-TAG"></span> allows the crop area to be rotated about its opposite handle.</li>
+				<li class="win32">Pressing the right mouse button lets you rotate the crop area about its opposite handle.</li>
+			</ul>
+			<p>These modifiers can be used in combination.</p>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../ObjectControl/rotateShear.html">Rotating and shearing objects</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

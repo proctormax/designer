@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="symbols" />
+	<meta name="description" content="Use symbols to simultaneously affect change across linked objects." />
+	<title>Symbols</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Symbols</h1>
+
+		<p>A symbol is an intelligent object that can be placed repeatedly in your document. Editing any one of these symbols on the page will automatically and instantly update all instances of that symbol.</p>
+		
+		<figure>
+			<div class="comparison"><img src="../../../shared/symbols-before.png" alt="Before" /><div><img src="../../../shared/symbols-after.png" alt="After" /></div>
+			</div>
+			<figcaption>The glowing button outline is a symbol. When the shape of the button is modified on just one instance, they all change simultaneously.</figcaption>
+		</figure>
+	</header>
+
+	<section class="about">
+		
+		<h2>Symbols</h2>
+		
+		<p>Symbols offer a highly efficient way of working, suitable for 'repeating' elements of design that are liable to change, e.g. logos, branding, and buttons, as well as specific adjustments. By avoiding having to edit the same elements multiple times, a symbol can be edited just once with all instances of that symbol updated automatically, even across multiple artboards. You also have the option to edit any symbol instance independently of others.</p>
+		
+		<h2>Linking</h2>
+
+		<p>Symbol links are automatically made when creating multiple instances of a symbol. This linkage is fundamental to symbol functionality and, by default, allows changes to symbols to be reflected across all instances.</p>
+
+		<h2>Synchronizing</h2>
+
+		<p>Synchronization allows editing across all symbols, while unsynchronization means all future editing is restricted to the current object and no longer affects the other symbol instances, until synchronization is enabled again.</p>
+		
+		<p>If a symbol instance no longer needs to be a symbol, it can be detached (made into a standard object) without affecting synchronization. If all symbol instances no longer need to be symbols, you can revert them all back to standard objects.</p>
+		
+		<h2>Editing</h2>
+		
+		<p>You can perform any edit to symbols just as you would to a standard object. You can:</p>
+		 	<ul>
+		 		<li>Reshape, change stroke/fills, and add effects/adjustments. Note that global colors can also be used to change color across object independently of symbols.</li>
+		 		<li>Add new 'non-symbol' objects to the symbol by dragging into the symbol group in the Layers panel.</li>
+		 	</ul>
+		 	
+		<aside class="box note">
+			<p>A key feature of symbols is that you can edit object attributes independently of each other&#8212;this means that, when unsynchronized, a specific attribute (dimension, fill, effect, font, etc.) can be edited while the remaining attributes will still retain symbols functionality.</p>
+		</aside>
+		 		
+		<p>As a useful visual aid, symbols are indicated by an vertical orange bar on their layer entries in the Layers panel. If a symbolized object has been edited when unsynchronized a dashed orange bar is shown instead.</p>
+		
+		<figure class="nft">
+			<p><img src="../../images/symbols_indicators.png" class="screenshot" width="291" height="184" alt="Symbol indicators" /></p>
+			<figcaption>The Layers panel showing symbol indicators.</figcaption>
+		</figure>
+
+		<aside class="box note">
+			<p>The Symbols panel is hidden by default. It can be switched on via <span class="ui">View&#62;Studio</span> when working in Designer or Pixel Persona.</p>
+		</aside>
+		
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/create_symbol.png" class="tool" width="16" height="16" alt="Create" /> To create a symbol:</summary>
+
+			<ol>
+				<li>Select an object or group on the page or via the <span class="ui">Layers</span> panel.</li>
+				<li>On the <span class="ui">Symbols</span> panel, click <span class="ui">Create</span>.</li>
+			</ol>
+			
+			<aside class="box tip">
+				<p>You cannot create a symbol from an object present in an existing symbol.</p>
+			</aside>
+			
+		</details>
+		
+		<details open="open">
+			<summary>To create symbol instances:</summary>
+
+			<p>Do one of the following:</p>
+			<ul>
+				<li>On the <span class="ui">Symbols</span> panel, drag a chosen symbol onto the page.</li>
+				<li>Duplicate an existing 'on page' symbol already present on the page.</li>
+			</ul>
+			
+			<p>Once there are multiple instances on your page, symbol linkage allows synchronization to occur across objects.</p>
+			
+				</details>
+				
+		<details open="open">
+			<summary>To edit a symbol instance:</summary>
+
+			<ul>
+				<li>On the <span class="ui">Layers</span>, expand a chosen Symbol entry, then edit the objects within.</li>
+			</ul>
+			
+			<aside class="box tip">
+				<p>When a symbol that comprises multiple objects is used to create symbol instances on the page, it groups the objects by default. As a result, you have to edit the objects within to affect change across all symbol instances.</p>
+			</aside>
+						
+		</details>	
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/sync_symbol.png" class="tool" width="16" height="16" alt="Sync" /> To disable synchronization:</summary>
+
+			<ul>
+				<li>On the <span class="ui">Symbols</span> panel, click <span class="ui">Sync</span> to disable so any object can be independently edited. When enabled again, editing is synchronized across all symbol instances.</li>
+			</ul>
+						
+		</details>	
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/detach_symbol.png" class="tool" width="16" height="16" alt="Detach" /> To detach objects from symbols:</summary>
+
+			<ol>
+				<li>Select a symbol on the page or via the <span class="ui">Layers</span> panel.</li>
+				<li>On the <span class="ui">Symbols</span> panel, click <span class="ui">Detach</span>.</li>
+			</ol>
+			
+			<p>Detaching reverts a symbol back to a standard object while keeping synchronization enabled.</p>
+						
+		</details>	
+		
+		<details>
+			<summary>To delete a symbol:</summary>
+
+			<ul>
+				<li>On the Symbols panel, <span class="key CLICK-TAG"></span>-click the symbol and select <span class="ui">Delete Symbol</span>.</li>
+			</ul>
+			
+			<p>All symbol instances will revert to standard objects.</p>
+			
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Panels/symbolsPanel.html">Symbols panel</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

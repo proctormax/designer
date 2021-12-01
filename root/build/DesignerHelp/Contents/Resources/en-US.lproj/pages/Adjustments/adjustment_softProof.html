@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="adjustment, output, print, screen, soft proof" />
+	<meta name="description" content="Preview the effect of creating an output for a specific color space or device." />
+	<title>Soft Proof adjustment</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Soft Proof adjustment</h1>
+
+		<p>Preview the effect of creating an output for a specific color space or device.</p>
+
+		<figure>
+			<div class="comparison"><img src="../../../shared/adjustment_base.jpg" alt="Before" /><div><img src="../../../shared/adjustment_softproof.jpg" alt="After" /></div>
+			</div>
+		</figure>
+	</header>
+
+	<section class="about">
+
+		<p>This adjustment allows you to preview different output options for your photo or design. It can also be used creatively for tonal effects. As it behaves like a standard adjustment layer, it must be hidden or removed before exporting or sending to print, otherwise its effect will be included in the output.</p>
+
+	</section>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted in the dialog:</p>
+		<ul>
+			<li><span class="ui">Proof Profile</span>&#8212;determines the color profile used. Select from the menu or use the up/down arrow keys to cycle through options.</li>
+			<li><span class="ui">Rendering Intent</span>&#8212;specifies how the adjustment converts 'source' colors to the destination color space using different intents. Select from the following:<ul>
+					<li><span class="ui">Absolute colourimetric</span>&#8212;adjusted colors are scaled to the white point of the source color space.</li>
+					<li><span class="ui">Perceptual</span>&#8212;for out of gamut colors, the visual relationship between colors is preserved so they are perceived as natural to the human eye, even though the color values may change.</li>
+					<li><span class="ui">Relative colourimetric</span>&#8212;shifts colors after making comparison between the highlights of a source color space and the destination color space, while minimizing desaturation.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Black point compensation</span>&#8212;when selected (default), the design's black point is adjusted to honor the current contrast within the current proof profile. If this option is off, the design's black point is not adjusted and image contrast may not be honored.</li>
+			<li><span class="ui">Gamut check</span>&#8212;when selected, RGB colors without a CMYK equivalent will display as gray.</li>
+		</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="adjustment_applying.html">Applying adjustments</a></li>
+			<li><a href="../ExportPersona/exportPersona.html">Export Persona</a></li>
+			<li><a href="../ShareSavePrint/export.html">Export</a></li>
+			<li><a href="../ShareSavePrint/print.html">Print</a></li>
+		</ul>
+	</section>
+	
+	<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

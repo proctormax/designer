@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="export options, panel, dialog, export settings, compare, file format" />
+	<meta name="description" content="Learn about the export settings available in the Export dialog and Export Options panel." />
+	<title>Export Settings</title>
+</head>
+
+<body>
+	<header>
+		<h1>Export Settings</h1>
+		<p>Each file format available in the <span class="ui"><a href="exportOptionsPanel.html">Export Options</a></span> panel and the <a href="../ShareSavePrint/export.html">Export dialog</a> offers a variety of settings that affect the resulting file(s).</p>
+	</header>
+	
+	<section class="settings">
+		<h2>General settings</h2>
+		<p>The following settings are available for all file formats, dependent on applicability to the export workflow that is in use.</p>
+
+		<table class="formatSettings general">
+			<thead>
+				<tr>
+					<th></th>
+					<th>Export Options panel</th>
+					<th>Export dialog</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<p><span class="ui">Mode</span>&#8212;with Selection enabled, the export options can be modified for the selected export area to be different from the default export option settings; Defaults, when enabled, sets the default export options for new slices.</p>
+					</td>
+					<td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="Export Options panel" /></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<p><span class="ui">Preset</span>&#8212;sets predefined export options for a range of common file formats, color modes, and bit depths. Select from the pop-up menu.</p>
+					</td>
+					<td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="Export Options panel" /></td>
+					<td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="Export dialog" /></td>
+				</tr>
+				<tr>
+					<td>
+						<p><span class="ui">(File) Format</span>&#8212;sets the graphics format for the exported file. Select from the pop-up menu.</p>
+					</td>
+					<td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="Export Options panel" /></td>
+					<td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="Export dialog" /></td>
+				</tr>
+				<tr>
+					<td>
+						<p><span class="ui">Resample</span>&#8212;select which resampling method to use if the image is to be upsampled or downsampled on export. For the PDF, SVG and EPS file formats, this setting is available when you select <span class="ui">More</span>.</p>
+						<p>The following resample settings are available:</p>
+						<ul>
+							<li><span class="ui">Nearest Neighbor</span>&#8212;simple resampling which has the fastest processing time. Use for hard-edge images.</li>
+							<li><span class="ui">Bilinear</span>&#8212;algorithmic resampling for use when shrinking images.</li>
+							<li><span class="ui">Bicubic</span>&#8212;algorithmic resampling for use when enlarging images. Resampling is smoother than Bilinear but has a slower processing time.</li>
+							<li><span class="ui">Lanczos 3</span>&#8212;complex algorithmic resampling which gives the best results but with the longest processing time. Available as 'separable' and 'non-separable'; the latter gives marginally better results, but is slightly slower than 'separable'.</li>
+						</ul>
+					</td>
+					<td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="Export Options panel" /></td>
+					<td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="Export dialog" /></td>
+				</tr>
+				<tr>
+					<td>
+						<p><span class="ui">Area</span>&#8212;instead of exporting the whole page, you can export the currently selected layer content, with or without other (deselected) layers, using the 'Selection Area' or 'Selection Only' options.</p>
+						<p>To export drawn slices or specific layers, use <a href="../ExportPersona/exportPersona.html">Export Persona</a>.</p>
+					</td>
+					<td></td>
+					<td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="Export dialog" /></td>
+				</tr>
+				<tr>
+					<td>
+						<p><span class="ui">Don't export layers hidden by Export Persona</span>&#8212;when selected, layers which have been hidden while in Export Persona are excluded from the exported file even if they display on the page.</p>
+						<p>If this option is off, all objects on the page (which are within the Area selected above) will be exported regardless of whether they are hidden in Export Persona.</p>
+					</td>
+					<td></td>
+					<td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="Export dialog" /></td>
+				</tr>
+			</tbody>
+		</table>
+							
+		<h2>Multi-format settings</h2>
+		<p>Availability of the following settings depends on the selected file format.</p>
+		<p>When using the Export dialog, many of these settings are only available when you select <span class="ui">More</span>.</p>
+		
+		<aside class="box tip">
+			<p>If the header and footer of the table below are out of view, hover over a tick to confirm the relevant format.</p>
+		</aside>
+		
+		<table class="formatSettings multi">
+			<thead>
+				<tr>
+					<th>
+						<p>Show descriptions: <br /><a href="#!" class="showAllDescs">All</a> / <a href="#!" class="hideAllDescs">None</a></p>
+					</th>
+					<th><img src="../../../shared/ui/exportPNG.png" class="formatIcon" alt="PNG" title="PNG" /></th>
+					<th><img src="../../../shared/ui/exportJPEG.png" class="formatIcon" alt="JPEG" title="JPEG" /></th>
+					<th><img src="../../../shared/ui/exportGIF.png" class="formatIcon" alt="GIF" title="GIF" /></th>
+					<th><img src="../../../shared/ui/exportTIFF.png" class="formatIcon" alt="TIFF" title="TIFF" /></th>
+					<th><img src="../../../shared/ui/exportPSD.png" class="formatIcon" alt="PSD" title="PSD" /></th>
+					<th><img src="../../../shared/ui/exportPDF.png" class="formatIcon" alt="PDF" title="PDF" /></th>
+					<th><img src="../../../shared/ui/exportSVG.png" class="formatIcon" alt="SVG" title="SVG" /></th>
+					<th class="windowsOnly"><img src="../../../shared/ui/exportWMF.png" class="formatIcon" alt="WMF" title="WMF" /></th>
+					<th><img src="../../../shared/ui/exportEPS.png" class="formatIcon" alt="EPS" title="EPS" /></th>
+					<th><img src="../../../shared/ui/exportEXR.png" class="formatIcon" alt="EXR" title="EXR" /></th>
+					<th><img src="../../../shared/ui/exportHDR.png" class="formatIcon" alt="HDR" title="HDR" /></th>
+					<th><img src="../../../shared/ui/exportTGA.png" class="formatIcon" alt="TGA" title="TGA" /></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<details>
+							<summary>Size</summary>
+							<p>By default, displays the native dimensions of your image. Type value(s) to set an alternative width and/or height for your exported image.</p>
+							<p>&nbsp;</p>
+							<p><img src="../../../shared/ui/locked.png" class="tool" width="20" height="18" alt="Lock aspect ratio" /> <span class="ui">Lock aspect ratio</span>&#8212;when selected (default), the image's native aspect ratio is honored. If this option is off, the exported image's width and height can be set independently.</p>
+							
+							<aside class="box warning">
+								<p>If your exported design exceeds the maximum dimensions for the file format to which you are exporting, the design will be scaled on export to fit the maximum dimensions. The Export dialog will warn you about this before you proceed.</p>
+							</aside>
+						</details>
+					</td><!-- PNG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PNG" /></td><!-- JPEG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="JPEG" /></td><!-- GIF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="GIF" /></td><!-- TIFF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="TIFF" /></td><!-- PSD --><td></td><!-- PDF --><td></td><!-- SVG --><td></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td></td><!-- EXR --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EXR" /></td><!-- HDR --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="HDR" /></td><!-- TGA --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="TGA" /></td>
+				</tr>
+				<tr>
+					<td><details>
+						<summary>Raster DPI</summary>
+						<p>This option lets you choose the resolution for rasterization for effects which will be rasterized on export.</p>
+					</details></td><!-- PNG --><td></td><!-- JPEG --><td></td><!-- GIF --><td></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PDF" /></td><!-- SVG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="SVG" /></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EPS" /></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Rasterize</summary>
+							<p>Select an option for Rasterizing design elements which are unsupported by the file format. Select from the pop-up menu:<ul>
+								<li><span class="ui">Nothing</span>&#8212;no elements within the design are rasterized on export, therefore unsupported elements are not included in the exported file.</li>
+								<li><span class="ui">Everything</span>&#8212;all elements within the design are rasterized for a resulting exported file which perfectly matches your original design.</li>
+								<li><span class="ui">Unsupported properties</span>&#8212;only unsupported elements are rasterized in the exported file.</li>
+							</ul>
+						</details>
+					</td><!-- PNG --><td></td><!-- JPEG --><td></td><!-- GIF --><td></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PDF" /></td><!-- SVG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="SVG" /></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EPS" /></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Downsample images</summary>
+							<p>Select whether to downsample raster images within the design.</details>
+					</td><!-- PNG --><td></td><!-- JPEG --><td></td><!-- GIF --><td></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PDF" /></td><!-- SVG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="SVG" /></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EPS" /></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Above (DPI)</summary>
+							<p>If this set DPI is exceeded by raster design elements, those elements will be rasterized down to this set DPI. This option is dependent on the <span class="ui">Downsample images</span> option being active.</p>
+						</details>
+					</td><!-- PNG --><td></td><!-- JPEG --><td></td><!-- GIF --><td></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PDF" /></td><!-- SVG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="SVG" /></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EPS" /></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Pixel format</summary>
+							<p>Sets the color mode for the exported image. Select from the pop-up menu.</p>
+						</details>
+					</td><!-- PNG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PNG" /></td><!-- JPEG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="JPEG" /></td><!-- GIF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="GIF" /></td><!-- TIFF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="TIFF" /></td><!-- PSD --><td></td><!-- PDF --><td></td><!-- SVG --><td></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="TGA" /></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Use document resolution</summary>
+							<p>Ensures the export is the same DPI as the current project's setting.</p>
+						</details>
+					</td><!-- PNG --><td></td><!-- JPEG --><td></td><!-- GIF --><td></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PDF" /></td><!-- SVG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="SVG" /></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EPS" /></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Use DPI</summary>
+							<p>Overrides the current project's resolution setting for the export. The exported image's DPI is set using the adjacent input box</p>
+						</details>
+					</td><!-- PNG --><td></td><!-- JPEG --><td></td><!-- GIF --><td></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PDF" /></td><!-- SVG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="SVG" /></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EPS" /></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Allow JPEG compression</summary>
+							<p>When selected, rasterized design elements will be compressed to decrease exported file size. If this option is off, rasterized design elements will be exported as uncompressed.</p>
+						</details>
+					</td><!-- PNG --><td></td><!-- JPEG --><td></td><!-- GIF --><td></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PDF" /></td><!-- SVG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="SVG" /></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EPS" /></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Quality</summary>
+							<p>Sets the resulting quality of rasterized design elements in the exported image&#8212;or the overall image in the JPEG format's case. Higher quality may result in significantly larger file sizes.</p>
+							<p>For the JPEG format, this is an independent setting. For the other formats, it is dependent on the <span class="ui">Allow JPEG compression</span> option being active.</p>
+						</details>
+					</td><!-- PNG --><td></td><!-- JPEG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="JPEG" /></td><!-- GIF --><td></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PDF" /></td><!-- SVG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="SVG" /></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EPS" /></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Matte</summary>
+							<p>Sets the background color for the exported image. Select from the pop-up panel.</p>
+						</details>
+					</td><!-- PNG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PNG" /></td><!-- JPEG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="JPEG" /></td><!-- GIF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="GIF" /></td><!-- TIFF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="TIFF" /></td><!-- PSD --><td></td><!-- PDF --><td></td><!-- SVG --><td></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td></td><!-- EXR --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EXR" /></td><!-- HDR --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="HDR" /></td><!-- TGA --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="TGA" /></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>ICC profile</summary>
+							<p>By default, this is set to the ICC profile of the project (document). However, the project's ICC profile can be overwritten for this export area. Select from the pop-up menu.</p>
+						</details>
+					</td><!-- PNG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PNG" /></td><!-- JPEG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="JPEG" /></td><!-- GIF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="GIF" /></td><!-- TIFF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="TIFF" /></td><!-- PSD --><td></td><!-- PDF --><td></td><!-- SVG --><td></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="TGA" /></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Embed ICC profile</summary>
+							<p>When selected, the ICC profile is included within the exported image's data, allowing the image to be viewed using the correct profile on any device. If this option is off, the viewing device must possess the ICC profile otherwise a substitute profile is used.</p>
+						</details>
+					</td><!-- PNG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PNG" /></td><!-- JPEG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="JPEG" /></td><!-- GIF --><td></td><!-- TIFF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="TIFF" /></td><!-- PSD --><td></td><!-- PDF --><td></td><!-- SVG --><td></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Include bleed</summary>
+							<p>When selected, the bleed area of your document, if set, will be included in the PDF output. See <a href="../ShareSavePrint/bleed.html">Setting bleed</a>.</p>
+						</details>
+					</td><!-- PNG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PNG" /></td><!-- JPEG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="JPEG" /></td><!-- GIF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="GIF" /></td><!-- TIFF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="TIFF" /></td><!-- PSD --><td></td><!-- PDF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PDF" /></td><!-- SVG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="SVG" /></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EPS" /></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="TGA" /></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Palletized</summary>
+							<p>When selected, encodes the exported image by mapping it to the Palette and Colors settings set below. (This option cannot be switched off for GIF images.)</p>
+						</details>
+					</td><!-- PNG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PNG" /></td><!-- JPEG --><td></td><!-- GIF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="GIF" /></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td></td><!-- SVG --><td></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Palette</summary>
+							<p>By default, this is set to be automatically determined. However, you can specify an encoding palette yourself. Select from the pop-up menu.</p>
+						</details>
+					</td><!-- PNG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PNG" /></td><!-- JPEG --><td></td><!-- GIF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="GIF" /></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td></td><!-- SVG --><td></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Colors</summary>
+							<p>Selects the number of colors available in the palette. Select from the pop-up menu.</p>
+						</details>
+					</td><!-- PNG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PNG" /></td><!-- JPEG --><td></td><!-- GIF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="GIF" /></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td></td><!-- SVG --><td></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>(Use) Relative coordinates</summary>
+							<p>When selected, objects in the exported file have relative positions for maximum editability. If this option is off, object positions are fixed to create a file which is optimized for viewing.</p>
+						</details>
+					</td><!-- PNG --><td></td><!-- JPEG --><td></td><!-- GIF --><td></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td></td><!-- SVG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="SVG" /></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EPS" /></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Embed metadata</summary>
+							<p>When selected, any raster image's original metadata is preserved in the exported file. If this option is off, all original metadata is removed; use this for privacy reasons or to reduce file size (for web use).</p>
+						</details>
+					</td><!-- PNG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PNG" /></td><!-- JPEG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="JPEG" /></td><!-- GIF --><td></td><!-- TIFF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="TIFF" /></td><!-- PSD --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="PSD" /></td><!-- PDF --><td></td><!-- SVG --><td></td><!-- WMF --><td class="windowsOnly"></td><!-- EPS --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="EPS" /></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+				<tr class="win32">
+					<td>
+						<details>
+							<summary>Export text as curves</summary>
+							<p>When selected, the text in the resulting file will be drawn as curves (therefore displaying precisely as intended, even if viewed on a device without the used fonts installed). However, this option will increase file size, and text won't be editable as text or available to &#34;text to speech&#34; in other apps. If this option is off, text will be exported as text and the viewing device will need the used fonts installed for it to be displayed correctly.</p>
+						</details>
+					</td><!-- PNG --><td></td><!-- JPEG --><td></td><!-- GIF --><td></td><!-- TIFF --><td></td><!-- PSD --><td></td><!-- PDF --><td></td><!-- SVG --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="SVG" /></td><!-- WMF --><td><img src="../../../shared/check.png" class="smallCheck" alt="check" title="WMF" /></td><!-- EPS --><td></td><!-- EXR --><td></td><!-- HDR --><td></td><!-- TGA --><td></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr class="neverHide">
+					<td></td>
+					<td><img src="../../../shared/ui/exportPNG.png" class="formatIcon" alt="PNG" title="PNG" /></td>
+					<td><img src="../../../shared/ui/exportJPEG.png" class="formatIcon" alt="JPEG" title="JPEG" /></td>
+					<td><img src="../../../shared/ui/exportGIF.png" class="formatIcon" alt="GIF" title="GIF" /></td>
+					<td><img src="../../../shared/ui/exportTIFF.png" class="formatIcon" alt="TIFF" title="TIFF" /></td>
+					<td><img src="../../../shared/ui/exportPSD.png" class="formatIcon" alt="PSD" title="PSD" /></td>
+					<td><img src="../../../shared/ui/exportPDF.png" class="formatIcon" alt="PDF" title="PDF" /></td>
+					<td><img src="../../../shared/ui/exportSVG.png" class="formatIcon" alt="SVG" title="SVG" /></td>
+					<td class="windowsOnly"><img src="../../../shared/ui/exportWMF.png" class="formatIcon" alt="WMF" title="WMF" /></td>
+					<td><img src="../../../shared/ui/exportEPS.png" class="formatIcon" alt="EPS" title="EPS" /></td>
+					<td><img src="../../../shared/ui/exportEXR.png" class="formatIcon" alt="EXR" title="EXR" /></td>
+					<td><img src="../../../shared/ui/exportHDR.png" class="formatIcon" alt="HDR" title="HDR" /></td>
+					<td><img src="../../../shared/ui/exportTGA.png" class="formatIcon" alt="TGA" title="TGA" /></td>
+				</tr>
+			</tfoot>
+		</table>
+
+		<x-osx>
+			<h2>Settings unique to<select class="uniqueSettings" name="format">
+					<option value="jpeg">JPEG</option>
+					<option value="tiff">TIFF</option>
+					<option value="psd">PSD</option>
+					<option value="pdf">PDF</option>
+					<option value="svg">SVG</option>
+					<option value="eps">EPS</option>
+					<option value="exr">EXR</option>
+				</select>format</h2>
+		</x-osx>
+
+		<h2 class="win32">Settings unique to JPEG format</h2>
+		<table data-format="jpeg" class="formatSettings unique" data-selected="true">
+			<thead>
+				<tr>
+					<th>
+						<p>Show descriptions: <a href="#!" class="showAllDescs">All</a> / <a href="#!" class="hideAllDescs">None</a></p>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<details>
+							<summary>Progressive</summary>
+							<p>When selected, the exported image is progressively compressed for optimized viewing when downloading.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Convert clips to paths</summary>
+							<p>When checked, converts top level clipping curves to vector paths.</p>
+						</details>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h2 class="win32">Settings unique to TIFF format</h2>
+		<table data-format="tiff" class="formatSettings unique">
+			<thead>
+				<tr>
+					<th>
+						<p>Show descriptions: <a href="#!" class="showAllDescs">All</a> / <a href="#!" class="hideAllDescs">None</a></p>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<details>
+							<summary>Save Affinity layers</summary>
+							<p>Layers in the document are preserved in the exported TIFF image. These layers will only be readable when the file is opened in an Affinity application.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Compression</summary>
+							<p>By default, this is set to ZIP. Options to apply LZW compression or no compression are available.</p>
+						</details>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2 class="win32">Settings unique to PSD format</h2>
+		<table data-format="psd" class="formatSettings unique">
+			<thead>
+				<tr>
+					<th>
+						<p>Show descriptions: <a href="#!" class="showAllDescs">All</a> / <a href="#!" class="hideAllDescs">None</a></p>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<details>
+							<summary>Compatibility mode</summary>
+							<p>When selected, the exported file will be compatible with other applications which do not support some features (file size may also increase). If this option is off, the exported file may not be readable by other applications (depending on the features used in the image).</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Smallest file sizes</summary>
+							<p>When selected, the exported file will be compressed where possible but may not be readable by other applications. If this option is off, no compression will take place for the exported file.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Rasterize all layers</summary>
+							<p>When selected, layer content is rasterized in the exported file (the layer structure is retained). If this option is off, no rasterization takes place on export.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Gradients</summary>
+							<p>This setting offers two strategies for how to export this specific project attribute. Select from the pop-up menu.</p>
+							<ul>
+								<li><span class="ui">Preserve accuracy</span>&#8212;the listed attribute will be rasterized to preserve its intended design.</li>
+								<li><span class="ui">Preserve editability</span>&#8212;the listed attribute will be exported with its original settings to allow for easy editing.</li>
+							</ul>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Layer effects</summary>
+							<p>This setting offers two strategies for how to export this specific project attribute. Select from the pop-up menu.</p>
+							<ul>
+								<li><span class="ui">Preserve accuracy</span>&#8212;the listed attribute will be rasterized to preserve its intended design.</li>
+								<li><span class="ui">Preserve editability</span>&#8212;the listed attribute will be exported with its original settings to allow for easy editing.</li>
+							</ul>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Lines</summary>
+							<p>This setting offers two strategies for how to export this specific project attribute. Select from the pop-up menu.</p>
+							<ul>
+								<li><span class="ui">Preserve accuracy</span>&#8212;the listed attribute will be rasterized to preserve its intended design.</li>
+								<li><span class="ui">Preserve editability</span>&#8212;the listed attribute will be exported with its original settings to allow for easy editing.</li>
+							</ul>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Adjustments</summary>
+							<p>This setting offers two strategies for how to export this specific project attribute. Select from the pop-up menu.</p>
+							<ul>
+								<li><span class="ui">Preserve accuracy</span>&#8212;the listed attribute will be rasterized to preserve its intended design.</li>
+								<li><span class="ui">Preserve editability</span>&#8212;the listed attribute will be exported with its original settings to allow for easy editing.</li>
+							</ul>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Adv Blending</summary>
+							<p>This setting offers two strategies for how to export this specific project attribute. Select from the pop-up menu.</p>
+							<ul>
+								<li><span class="ui">Preserve accuracy</span>&#8212;the listed attribute will be rasterized to preserve its intended design.</li>
+								<li><span class="ui">Preserve editability</span>&#8212;the listed attribute will be exported with its original settings to allow for easy editing.</li>
+							</ul>
+						</details>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2 class="win32">Settings unique to PDF format</h2>
+		<table data-format="pdf" class="formatSettings unique">
+			<thead>
+				<tr>
+					<th>
+						<p>Show descriptions: <a href="#!" class="showAllDescs">All</a> / <a href="#!" class="hideAllDescs">None</a></p>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<details>
+							<summary>Preview export when complete</summary>
+							<p>Opens the exported file in your device's default PDF viewer.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Compatibility</summary>
+							<p>Sets the version and type of PDF to be exported. Select from the pop-up menu.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Color Space</summary>
+							<p>Choose whether to use the document's current color space or export using a selected color space. Select from the pop-up menu.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Profile</summary>
+							<p>Choose whether to use the document's current color profile or export using a specific color profile. Select from the pop-up menu.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Embed profiles</summary>
+							<p>When selected (default), the chosen (or document's) color profile will be embedded in the exported file. If this option is off, the exported file will not have the color profile embedded with it (the viewing device will need to have the appropriate color profile installed to view the exported PDF accurately).</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Convert image color spaces</summary>
+							<p>When checked, all placed images will convert to the color space chosen on export (as set in the <span class="ui">Profile</span> option above). When unchecked, the color space of the imported placed image is honored.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Honor spot colors</summary>
+							<p>When selected, spot colors within the design are exported as spot colors. If this option is off, spot colors are converted to an equivalent color within the exported file's color space (see above).</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Overprint black</summary>
+							<p>When selected, design elements which use CMYK black are set to overprint. If this option is off, CMYK black elements are set to be indistinguishable to other colors during printing.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Include hyperlinks</summary>
+							<p>When selected, the PDF output will include all created hyperlinks.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Include bookmarks</summary>
+							<p>When selected, PDF bookmarks are included in the PDF output. (Primarily used when working on Affinity Publisher documents in Affinity Designer or Affinity Photo.)</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Include layers</summary>
+							<p>When selected, the PDF output will include all created layers.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Include printers marks</summary>
+							<p>When selected, the PDF output will show printer marks around the page edge. All printer marks are added by default. However, particular types of printer marks can be switched off, depending on your preference. These include:</p>
+						
+							<ul>
+								<li>Crop marks</li>
+								<li>Registration marks</li>
+								<li>Color and grayscale bars</li>
+								<li>Page information</li>
+							</ul>
+						
+							<aside class="box note">
+								<p>Professional printing services often print on larger sheets and trim them to your page design's size. To ensure movement during printing does not result in white edges, make your design fill the document's bleed area, turn on <span class="ui">Include bleed</span> to add this information to your PDF file, and turn on <span class="ui">Include printers marks</span> to assist with trimming.</p>
+							</aside>
+					</details>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<details>
+						<summary>Embed fonts</summary>
+						<p>Select an option for handling fonts used in the document.</p>
+						
+						<ul>
+							<li><span class="ui">Text as Curves</span>&#8212;all text is converted to curves. This ensures the resulting exported file will display correctly regardless of the fonts installed on the viewing device.</li>
+							<li><span class="ui">All Fonts</span>&#8212;any fonts used in the document are embedded in the exported file. This ensures the resulting exported file will display correctly regardless of the fonts installed on the viewing device.</li>
+							<li><span class="ui">Uncommon Fonts</span>&#8212;fonts used are only embedded in the exported file if they are not part of the fonts traditionally installed on most devices. The viewing device must have the expected fonts installed to view any common fonts in the exported file.</li>
+							<li><span class="ui">No Fonts</span>&#8212;no fonts are embedded in the exported file. A viewing device must have all the used fonts installed to accurately view the exported file.</li>
+						</ul>
+					</details>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<details>
+						<summary>Subset fonts</summary>
+						<p>When selected, embedded fonts will only include the glyphs used in the document. If this option is off, all glyphs for the used fonts are embedded in the exported file, regardless of whether they appear in the document or not.</p>
+					</details>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<details>
+						<summary>Allow advanced features</summary>
+						<p>When selected, all design features supported by the PDF file format are exported as vectors. If this option is off, depending on the nature of these features, they are rasterized or converted to curves on export. These features include:</p>
+						
+						<ul>
+							<li>Artistic text which has been horizontally or vertically stretched.</li>
+							<li>Text which has an applied stroke.</li>
+							<li>Linear and radial gradients.</li>
+							<li>Non-solid transparencies.</li>
+						</ul>
+						
+						<aside class="box warning">
+							<p>If the <span class="ui">Allow advanced features</span> option is selected on export, the resulting PDF, when imported into other applications, may cause the above advanced features to be rasterized or rendered incorrectly. The third party's app may also display an error message on PDF import.</p>
+						</aside>
+					</details>
+				</td>
+			</tr>
+		</table>
+
+		<h2 class="win32">Settings unique to SVG format</h2>
+		<table data-format="svg" class="formatSettings unique">
+			<thead>
+				<tr>
+					<th>
+						<p>Show descriptions: <a href="#!" class="showAllDescs">All</a> / <a href="#!" class="hideAllDescs">None</a></p>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="osx">
+					<td>
+						<details>
+							<summary>Export text as curves</summary>
+							<p>When selected, the text in the resulting file will be drawn as curves (therefore displaying precisely as intended, even if viewed on a device without the used fonts installed). However, this option will increase file size, and text won't be editable as text or available to &#34;text to speech&#34; in other apps. If this option is off, text will be exported as text and the viewing device will need the used fonts installed for it to be viewed correctly.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Longer text spans</summary>
+							<p>When selected, text is placed relative to previous lines of text (therefore producing smaller file sizes and simpler file structures). If this option is off, text is placed with absolute coordinates</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Use hex colors</summary>
+							<p>When selected, colors in the exported file are expressed as RGB Hex values (therefore reducing file size but less human-readable). If this option is off, colors are exported as standard RGB values.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Flatten transforms</summary> 
+							<p>When selected, transformed objects are 'fixed' in the exported file. This allows for the file to be viewed more accurately across applications. If this option is off, objects remain dynamically transformed to allow for more flexible editing.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Use tile patterns</summary>
+							<p>When selected, rasterized areas may be converted to a vector shape with a filled bitmap to give smoother, sharper edges. However, this might not be supported by some apps. If this option is off, objects will exist as singular elements within the exported file.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Set viewBox</summary>
+							<p>When selected, the exported file includes coordinates and dimensions which define the view box of the image. If this option is off, no view box data is included in the exported file. The export area is used to define the view box.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Add line breaks</summary>
+							<p>When selected, the code in the exported file will be optimized for human viewing and reading. If this option is off, the image will be exported with code on a single line which will make the file size significantly smaller.</p>
+						</details>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2 class="win32">Settings unique to WMF format</h2>
+		<table data-format="wmf" class="formatSettings unique">
+			<thead>
+				<tr>
+					<th>
+						<p>Show descriptions: <a href="#!" class="showAllDescs">All</a> / <a href="#!" class="hideAllDescs">None</a></p>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<details>
+							<summary>Enhanced Windows Metafile</summary>
+							<p>When checked, the exported file with be in EMF format. When unchecked, the export file will be in WMF format.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Clip Transparency</summary>
+							<p>When checked, any transparent area around your content is absent in the exported file. When unchecked, the transparent area is retained.</p>
+						</details>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2 class="win32">Settings unique to EPS format</h2>
+		<table data-format="eps" class="formatSettings unique">
+			<thead>
+				<tr>
+					<th>
+						<p>Show descriptions: <a href="#!" class="showAllDescs">All</a> / <a href="#!" class="hideAllDescs">None</a></p>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<details>
+							<summary>PostScript level</summary>
+							<p>Sets the version of the exported PostScript file. Select from the pop-up menu.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Minimize size</summary>
+							<p>When selected (default), the exported file will be compressed to create the smallest file size possible.</p>
+						</details>
+					</td>
+				</tr>
+			</tbody>
+		</table>	
+
+		<h2 class="win32">Settings unique to EXR format</h2>
+		<table data-format="exr" class="formatSettings unique">
+			<thead>
+				<tr>
+					<th>
+						<p>Show descriptions: <a href="#!" class="showAllDescs">All</a> / <a href="#!" class="hideAllDescs">None</a></p>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<details>
+							<summary>Color profile from name</summary>
+							<p>This is dependent on OpenColorIO. With a valid configuration, appending the filename during export will convert to that color space from scene linear. For example, name your file <i>output acescg.exr</i> to convert to ACEScg if your OCIO configuration lists that as a valid color space.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Multi channel</summary>
+							<p>When exporting to OpenEXR format, converts layers with affixes&#8212;e.g. .RGB or .RGBA after the layer's name&#8212;back to multi channel data.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Include unknown channels</summary>
+							<p>When checked, channels whose type cannot be determined will still be exported as a single luminance-based channel.</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Image pixels</summary>
+							<p>Choose whether to encode Image channels (<span class="ui">RGBA</span> etc) as 16-bit (half float) or 32-bit (full float).</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Spacial pixels</summary>
+							<p>Choose whether to encode Spatial channels (<span class="ui">XYZ</span> etc) as 16-bit (half float) or 32-bit (full float).</p>
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<details>
+							<summary>Other pixels</summary>
+							<p>Choose whether to encode other/undetermined channels as 16-bit (half float) or 32-bit (full float).</p>
+						</details>
+					</td>
+				</tr>
+		</table>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../ShareSavePrint/export.html">Export dialog</a></li>
+			<li><a href="exportPersona.html">Export Persona</a></li>
+			<li><a href="exportOptionsPanel.html">Export Options panel</a></li>
+		</ul>
+	</section>
+	
+	<div id="spacer"></div>
+	
+	<script src="../../../resources/js/breakout.js"></script>
+	<script src="../../../resources/js/comparisonTable.js"></script>
+</body>
+</html>

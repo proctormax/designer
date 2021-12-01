@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="package, packaging, archive, archiving, distribute, distribution, distributing, zip, gather, collect" />
+	<meta name="description" content="Create a package containing a document and its fonts and linked images." />
+	<title>Creating packages</title>
+</head>
+
+<body>
+
+	<header>
+		<h1>Creating packages</h1>
+		<p>Use the <span class="ui">File</span> menu's <span class="ui">Save as Package</span> command to open the <span class="ui">Package Document</span> dialog.</p>
+		<p>The dialog's <span class="ui">Summary</span> section reports the numbers of fonts and images used in your document and alerts you to potential problems.</p>
+		<p>The total number of images may be larger than the sum of linked, missing and modified images because it also includes any that are embedded within the document.</p>
+		
+		<aside class="box warning">
+			<p>Check your compliance with the licensing terms of all fonts and images used in a document before packaging and distributing them.</p>
+		</aside>
+
+		<figure class="nft">
+			<div class="single"><img src="../../images/packageCreating.jpg" class="screenshot responsive" alt="The Package Document dialog when creating a package." /></div>
+			<figcaption></figcaption>
+		</figure>		
+	</header>
+
+	<section class="about">
+		<h2>Excluding items from a package</h2>
+		<p>You can choose to exclude all fonts and/or all images when creating a package.</p>
+		<p>To exclude individual items, delete them from the destination folder after the package has been created.</p>
+		
+		<h2 id="dialogStatuses">Diagnosing problematic statuses</h2>
+		<p>The dialog provides separate counts of items that are missing, modified or restricted. Investigate these before you proceed with packaging.</p>		
+		<ul>
+			<li><span class="ui">Missing</span>&#8212;select <span class="ui">Fonts</span> or <span class="ui">Images</span> on the dialog's left side to precisely identify missing items. To focus your investigation, click the <span class="ui">Status</span> column heading to group items by status.</li>
+			<li><span class="ui">Restricted</span>&#8212;a font is considered restricted if any of the Restricted License Embedding, Preview and Print Embedding, or Bitmap Embedding Only attributes are set within it. Distribution of the font may require you to obtain a more permissive license or the recipient to have their own license for the font.</li>
+			<li><span class="ui">Modified</span>&#8212;an image has changed outside of Affinity Designer and has not been updated within the document. Use the Resource Manager to update the document with the latest image data.</li>
+		</ul>
+		
+		<aside class="box warning">
+			<p>For all fonts, regardless of whether they are listed as Restricted, check your licensing terms are compatible with your intentions for the package.</p>
+		</aside>
+
+		<h2>If packaging fails</h2>
+		<p>Affinity Designer may inform you that it has failed to save the package, and that the package may be incomplete. One reason for this message is to remind you that some fonts or images are missing.</p>
+		<p>If you did not expect any fonts or images to be missing, try packaging the document again.</p>
+		<p>Always check that a package contains everything that is expected.</p>
+	</section>
+	
+	<section class="howto">
+		<details open="open">
+			<summary>To package a document:</summary>
+			<ol>
+				<li>With the document open in Affinity Designer, select <span class="ui">File&gt;Save as Package</span>.</li>
+				<li>Set <span class="ui">Include fonts</span> and <span class="ui">Include images</span> as needed.</li>
+				<li>Select <span class="ui">OK</span>.</li>
+				<li>Browse to the empty folder in which you want to create the package.</li>
+				<li>Select <span class="ui">Package</span>.</li>
+			</ol>
+		</details>
+	</section>
+	
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../ShareSavePrint/aboutPackaging.html">About packaging</a></li>
+			<li><a href="../ShareSavePrint/openingPackages.html">Opening packages</a></li>
+			<li><a href="../Media/resourceManager.html">Resource Manager</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+</html>

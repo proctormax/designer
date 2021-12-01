@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="rasterize, rasterize, raster, flatten" />
+	<meta name="description" content="Use rasterization to convert vector shapes, lines and text into pixels." />
+	<title>Rasterizing</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Rasterizing</h1>
+		<p>Lines, curves, shapes and text can be rasterized to create pixel layers.</p>
+		<p>Rasterization has various uses:</p>
+		<ul>
+			<li>For when the appearance of complex vector gradients or effects needs to be honored, particularly for print artwork.</li>
+			<li>To convert a placed image layer to a pixel layer (for pixel manipulation). By default, many brush tools rasterize image layers before painting.</li>
+		</ul>
+		
+	</header>
+	
+	<section class="howto">
+		<details open="open">
+		<summary>To rasterize an object:</summary>
+			<p>Do one of the following:</p>
+				<ul>
+					<li>From <span class="ui">Layer</span> menu, select <span class="ui">Rasterize</span>.</li>
+					<li>On the <span class="ui">Layers</span> panel, <span class="key CLICK-TAG"></span>-click a layer and select <span class="ui">Rasterize</span>.</li>
+				</ul>
+			
+			<aside class="box note">
+				<p>Partly off-canvas objects will not be trimmed with this operation; if completely off canvas, the object will be kept.</p>
+			</aside>
+			
+		</details>
+		
+		<details open="open">
+		<summary>To rasterize an object and trim off-canvas content:</summary>
+			<ul>
+				<li>On the <span class="ui">Layers</span> panel, <span class="key CLICK-TAG"></span>-click a layer and select <span class="ui">Rasterize &amp; Trim</span>.</li>
+			</ul>
+			
+			<aside class="box note">
+				<p>Partly off-canvas objects will be trimmed with this operation; if completely off canvas, the object will be removed.</p>
+			</aside>
+		</details>
+		
+		<details open="open">
+		<summary>To rasterize an object to a mask:</summary>
+				<ul>
+					<li>From <span class="ui">Layer</span> menu, select <span class="ui">Rasterize To Mask</span>.</li>
+				</ul>
+		</details>
+		
+		<aside class="box warning">
+			<p>When rasterizing a layer that has layer effects applied to it, a dialog offers an option to <span class="ui">Preserve layer FX</span>. Clear the checkbox to include the effects in the rasterization process along with the layer's shape, line, curve or text content. Leave it ticked to rasterize only the layer's content and still be able to edit the effects afterwards.</p>
+		</aside>
+		
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../CurvesShapes/draw_linesAndShapes.html">Draw curves and shapes</a></li>
+			<li><a href="../CurvesShapes/draw_geometricShapes.html">Draw and edit shapes</a></li>			
+			<li><a href="../Text/text_general.html">Working with text</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

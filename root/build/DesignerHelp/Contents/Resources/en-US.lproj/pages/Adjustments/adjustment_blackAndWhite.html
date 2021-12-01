@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="adjustment, black and white, monochrome, grayscale" />
+	<meta name="description" content="Convert a color image to monochrome while maintaining full control over how individual colors are converted." />
+	<title>Black and White adjustment</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Black and White adjustment</h1>
+
+		<p>Convert a color image to monochrome while maintaining full control over how individual colors are converted.</p>
+
+		<figure>
+			<div class="comparison"><img src="../../../shared/adjustment_base.jpg" alt="Before" /><div><img src="../../../shared/adjustment_blackandwhite.jpg" alt="After" /></div>
+			</div>
+		</figure>
+
+	</header>
+
+	<section class="about">
+
+		<p>This adjustment comes with a handy <span class="ui">Picker</span> setting which allows you to target a color in the document and adjust the applicable slider.</p>
+
+		<aside class="box tip">
+			<p>You may wish to apply a color tone, such as sepia, to the resulting grayscale image. To do this, you could use a <span class="ui">Recolor</span> adjustment.</p>
+		</aside>
+
+		<aside class="box note">
+			<p>You can also create black and white images using the <span class="ui">HSL</span>, <span class="ui">Gradient Map</span>, and <span class="ui">Threshold</span> adjustments.</p>
+		</aside>
+
+	</section>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted in the dialog:</p>
+		<ul>
+			<li>The sliders control the lightness value of the named color areas of the image. Drag the slider to the left to darken areas of the named color, drag the slider to the right to lighten them.</li>
+			<li><span class="ui">Picker</span>&#8212;allows you to drag on the image to modify the adjustment. The initial click will identify the predominant color, dragging left will darken areas of the identified color while dragging right will lighten them. The corresponding slider will be updated.</li>
+		</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="adjustment_applying.html">Applying adjustments</a></li>
+			<li><a href="adjustment_reclr.html">Recolor adjustment</a></li>
+			<li><a href="adjustment_HSL.html">HSL adjustment</a></li>
+			<li><a href="adjustment_gradientMap.html">Gradient Map adjustment</a></li>
+			<li><a href="adjustment_threshold.html">Threshold adjustment</a></li>
+		</ul>
+	</section>
+	
+	<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

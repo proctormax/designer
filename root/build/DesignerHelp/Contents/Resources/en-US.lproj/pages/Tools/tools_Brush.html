@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="vector, brush" />
+	<meta name="description" content="The tool paints vector brush strokes that are always editable." />
+	<title>Vector Brush Tool</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1><img src="../../../shared/ui/vector_brush.png" class="tool heading" width="18" height="18" alt="Brush Tool" /> Vector Brush Tool</h1>
+
+		<p>With the <span class="ui">Vector Brush Tool</span> you can create a hand-painted look by painting freehand, variable width, lines and shapes as if you were painting on paper. Its vector characteristics means you can edit the stroke at any time.</p>
+
+		<p>Its variable width lines can be controlled either by velocity&#8212;most useful when drawing with a mouse&#8212;or by pressure&#8212;for use when drawing with a pressure-sensitive device.</p>
+
+	</header>
+
+	<section class="about">
+
+		<p>The <span class="ui">Vector Brush Tool</span> paints by scaling or repeating an image along a path (line).</p> 
+
+		<p>As you paint, nodes are created automatically and can be edited with the <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> or at any time with the <span class="ui">Node Tool</span>.</p>
+
+		<p>The tool uses many of the standard line settings to control the appearance of the applied stroke. Brush types are applied using the <span class="ui">Brushes</span> panel.</p>
+		
+		<aside class="box tip">
+			<p class="osx">With any Brush tool selected, you can quickly decrease or increase the size (width) of your brush by holding <span class="key CTRL-TAG"></span> and <span class="key ALT-TAG"></span> then dragging left or right, respectively. If the Brush tool has a hardness attribute, this can be adjusted in a similar way by holding <span class="key CTRL-TAG"></span> and <span class="key ALT-TAG"></span> then dragging up or down.</p>
+			<p class="win32">With any Brush tool selected, you can quickly decrease or increase the size (width) of your brush by holding <span class="key CMD-TAG"></span> and <span class="key ALT-TAG"></span> then dragging left or right, respectively. If the Brush tool has a hardness attribute, this can be adjusted in a similar way by holding <span class="key CMD-TAG"></span> and <span class="key ALT-TAG"></span> then dragging up or down.</p>
+		</aside>
+		
+	</section>
+	
+	<section class="settings">
+		<h3>Settings</h3>
+		
+		<p>The following settings can be adjusted from the context toolbar:</p>
+			<ul>
+				<li><span class="ui">Color</span>&#8212;the color of your brush stroke. Click the color swatch to select from solid colors, a picked color, color gradients or from your preset or custom color swatches.</li>
+				<li><span class="ui">Width</span>&#8212;the brush (stroke) size in pixels. Type directly in the text box or drag the pop-up slider to set the value.</li>
+				<li><span class="ui">Opacity</span>&#8212;how see through the brush stroke is. Type directly in the text box or drag the pop-up slider to set the value.</li>
+				<li><span class="ui">More</span>&#8212;click to display the Brushes dialog to access advanced brush settings.</li>
+				<li><span class="ui">Stabilizer</span>&#8212;enables stroke stabilization using either a <span class="ui">Rope stabilizer</span> or <span class="ui">Window stabilizer</span> mode; the former drags the stroke end by a 'rope' to smooth the stroke but lets you introduce sharp corners at increasing rope <span class="ui">Length</span> (radius) values by redirecting the slackened rope; the latter will smooth the stroke by averaging sampled input positions within a <span class="ui">Window</span> whose size is configurable.</li>
+				<li><span class="ui">Blend Mode</span>&#8212;changes how the stroke's color interacts with existing colors on a layer. Select from the pop-up menu.</li>
+				<li><span class="ui">Controller</span>&#8212;controls how the brush stroke responds to various inputs:<ul>
+						<li>Brush Defaults&#8212;the brush variance and controller settings stored with the currently selected brush are used. Click <span class="ui">More</span> on toolbar to access.</li>
+						<li>Automatic&#8212;the input device (pen tablet, Force Touch device, mouse) is detected and the brush will work automatically with that device, using the brush variance settings but ignoring the brush controller setting. You can operate devices interchangeably.</li>
+						<li>Pressure&#8212;brush stroke is only responsive to pressure from a pen tablet, using the brush variance settings but ignoring the brush controller setting.</li>
+						<li>Velocity&#8212;brush stroke is only responsive to speed of mouse movement.</li>
+					</ul>
+				</li>
+
+			</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Painting/painting.html">Painting brush strokes</a></li>
+			<li><a href="tools_pencil.html">Pencil Tool</a></li>
+			<li><a href="tools_pen.html">Pen Tool</a></li>
+			<li><a href="tools_node.html">Node Tool</a></li>
+			<li><a href="../Panels/brushesPanel.html">Brushes Panel</a></li>
+			<li><a href="../Panels/strokePanel.html">Stroke Panel</a></li>
+			<li><a href="../Painting/pressure.html">Pressure sensitivity</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=tools">Keyboard shortcuts for tools</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

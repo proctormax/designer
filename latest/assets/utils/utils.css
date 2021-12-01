@@ -1,0 +1,24 @@
+@import "alignments.css";
+@import "corners.css";
+@import "padding.css";
+@import "sizes.css";
+@import "strokes.css";
+
+.hidden{display: none !important;}
+.mask{position:relative;}
+.masked{display: none; position:absolute;}
+.mask:hover > .masked{display: block;}
+.order-front{z-index: 20;}
+.order-foward{z-index: 10;}
+.order-backward{z-index: 5;}
+.order-back{ z-index: 1;}
+.oflow-hide{ overflow: hidden;}
+.clear-both{ clear: both;}
+.absolute{ position: absolute;}
+.relative{ position: relative;}
+.text-center{ text-align: center;}
+.text-justify{ text-align: justify;}
+.text-left{ text-align: left;}
+.text-right{ text-align: right;}
+.select-none{ user-select: none;}
+.no-mouse{pointer-events: none !important;}

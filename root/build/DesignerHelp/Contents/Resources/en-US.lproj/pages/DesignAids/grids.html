@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="design aids, grids, fixed grid" />
+	<meta name="description" content="A non-printing, non-exporting grid can be displayed on top of your image in order to help you to lay out objects accurately." />
+	<title>Grids</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Grids</h1>
+		<p>A non-printing, non-exporting grid can be displayed in order to help you to create interesting and well-constructed page layouts.</p>
+		
+		<figure>
+			<div class="single"><img src="../../../shared/grids.png" class="screenshot responsive" alt="Grids" /></div>
+			<figcaption></figcaption>
+		</figure>
+
+	</header>
+
+	<section class="about">
+
+		<p>The grid is overlaid over your page to help you align objects. They are gray by default but can be any color you choose.</p>
+		<p>Grids can be <span class="term">automatic</span> or <span class="term">fixed</span>&#8212;the former (as default) changes the frequency of grid subdivisions as you zoom in/zoom out, the latter always keeps the grid frequency constant (irrespective of zoom level).</p>
+		<p>Grids work best when combined with snapping, in particular when the Snap to Grid option is enabled. They can be based on any document unit and will line up perfectly with <a href="rulers.html">rulers</a> (when switched on).</p>
+
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary>To show or hide the grid:</summary>
+			<ul>
+				<li>On the <span class="ui">View</span> menu, select <span class="ui">Show Grid</span>.</li>
+			</ul>
+
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/zoom.png" class="tool" width="18" height="18" alt="Zoom Tool" /> To adjust automatic grid spacing:</summary>
+			<p>With the <span class="ui">Zoom Tool</span> selected, do one of the following:</p>
+			<ul>
+				<li>Zoom in to see smaller grid divisions.</li>
+				<li>Zoom out to see larger grid divisions.</li>
+			</ul>
+
+			<p>At all zoom levels the grid shows as grid 'blocks' further split into grid subdivisions.</p>
+		</details>
+
+		<details open="open">
+			<summary>To create a fixed square grid:</summary>
+
+			<ol>
+				<li>From the <span class="ui">View</span> menu, select <span class="ui">Grid and Axis Manager</span>.</li>
+				<li>Select <span class="ui">Basic</span> mode.</li>
+				<li>Set the <span class="ui">Spacing</span> and <span class="ui">Divisions</span> values.</li>
+				<li>Click <span class="ui">Close</span>.</li>
+			</ol>
+		</details>
+
+		<details open="open">
+			<summary>To customize grid color:</summary>
+
+			<ol>
+				<li>From the <span class="ui">View</span> menu, select <span class="ui">Grid and Axis Manager</span>.</li>
+				<li>Click the <span class="ui">Grid lines</span> or <span class="ui">Subdivision lines</span> swatch to display a pop-up panel to set the line color(s).</li>
+				<li>Drag the sliders to set the opacity of either, or both, line colors.</li>
+				<li>Click <span class="ui">Close</span>.</li>
+			</ol>
+
+		<aside class="box note">
+			<p>For a different color or opacity for the subdivision lines compared to the main grid lines, click the <span class="ui">Link the grid colors</span> symbol next to the swatches.</p>
+		</aside>
+
+		</details>
+
+		<details>
+			<summary>To create a rectangular grid:</summary>
+
+			<ol>
+				<li>From the <span class="ui">View</span> menu, select <span class="ui">Grid and Axis Manager</span>.</li>
+				<li>Select <span class="ui">Advanced</span> and uncheck <span class="ui">Uniform</span>.</li>
+				<li>Do one of the following:<ul>
+						<li>Set the <span class="ui">Spacing</span> and <span class="ui">Divisions</span> for the first and second axis.</li>
+						<li>Select <span class="ui">Fixed aspect ratio</span>, set the <span class="ui">Spacing</span> and <span class="ui">Divisions</span> for the first axis and then set the <span class="ui">Aspect ratio</span> and <span class="ui">Divisions</span> for the second axis.</li>
+					</ul>
+				</li>
+				<li>Click <span class="ui">Close</span>.</li>
+			</ol>
+		</details>
+
+		<details>
+		<summary>To create a fixed angular grid:</summary>
+
+			<ol>
+				<li>From the <span class="ui">View</span> menu, select <span class="ui">Grid and Axis Manager</span>.</li>
+				<li>Select <span class="ui">Advanced</span>.</li>
+				<li>From the <span class="ui">Grid type</span> pop-up menu, select <span class="ui">Two axis custom</span>.</li>
+				<li>Set the <span class="ui">Angle</span> of either axis.</li>
+				<li>Click <span class="ui">Close</span>.</li>
+			</ol>
+
+		</details>
+
+		<details>
+			<summary><img src="../../../shared/ui/zoom.png" class="tool" width="18" height="18" alt="Zoom Tool" /> To change document units:</summary>
+			<p>Do one of the following:</p>
+				<ul>
+					<li>With either the <span class="ui">View Tool</span> or <span class="ui">Zoom Tool</span> selected, choose a unit of measurement from the pop-up menu on the context toolbar.</li>
+					<li>From the <span class="ui">File</span> menu, select <span class="ui">Document Setup</span>, and in the dialog choose a unit type from the <span class="ui">Document Units</span> pop-up menu.</li>
+					<li><span class="key CLICK-TAG"></span>-click the ruler intersection and choose a unit type from the pop-up menu.</li>
+				</ul>
+		</details>
+
+		<h2>Presets</h2>
+	
+		<p>To make grid setup quick and easy, one of several grid presets can be chosen depending on how you plan to work (e.g., for UI design, image placement, etc.).</p>
+		
+		<details open="open">
+			<summary>To select a preset:</summary>
+			<ol>
+				<li>From the <span class="ui">View</span> menu, select <span class="ui">Grid and Axis Manager</span>.</li>
+				<li>From the <span class="ui">Preset</span> pop-up menu, select a preset.</li>
+			</ol>
+		</details>
+
+		<details open="open">
+			<summary>To customize a preset:</summary>
+				<ol>
+					<li>From the <span class="ui">View</span> menu, select <span class="ui">Grid and Axis Manager</span>.</li>
+					<li>Select a preset on which to base your new grid options.</li>
+					<li>Check individual options on/off to override the current preset's options.</li>
+				</ol>
+			<p>The options will be in effect immediately.</p>
+		</details>
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/moremenuicon.png" class="tool" width="15" height="11" alt="Presets menu" /> To save as a custom preset for future use:</summary>
+				<ol>
+					<li>Click the button adjacent to the <span class="ui">Preset</span> pop-up menu.</li>
+					<li>Select <span class="ui">Create preset</span>.</li>
+				</ol>
+			<p>The custom preset is in effect immediately.</p>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="snapping.html">Snapping</a></li>
+			<li><a href="grids_axonometric.html">Isometric and axonometric grids</a></li>
+			<li><a href="../GetStarted/zoom.html">Zooming</a></li>
+			<li><a href="../Tools/tools_zoom.html">Zoom Tool</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="slices, panel" />
+	<meta name="description" content="Export designs to universally recognized image formats using the Slices panel." />
+	<title>Slices panel</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Slices panel</h1>
+
+		<p>The Slices panel allows you to export defined areas of your design to universally recognized image formats.</p>
+	</header>
+
+	<section class="about">
+		<h2>About the Slices panel</h2>
+
+		<p>Once an export area has been defined, the <span class="ui">Slices</span> panel allows you to export the area at various sizes and formats.</p>
+
+		<p>The panel can be populated with one or more slices. Each slice possesses a single <em>export setup</em>, within which multiple <em>export formats</em> (detailing file format and scaling options) may be stored. In turn, each export format can have multiple <em>export sizes</em>. This allows different graphics formats, of different sizes, to be exported from each slice simultaneously.</p>
+
+		<figure class="nft">
+			<p><img src="../../images/panel_slices.png" class="responsive panel" alt="Slices panel (Export Persona)" /></p>
+			<figcaption>The Slices panel showing export areas in the document.</figcaption>
+		</figure>
+
+	</section>
+
+	<section class="settings">
+		<h3>Options</h3>
+
+		<p>The following options are available in the panel:</p>
+
+		<ul>
+			<li><span class="ui">Batch builder</span>&#8212;Creates Xcode JSON batches from multiple Apple Universal or Application icon slices. For Xcode UI development only.</li>
+			<li><span class="ui">Export preset</span>&#8212;presents slice presets offering common graphics formats and options for Apple app icon design.</li>
+			<li><img src="../../../shared/ui/exportcopyconfig.png" class="tool" width="16" height="16" alt="Copy export setup to clipboard" /> <span class="ui">Copy export setup to clipboard</span>&#8212;copies a selected slice's export setup (including multiple export formats) to clipboard. If you select a graphic-specific export format within the setup, the button can be used to copy that export format to another slice's export setup.</li>
+			<li><img src="../../../shared/ui/exportpaste.png" class="tool" width="16" height="16" alt="Replace export setup from clipboard" /> <span class="ui">Replace export setup from clipboard</span>&#8212;pastes a copied slice's export setup from the clipboard to another selected 'target' slice. A copied export format can be pasted too.</li>
+			<li><img src="../../../shared/ui/exportpaste-add.png" class="tool" width="16" height="16" alt="Add Export setup from clipboard" /> <span class="ui">Add Export format from clipboard</span>&#8212;pastes a copied export format selected from a slice's export setup and adds it to another slice's export setup. You can copy (and replace) an export format from Panel Preferences.</li>
+			<li><img src="../../../shared/ui/LayersTabSubtractIcon.png" class="tool" width="16" height="16" alt="Delete" /> Delete&#8212;removes the panel item and corresponding export area from the page. The Page panel item cannot be deleted.</li>
+			<li><span class="ui">Continuous</span>&#8212;when selected, slices are re-exported automatically if the content within the slices are modified. This option becomes available once <span class="ui">Export Slices (<i>n</i>)</span> has been clicked and an export folder selected.</li>
+			<li><img src="../../../shared/ui/export.png" class="tool" width="12" height="16" alt="Export" /> <span class="ui">Export Slices (<i>n</i>)</span>&#8212;exports all checked panel items.</li>
+		</ul>
+
+		<aside class="box tip">
+			<p>The forward slash (or oblique) character can be used in slice filenames in export setups in the Slices panel. The word preceding the slash will be used to create a containing folder for the file named at the end, when exported using <span class="ui">Export Slices (<i>n</i>)</span>.</p>
+			<p>For example, a PNG slice with a filename in the Slices panel of <span class="ui">assets/img/hero</span> will create <span class="ui">hero.png</span> within an <span class="ui">img</span> folder within an <span class="ui">assets</span> folder.</p>
+		</aside>
+
+	</section>
+
+
+	<section class="settings">
+		<h3>Export Setup Options</h3>
+
+		<p>The following options are available in the export setup for each slice entry:</p>
+
+		<ul>
+			<li><img src="../../../shared/ui/spread.png" class="tool" width="16" height="16" alt="Page" /> Page&#8212;indicates that the export area is the entire page or all artboards.</li>
+			<li><img src="../../../shared/ui/sliceset.png" class="tool" width="16" height="16" alt="Slice" /> Slice&#8212;indicates an export area drawn with the Slice Tool.</li>
+			<li><img src="../../../shared/ui/node.png" class="tool" width="16" height="16" alt="Slice from Layer" /> Slice (from item)&#8212;indicates an export area created from an artboard, layer, group or object.</li>
+			<li>Thumbnail&#8212;visually indicates the area to be exported.</li>
+			<li>Filename&#8212;displays the name for the export area. Type directly in the text box to set your own file name. If a name has not been set, unique names are suggested.</li>
+			<li><img src="../../../shared/ui/CheckboxTick.png" class="tool" width="11" height="11" alt="Active" /> Active/Inactive&#8212;when checked, the area is exported when <span class="ui">Export Slices (<i>n</i>)</span> is clicked at the bottom of the panel.</li>
+			<li><img src="../../../shared/ui/export.png" class="tool" width="12" height="16" alt="Export" /> Export&#8212;exports the area represented by the panel item.</li>
+			<li>Path&#8212;defines the folder name for the JSON imageset to be written to. For Xcode UI development only.</li>
+			<li>Builder&#8212;generates supplementary Xcode JSON files along with the exported slices for Apple icons. For Xcode UI development only.</li>
+		</ul>
+
+	</section>
+
+	<section class="settings">
+		<h3>Export Format Options</h3>
+
+		<p>You can store multiple formats within every slice's export setup. The following options are available for each format:</p>
+
+		<ul>
+			<li>File format&#8212;select a file format to be exported from the pop-up menu.</li>
+			<li>Size scaling&#8212;select scaling options (e.g., 1x, 2x, etc.) to set for the export format.</li>
+			<li>Additional properties&#8212;lets you choose a custom DPI and a path and filename made up of defined tokens or custom user variables.</li>
+			<li><img src="../../../shared/ui/export.png" class="tool" width="12" height="16" alt="Export" /> Export&#8212;exports the slice using this export format.</li>
+		</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="exportPersona.html">Exporting using Export Persona</a></li>
+			<li><a href="exportOptionsPanel.html">Export Options panel</a></li>
+			<li><a href="exportPersona_layersPanel.html">Layers panel (Export Persona)</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

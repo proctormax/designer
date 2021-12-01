@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="options, global, updates, upgrade, software" />
+	<meta name="description" content="Document-wide preferences to control the way you work." />
+	<title>Preferences</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Preferences</h1>
+
+		<p>Preferences comprise a series of miscellaneous options that are applied across your application. They can be used to set up your own way of working.</p>
+
+	</header>
+
+	<section class="about">
+
+		<details>
+			<summary>General options</summary>
+				<ul>
+					<li>Choose whether to restore the last session when launching application.</li>
+					<li class="win32">Choose whether documents open in a floating window separate from the app's main window.</li>
+					<li class="win32">Choose whether documents open in the current active group, meaning the most recent floating window, or in the app's main window.</li>
+					<li class="win32">Choose whether to limit initial zoom to a maximum of 100&#37; when loading files.</li>
+					<li>Choose to open PSDs with editable text objects.</li>
+					<li>Choose whether to automatically refine HEIC depth maps.</li>
+					<li class="osx">Select whether to show or hide file extensions.</li>
+					<li>Choose whether to create SVGs on the clipboard when copying objects for better cross-platform interaction.</li>
+					<li>You can exclude your thumbnail from being stored with your document.</li>
+					<li>Choose whether to overwrite imported PSD files when using the <span class="ui">Save</span> command, rather than creating an *.afdesign file. We recommend reading the warning provided in the dialog before selecting this option.</li>
+					<li>Choose whether to insert filler text as editable text.</li>
+					<li>Choose whether to keep selection after deleting an object.</li>
+					<li><span class="ui">Language</span>&#8212;Sets the UI language independently of the operating system. Select from the pop-up menu.</li>
+				</ul>
+		</details>
+
+		<details>
+			<summary>Color options</summary>
+				<ul>
+					<li>You can set up your default RGB, 32bit RGB, CMYK, Grayscale and LAB color profiles for use in future documents. Select from the pop-up menus.</li>
+					<li><span class="ui">Rendering Intent</span>&#8212;Choose the rendering intent for your images. Select from the pop-up menu.</li>
+					<li>Choose whether to apply black point compensation when opening an image.</li>
+					<li>Choose whether to convert an opened file color space to the working space and also choose whether to warn that this has occurred.</li>
+					<li>Choose whether to receive a warning when a working profile is assigned to an unprofiled image.</li>
+					<li>Select a OpenColorIO Configuration File.</li>
+					<li class="osx">Select a OpenColorIO Search Folder.</li>
+					<li>Choose whether OCIO conversions are based on file name and also choose whether to warn that this has occurred.</li>
+					<li>Choose whether to merge EXR alpha channel information to its associated RGB pixel layer's alpha channel.</li>
+					<li>Choose whether to divide EXR color channels by the alpha channel.</li>
+					<li>Choose whether to leave zero alpha information untouched, or, with <span class="ui">Post divide EXR colors by alpha</span> enabled as well, for zero alpha information to be altered so post-division with color channel information can be achieved.</li>
+				</ul>
+		</details>
+
+		<details>
+			<summary>Performance options</summary>
+				<ul>
+					<li><span class="ui">RAM Usage Limit</span>&#8212;allows you to set your preference for optimizing application performance for your projects.</li>
+					<li><span class="ui">Disk Usage Warning At</span>&#8212;choose the limit at which you are warned about disk usage.</li>
+					<li><span class="ui">Undo Limit</span>&#8212;choose the history length you are able to access.</li>
+					<li><span class="ui">View Quality</span>&#8212;choose the way in which the image displays during modifications. Select from the pop-up menu.</li>
+					<li>Choose whether to dither gradients, when working on projects, to speed up performance.</li>
+					<li>Choose a clipping option for optimizing performance.</li>
+					<li><span class="ui">File Recovery Interval</span>&#8212;sets the interval for saving temporary data for currently open documents, allowing a document restore to be offered at startup if the app develops a fault.</li>
+					<li class="osx"><span class="ui">Display</span>&#8212;Choose whether to use hardware acceleration such as <span class="ui">Metal</span>, <span class="ui">OpenGL</span> or <span class="ui">OpenGL (Basic)</span>, or use <span class="ui">Software</span> acceleration. If your computer experiences performance problems, use the above option order until performance is acceptable. Metal requires Sierra macOS (10.12.x) and above, with Affinity optimized for High Sierra (10.13.x) and above. If your Mac has an additional discrete graphics card, checking the <span class="ui">Use only integrated GPU</span> will not allow access to it, therefore reducing power consumption and conserving battery life (useful for unplugged MacBook Pros).</li>
+					<li class="win32"><span class="ui">Renderer</span>&#8212;choose your rendering experience. Select from the pop-up menu.<ul>
+							<li><span class="ui">Default</span>&#8212;renders using the default method - typically the installed graphics card.</li>
+							<li><span class="ui"><i>Graphics display adapter</i></span>&#8212;the name here varies depending on your graphics card and its driver. If you have multiple graphics cards installed you may see more than one option here.</li>
+							<li><span class="ui">WARP</span>&#8212;use Windows Advanced Rasterization Platform just for presenting the document. Try this if you are experiencing performance issues with the default option.</li>
+						</ul>
+					</li>
+					<li><span class="ui">Retina Rendering</span>&#8212;choose your rendering experience. Select from the pop-up menu.<ul>
+							<li><span class="ui">Automatic (Best)</span>&#8212;renders as non-retina followed by retina for balanced performance and quality.</li>
+							<li><span class="ui">Low quality (Fastest)</span>&#8212;renders as non-retina only for highest performance level but compromises on quality.</li>
+							<li><span class="ui">High quality (Slowest)</span>&#8212;renders as retina only for high quality but may compromise performance.</li>
+						</ul>
+					</li>
+					<li class="osx"><span class="ui">Hardware Acceleration</span>&#8212;checking <span class="ui">Enable Metal compute acceleration</span> boosts some tasks' performance if a compatible GPU is available. See the <a href="../Extras/hardwareAcceleration.html">Hardware acceleration</a> topic.</li>
+					<li class="win32"><span class="ui">Hardware Acceleration</span>&#8212;checking <span class="ui">Enable OpenCL compute acceleration</span> boosts some tasks' performance if a compatible GPU is available. See the <a href="../Extras/hardwareAcceleration.html">Hardware acceleration</a> topic.</li>
+				</ul>
+		</details>
+
+		<details>
+			<summary>User Interface options</summary>
+				<ul>
+					<li><span class="ui">Background Grey Level</span>&#8212;controls the grayscale level of the pasteboard surrounding the document.</li>
+					<li><span class="ui">Artboard Background Gray Level</span>&#8212;controls the grayscale level of the pasteboard surrounding artboard(s).</li>
+					<li><span class="ui">UI Gamma</span>&#8212;adjusts the contrast of the user interface.</li>
+					<li class="osx"><span class="ui">Font UI Size</span>&#8212;optionally increase the font size of UI text.</li>
+					<li class="osx"><span class="ui">UI Style</span>&#8212;displays the user interface in a dark or light style or a default style which sets the UI depending on your Mojave setting.</li>
+					<li class="win32"><span class="ui">UI Style</span>&#8212;displays the user interface in a dark or light style.</li>
+					<li><span class="ui">Tooltip Delay</span>&#8212;set the length of time before a tooltip appears when hovering over a UI element.</li>
+					<li><span class="ui">Decimal Places for Unit Types</span>&#8212;controls the number of decimal places allowable for each document measurement unit and degree readouts.</li>
+					<li>Locks (or keeps unlocked) an imported image as a background layer.</li>
+					<li>Choose whether line width (thickness) displays in points or in the document's measurement units.</li>
+					<li>Choose whether text is expressed in points or in the document's measurement units.</li>
+					<li>Choose whether the brush cursor display a preview of pixels to be placed.</li>
+					<li>Overlays a cross-hair over the brush cursor for better targeting.</li>
+					<li>Makes icons display in grayscale.</li>
+					<li>Expands layer to reveal selected object entry when object is selected.</li>
+					<li class="osx">Choose whether to activate Touch Bar support.</li>
+					<li class="win32">Choose whether to enable pointer support.</li>
+				</ul>
+		</details>
+
+		<details>
+			<summary>Tools options</summary>
+				<ul>
+					<li><span class="ui">Tool Handle Size</span>&#8212;makes selected layer content's bounding box handles and curve nodes (and handles) smaller or larger.</li>
+					<li class="osx">Choose whether <span class="key CLICK-TAG"></span>+click displays context menus (alternative to right-click with a multi-button mouse).</li>
+					<li class="osx">Enable or disable the Force Touch context menu; when enabled, the menu is accessed by a strong-press on a Force Touch-compatible trackpad.</li>
+					<li>Choose whether an object is added to a selection when partially covered by the selection marquee or whether it has to be encompassed by the marquee.</li>
+					<li>When enabled, cycling between tools is only possible with <span class="SHIFT-TAG"></span> modifier pressed. Affects text and shape tools, and Pixel Persona's Paint Brush/Pixel, Selection and Dodge/Burn tool cycles.</li>
+					<li>Choose whether the middle mouse button will allow scrolling or zooming.</li>
+					<li>Choose whether dragging with the Zoom Tool zooms around the cursor (scrubby zoom) or creates a 'zoom to' marquee.</li>
+					<li class="win32"><span class="ui">Enable Dial support</span>&#8212;Check the option to use Surface Studio's Surface Dial (or equivalent radial device).</li>
+					<li class="osx">Choose if the canvas can be rotated using a Trackpad or not.</li>
+					<li class="osx">Choose if the canvas can be rotated using a scroll wheel or not.</li>
+					<li class="win32"><span class="ui">Touch for gestures only</span>&#8212;When enabled, only your connected tablet pen can use tools on the canvas but you can still use gestures. Useful for preventing accidental tool use when interacting with the canvas. When disabled, you have full touch control plus gestures, with or without a tablet pen.</li>
+					<li><span class="ui">Move Tool Aspect Constrain</span>&#8212;controls the default constraining behavior when resizing objects using the Move Tool. Select from the pop-up menu.</li>
+					<li class="win32"><span class="ui">Tablet input method</span>&#8212;choose whether your tablet pen should use the best quality high resolution input data (if supported), low resolution input data (the system cursor position&#8212;this setting is switched on by default), or enable Windows Ink in your drivers.</li>
+					<li><span class="ui">Create Text with Blend Gamma</span>&#8212;controls the default blend gamma applied to text on creation.</li>
+					<li><span class="ui">Nudge Distance</span>&#8212;sets the nudge amount by which an object is moved when using the arrow keys. Select measurement units from the pop-up menu.</li>
+					<li><span class="ui">Modifier Nudge Distance</span>&#8212;sets the amount by which an object is moved when using the arrow keys along with the <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span>.</li>
+					<li><span class="ui">Synchronize tools between documents</span>&#8212;Makes tool settings persistent between different documents.</li>
+					<li class="win32"><span class="ui">Additional dictionary folder</span>&#8212;add an additional folder that you can copy dictionary files into. The directory is scanned during start-up and found dictionaries will be added.</li>
+				</ul>
+		</details>
+
+		<details>
+			<summary>Keyboard Shortcuts options</summary>
+			<ul>
+				<li>Use these options to define your own keyboard shortcuts. See the <a href="customizingShortcuts.html">Customizing keyboard shortcuts</a> topic.</li>
+			</ul>
+		</details>
+		
+		<x-osx>
+		<details>
+			<summary>Software Updates</summary>
+			<ul>
+				<li>Sets the frequency to which the app will check for any software updates. You can switch off update checking by selecting 'Never'.</li>
+			</ul>
+		</details>
+		</x-osx>
+		
+		<x-osx>
+		<details>
+			<summary>Miscellaneous options</summary>
+			<ul>
+				<li>Your current Fills, Brushes, Object Styles, Text Styles, User Defaults and Fonts can be reset to factory defaults. Reset fonts updates the font cache to the current state of the system (from memory).</li>
+			</ul>
+		</details>
+		</x-osx>
+		
+		<x-win32>
+		<details>
+			<summary>Miscellaneous options</summary>
+			<ul>
+				<li>Your current Fills, Brushes, Object Styles, Text Styles and User Defaults can be reset to factory defaults.</li>
+				<li>Choose whether crash reports are sent to Serif automatically and whether they include your registered name to help technical support identify your feedback. Reports are anonymous by default.</li>
+			</ul>
+		</details>
+		</x-win32>	
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To set preferences:</summary>
+
+			<ul>
+				<li class="osx">From the <span class="ui">Affinity Designer</span> menu, select <span class="ui">Preferences</span>.</li>
+				<li class="win32">From the <span class="ui">Edit</span> menu, select <span class="ui">Preferences</span>.</li>
+			</ul>
+
+		<aside class="box note">
+			<p>To navigate to particular preference options, use the arrow keys, pop-up menu or search facility at the top of the dialog.</p>
+		</aside>
+
+		<x-osx><aside class="box note">
+			<p>Apple System Preferences allow you to control elements of the Affinity User interface such as scrollbar behavior.</p>
+		</aside></x-osx>
+
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../ObjectControl/objectDefaults.html">Object defaults</a></li>
+			<li><a href="../Clr/ClrProfiles.html">Color management</a></li>
+			<li><a href="customizingShortcuts.html">Customizing keyboard shortcuts</a></li>
+			<li><a href="../Extras/penTablet.html">Using pen tablets</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

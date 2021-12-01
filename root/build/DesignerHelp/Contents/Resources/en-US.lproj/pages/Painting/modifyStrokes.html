@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="edit brush, modify strokes, vector brush" />
+	<meta name="description" content="A preset vector brush stroke applied to an object can be modified at any time." />
+	<title>Modifying vector brush strokes</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Modifying vector brush strokes</h1>
+
+		<p>A vector brush stroke applied to the page remains fully editable and can be modified, while the stroke is selected. On the context toolbar, you can change its stroke width or color; on the Stroke panel you can change its profile, while the Brushes panel lets you swap the brush for another.</p>
+		
+	<figure>
+		<div class="single"><img src="../../../shared/modifing_brush_strokes.png" alt="Modifying brush strokes" /></div>
+		<figcaption></figcaption>
+	</figure>
+
+		<p>For more advanced brush settings you can also use the <span class="ui">Edit</span> button on the Brushes panel, with the option to save your brush stroke setting as a new brush preset.</p>
+
+	</header>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings are available in the Brush dialog's <span class="ui">Stroke</span> section:</p>
+		<ul>
+			<li><span class="ui">Brush Width</span>&#8212;sets the size of the stroke.</li>
+			<li><span class="ui">Size Variance</span>&#8212;sets the amount of brush width deviation allowed as a stroke is painted.</li>
+			<li><span class="ui">Opacity Variance</span>&#8212;sets the amount of transparency deviation allowed as a stroke is painted.</li>
+			<li class="osx">The controller pop-up menu varies the brush size and opacity according to a particular input: 'Pressure' for pen tablets and Force Touch-enabled devices, and 'Velocity' or 'Velocity Inversed' for mice/Trackpads.</li>
+			<li class="win32">The controller pop-up menu varies the brush size and opacity according to a particular input: 'Pressure' for pen tablets, and 'Velocity' or 'Velocity Inversed' for mice. The last two options simulate pressure relative to the speed of mouse movement. Click the adjacent Ramp profile icon to select a standard profile from lower thumbnails or create your own using the ramp chart. Move circular nodes to reshape the ramp, add nodes to the ramp by clicking on the line, or select a node to delete a node with the <span class="key BACKSPACE-WIN"></span> <span class="KEY-TAG"></span> (simplifying the ramp). Check <span class="ui">Linear</span> for straight lines between all nodes; If unchecked (non-linear), nodes are connected using smooth curves.</li>
+			<li>The profile pop-up menu sets the behavior of the controller.</li>
+			<li><span class="ui">Body</span>&#8212;determines the method with which the central section is drawn along the length of the stroke.</li>
+			<li><span class="ui">Corners</span>&#8212;determines the method used to control how corners are drawn within the stroke.</li>
+			<li><span class="ui">Head Offset</span>&#8212;sets the transition point at which the head section becomes the body section.</li>
+			<li><span class="ui">Tail Offset</span>&#8212;sets the transition point at which the body section becomes the tail section.</li>
+			<li>Drag the red dotted lines on the lower preview to set the length of the brush body. As the lines are repositioned the Head and Tail Offset values will update.</li>
+			<li><span class="ui">Reset</span>&#8212;returns all stroke settings to those of the saved brush preset.</li>
+			<li><span class="ui">Duplicate</span>&#8212;saves the current stroke settings as a preset brush.</li>
+			<li><span class="ui">Close</span>&#8212;exits the dialog and applies stroke settings to the selected object.</li>
+		</ul>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To modify vector brush strokes:</summary>
+
+			<ol>
+				<li>Select the Vector Brush tool, unless already selected.</li>
+				<li><span class="key CMD-TAG"></span>-click on the brush stroke.</li>
+				<li>On the context toolbar, click <span class="ui">More</span>.</li>
+				<li>Adjust the settings in the <span class="ui">Stroke</span> section.</li>
+				<li>Click <span class="ui">Close</span>.</li>
+			</ol>
+		</details>
+
+		<aside class="box tip">
+			<p>You can paint on the page while the Brush dialog is open. The stroke will adopt the current settings in the dialog. This allows you to adjust the full brush settings as you paint for increased efficiency.</p>
+		</aside>
+
+		<aside class="box note">
+			<p>For more information on saving your settings as a preset, see the <a href="create_custombrushes.html">Creating custom brushes</a> topic.</p>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="painting.html">Painting brush strokes</a></li>
+			<li><a href="create_custombrushes.html">Create custom vector brushes</a></li>
+			<li><a href="../Tools/tools_Brush.html">Vector Brush Tool</a></li>
+			<li><a href="../Panels/brushesPanel.html">Brushes panel</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

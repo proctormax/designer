@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="design aids, snapping, angles, control handles, construction, reflected, parallel, degrees, snap off-curve handle" />
+	<meta name="description" content="For curve drawing, snap a node's control handle to various angles and alignments." />
+	<title>Construction snapping for curves</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Construction snapping for curves</h1>
+
+		<p>Use construction snapping to help you build complicated shapes or intersections accurately and easily, giving you simple access to parallels, right angles, reflected and mirrored angles. Great for precise and symmetrical curve drawing, especially for technical drawing styles and typographic design.</p>
+		
+	</header>
+
+	<section class="about">
+
+		<h2>Construction snapping</h2>
+		
+		<p>Construction snapping lets you snap a node's control handle to useful construction angles relative to the adjacent node and opposing control handle. You can also balance control handle lengths on adjacent nodes.</p>
+		
+		<p>You can enable construction snapping via a single button which permits control handle snapping to various angles and alignments.</p>
+
+<table class="equal uniform">
+	<tr>
+		<th>Control handle snapping behavior</th>
+		<th>Example</th>
+	</tr>
+	<tr>
+		<td>Snap the leading control handle inline to adjacent node</td><td><img src="../../../shared/curve_snap_inline.png" class="screenshot" alt="Snap the leading control handle inline to adjacent node" /></td>
+	</tr>
+	<tr>
+		<td>Snap 90&#176; to inline</td><td><img src="../../../shared/curve_snap_inline90.png" class="screenshot" alt="Snap 90deg to inline" /></td>
+	</tr>
+	<tr>
+		<td>Snap to reflected/mirrored angle</td><td><img src="../../../shared/curve_snap_reflected.png" class="screenshot" alt="Snap to reflected/mirrored angle" /></td>
+	</tr>
+	<tr>
+		<td>Snap to parallel control handle</td><td><img src="../../../shared/curve_snap_parallel.png" class="screenshot" alt="Snap to parallel control handle" /></td>
+	</tr>
+	<tr>
+		<td>Snap to 90&#176; from parallel control handle</td><td><img src="../../../shared/curve_snap_parallel90.png" class="screenshot" alt="Snap to 90deg from parallel control handle" /></td>
+	</tr>
+	<tr>
+		<td>Snap to logical triangle</td><td><img src="../../../shared/curve_snap_triangle.png" class="screenshot" alt="Snap to logical triangle" /></td>
+	</tr>
+</table>
+
+		<p>These snapping options operate independently of <a href="snapping.html">global snapping</a>. They help avoid having to align control handles to grid or guide and offer additional accuracy and symmetry once nodes have been positioned using <a href="curveSnapping.html">Curve snapping</a> options.</p> 
+	
+	</section>
+
+	<section class="howto">
+	
+		<details open="open">
+			<summary><img src="../../../shared/ui/SnapCurveConstruction.png" class="tool" width="16" height="16" alt="Perform construction snapping" /> To apply construction snapping:</summary>
+			<ol>
+				<li>Select the <span class="ui">Pen Tool</span> or <span class="ui">Node Tool</span>.</li>
+				<li>From the context toolbar's <span class="ui">Snap</span> section, enable <span class="ui">Perform construction snapping</span>.</li>
+				<li>Drag a control handle such that it snaps to angles and alignments.</li>
+			</ol>
+		
+		<aside class="box tip">
+			<p>For reflected and parallel control handles, after snapping the control handle direction you can use a second action (holding the <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span>) to snap the handle lengths to match the preceding or following handle (while maintaining the direction you already snapped to). This produces perfectly balanced control handles, indicated by the double markers.</p><img src="../../../shared/curve_snap_reflected_bal.png" class="screenshot" alt="Snap to reflected/mirrored angle balanced" /><p>Sometimes you might see both single and double markers on the same control handle which means, respectively, that the control handle pairs are equal length and the control handle is the same length as the adjacent control handle.</p>
+		</aside>
+		
+		</details>
+		
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="snapping.html">Snapping</a></li>
+			<li><a href="curveSnapping.html">Curve snapping</a></li>
+			<li><a href="../Tools/tools_node.html">Node Tool</a></li>
+			<li><a href="../Tools/tools_pen.html">Pen Tool</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

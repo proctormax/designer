@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="erasing, rasterize, painting" />
+	<meta name="description" content="Controls rasterization behavior when working with pixel-based tools." />
+	<title>Assistant Manager</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Assistant Manager</h1>
+
+		<p>The Assistant Manager manages alert messages that pop up on your screen that affect layer behavior.</p>
+	</header>
+	
+	
+	<section class="about">
+		<p>When you perform pixel painting (or erasing) on vector layers, or when applying adjustments to selections, alert messages inform you that Affinity Designer has performed an action that you need to be aware of. This is as a result of the last operation you performed. Assistant Manager cannot only decide the default type of action to take, but switch alerts on or off once you've decided on your chosen default action. Several types of operation can lead to different actions.</p>
+				<ul>
+					<li><span class="ui">Painting with no layer selected</span>: In Pixel Persona, you can choose to create a new pixel layer for your brush strokes using 'Add new pixel layer and paint'; 'No action' means that no pixel painting is allowed. If a vector layer is selected, a new pixel layer is created above the vector layer. If a pixel layer is selected, your brush stroke is added to the pixel layer.</li>
+					<li><span class="ui">Erasing from vector layers</span>: In Pixel Persona, the option lets you choose to erase on a created pixel mask over your vector object, immediately rasterize the vector layer and erase directly on it, or take no action.</li>
+					<li><span class="ui">Other brushes on vector layers</span>: For retouching pixel brushes (e.g., Burn brush, Smudge brush, etc.), any applied brush stroke rasterizes the vector layer by default. You can change this behavior by selecting 'No Action' which doesn't convert the layer or apply the stroke.</li>
+					<li><span class="ui">Adding adjustment layer to selection</span>: In Pixel Persona, if you've created a selection, any adjustment applied to the selection can be added as a new adjustment layer or made a child adjustment layer in the current layer.</li>
+				</ul>
+	</section>
+
+	<section class="howto">
+		<details>
+			<summary>To change Assistant Manager settings:</summary>
+				<ol>
+					<li>From the <span class="ui">View</span> menu, click <span class="ui">Assistant Manager</span>.</li>
+					<li>Select options from the relevant option's pop-up menu.</li>
+				</ol>
+		</details>
+
+
+	</section>	
+	
+	<section class="howto">
+		<details>
+			<summary>To switch off alerts or the Assistant Manager completely:</summary>
+				<ol>
+					<li>From the <span class="ui">View</span> menu, click <span class="ui">Assistant Manager</span>.</li>
+					<li>Uncheck <span class="ui">Alert when assistant takes an action</span> or <span class="ui">Enable assistant</span>, respectively.</li>
+				</ol>
+		</details>
+
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Painting/painting.html">Painting brush strokes</a></li>
+			<li><a href="../Painting/erasing.html">Erasing</a></li>
+			<li><a href="../Painting/retouch.html">Retouch</a></li>
+			<li><a href="../Layers/adjustmentLayers.html">Using adjustment layers</a></li>
+			<li><a href="../Selections/selections_create.html">Creating pixel selections</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

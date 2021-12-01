@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="Surface, Surface Pro, Surface Pen, input devices" />
+	<meta name="description" content="Microsoft's Surface Pen enables you to draw and paint with precision directly on your Surface device's display." />
+	<title>Using Surface Pen with your Affinity Windows apps</title>
+</head>
+
+<body>
+<x-win32>
+
+	<header>
+		<h1>Using Surface Pen</h1>
+		<p>You can use a Microsoft Surface Pen to interact with your Affinity app's user interface and to paint and draw using creative tools.</p>
+
+		<figure class="nft">
+			<p><img src="../../images/brushDynamics.jpg" class="screenshot responsive" alt="Brush dynamics settings" /></p>
+			<figcaption>The pressure and tilt of Surface Pen can be used to control brush tool attributes.</figcaption>
+		</figure>
+	</header>
+
+	<section class="about">
+		<h2>Integration with your Affinity app</h2>
+		<p>On compatible hardware, Surface Pen provides pressure and tilt input to your Affinity app. For example, a brush's dynamics can be configured so that pressure creates variation in brush size and tilt controls saturation.</p>
+		<p>When you turn Surface Pen around and use its eraser, your Affinity app recognizes whether the current layer contains vector or raster objects and masks out or erases the areas of contact, respectively. This happens without you having to manually perform additional steps, such as switch Persona, create a mask layer, or select the <span class="ui">Erase Brush Tool</span>.</p>
+		<p>For your Affinity app to use contact from Surface Pen but not your fingers for tool interaction, turn on <span class="ui">Touch for gestures only</span> in its <span class="ui">Tools</span> preferences.</p>
+		
+	</section>
+
+	<section class="howto">
+		<h2>Use Surface Pen pressure and tilt input</h2>
+		<details open="open">
+			<summary>To assign Surface Pen input to brush attributes:</summary>
+			<ol>
+				<li>On the <span class="ui">Brushes</span> panel, select a brush.</li>
+				<li>Click <span class="ui">Edit Brush</span>.</li>
+				<li>Select <span class="ui">Dynamics</span>.</li>
+				<li>Next to <span class="ui">Size Jitter</span>, ensure the pop-up menu is set to <span class="ui">Pressure</span>. Adjust the jitter amount and Ramp profile as required.</li>
+				<li>Next to another attribute, such as <span class="ui">Saturation Jitter</span>, set the pop-up menu to <span class="ui">Tilt</span>. Adjust the attribute's jitter amount and Ramp profile as required.</li>
+			</ol>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Workspace/customizingWorkspace.html">Customizing the workspace</a></li>
+			<li><a href="surfaceDial.html">Using Surface Dial with your Affinity Windows apps</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+
+</x-win32>
+</body>
+</html>

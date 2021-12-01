@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="brushes, painting, raster" />
+	<meta name="description" content="The Paint Brush lets you apply pixel brush strokes to your design." />
+	<title>Painting pixel brush strokes</title>
+</head>
+
+<body>
+	<header>
+
+		<h1>Painting pixel brush strokes</h1>
+
+		<p>You can use Pixel Persona to add photo-realistic textures to your vector designs using pixel brushes. Alternatively, you can use basic hard- and soft-edged pixel brushes to add shadows and highlights to your work.</p>
+
+		<figure>
+			<div class="comparison"><img src="../../../shared/pixel_painting_before.png" alt="Before" /><div><img src="../../../shared/pixel_painting_after.png" alt="After" /></div>
+			</div>
+			<figcaption>Before and after adding brush textures clipped to vector shapes.</figcaption>
+		</figure>
+
+	</header>
+
+	<section class="about">
+		<h2>Brushes</h2>
+
+		<p>Affinity Designer provides an impressive selection of pixel brush designs for use with your Paint Brush. Each category contains brushes of varying properties and characteristics.</p>
+		<p>You can also create your own pixel brushes to assist with your design work. If you want to save a brush, these can be stored in the panel as a custom brush for future use.</p>
+
+		<aside class="box tip">
+			<p><a href="../Layers/layerClip.html">Clipping pixel brush strokes to vector objects</a> helps to create shadows and highlights efficiently.</p>
+		</aside>
+
+		<h2>Multi-brushes</h2>
+			
+		<p>This feature allows any brush to have one or more additional <em>sub brushes</em> attached to it. The sub brushes will draw over the top of the base brush as the stroke is applied. It is intended to introduce more nib variety, randomness and character to your brush stroke appearance (avoiding repetitive texture tiling) so the results are more varied and natural. Each sub brush can have a fully separate and customizable set of dynamics. You can control where the sub brushes are drawn on the stroke and how they blend with the main brush.</p>
+
+		 <p>Sub-brushes can be created from an existing brush or as a new brush by accessing the Sub-brushes tab in the Brush - Editing dialog (double-click a pixel brush in the panel to view). You can drag and drop existing brushes from the same <span class="ui">Brushes</span> panel category directly into the tab's Sub Brushes list. Change the order in which they are added to the main brush by dragging them up or down in the list.</p>
+ 
+		<figure>
+			<p><img src="../../../shared/sub_brushes.png" class="responsive" alt="Sub brush examples" /></p>
+			<figcaption>Single brush strokes (left) and multi-brush stroke equivalents (right).</figcaption>
+		</figure>
+		
+		<x-osx>
+			<aside class="box note">
+				<p>For best performance, use Metal acceleration (if available).</p>
+			</aside>
+		</x-osx>
+		
+		<x-win32>
+			<aside class="box note">
+				<p>For best performance, use a computer with high-end QuadCore CPUs (or better).</p>
+			</aside>
+		</x-win32>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/paint_brush.png" class="tool" width="18" height="18" alt="Paint Brush" /> To paint pixel brush strokes:</summary>
+
+			<ol>
+				<li>Use the <span class="ui">Layers</span> panel to select the pixel layer that you want to work on, or create a new pixel layer.</li>
+				<li>From the <span class="ui">Tools</span> panel, select the <span class="ui">Paint Brush</span>.</li>
+				<li>From the <span class="ui">Brushes</span> panel, select a brush thumbnail of your choice. The tool uses a soft-round brush by default.</li>
+				<li>Adjust the context toolbar settings.</li>
+				<li>Select a stroke color from the <span class="ui">Color</span> panel.</li>
+				<li>Drag on the page in the direction that you want the brush stroke to follow.</li>
+			</ol>
+
+		<aside class="box tip">
+			<p>Use your keyboard's left or right arrow keys to manually rotate your brush nozzle(s) as you paint.</p>
+		</aside>
+
+		</details>
+
+		<details open="open">
+			<summary>To create symmetrical and mirrored effects:</summary>
+			<ol>
+				<li>Enabling the <span class="ui">Symmetry</span> option from the context toolbar allows you to produce symmetrical or mirrored drawings over one or multiple planes.</li>
+				<li>You can rotate the symmetry plane from the center of the drawing by clicking and dragging on it. Selecting <span class="key SHIFT-TAG"></span> will make it snap to different angles.</li>
+				<li>Click the <span class="ui">Lock</span> setting to lock the symmetry plane in place.</li>
+				<li>Use the live brush preview to see the direction of the symmetrical brush strokes. If the direction needs to be mirrored, check the <span class="ui">Mirror</span> option on the context toolbar.</li>
+				<li>If you wish to work with more than one plane of symmetry, click the numerical value box next to <span class="ui">Symmetry</span> and adjust the number of planes. You can use up to 16 planes in total.</li>
+				<li>With the <span class="ui">Lock</span> setting unchecked, you can reposition the center point of the symmetrical planes and draw symmetrical and mirrored patterns elsewhere on the page.</li>
+			</ol>
+			
+		<figure>
+			<p><img src="../../../shared/dreamcatcher_symmetrical.png" class="responsive" alt="Symmetrical dreamcatcher" /></p>
+			<figcaption>A dreamcatcher design with a symmetrical pattern.</figcaption>
+		</figure>
+		
+		<figure>
+			<p><img src="../../../shared/dreamcatcher_mirrored.png" class="responsive" alt="Mirrored dreamcatcher" /></p>
+			<figcaption>A dreamcatcher design with a mirrored pattern.</figcaption>
+		</figure>
+		</details>
+		
+		<details open="open">
+			<summary>To reposition the mirror origin:</summary>
+				<ul>
+					<li>Drag the mirror origin to position it on the page.</li>
+				</ul>
+		</details>
+		 
+ 		<details>
+			<summary>To smooth brush strokes as you paint:</summary>
+			<ul>
+				<li>On the context toolbar, enable the <span class="ui">Stabilizer</span> option and choose one of the following:<ul>
+						<li><span class="ui">Rope mode</span>&#8212;drag the stroke end by a 'rope' that smooths the stroke but lets you introduce sharp corners at increasing <span class="ui">Length</span> (radius) values by redirecting the slackened rope.</li>
+						<li><span class="ui">Window mode</span>&#8212;smooths the stroke by averaging the stroke's position over a <span class="ui">Window</span> whose size is configurable.</li>
+					</ul>
+				</li>
+			</ul>
+ 
+		</details>
+
+		<aside class="box note">
+			<h3>Modifier keys</h3>
+			<p>When using the Paint Brush, the following modifier keys can be used:</p>
+			<ul>
+				<li>To draw a straight brush stroke, lay down your initial stroke, then <span class="key SHIFT-TAG"></span>-click at the position where your stroke is to end; keep the key pressed to continue the straight line stroke.</li>
+				<li>To constrain a stroke to the X-axis or Y-axis, press the <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> immediately after your initial stroke is laid down, then drag along the X or Y axis to the position where your stroke is to end; keep the key pressed to continue the stroke.</li>
+				<li>Hold the <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span> and press the left mouse button to pick up a new color under the brush to paint with.</li>
+				<li>To decrease or increase brush width, use the [ or ] <span class="KEY-TAG"></span>s, respectively.</li>
+				<li class="osx">Press the <span class="key CTRL-TAG"></span> and <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span>s together and:<ul>
+						<li>Click to cycle between width and hardness, shape and spacing, and rotation attributes.</li>
+						<li>Drag left/right or up/down to adjust the corresponding attribute. For example, with width and hardness attributes selected, drag left/right to adjust the first attribute and up/down to adjust the second attribute.</li>
+					</ul>
+				</li>		
+				<li class="win32">Press the <span class="key CMD-TAG"></span> and <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span>s together and:<ul>
+						<li>Click to cycle between width and hardness, shape and spacing, and rotation attributes.</li>
+						<li>Drag left/right or up/down to adjust the corresponding attribute. For example, with width and hardness attributes selected, drag left/right to adjust the first attribute and up/down to adjust the second attribute.</li>
+					</ul>
+				</li>		
+				<li>With many Brush tools in Pixel Persona, you can quickly change the opacity of your brush using your keyboard's number keys.</li>
+				<li class="osx">To change flow instead, hold the <span class="key CTRL-TAG"></span> <span class="KEY-TAG"></span> and press a number key.</li>
+			</ul>
+		</aside>
+		
+		<aside class="box prefs">
+			<h3>Preferences</h3>
+			<p>Related behaviors can be adjusted from <a href="../Workspace/preferences.html">the app's preferences</a>:</p>
+			<ul>
+				<li><span class="ui">Miscellaneous&gt;Reset Fills</span></li>
+				<li><span class="ui">Miscellaneous&gt;Reset Brushes</span></li>
+				<li><span class="ui">User Interface&gt;Show brush previews</span></li>
+				<li><span class="ui">User Interface&gt;Always show brush crosshair</span></li>
+			</ul>			
+		</aside>		
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Tools/tools_paintBrush.html">Paint Brush Tool</a></li>
+			<li><a href="../Panels/brushesPanel.html">Brushes panel</a></li>
+			<li><a href="pixel_modify.html">Modifying pixel brushes</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=operations">Keyboard shortcuts for painting operations</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

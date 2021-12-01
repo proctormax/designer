@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="design aids, snapping, curves, geometry, nodes, alignment" />
+	<meta name="description" content="Use curve snapping to align nodes and control handles." />
+	<title>Curve snapping</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Curve snapping</h1>
+
+		<p>Curve snapping lets you align any moving node (or control handle) to an already placed node or curves's geometry.</p>	
+
+		
+	</header>
+
+	<section class="about">
+
+		<p>You can take advantage of curve snapping either as you draw with the Pen Tool or when editing the curve with the Node Tool. Curve snapping gives you accurate positional control of nodes where a more symmetrical approach to curve drawing is needed.</p>
+
+		<aside class="box note">
+			<p>Curve snapping operates independently of global snapping but can be used conjunction with it.</p>
+		</aside>
+
+		<p>The curve snapping options are hosted on the Pen or Node tool's context toolbar. Snapping options can be used in combination with each other.</p>
+		
+		
+		<table class="thirtythree uniform">
+			<tr>
+				<th>Snap option</th>
+				<th>Description</th>
+				<th>Example</th>
+			</tr>
+			<tr>
+				<td><img src="../../../shared/ui/snap_selected_curves.png" class="tool" width="16" height="16" alt="Align to nodes of selected curves" /> Align to nodes of selected curves</td><td>Aligns moving node horizontally (shows in red) or vertically (in green; not shown) to another node</td><td><img src="../../../shared/curve_align_node.png" class="screenshot" alt="Align to nodes of selected curves" /></td>
+			</tr>
+			<tr>
+				<td><img src="../../../shared/ui/SnapSelectedGeometry.png" class="tool" width="16" height="16" alt="Snap to geometry of selected curves" /> Snap to geometry of selected curves</td><td>Snaps moving node to the same or different curve's path (shown in yellow) or node</td><td><img src="../../../shared/curve_snap_geometry.png" class="screenshot" alt="Snap to geometry of selected curves" /></td>
+			</tr>
+				<tr>
+				<td><img src="../../../shared/ui/snap_all_nodes.png" class="tool" width="16" height="16" alt="Snap all selected nodes when dragging" /> Snap all selected nodes when dragging</td><td>Snaps multiple selected nodes (shows in red and green), when dragging, to a 'target' node (yellow) on any selected curves</td><td><img src="../../../shared/curve_all_nodes.png" class="screenshot" alt="Snap all selected nodes when dragging" /></td>
+			</tr>
+			<tr>
+				<td><img src="../../../shared/ui/SnapCurveHandlePosition.png" class="tool" width="16" height="16" alt="Align handle positions using snapping options" /> Align handle positions using snapping options</td><td>Snaps control handle using any of the snapping criteria currently set in Global snapping, e.g. to grid, guide, object geometry/node (shown in yellow), key points, etc.</td><td><img src="../../../shared/curve_align_handles.png" class="screenshot" alt="Align handle positions using snapping options" /></td>
+			</tr>
+			<tr>
+				<td><img src="../../../shared/ui/SnapCurveConstruction.png" class="tool" width="16" height="16" alt="Perform construction snapping" /> Perform construction snapping</td><td>Snaps control handles to suggested angles and alignments for precise geometry and positioning. See separate <a href="constructionSnapping.html">Construction snapping</a> topic.</td><td><img src="../../../shared/curve_align_triangle.png" class="screenshot" alt="Perform construction snapping" /></td>
+			</tr>
+		</table>
+
+
+		<aside class="box note">
+			<p>When drawing, you can also snap the moving node to any curve intersection point or node on the same or different curve if the global snapping option <span class="ui">Snap to object geometry</span> is enabled.<br /> <img src="../../../shared/curve_snap_intersection.png" class="screenshot" alt="Snap to curve intersection" /></p>
+		</aside>
+		
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary>To switch on curve snapping options:</summary>
+			<ol>
+				<li>Select the <span class="ui">Pen Tool</span> or <span class="ui">Node Tool</span>.</li>
+				<li>From the context toolbar's <span class="ui">Snap</span> section, enable combinations of the buttons for different curve snapping behavior.</li>
+			</ol>
+		</details>
+		
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="snapping.html">Snapping</a></li>
+			<li><a href="constructionSnapping.html">Construction snapping</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

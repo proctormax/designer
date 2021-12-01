@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="layers, panel" />
+	<meta name="description" content="The Layers panel lets you create a tiered document that can be designed more easily by management of layers." />
+	<title>Layers panel (Designer Persona)</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Layers panel (Designer Persona)</h1>
+
+		<p>The <span class="ui">Layers</span> panel lets you create a tiered document that can be designed more easily by management of layers.</p>
+
+	</header>
+
+	<section class="about">
+		<h2>About the Layers panel</h2>
+
+		<p>Layers are composited together to form your complete design which shows up on your page.</p>
+		<p>The panel can be used to build up your design as multiple layers, with each layer devoted to a particular facet (e.g., lines, shapes, text, adjustments, etc.).</p>
+
+		<aside class="box note">
+			<p><a href="../Artboards/artboards_about.html">Artboards</a> are also located on the Layers panel and can be organized in the same way as layers.</p>
+		</aside>
+
+		<h3>From the Layers panel you can:</h3>
+
+		<ul>
+			<li>Create or delete layers</li>
+			<li>Select artboards, layers, groups and objects</li>
+			<li>Arrange and reorder layers and artboards</li>
+			<li>Show and hide artboards, layers, groups and objects</li>
+			<li>Lock artboards, layers, groups and objects</li>
+			<li>Clip objects or layers</li>
+			<li>Apply layer and artboard opacity</li>
+			<li>Apply blend modes and blend ranges to layers</li>
+			<li>Create masks</li>
+			<li>Add layer adjustments and effects</li>
+			<li>Tag layers with a choice of colors</li>
+			<li>Exclude object from being a snapping candidate (right-click object only)</li>
+			<li>Switch off Auto-scroll (panel scrolls to layer content when it is selected on the page)</li>
+			<li>Display layer thumbnails with a solid or checkerboard background</li>
+			<li>Determine the size of layer thumbnails</li>
+		</ul>
+
+
+		<figure class="nft overrideDE overrideFR">
+			<p><img src="../../images/panel_layers.png" class="responsive panel" alt="Layers panel" /> <img src="../../images/panel_layers_exportpersona.png" class="responsive panel" alt="Layers panel (Export Persona)" /></p>
+			<figcaption>The Layers panel in Designer/Pixel Persona (left) and Export Persona (right).</figcaption>
+		</figure>
+
+		<p>The panel displays the following:</p>
+
+		<ul>
+			<li><img src="../../../shared/ui/moremenuicon.png" class="tool" width="24" height="24" alt="Panel Preferences" /> Panel Preferences menu which offers:<ul>
+					<li><span class="ui">Auto-Scroll</span>&#8212;when selected (default), the selected object's layer entry immediately comes into view in the <span class="ui">Layers</span> panel.</li>
+					<li><span class="ui">Checkerboard Background</span>&#8212;when selected, layer thumbnails will display with a checkerboard background.</li>
+					<li><span class="ui">Show Group Thumbnails</span>&#8212;when selected (default), each group layer’s thumbnail displays a preview of all the group’s contents. When deselected, a folder icon is shown instead.</li>
+					<li class="osx"><span class="ui">Compact Group Rows</span>&#8212;when selected (default) and thumbnails are set to medium or large size, group layers will be displayed at the small size.</li>
+					<li><span class="ui">Small Thumbnails</span>&#8212;when selected (default), displays small thumbnails.</li>
+					<li><span class="ui">Medium Thumbnails</span>&#8212;when selected, displays medium thumbnails.</li>
+					<li><span class="ui">Large Thumbnails</span>&#8212;when selected, displays large thumbnails.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Opacity</span>&#8212;Adjusts opacity of the selected items.</li>
+
+			<li>Blend Mode&#8212;Changes how the applied pixels interact with existing pixels on the layer below. Choose mode type from a pop-up menu.</li>
+
+			<li><img src="../../../shared/ui/cogicon.png" class="tool" width="16" height="16" alt="Blend Options" /> <span class="ui">Blend Options</span>&#8212;Click to access a dialog for setting the blend ranges, blend gamma and antialiasing settings for the selected layer.</li>
+
+			<li><img src="../../../shared/ui/LayersTabLockIcon.png" class="tool" width="16" height="16" alt="Lock/Unlock" /> <span class="ui">Lock/Unlock</span>&#8212;Click to lock or unlock selected items to prevent accidental selection and transformation.</li>
+
+			<li><img src="../../../shared/ui/ExpandCollapsebtn.png" class="tool" width="16" height="16" alt="Expand/Collapse" /> <span class="ui">Expand/Collapse</span>&#8212;Click to expand/contract the item, revealing nested content.</li>
+
+			<li>Item&#8212;The created artboard, layer, group or object, showing a thumbnail of contents, the item's name and the type of item (in parenthesis).</li>
+
+			<li><img src="../../../shared/ui/CheckboxTick.png" class="tool" width="16" height="16" alt="Hide/Show Layer" /> Hide/Show item&#8212;Uncheck to hide the item; check to make it visible again.</li>
+
+			<li><img src="../../../shared/ui/LayersTabEditAllLayersIcon.png" class="tool" width="16" height="16" alt="Edit All Layers" /> <span class="ui">Edit All Layers</span>&#8212;Allows selection and editing of objects across all artboards and layers (rather than the current layer).</li>
+
+			<li><img src="../../../shared/ui/LayersTabMaskIcon.png" class="tool" width="16" height="16" alt="Mask Layer" /> <span class="ui">Mask Layer</span>&#8212;Creates a layer mask to reveal a portion of a layer while the rest of the layer remains hidden.</li>
+
+			<li><img src="../../../shared/ui/LayersTabAdustmentIcon.png" class="tool" width="16" height="16" alt="Adjustments" /> <span class="ui">Adjustments</span>&#8212;Adds an adjustment layer to the current layer for tonal and color correction.</li>
+
+			<li><img src="../../../shared/ui/LayersTabFxIcon.png" class="tool" width="16" height="16" alt="Layer Effects" /> <span class="ui">Layer Effects</span>&#8212;Applies a layer effect to the currently selected layer.</li>
+
+			<li><img src="../../../shared/ui/LayersTabAddIcon.png" class="tool" width="16" height="16" alt="Add Layers" /> <span class="ui">Add Layer</span>&#8212;Creates an empty new layer above the currently selected layer.</li>
+
+			<li><img src="../../../shared/ui/LayersTabAddRasterIcon.png" class="tool" width="16" height="16" alt="Add Pixel Layers" /> <span class="ui">Add Pixel Layer</span>&#8212;Creates an empty new pixel layer above the currently selected layer.</li>
+
+			<li><img src="../../../shared/ui/LayersTabSubtractIcon.png" class="tool" width="16" height="16" alt="Remove Layers" /> <span class="ui">Remove Layer</span>&#8212;Deletes the currently selected layer or artboard.</li>
+
+		</ul>
+
+		<aside class="box note">
+			<p>Hidden layers will not print or export.</p>
+		</aside>
+		
+		<h3>Labeling layers with colors</h3>
+
+		<p>Layers can be colored to help with organization and navigation of your document. Each layer can be assigned a single color.</p>
+		
+		<details open="open">
+			<summary>To assign a color label:</summary>
+
+			<ol>
+				<li>In the <span class="ui">Layers</span> panel, select one or more layers.</li>
+				<li>Right-click one of the selected items.</li>
+				<li>Choose a color at the bottom of the contextual menu. It is applied to the entire selection.</li>
+			</ol>
+		</details>				
+
+		<p>When you assign a color label to a layer group, it is also applied to layers within the group <em>except</em> any that have a color label already.</p>
+		
+		<details>
+			<summary>To remove a color label:</summary>
+			
+			<ol>
+				<li>In the <span class="ui">Layers</span> panel, select one or more layers.</li>
+				<li>Right-click one of the selected items.</li>
+				<li>At the bottom of the contextual menu, choose the first color swatch (white with a red line through it). Color labels are removed from the entire selection.</li>
+			</ol>
+		</details>
+		
+		<p>When you remove a color label from a layer group, it is also removed from any layers of the same color within the group.</p>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Layers/createLayers.html">Create layers</a></li>
+			<li><a href="../Layers/selectEditLayers.html">Selecting and editing layers</a></li>
+			<li><a href="../Layers/layerClip.html">Layer clipping</a></li>
+			<li><a href="../Layers/LayerMasks.html">Layer masking</a></li>
+			<li><a href="../Layers/layerBlendRanges.html">Layer blend ranges</a></li>
+			<li><a href="../Workspace/customizingWorkspace.html">Customizing the workspace</a></li>
+			<li><a href="../ExportPersona/exportPersona_layersPanel.html">Layers panel (Export Persona)</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

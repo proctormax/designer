@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="shape, node, convert to curves, tool preset" />
+	<meta name="description" content="Geometric and other special shapes can be easily created and edited with precision and speed." />
+	<title>Draw and edit shapes</title>
+</head>
+
+<body>
+	<header>
+
+		<h1>Draw and edit shapes</h1>
+
+		<p>Geometric and other special shapes that would be otherwise hard to draw can be easily created using one of the corresponding shape tools. Once drawn, both the shape and its stroke can be made into curves for more freeform design.</p>
+
+		<p><img src="../../../shared/shapes_edit.png" class="screenshot responsive" alt="Shapes example" /></p>
+	</header>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/Shape_RoundedRectangle.png" class="tool" width="18" height="18" alt="Rounded Rectangle" /> To draw a new shape:</summary>
+			<ol>
+				<li>Choose one of the shape tools, e.g., <span class="ui">Rounded Rectangle</span> from the Tools panel.</li>
+				<li>Drag on the page to create the shape and use the <span class="key SHIFT-TAG"></span> modifier to constrain the shape's proportions if needed.<br /> <img src="../../../shared/shapes_dragshape.png" class="screenshot responsive" alt="Drag shape" /></li>
+				<li>Modify options as required, either by changing the values on the context toolbar or by dragging the red handle(s) (if available).<br /> <img src="../../../shared/shapes_dragnode.png" class="screenshot responsive" alt="Drag handle" /></li>
+			</ol>
+
+			<aside class="box tip">
+					<p>When you hover over a handle, a red guide line will appear to suggest the direction of drag needed to modify your shape.</p>
+			</aside>
+
+			<aside class="box tip">
+					<p>Shapes can be converted to text frames via <span class="ui">Layer&gt;Convert to Text Frame</span>.</p>
+			</aside>
+
+		</details>
+
+		<details open="open">
+			<summary>To reset a shape handle to its initial position:</summary>
+			<ul>
+				<li>Double-click the red handle that has been previously moved. Any other repositioned handles on the shape will not be affected.</li>
+			</ul>
+
+		</details>		
+		
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/node_tool.png" class="tool" width="18" height="18" alt="Node tool" /> To edit an existing shape:</summary>
+			<ol>
+				<li>Click the <span class="ui">Node Tool</span>.</li>
+				<li>Select the shape, either by clicking the shape or by clicking the layer entry in the <span class="ui">Layers</span> panel.</li>
+				<li>Edit the shape as required by either by directly dragging the red handle(s), or by changing the values on the context toolbar.</li>
+			</ol>
+
+			<aside class="box tip">
+				<p>Shapes have special snapping properties which allow lines to snap to various angles within the shape.</p>
+			</aside>
+
+		</details>
+
+		<details>
+			<summary><img src="../../../shared/ui/move_tool.png" class="tool" width="18" height="18" alt="Select tool" /> <img src="../../../shared/ui/node_tool.png" class="tool" width="18" height="18" alt="Node tool" /> To convert a shape to curves:</summary>
+			<ul>
+				<li>Click <span class="ui">Convert to Curves</span>, found in either the <span class="ui">Layer</span> menu or on the context toolbar.<br /> <img src="../../../shared/shapes_convertToCurves.png" class="screenshot responsive" alt="Convert to Curves" /></li>
+			</ul>
+			<p>The shape is now made from curves and the <span class="ui">Node Tool</span> is automatically selected. Segments and nodes can be modified with the Node Tool.</p>
+			
+			<aside class="box tip">
+				<p>Applying a rounded corner to a geometric shape using the <span class="ui">Corner Tool</span> will automatically convert that shape to curves. From that point, you won't be able to make use of the Shape tool's inherent 'morphing' behavior.</p>
+			</aside>
+		</details>
+
+		<aside class="box note">
+			<h3>Modifier keys</h3>
+			<p>As you create shapes, the following modifier keys can be used while the shape is being drawn:</p>
+			<ul>
+				<li>The <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> constrains shape's proportions at the time of creation.</li>
+				<li>The <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> draws or resizes from center (can be combined with the <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span>).</li>
+				<li>Where appropriate, on many shapes, the <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> moves the red handles in pairs.</li>
+				<li class="osx">The <span class="key CTRL-TAG"></span> <span class="KEY-TAG"></span> lets you rotate a shape about its opposite handle.</li>
+				<li class="win32">Pressing the right mouse button lets you rotate a shape about its opposite handle.</li>
+				<li>The <span class="key SPACEBAR-TAG"></span> lets you reposition a shape at the time of creation.</li>
+				<li>You can pick up color as you design by using the <span class="key ALT-TAG"></span>-key and dragging.</li>
+			</ul>
+		</aside>
+
+	</section>
+	
+	<section class="about">
+		<h2>Presets</h2>
+		<p>Presets can be applied to shape tools from the context toolbar. These allow you to take variations of standard shapes and reuse them instantly. A number of master presets have been supplied, but you can also create and define your own presets using the <span class="ui">Presets Manager</span>.</p>
+		
+	</section>
+	
+	<section class="howto">
+		<details>
+			<summary><img src="../../../shared/ui/cogicon.png" class="tool" width="18" height="18" alt="Presets Icon" /> <img src="../../../shared/ui/moremenuicon.png" class="tool" width="18" height="18" alt="Preferences" /> To apply tool presets:</summary>
+			<ol>
+				<li>Select the shape you wish to access presets for.</li>
+				<li>From the shape's context toolbar, click the <span class="ui">Presets</span> icon.</li>
+				<li>A pop up panel containing a list of available presets for the shape will be displayed. By clicking on a preset, you can apply it to the selected shape.</li>
+			</ol>
+		</details>
+		
+		<aside class="box note">
+			<p>Master presets which have been supplied by Affinity will have an Affinity logo in the bottom right hand corner; user defined or custom presets will have a user logo in this corner instead.</p>
+		</aside>
+		
+		<details>
+			<summary><img src="../../../shared/ui/cogicon.png" class="tool" width="18" height="18" alt="Presets Icon" /> <img src="../../../shared/ui/moremenuicon.png" class="tool" width="18" height="18" alt="Preferences" /> To create new custom tool presets:</summary>
+			<ol>
+				<li>Select the shape you wish to create a new preset for and edit it to your liking.</li>
+				<li>From the shape's context toolbar, click the <span class="ui">Presets</span> icon.</li>
+				<li>From the pop up panel, select <span class="ui">Create Preset</span> from the preferences menu. Enter a name and category for your new preset, then click <span class="ui">Create</span>.</li>
+			</ol>
+		</details>
+		
+		<details>
+			<summary><img src="../../../shared/ui/cogicon.png" class="tool" width="18" height="18" alt="Presets Icon" /> <img src="../../../shared/ui/moremenuicon.png" class="tool" width="18" height="18" alt="Preferences" /> To manage tool presets:</summary>
+			<ol>
+				<li>Select the shape you wish to access presets for.</li>
+				<li>From the shape's context toolbar, click the <span class="ui">Presets</span> icon.</li>
+				<li>A pop up panel containing a list of available presets for the shape will be displayed. From this panel, select <span class="ui">Manage Presets</span> from the preferences menu.</li>
+				<li>The <span class="ui">Presets Manager</span> will be displayed. From here, you can do the following:<ul>
+						<li>Drag and drop preset thumbnails into an existing category to move them into that category.</li>
+						<li>Right-click on a preset to rename it, delete it, export it, or revert any changes you have made to it.</li>
+						<li>Click on a category menu to rename it, delete it, restore master presets to it, import user presets directly to it, or export presets from it.</li>
+						<li>To create a new preset category, select <span class="ui">Create Category</span> and enter a name for your new category.</li>
+						<li>To return all master presets to their original uncategorized state, select <span class="ui">Restore Master Presets to Category</span>.</li>
+						<li class="osx">To export any user defined presets from the <span class="ui">Presets Manager</span>, select <span class="ui">Export User Presets</span>. Type a name for the exported file along with any tags you would like it to have, choose the disk location you want to save it to and click <span class="ui">Export</span>.</li>
+						<li>To import presets to the <span class="ui">Presets Manager</span>, select <span class="ui">Import Presets</span>. Locate the .aftoolpresets file you want to import and click <span class="ui">Import</span>.</li>
+						<li>To view presets for a different shape, select the shape from the <span class="ui">Filter:</span> menu.</li>
+					</ul>
+				</li>
+			</ol>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="about_geometricShapes.html">About geometric shapes</a></li>
+			<li><a href="about_linesAndShapes.html">About lines, curves and shapes</a></li>
+			<li><a href="edit_linesAndShapes.html">Edit curves and shapes</a></li>
+			<li><a href="../Text/frameText.html">Frame text</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=operations">Keyboard shortcuts for curve drawing operations</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

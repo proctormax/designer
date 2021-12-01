@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="swatches, panel" />
+	<meta name="description" content="The Swatches panel stores a selection of color, gradient and recently used document color swatches for applying to objects." />
+	<title>Swatches panel</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Swatches panel</h1>
+
+		<p>The <span class="ui">Swatches</span> panel makes it easy to use predefined colors, and also to define, store and reuse your own selection of colors.</p>
+
+	</header>
+
+	<section class="about">
+		<h2>About the Swatches panel</h2>
+
+		<x-osx><p>The <span class="ui">Swatches</span> panel stores your recently used colors and lets you access a range of predefined palettes, each containing solid or gradient fill swatches. These can be selected for use with various tools and for applying directly to objects. You can also create and store your own swatches as custom color palettes either for the document, application or system-wide, as well as import any exported Affinity .afpalette from other users or import Adobe Swatch Exchange (ASE) palettes.</p></x-osx>
+
+		<x-win32><p>The <span class="ui">Swatches</span> panel stores your recently used colors and lets you access a range of predefined palettes, each containing solid or gradient fill swatches. These can be selected for use with various tools and for applying directly to objects. You can also create and store your own swatches as custom color palettes either for the document or application, as well as import any exported Affinity .afpalette from other users or import Adobe Swatch Exchange (ASE) palettes.</p></x-win32>
+
+		<p>As well as accessing palette, you can create global and spot colors, and make colors overprint. Your registration color can also be customized.</p>
+
+		<figure class="nft overrideDE overrideFR">
+			<p><img src="../../images/panel_swatches.png" width="664" class="screenshot responsive" alt="Swatches panel" /></p>
+			<figcaption>Swatches panel: (A) Primary/Secondary (left) or Stroke/Fill color selectors with color 'none' swatch and 'swap' arrow, (B) Color picker tool and picked color swatch, (C) Category list (showing Application, left, and Document, right), (D) Category color palette swatches, (E) Search, (F) Panel Preferences, (G) Opacity control, (H) Recently used colors, (I) None, Black, Mid-gray and White swatches, (J) Add current color to palette as a global color, (K) Add current fill to palette, (L) Registration color, (M) Global color, (N) Overprint color, (O) Spot color.</figcaption>
+		</figure>
+
+ 		<figure>
+			<p><img src="../../../shared/swatches_thumbnail.png" class="screenshot responsive" width="240" height="100" alt="Swatches thumbnail" /></p>
+			<figcaption>Markings which distinguish specialist color swatches: (A) Global, (B) Overprint, (C) Spot.</figcaption>
+		</figure>
+
+		<p>Like the <span class="ui">Color</span> panel, the Swatches panel has different states depending on the active Persona and on the selected tool. The large color swatch selectors indicate the currently selected colors.</p>
+		
+		<ul>
+			<li>In Designer Persona, objects have fill and stroke color properties. The stroke color is represented by the cutout (donut) color selector. The fill is represented by the solid color selector.</li>
+			<li>In Pixel Persona, the two solid color selectors indicate interchangeable Primary and Secondary colors.</li>
+		</ul>
+
+		<p>The <span class="ui">Swatches</span> panel also shows None, Black, Mid-gray and White swatches, recently used colors and an opacity control. Swatches are organized into color palettes by category.</p>
+
+		<aside class="box note">
+			<p><img src="../../../shared/ui/moremenuicon.png" class="tool" width="15" height="11" alt="Panel Preferences" /> To add a customized registration color for professional printing, click <span class="ui">Panel Preferences</span>, then select <span class="ui">Add Registration Color</span>.</p>
+		</aside>
+
+		<aside class="box note">
+			<p>Preset color palettes (available from the category list pop-up menu) include<x-osx>macOS color palettes such as Apple,</x-osx>Web Safe Colors, System, and Crayons.</p>
+			<p><img src="../../../shared/ui/moremenuicon.png" class="tool" width="15" height="11" alt="Panel Preferences" /> To list swatches by name instead of thumbnail, click <span class="ui">Panel Preferences</span>, then select <span class="ui">Appearance&gt;Show as List</span>.</p>
+		</aside>
+
+		<aside class="box tip">
+			<p>The active swatch is whichever is shown in front of the other. You can switch between the primary and secondary colour selectors by pressing the <span class="ui">X</span> <span class="KEY-TAG"></span>.</p>
+		</aside>
+		
+		<aside class="box tip">
+			<p>You can set the primary (fill) and secondary (stroke) color selectors to white and black, respectively, by pressing the <span class="ui">D</span> <span class="KEY-TAG"></span>. This affects any vector objects that are selected.</p>
+		</aside>
+
+		<aside class="box note">
+			<p>These swatches change appearance for some vector tools.</p>
+				<ul>
+					<li><img src="../../../shared/ui/gradient_tool.png" class="tool" width="18" height="18" alt="Fill Tool" /> <span class="ui">Fill Tool</span>: When selected, only one color selector swatch is shown to represent the fill only.</li>
+					<li><img src="../../../shared/ui/vector_brush.png" class="tool" width="18" height="18" alt="Vector Brush Tool" /> <span class="ui">Vector Brush Tool</span>: When selected, the panel shows primary and secondary swatches that can be swapped by clicking the adjacent double arrow.</li>
+				</ul>
+		</aside>
+
+		<h2>Working with palettes</h2>
+
+		<p>The ten most recently used colors are automatically added to the panel on a temporary basis. You can permanently store custom colors and gradients that you use most often in any of the palettes or you can create custom palettes to host them.</p>
+
+		<aside class="box tip">
+			<p>Although you can add colors to any of the predefined palette categories, we recommend that you always create your own.</p>
+		</aside>
+
+		<p>The following types of palette exist within Affinity Designer:</p>
+
+		<ul>
+			<li><span class="ui">Document</span>&#8212;these palettes are saved within the current document.</li>
+			<li><span class="ui">Application</span>&#8212;these palettes are saved within Affinity Designer. These palettes are available to any Affinity Designer document.</li>
+			<li class="osx"><span class="ui">System</span>&#8212;these palettes are saved to your operating system. These palettes are available within Affinity Designer and other applications installed on your system.</li>
+			<li><span class="ui">PANTONE®</span>&#8212;these palettes are based on PANTONE® Colors. These palettes are available to any Affinity Designer document.</li>
+		</ul>
+
+	</section>
+
+	<section class="howto">
+
+		<h2>Saving and deleting custom color palettes</h2>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/moremenuicon.png" class="tool" width="15" height="11" alt="Panel Preferences" /> To create a new palette:</summary>
+
+			<ul>
+				<li>Click Panel Preferences and choose an <span class="ui">Add Palette</span> option.</li>
+			</ul>
+			<aside class="box note">
+				<p>From Panel Preferences, you can also rename and delete the selected palette.</p>
+			</aside>
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/addfilltopalette.png" class="tool" width="16" height="16" alt="Add current fill to palette" /> To save a color or gradient to a palette:</summary>
+			<ol>
+				<li>On the <span class="ui">Swatches</span> panel, select a palette from the palette pop-up menu.</li>
+				<li>Do one of the following:<ul>
+						<li><span class="key CLICK-TAG"></span>-click an object, then from the pop-up menu, click <span class="ui">Add to Swatches</span> and choose to add color from fill, stroke or both.</li>
+						<li>Select <span class="ui">Add current color to palette</span>. Use the Stroke/Fill color selector to target the color.</li>
+					</ul>
+				</li>
+			</ol>
+
+		</details>
+
+		<details>
+			<summary>To edit a saved swatch:</summary>
+
+			<ul>
+				<li>Double-click a saved swatch.</li>
+			</ul>
+		</details>
+
+		<details>
+			<summary>To delete a saved swatch:</summary>
+
+			<ul>
+				<li><span class="key CLICK-TAG"></span>-click the swatch you want to remove and choose <span class="ui">Delete Fill</span> from the pop-up menu.</li>
+			</ul>
+		</details>
+
+		<h2>Generating a palette from document</h2>
+
+		<p>You can generate a palette from the colors used throughout your document.</p>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/moremenuicon.png" class="tool" width="15" height="11" alt="Panel Preferences" /> To generate a palette from document:</summary>
+
+			<ul>
+				<li>Click Panel Preferences and choose an option from <span class="ui">Create Palette from Document</span>.</li>
+			</ul>
+			<p>A new palette is created (named after the document) using all the colors currently in the document.</p>
+		</details>
+
+
+		<h2>Sharing custom palettes</h2>
+
+		<p>You can also share custom color palettes for use by other Affinity users.</p>
+
+		<details>
+			<summary><img src="../../../shared/ui/moremenuicon.png" class="tool" width="15" height="11" alt="Panel Preferences" /> To export a color palette:</summary>
+
+			<ol>
+				<li>Choose the palette you want to export from the palette pop-up menu.</li>
+				<li>Click Panel Preferences and choose <span class="ui">Export Palette</span> from the menu.</li>
+				<li>Type a name for the exported file, choose the disk location you want to save it to and click <span class="ui">Save</span>.</li>
+			</ol>
+		</details>
+
+		<h2>Setting default palettes</h2>
+
+		<p>Any palette can be set as the default used for specific color formats. For example, you can set <span class="ui">RGB/8</span> documents to have a different default palette to <span class="ui">CMYK/8</span> documents.</p>
+
+		<details>
+			<summary><img src="../../../shared/ui/moremenuicon.png" class="tool" width="15" height="11" alt="Panel Preferences" /> To set a default palette:</summary>
+
+			<ol>
+				<li>On the <span class="ui">Swatches</span> panel, select a palette from the palette pop-up menu.</li>
+				<li>Click Panel Preferences and choose a color format option from the <span class="ui">Set as Default for</span> from the pop-up menu.</li>
+			</ol>
+		</details>
+
+	</section>
+
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Clr/selectingClr.html">Selecting colors</a></li>
+			<li><a href="../Panels/clrPanel.html">Color panel</a></li>
+			<li><a href="../Clr/clrChords.html">Color chords</a></li>
+			<li><a href="../Clr/globalClr.html">Global colors</a></li>
+			<li><a href="../Clr/spotClr.html">Spot colors</a></li>
+			<li><a href="../Appendix/importingSwatches.html">Importing swatches palettes</a></li>
+			<li><a href="../Workspace/customizingWorkspace.html">Customizing the workspace</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="layers, blend range, blend ranges, antialiasing, antialias" />
+	<meta name="description" content="Blend ranges specify the range of colors on a current layer which are blended with the underlying layer(s)." />
+	<title>Layer blend ranges</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Layer blend ranges</h1>
+
+		<p>Blend ranges specify the range of colors on a current layer which are blended with the underlying layer(s).</p>
+
+	</header>
+
+	<section class="about">
+		<h2>About blend ranges</h2>
+
+		<p>Blend ranges allow you to specify how tonal values of a layer blend with the layer(s) below. You can set the range of the tonal values affected and can set the range to have any level of opacity (from opaque to transparent).</p>
+
+		<figure>
+			<p><img src="../../../shared/blendranges.png" class="responsive" alt="Blend ranges example" /></p>
+			<figcaption>Before and after blend range applied.</figcaption>
+		</figure>
+
+
+		<p>The blend range of the selected layer and the underlying layer(s) is controlled in the <span class="ui">Blend Ranges</span> dialog.</p>
+		<p>You can change the blend range for individual color channels within the dialog.</p>
+
+		<h3>About blend gamma and antialiasing (RGB documents only)</h3>
+
+		<p>The Blend Ranges dialog allows you to adjust the blend gamma of the selected layer. This gives you the option of designing using a linear-RGB color space (1.0), regular sRGB-blending (2.2) or any gamma value up to 3.0. In other words, it gives you full control over how the tones of semi-transparent or antialiased edged objects interact with colors underneath.</p>
+
+		<figure>
+			<p><img src="../../../shared/blendgamma.png" class="responsive" alt="Blend gamma example" /></p>
+			<figcaption>Blue rectangle using linear-RGB (1.0 gamma) and regular sRGB-blending (2.2 gamma), respectively.</figcaption>
+		</figure>
+
+		<aside class="box note">
+			<p>By default, text layers are set to a gamma of 1.45 and all other types of layer to 2.2 (regular sRGB-blending). These default settings can be changed in <a href="../Workspace/preferences.html">Preferences</a> (Tools option).</p>
+		</aside>
+
+		<p><span class="term">Antialiasing</span> is the reduction of the jagged appearance of lines on a pixel grid. Antialiasing is achieved by the addition of semi-transparent pixels along the line to smooth the transition from the line's edge to background objects. This area of transition is sometimes referred to as the <span class="term">antialiasing ramp</span> or <span class="term">antialiasing coverage</span>.</p>
+
+		<p>In the Blend Ranges dialog, you can adjust the antialiasing ramp (coverage) of the selected layer, as well as control how (and if) antialiasing is inherited or set independently of other layers. For improved workflow, child layers nested hierarchically in a parent layer can inherent the parent layer's antialiasing setting automatically but can be forced to apply antialiasing or ignore it.</p>
+
+		<figure>
+			<p><img src="../../../shared/blendcoverage.png" class="responsive" alt="Antialiasing coverage example" /></p>
+			<figcaption>Antialiased line with linear coverage map and custom coverage map, respectively. <a href="../GetStarted/view.html">Viewed in Pixel mode</a> at 800% zoom.</figcaption>
+		</figure>
+
+	</section>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings are available in the Blend Ranges dialog:</p>
+		<ul>
+			<li><span class="ui">Gamma</span>&#8212;controls the layer's blend gamma.</li>
+			<li><span class="ui">Antialiasing</span>&#8212;controls antialiasing behavior for the selected layer: <span class="ui">Inherit</span> (default) adopts antialiasing from any parent layer, while <span class="ui">Force On</span> and <span class="ui">Force Off</span> respectively applies or disables antialiasing independently of any other layers.</li>
+			<li><span class="ui">Coverage Map</span>&#8212;controls the layer's antialiasing ramp.</li>
+			<li>Channels&#8212;controls which channel is affected when adjusting the blend range. Select from the pop-up menu.</li>
+		</ul>
+
+		<p>The following settings can be adjusted for both the <span class="ui">Source Layer Ranges</span> and the <span class="ui">Underlying Composition Ranges</span>:</p>
+		<ul>
+			<li>Graph&#8212;controls the affected range of pixels and the opacity of pixels within the specified range.</li>
+			<li><span class="ui">In</span>&#8212;sets the horizontal position of the selected node. Type directly in the text box or drag the pop-up slider to set the value.</li>
+			<li><span class="ui">Out</span>&#8212;sets the vertical position of the selected node. Type directly in the text box or drag the pop-up slider to set the value.</li>
+			<li><span class="ui">Linear</span>&#8212;when selected (default), the graduation between two nodes is linear (i.e., nodes on the graph are connected using straight lines). If this option is off, nodes are connected using smooth curves.</li>
+			<li><span class="ui">Reset</span>&#8212;returns the graph to the default position (a straight line between two nodes positioned at the top of the grid).</li>
+		</ul>
+
+		<aside class="box note">
+			<p>When adjusting the graphs in the dialog it is worth noting the following:</p>
+				<ul>
+					<li>The graphs represent tonal values from darkest on the left to lightest on the right.</li>
+					<li>Objects on the selected layer become less visible as nodes on the <span class="ui">Source Layer Ranges</span> graph are moved downwards.</li>
+					<li>Objects on the underlying layer(s) become more visible as nodes on the <span class="ui">Underlying Composition Ranges</span> graph are moved downwards.</li>
+				</ul>
+		</aside>
+
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/cogicon.png" class="tool heading" width="12" height="12" alt="Blend Ranges" /> To change blend ranges, blend gamma and antialiasing ramp:</summary>
+
+			<ol>
+				<li>On the <span class="ui">Layers</span> panel, select a layer and then click <span class="ui">Blend Ranges</span>.</li>
+				<li>Adjust the settings in the dialog.</li>
+				<li>Close the dialog.</li>
+			</ol>
+		</details>
+
+		<details open="open">
+			<summary>To adjust a graph directly:</summary>
+				<p>Do any of the following:</p>
+				<ul>
+					<li>Drag a node horizontally to affect more or less pixels.</li>
+					<li>Drag a node vertically to affect the visibility of pixels at the tonal value selected.</li>
+					<li>Click on the curve to add additional nodes.</li>
+					<li class="osx">Click to select a node and then press the <span class="key BACKSPACE"></span> <span class="KEY-TAG"></span> to remove it.</li>
+					<li class="win32">Click to select a node and then press the <span class="key BACKSPACE-WIN"></span> <span class="KEY-TAG"></span> to remove it.</li>
+				</ul>
+		</details>
+
+		<details>
+			<summary>To modify the antialiasing ramp:</summary>
+				<ol>
+					<li>Click the <span class="ui">Coverage Map</span> thumbnail.</li>
+					<li>From the displayed chart, select a node on the profile's line and drag it vertically or horizontally to a new position.</li>
+					<li>Repeat for other nodes as needed.</li>
+				</ol>
+
+			<aside class="box note">
+				<p>For more complex profiles, click on the profile line to add a node which can be positioned as for any generated node.</p>
+			</aside>
+
+			<aside class="box tip">
+				<p>To remove antialiasing, set a straight, horizontal profile line at the top of the chart.</p>
+			</aside>
+
+		</details>
+
+		<details>
+			<summary>To reset antialiasing ramp to linear:</summary>
+				<ol>
+					<li>Click the <span class="ui">Coverage Map</span> thumbnail.</li>
+					<li>From the displayed chart's pop-up dialog, click <span class="ui">Reset</span>.</li>
+				</ol>
+		</details>
+
+		<details>
+			<summary>To save a coverage map profile:</summary>
+				<ul>
+					<li>Under the chart, click <span class="ui">Save Profile</span>. The profile shows under the chart.</li>
+				</ul>
+		</details>
+
+		<details>
+			<summary>To apply a custom coverage map profile:</summary>
+				<ol>
+					<li>Click the <span class="ui">Coverage Map</span> thumbnail.</li>
+					<li>Select a custom profile thumbnail from below the chart. The chart will update, showing the chosen profile.</li>
+				</ol>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="layerBlendModes.html">Layer blending</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

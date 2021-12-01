@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="node, tool, vector" />
+	<meta name="description" content="The Node Tool is used to edit existing curves and shapes." />
+	<title>Node Tool</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1><img src="../../../shared/ui/node_tool.png" class="tool heading" width="18" height="18" alt="Node Tool" /> Node Tool</h1>
+
+		<p>The <span class="ui">Node Tool</span> is used to edit existing curves and shapes.</p>
+	</header>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings can be adjusted from the context toolbar:</p>
+		<ul>
+			<li><span class="ui">Fill</span>&#8212;click the color swatch to display a pop-up panel to update fill color.</li>
+			<li><span class="ui">Stroke</span>&#8212;click the color swatch to display a pop-up panel to update stroke color.</li>
+			<li><span class="ui">Stroke properties</span>&#8212;the line thickness in points. Type directly in the text box or drag the pop-up slider to set the value.</li>			
+			<li><img src="../../../shared/ui/Sharp%20Corner.png" class="tool" width="16" height="16" alt="Sharp Corner" /> <img src="../../../shared/ui/Smooth%20Corner.png" class="tool" width="16" height="16" alt="Smooth Corner" /> <img src="../../../shared/ui/Smart%20Corner.png" class="tool" width="16" height="16" alt="Smart Corner" /> <span class="ui">Convert</span>&#8212;converts the selected node into a <span class="ui">Sharp</span>, <span class="ui">Smooth</span>, or <span class="ui">Smart node</span>.</li>
+			<li><span class="ui">Action</span>&#8212;Manipulates the curve(s):<ul>
+					<li><img src="../../../shared/ui/Break%20Curve.png" class="tool" width="16" height="16" alt="Break Curve" /> <span class="ui">Break Curve</span> opens the shape at the selected node.</li>
+					<li><img src="../../../shared/ui/Close%20Curve.png" class="tool" width="16" height="16" alt="Close Curve" /> <span class="ui">Close Curve</span> joins the start and end nodes to create an enclosed shape.</li>
+					<li><img src="../../../shared/ui/Smooth%20Curve.png" class="tool" width="16" height="16" alt="Smooth Curve" /> <span class="ui">Smooth Curve</span> modifies a line or shape, by adding and removing nodes, to create a rounder and softer curve effect.</li>
+					<li><img src="../../../shared/ui/Join%20Curves.png" class="tool" width="16" height="16" alt="Join Curves" /> <span class="ui">Join Curves</span> connects two separate curves together to make one curve. Curves need to be both selected with the <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> using either the Node Tool or <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> as you draw.</li>
+					<li><img src="../../../shared/ui/reversecurves.png" class="tool" width="16" height="16" alt="Reverse Curve" /> <span class="ui">Reverse Curve</span> reverses the direction the curve was drawn in.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Transform</span>&#8212;Transforms the selected node(s):<ul>
+					<li><img src="../../../shared/ui/transform_mode.png" class="tool" width="16" height="16" alt="Transform Mode" /> <span class="ui">Transform Mode</span>&#8212;when selected, creates a bounding box around the selected nodes, allowing them to be transformed as a group.</li>
+					<li><img src="../../../shared/ui/rotationcntr.png" class="tool" width="16" height="16" alt="Enable Transform Origin" /> <span class="ui">Enable Transform Origin</span>&#8212;displays a movable transform origin about which the selection box can be rotated.</li>
+					<li><img src="../../../shared/ui/hideselection.png" class="tool" width="16" height="16" alt="Hide Selection" /> <span class="ui">Hide Selection while Dragging</span>&#8212;when selected, the selection box is temporarily hidden when transforming. If this option is off, the selection box remains visible during transformation. The selected behavior persists across all objects unless it is manually switched.</li>
+					<li><img src="../../../shared/ui/alignment_mode.png" class="tool" width="16" height="16" alt="Show Alignment Handles" /> <span class="ui">Show Alignment Handles</span>&#8212;when selected, displays alignment handles at the center and edges of the selected object. Hovering over these handles displays a floating guideline across the page. You can drag the handles to position the center or edges of the selected object in line with this guide.</li>
+ 					<li><img src="../../../shared/ui/multiple_transform.png" class="tool" width="16" height="16" alt="Transform Objects Separately" /> <span class="ui">Transform Objects Separately</span>&#8212;when selected, where multiple objects are selected, they can be be resized, rotated and sheared independently of each other instead of transforming the bounding box.</li>
+					<li><img src="../../../shared/ui/curves_box_mode.png" class="tool" width="16" height="16" alt="Selection Box From Curves" /> <span class="ui">Selection Box From Curves</span>&#8212;when selected, the selection box encompasses and includes all curves that extend outside the array of currently selected nodes.</li>
+					<li><img src="../../../shared/ui/resetboundingbox.png" class="tool" width="16" height="16" alt="Cycle Selection Box" /> <span class="ui">Cycle Selection Box</span>&#8212;after reshaping, rotating, or shearing the object, this option toggles the selection box between a Base box (honors the transform), Regular bounds (ignores transform) or Planar bounds (fitting to an isometric grid if active).</li>
+				</ul>
+			</li>
+			<li><span class="ui">Snap</span>&#8212;Controls node snapping:<ul>
+					<li><img src="../../../shared/ui/snap_selected_curves.png" class="tool" width="16" height="16" alt="Align to nodes of selected curves" /> <span class="ui">Align to nodes of selected curves</span>&#8212;aligns any moving node you drag to any other node on the same or a different curve.</li>
+					<li><img src="../../../shared/ui/SnapSelectedGeometry.png" class="tool" width="16" height="16" alt="Snap to geometry of selected curves" /> <span class="ui">Snap to geometry of selected curves</span>&#8212;will snap moving node to the same or different curve's path or node.</li>
+					<li><img src="../../../shared/ui/snap_all_nodes.png" class="tool" width="16" height="16" alt="Snap all selected nodes when dragging" /> <span class="ui">Snap all selected nodes when dragging</span>&#8212;will snap multiple selected nodes, when dragging, to a &#34;target&#34; node on any selected curves.</li>
+					<li><img src="../../../shared/ui/SnapCurveHandlePosition.png" class="tool" width="16" height="16" alt="Align handle positions using snapping options" /> <span class="ui">Align handle positions using snapping options</span>&#8212;will snap a control handle using any of the snapping criteria currently set in Global snapping, e.g. to grid, guide, object geometry, key points, spread, margin, etc.</li>
+					<li><img src="../../../shared/ui/SnapCurveConstruction.png" class="tool" width="16" height="16" alt="Perform construction snapping" /> <span class="ui">Perform construction snapping</span>&#8212;allows control handle snapping:<ul>
+							<li>inline with adjacent node.</li>
+							<li>to 90&#176; from inline.</li>
+							<li>to reflected angle with adjacent control handle.</li>
+							<li>parallel to adjacent control handle.</li>
+							<li>90&#176; to parallel control handle.</li>
+							<li>to logical triangle.</li>
+						</ul>
+					</li>
+				</ul>
+				<p>These options are independent of the global <a href="../DesignAids/snapping.html">snapping</a> options.</p>
+			</li>
+			<li><span class="ui">Show Orientation</span>&#8212;displays the segment leading up to the end node in red to help visualize the start of a closed shape when winding fill mode is active.</li>
+		</ul>
+
+		<aside class="box note">
+			<p>If a geometric shape is selected rather than a curve, the Node Tool's context toolbar will show options applicable to a selected geometric shape rather than the options listed above.</p>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../CurvesShapes/edit_linesAndShapes.html">Edit curves and shapes</a></li>
+			<li><a href="../CurvesShapes/draw_geometricShapes.html">Draw and edit shapes</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=tools">Keyboard shortcuts for tools</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

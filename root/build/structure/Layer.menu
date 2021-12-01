@@ -1,0 +1,166 @@
+[---------------------------------
+            <<menu>>
+	          Layer
+---------------------------------
+Group,                  Ctrl+G
+Ungroup,                Ctrl+Shift+G
+Ungroup All
+---------------------------------
+Create Compound
+Release Compound
+---------------------------------
+Arrange >
+Alignment >
+Geometry >
+Transform >
+Insertion >
+---------------------------------
+New Layer,              Ctrl+Alt+N
+New Pixel Layer,        Ctrl+Shift+N
+New Adjustment >
+---------------------------------
+Lock,                   Ctrl+L
+Unlock,                 Ctrl+Shift+L
+Unlock All,             Ctrl+Alt+Shift+L
+---------------------------------
+Hide
+Show
+Show All,               Ctrl+Alt+Shift+H
+---------------------------------
+Find in Layers Panel,   Ctrl+K
+---------------------------------
+Convert to Curves,      Ctrl+Return
+Convert to Text Frame
+Convert to Text Path
+Expand Stroke
+Rasterize...
+Rasterize to Mask
+Promote Group to Layer
+---------------------------------
+Convert Object to Artboard
+Convert Artboard to Object
+---------------------------------
+Fill Mode >
+Layer Effects...
+---------------------------------]
+
+
+
+
+[---------------------------------
+            <<menu>>
+	   Layer > Arrange
+---------------------------------
+Move to Front,          Ctrl+Shift+]
+Move Forward One,       Ctrl+]
+Move Back One,          Ctrl+[
+Move to Back,           Ctrl+Shift+[
+---------------------------------
+Move Inside,            Ctrl+Alt+G
+Move Outside,           Ctrl+Alt+Shift+G
+---------------------------------]
+
+
+
+[---------------------------------
+            <<menu>>
+	   Layer > Alignment
+---------------------------------
+Align Left
+Align Center
+Align Right
+---------------------------------
+Align Top
+Align Middle
+Align Bottom
+---------------------------------
+Space Horizontal
+Space Vertically
+---------------------------------
+Distribute Horizontal
+Distribute Vertically
+---------------------------------]
+
+
+
+[---------------------------------
+            <<menu>>
+	   Layer > Geometry
+---------------------------------
+Add
+Subtract
+Intersect
+Xor
+Divide
+---------------------------------
+Merge Curves
+Separate Curves
+---------------------------------]
+
+
+
+[---------------------------------
+            <<menu>>
+	   Layer > Transform
+---------------------------------
+Rotate Left
+Rotate Right
+---------------------------------
+Flip Horizontal
+Flip Vertical
+---------------------------------]
+
+
+
+[---------------------------------
+            <<menu>>
+	   Layer > Insertion
+---------------------------------
+Default
+Behind
+Top
+Inside
+---------------------------------]
+
+
+
+[---------------------------------
+            <<menu>>
+	   Layer > New Adjustment
+---------------------------------
+Exposure
+Levels
+White Balance
+Brightness / Contrast
+Shadows / Highlights
+---------------------------------
+Curves
+Channel Mixer
+Selective Color
+Color Balance
+Gradient Map
+Black & White,  Ctrl+Alt+Shift+B
+HSL
+Lens Filter
+LUT
+OpenColorIO
+Posterize
+Recolor
+Soft Proof
+Split Toning
+Vibrance
+---------------------------------
+Invert
+Threshold
+---------------------------------]
+
+
+
+[---------------------------------
+            <<menu>>
+	   Layer > Fill Mode
+---------------------------------
+Alternate
+Winding
+---------------------------------]
+

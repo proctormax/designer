@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="adjustment, settings, apply, corrective, correction, creative, image" />
+	<meta name="description" content="Apply adjustments to your image for creative or corrective purposes." />
+	<title>Applying adjustments</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Applying adjustments</h1>
+		<p>There are a range of adjustments which can be applied to your design as a new layer for creative or corrective purposes.</p>
+	</header>
+
+	<section class="about">
+
+		<details>
+			<summary>Available Adjustments:</summary>
+			<ul>
+				<li><a href="adjustment_blackAndWhite.html">Black and White</a></li>
+				<li><a href="adjustment_brightnessContrast.html">Brightness / Contrast</a></li>
+				<li><a href="adjustment_channelMixer.html">Channel Mixer</a></li>
+				<li><a href="adjustment_clrBalance.html">Color Balance</a></li>
+				<li><a href="adjustment_curves.html">Curves</a></li>
+				<li><a href="adjustment_exposure.html">Exposure</a></li>
+				<li><a href="adjustment_gradientMap.html">Gradient Map</a></li>
+				<li><a href="adjustment_HSL.html">HSL</a></li>
+				<li><a href="adjustment_invert.html">Invert</a></li>
+				<li><a href="adjustment_lensfilter.html">Lens Filter</a></li>
+				<li><a href="adjustment_levels.html">Levels</a></li>
+				<li><a href="adjustment_3dLut.html">LUT</a></li>
+				<li><a href="adjustment_ocio.html">OCIO (OpenColorIO)</a></li>
+				<li><a href="adjustment_posterize.html">Posterize</a></li>
+				<li><a href="adjustment_reclr.html">Recolor</a></li>
+				<li><a href="adjustment_selectiveClr.html">Selective Color</a></li>
+				<li><a href="adjustment_shadowsHighlights.html">Shadows / Highlights</a></li>
+				<li><a href="adjustment_softProof.html">Soft Proof</a></li>
+				<li><a href="adjustment_splitToning.html">Split Toning</a></li>
+				<li><a href="adjustment_threshold.html">Threshold</a></li>
+				<li><a href="adjustment_vibrance.html">Vibrance</a></li>
+				<li><a href="adjustment_whiteBalance.html">White Balance</a></li>
+			</ul>
+		</details>
+
+		<p>Adjustments are applied to your image from the <span class="ui">Layers</span> panel and most include customizable settings alongside general adjustment options.</p>
+		<p>Adjustment layers only affect objects in the layer which are below them. Alternatively, you can make an adjustment a child of an object, thereby affecting that object only.</p>
+		<p>Some adjustments (i.e., Curves, Levels, or Channel Mixer) can be made in any color space independently of the document color space.</p>
+
+	</section>
+
+
+	<section class="settings">
+		<h3>Settings</h3>
+
+		<p>The following general settings are available from all adjustment dialogs:</p>
+		<ul>
+			<li><span class="ui">Delete</span>&#8212;closes the dialog and deletes the adjustment layer, removing the adjustment from the image.</li>
+			<li><span class="ui">Merge</span>&#8212;merges the current adjustment layer with the layer immediately below it in the layer order.</li>
+			<li><span class="ui">Reset</span>&#8212;reverts all dialog settings to default.</li>
+			<li><span class="ui">Opacity</span>&#8212;how see through the adjustment layer is.</li>
+			<li><span class="ui">Blend mode</span>&#8212;changes how the applied pixels interact with existing pixels on the layer below. Choose mode type from a pop-up menu.</li>
+		</ul>
+
+		<aside class="box note">
+			<p>You can reset any adjustment setting back to its default by double- clicking on its slider handle.</p>
+		</aside>
+		
+		<aside class="box note">
+			<p>Not all adjustments have a dedicated dialog or customizable settings.</p>
+		</aside>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/LayersTabAdustmentIcon.png" class="tool" width="16" height="16" alt="Adjustments" /> To apply an adjustment:</summary>
+			<ol>
+				<li>On the <span class="ui">Layers</span> panel, do one of the following:<ul>
+						<li>Select a layer to add the adjustment as a child of the layer. It will affect all objects on the selected layer, depending on the adjustment's position within the layer stack.</li>
+						<li>Select a layer object/group to add the adjustment which affects that object/group only.</li>
+					</ul>
+				</li>
+				<li>Click <span class="ui">Adjustments</span> and select an adjustment from the pop-up menu.</li>
+				<li>If a dialog appears for the adjustment, follow the steps below:<ol class="nested">
+						<li>Adjust the settings in the dialog.</li>
+						<li>Close the dialog.</li>
+					</ol>
+				</li>
+			</ol>
+		</details>
+
+		<aside class="box note">
+			<p>Adjustments are also available from the <span class="ui">Layer</span> menu's <span class="ui">New Adjustment</span> sub-menu.</p>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Layers/adjustmentLayers.html">Using adjustment layers</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

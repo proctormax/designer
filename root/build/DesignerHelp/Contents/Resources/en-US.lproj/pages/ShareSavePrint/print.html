@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="print, PDF, imposition, tiled, n-up, business cards, ganged, poster, banner, impose, imposition, booklet, bleed" />
+	<meta name="description" content="Print your document to create a physical or PDF copy." />
+	<title>Print</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Print</h1>
+		<p>You can print your single page or choose various layouts such as tiled or N-Up (ganged).</p>
+	</header>
+
+	<section class="about">
+	
+		<h2>About printing</h2>
+		
+		<p>The print feature lets you print out your document using different layouts.</p>
+		
+			<ul>
+				<li>Single: your page are printed per sheet.</li>
+				<li>Tiled: your page can be printed to a large format (e.g., posters, banners, etc.).</li>
+				<li>N-Up: 'gang' prints your page so multiple copies can be printed per sheet.</li>
+			</ul>
+								
+		<p>The final print of the page will include all currently visible objects. Layer visibility and exportability is controlled by the <a href="../Panels/layersPanel.html">Layers panel</a>.</p>
+		
+		<p><span class="ui"><a href="../ShareSavePrint/bleed.html">Bleed</a></span> can be set from the <span class="ui">Print</span> dialog, extending the printable area of the page beyond the page edge to be trimmed off in the event of paper movement or design inconsistencies.</p>
+		
+		<p>Printer marks can be displayed around the page edge via the <span class="ui">Export</span> dialog. You may choose to display all printer marks, or switch off particular types of printer marks, depending on your preference.</p>
+
+		<aside class="box tip">
+			<p>The <span class="ui">Print</span> dialog will honor the project's current page setup. Therefore, it is important to check your page setup settings before proceeding to print.</p>
+		</aside>
+
+		<aside class="box note">
+			<p>For more information on printing individual artboards (rather than the entire document), see the <a href="../Artboards/artboards_print.html">Printing artboards</a> topic.</p>
+		</aside>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To print project pages:</summary>
+			<ol>
+				<li>From the <span class="ui">File</span> menu, select <span class="ui">Print</span>.</li>
+				<li>In the dialog, adjust settings as appropriate.</li>
+				<li>Click <span class="ui">Print</span>.</li>
+			</ol>
+			
+		<aside class="box warning">
+			<p>If the document preview window in the Print dialog shows with a pink overlay, this means there is a mismatch between your Affinity document dimensions and the printer's currently set paper size.</p>
+		</aside>
+		
+		</details>
+
+		<details open="open">
+			<summary>To print tiled or N-Up (ganged) output:</summary>
+			<ol>
+				<li>From the <span class="ui">File</span> menu, select <span class="ui">Print</span>.</li>
+				<li class="osx">In the <span class="ui">Print Options</span> pop-up menu, select <span class="ui">Document Layout</span>.<li class="win32">From the dialog, select <span class="ui">Layout</span> from the lower-left Categories list.</li>
+				<li>From the <span class="ui">Model</span> pop-up menu, select 'Tiled' or 'N-Up'.</li>
+				<li>In the dialog, adjust settings as appropriate.</li>			
+				<li>Click <span class="ui">Print</span>.</li>
+			</ol>
+		</details>
+		
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="save.html">Save</a></li>
+			<li><a href="export.html">Export</a></li>
+			<li class="osx"><a href="share.html">Share</a></li>
+			<li><a href="../Artboards/artboards_print.html">Printing artboards</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=file">Keyboard shortcuts for file/document management</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

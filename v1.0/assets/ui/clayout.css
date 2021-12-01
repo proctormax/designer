@@ -1,0 +1,113 @@
+row,column,layout{
+    display: flex;
+}
+
+
+layout.horizontal > item {
+    position: relative;
+    
+}
+
+layout.vertical > item{
+    position: relative;
+    
+}
+column > item,
+layout.vertical > item {
+    position: relative;
+}
+
+/*- horizontal -*/
+row:not(.reversed),
+layout.horizontal:not(.reversed),
+.direction-row
+{flex-direction: row;}
+
+row.reversed,
+layout.horizontal.reversed,
+.direction-row-reverse
+{flex-direction: row-reverse;}
+
+/*- vertical -*/
+column:not(.reversed),
+layout.vertical:not(.reversed),
+.direction-column
+{flex-direction: column;}
+
+column.reversed,
+layout.vertical.reversed,
+.direction-column-reverse
+{flex-direction: column-reverse;}
+
+row.wrap,
+column.wrap,
+layout.wrap
+{ flex-wrap: wrap;}
+
+row.nowrap,
+column.nowrap,
+layout.nowrap
+{flex-wrap: wrap;}
+
+row.justify-start,
+column.justify-start,
+layout.justify-start
+{justify-content: flex-start;}
+
+row.justify-end,
+column.justify-end,
+layout.justify-end
+{justify-content: flex-end;}
+
+row.justify-center,
+column.justify-center,
+layout.justify-center
+{justify-content: flex-center;}
+
+row.space-around,
+column.space-around,
+layout.space-around
+{justify-content: flex-space-around;}
+
+row.space-evenly,
+column.space-evenly,
+layout.space-evenly
+{justify-content: space-evenly;}
+
+row.space-between,
+column.space-between,
+layout.space-between
+{justify-content: space-between;}
+
+row.align-start,
+column.align-start,
+layout.align-start
+{ align-items: flex-start;}
+
+row.align-end,
+column.align-end,
+layout.align-end
+{ align-items: flex-end;}
+
+row.align-center,
+column.align-center,
+layout.align-center
+{ align-items: center;}
+
+row.align-stretch,
+column.align-stretch,
+layout.align-stretch
+{ align-items: stretch;}
+
+row.align-baseline,
+column.align-baseline,
+layout.align-baseline
+{ align-items: baseline;}
+
+
+item.auto{ align-self: auto;}
+item.flex-start{ align-self: flex-start;}
+item.flex-end{ align-self: flex-end;}
+item.center{ align-self: center;}
+item.baseline{ align-self: baseline;}
+item.stretch{ align-self: stretch;}

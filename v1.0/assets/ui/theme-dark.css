@@ -1,0 +1,164 @@
+
+
+
+
+
+
+
+/* THEME-dark:
+dark      = #262626
+base      = #2e2e2e
+light     = #3f3f3f
+accent    = #ff4500
+primary   = #5c6a79
+highlight = #159
+ic_8989
+*/
+.theme-dark .clist > .active,
+.theme-dark .fill-dark
+{ background-color: #262626;}
+
+.theme-dark .fill-base
+{ background-color: #2e2e2e;}
+
+.theme-dark .fill-base
+{ background-color: #2a2a2a;}
+
+item:nth-child(odd) .ui-layer,
+.ctabbar > layout > item > .active:not(.disabled),
+.theme-dark .fill-base
+{ background-color: #292929;}
+
+
+.theme-dark .clist > item:not(.active):not(.disabled):hover,
+.theme-dark .ui-slider > .absolute:not(.active):not(.disabled),
+.theme-dark .fill-light
+{ background-color: #3f3f3f;}
+
+.theme-dark .fill-accent
+{ background-color: #ff4500;}
+
+/* 
+.btn, 
+.ui-slider, 
+.ui-combo > div, 
+--------------------------
+ABN: 51451344026
+BSB: 063-097
+ACN: 27420909
+--------------------------
+anzcard@anz.com
+yourccdocs@anz.com
+*/
+.theme-dark .fill-primary
+{ background-color: #1a2a3a;}
+
+
+.item_fill-primary > item,
+.active_fill-primary > .active,
+.theme-dark .fill-primary
+{ background-color: #004165;}
+
+
+.item_fill-highlight > item,
+.active_fill-highlight > .active,
+.theme-dark .fill-highlight
+{ background-color: #159;}
+
+.theme-dark .selected
+{ outline: dotted 1px #159;}
+
+
+.item_stroke-transparent,
+.theme-dark .stroke-transparent
+{ border-color: transparent;}
+
+
+.theme-dark .item_stroke-dark,
+.theme-dark .dash-stroked_dark,
+.theme-dark .solid-stroked_dark,
+.theme-dark .dot-stroked_dark,
+.theme-dark .stroke-dark
+{ border-color: #262626;}
+
+
+.theme-dark .dash-stroked_base,
+.theme-dark .solid-stroked_base,
+.theme-dark .dot-stroked_base,
+.theme-dark .stroke-base
+{ border-color: #2e2e2e;}
+
+
+
+.theme-dark .dash-stroked_accent,
+.theme-dark .solid-stroked_accent,
+.theme-dark .dot-stroked_accent,
+.theme-dark .stroke-accent
+{ border-color: #ff4500;}
+
+
+
+.theme-dark .dash-stroked_primary,
+.theme-dark .solid-stroked_primary,
+.theme-dark .dot-stroked_primary,
+.theme-dark .stroke-primary
+{ border-color: #3f3f3f;}
+
+
+
+.theme-dark .dash-stroked_light,
+.theme-dark .solid-stroked_light,
+.theme-dark .dot-stroked_light,
+.theme-dark .stroke-light
+{ border-color: #3f3f3f;}
+
+
+.active_stroke-highlight > .active,
+.theme-dark .stroke-highlight
+{ border-color: #159;}
+
+
+.theme-dark .text-dark
+{ color: #262626;}
+
+.theme-dark .text-base
+{ color: #2e2e2e;}
+
+.theme-dark .text-light
+{ color: #3f3f3f;}
+
+row>item.active,
+.theme-dark .text-accent
+{ color: #ff4500;}
+
+.btn.active,
+.theme-dark .text-primary
+{ color: #5c6a79;}
+
+.active_text-highlight > .active,
+column>item.active,
+.theme-dark .text-highlight
+{ color: #159;}
+
+
+.btn, 
+.ui-slider, 
+.ui-text, 
+.ui-combo > div
+{border: solid 1px rgba(36, 36, 36, 0.705);}
+.btn:not(.disabled):hover, 
+.ui-text:not(.disabled):hover, 
+.ui-slider:not(.disabled):hover, 
+.ui-combo:not(.disabled):hover > div
+{
+  border-color: rgb(36, 36, 36);
+  color: #cacaca;
+}
+.theme-dark .disabled
+{color: #3d3d3d !important;}
+
+.action-group,
+.toggle-group,
+.radio-group,
+.checkbox-group
+{ cursor: default;}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="force touch, trackpad, touchpad, multitouch, multi-touch" />
+	<meta name="description" content="Use Gestures to enhance your workflow" />
+	<script src="../../../resources/js/tabbedimages.js"></script>
+	<script>
+		var imageSources = {
+			img1: {
+				menuOffset: { left: 30, top: 10 },
+				tab1: { 
+					item1: { src: "../../../shared/gesture_taptoclick.png", alt: "Trackpad gesture for making a selection", caption: { left: 20 } },
+					item2: { src: "../../../shared/gesture_lookup.png", alt: "Trackpad gesture for displaying the context menu when using a Force Touch trackpad" , caption: { left: 20 } },
+					item3: { src: "../../../shared/gesture_secondaryclick.png", alt: "Trackpad gesture for displaying the context menu", caption: { left: 20 } }
+				},
+				tab2: {
+					item1: { src: "../../../shared/gesture_pan.png", alt: "Trackpad gesture for panning the document view", caption: { left: 20 }, },
+					item2: { src: "../../../shared/gesture_pinchzoom.png", alt: "Trackpad gesture for zooming in or out", caption: { left: 20 }, },
+					item3: { src: "../../../shared/gesture_smartzoom.png", alt: "Trackpad gesture for switching between the current zoom level and 100% zoom", caption: { left: 20 }, },
+					item4: { src: "../../../shared/gesture_altzoom.png", alt: "Trackpad gesture for scrolling the document view", caption: { left: 20 }, },
+					item5: { src: "../../../shared/gesture_rotate.png", alt: "Trackpad gesture for rotating the canvas about the current cursor position", caption: { left: 20 }, }
+				}
+			},
+		}
+	</script>
+	<title>Gestures</title>
+</head>
+
+<body onload="loadTabbedImages()">
+<x-osx>
+	<header>
+		<h1>Gestures</h1>
+
+		<p>Affinity products are designed to be used in conjunction with multitouch devices (Magic Mouse, Trackpad), including those with Force Touch pressure-sensitive capability (Magic Trackpad 2 and later MacBook computers).</p>
+
+		<p>For Point &amp; Click and Scroll &amp; Zoom operations, the following default gestures are available when using Trackpad devices (gestures can be changed in device preferences):</p>
+
+		<div class="tabbedImage sidebar" id="img1">
+			<div class="tabStrip">
+				<div class="tab"><p>Point &amp; Click</p></div>
+				<div class="tab"><p>Scroll &amp; Zoom</p></div>
+			</div>
+			<div class="view"><img class="responsive" src="../../../shared/gesture_pan.png" alt=""><div class="overlays">
+					<div class="menu">
+						<div class="menu-item">
+							<div class="label"><p>Tap to click</p></div>
+							<div class="caption"><p>Makes a selection.</p></div>
+						</div>
+						<div class="menu-item">
+							<div class="label"><p>Look up</p></div>
+							<div class="caption"><p>Displays context menu (Force Touch only).</p></div>
+						</div>
+						<div class="menu-item">
+							<div class="label"><p>Two-finger click</p></div>
+							<div class="caption"><p>Displays context menu.</p></div>
+						</div>
+					</div>
+					<div class="menu">
+						<div class="menu-item">
+							<div class="label"><p>Scroll direction</p></div>
+							<div class="caption"><p>Pans around document view.</p></div>
+						</div>
+						<div class="menu-item">
+							<div class="label"><p>Zoom in/out</p></div>
+							<div class="caption"><p>Pinch/spread with two fingers to zoom in/out.</p></div>
+						</div>
+						<div class="menu-item">
+							<div class="label"><p>Smart zoom</p></div>
+							<div class="caption"><p>Switches between current zoom and 100% zoom by double tap.</p></div>
+						</div>
+						<div class="menu-item">
+							<div class="label"><p>Scroll direction (modifier)</p></div>
+							<div class="caption"><p>Zooms in and out. Tracks finger movement.</p></div>
+						</div>
+						<div class="menu-item">
+							<div class="label"><p>Rotate</p></div>
+							<div class="caption"><p>Rotates canvas about current cursor position.</p></div>
+						</div>
+					</div>
+				</div>
+			</div>				
+		</div>
+
+	</header>
+
+<script src="../../../resources/js/breakout.js"></script>
+</x-osx>
+</body>
+
+</html>

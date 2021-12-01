@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="axonometric, 2.5D, pseudo 3D, orthographic, one-point, isometric, trimetric" />
+	<meta name="description" content="Create 2.5D parallel projections using projection grids." />
+	<title>Isometric and axonometric grids</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Isometric and axonometric grids</h1>
+		<p>Affinity Designer makes use of highly customizable isometric and other axonometric grids, perfect for UI/game design, digital design models, mock ups or designs which benefit from this style.</p>
+
+		<figure>
+			<p><img src="../../../shared/grid_isometric.png" class="responsive" alt="isometric grid" /><figcaption>Isometric drawing and grid.</figcaption>
+		</figure>
+
+	</header>
+
+	<section class="about">
+
+		<h2>About isometric and axonometric grids</h2>
+		
+		<p>Isometric and other axonometric grids are, by nature, parallel projections. This means that grid lines never converge to a vanishing point as in perspective projections. Perspective projections are not supported in Affinity.</p>
+		
+		<p>Affinity Designer lets you set up different types of grid in different ways:<ul>
+				<li>Isometric (with planes): Easy setup via the <span class="ui">Isometric</span> panel.</li>
+				<li>Trimetric left and isometric (with planes): as presets from <span class="ui">Grid and Axis Manager</span>.</li>
+				<li>Dimetric, trimetric, oblique, triangular: from Advanced tab's <span class="ui">Grid type</span> option in <span class="ui">Grid and Axis Manager</span>.</li> 
+			</ul>
+		
+		<p>For any axonometric grids, planes can be switched between so you can apply in-plane transforms on front, side and top planes in turn.</p>
+		
+		<figure>
+			<div class="single"><img src="../../../shared/projection_frontsidetop.png" alt="Front plane" /></div>
+			<figcaption>Front, Side and Top planes of isometric grid showing selected object transformed to fit in-plane.</figcaption>
+		</figure>
+		
+		<p>Once a grid is set up, you can draw geometric shapes, art text and gradients directly on the active plane and selectively transform curves, closed shapes and placed images to the plane of your choice using the Move Tool.</p>
+		
+		<h3>About snapping controls</h3>
+
+		<p>Grids work best when combined with snapping. Object handles and curve nodes snap precisely to any grid line and line intersections.</p>
+		
+		<p>Grids can be based on any document unit, shown when switching on the rulers.</p>
+		
+		<h3>Using Cycle Selection boxes</h3>
+
+		<p><img src="../../../shared/ui/resetboundingbox.png" class="tool" width="16" height="16" alt="Cycle Selection Box" /> When drawing curves on plane, take advantage of the <span class="ui">Cycle Selection Box</span> setting on the Move Tool’s context toolbar. Its 'Planar bounds' option transforms the curve’s selection box (not the object) to that of the current plane, allowing easier positioning/snapping of curve to grid. Once Planar bounds is set, fitting the curve to a different plane subsequently will change the planar box too.</p>
+
+		<figure>
+			<div class="single"><img src="../../../shared/projection_curveselectionbox.png" alt="Front plane" /></div>
+			<figcaption>Selection box (not object) changed to 'Planar bounds'.</figcaption>
+		</figure>		
+		
+<p>For out-of-plane editing, choose a <span class="ui">Cycle Selection Box</span> setting of ‘Base Box’ or ‘Regular Bounds’.</p>
+	</section>
+	
+	<section class="howto">
+		<details open="open">
+			<summary>To create an isometric grid:</summary>
+			<ol>
+				<li>From the <span class="ui">View</span> menu, select <span class="ui">Isometric</span> from the <span class="ui">Studio</span> options to display the <span class="ui">Isometric</span> panel.</li>
+				<li>Click <span class="ui">Modify Grid</span>.</li>
+				<li>On the now displayed <span class="ui">Grid and Snapping Axis</span> dialog, check <span class="ui">Show Grid</span>.</li>
+			</ol>
+			
+		<aside class="box tip">
+			<p>If you haven't set up a grid previously, you'll be prompted to initially modify the settings (e.g., grid Spacing) for your new isometric grid; you can then make the grid visible.</p>
+			<p>If an isometric or other type of axonometric grid was already set up, the you won't be prompted for settings.</p>  
+		</aside>
+
+		</details>
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/planar_front.png" class="tool" width="32" height="32" alt="Front plane" /> <img src="../../../shared/ui/planar_side.png" class="tool" width="32" height="32" alt="Side plane" /> <img src="../../../shared/ui/planar_top.png" class="tool" width="32" height="32" alt="Top plane" /> To jump between grid planes:</summary>
+			<p>Do one of the following:</p>
+			<ul>
+				<li>From the <span class="ui">Isometric</span> panel, click <span class="ui">Front</span>, <span class="ui">Side</span> or <span class="ui">Top</span>.</li>
+				<li>Press the apostrophe (') <span class="KEY-TAG"></span> to cycle between planes.</li>
+			</ul>
+			
+			<aside class="box note">
+				<p>This plane-swapping behavior is a fundamental principle in drawing the 'faces' of an object (Front, Side and then Top plane).</p>
+			</aside>
+
+		</details>
+			
+		<details open="open">
+			<summary>To set the grid spacing:</summary>
+			<ul>
+				<li>On the <span class="ui">Grid and Snapping Axis</span> dialog, set the <span class="ui">Spacing</span> and <span class="ui">Divisions</span> values.</li>
+			</ul>
+		</details>
+			
+		<details open="open">
+			<summary><img src="../../../shared/ui/guidessnapping.png" class="tool" width="18" height="18" alt="Snapping" /> To set grid snapping:</summary>
+			<ol>
+				<li>From the Toolbar, select <span class="ui">Snapping</span>.</li>
+				<li>Select a <span class="ui">Preset</span>, e.g. Curve drawing, ensuring that <span class="ui">Snap to grid</span> is also checked.</li>
+			</ol>
+			<p>This ensures that objects will fit accurately to grid lines.</p>
+		</details>
+			
+		<details open="open">
+			<summary><img src="../../../shared/ui/edit_in_plane.png" class="tool" width="18" height="18" alt="Edit in Plane" /> To draw geometric shapes directly on the grid:</summary>
+			<ol>
+				<li>From the <span class="ui">Isometric</span> panel, enable <span class="ui">Edit in plane</span>.</li>
+				<li>With a shape tool selected, drag out a chosen shape. You can snap your shape to the grid on creation when dragging initially from any grid intersection or when repositioning and/or scaling the shape.</li>
+			</ol>
+			
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/correct_to_plane.png" class="tool" width="18" height="18" alt="Fit to Plane" /> To fit two-dimensional objects to plane:</summary>
+			<ol>
+				<li>Select a curve, closed shape, artistic text or image.</li>
+				<li>On the <span class="ui">Isometric</span> panel, choose a plane (Front, Side, Top) to send the object to.</li>
+				<li>On the same panel, select <span class="ui">Fit to plane</span>.</li>
+			</ol>
+
+			<aside class="box tip">
+				<p>If you <a href="../Layers/layerClip.html">clip</a> objects to parent objects before fitting them to the plane of your choice, these child objects will automatically follow the parent object's transformation on plane.</p>
+			</aside>
+			
+			<aside class="box tip">
+				<p>If including text on any plane, ensure artistic text is used rather than frame text. The frame properties of frame text means that transformation on plane is not exact.</p>
+			</aside>
+	
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/planar_flip_horizontal.png" class="tool" width="18" height="18" alt="Flip horizontal in plane" /> <img src="../../../shared/ui/planar_flip_vertical.png" class="tool" width="18" height="18" alt="Flip vertical in plane" /> <img src="../../../shared/ui/planar_rotate_anti_clockwise.png" class="tool" width="18" height="18" alt="Rotate anticlockwise in plane" /> <img src="../../../shared/ui/planar_rotate_clockwise.png" class="tool" width="18" height="18" alt="Rotate clockwise in plane" /> To transform any object on the grid:</summary>
+			<ul>
+				<li>Select the object in the plane, then do one of the following:<ul>
+						<li>On the <span class="ui">Isometric</span> panel, ensure the correct Current plane is set (must be the same plane as that which the object was originally drawn on), then use the panel's 180&#176; flip and 90&#176; rotate options.</li>
+						<li>To rotate the object on the page, drag its Rotation Handle clockwise or anti-clockwise. Press the <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> to rotate in 15&#176; increments.</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<aside class="box note">
+				<p>If you wish to rotate objects using Rotation Handles, ensure <span class="ui">Edit in plane</span> is enabled.</p>
+			</aside>
+			
+		</details>
+			
+		<details open="open">
+			<summary>To change other isometric grid settings:</summary>
+			<ul>
+				<li>On the <span class="ui">Isometric</span> panel, select <span class="ui">Grid Settings</span>. From here, you can:<ul>
+						<li>Switch on the grid origin (axis editing handles)</li>
+						<li>Add intermediate grid angles for snapping or constraining to.</li>
+						<li>Add an axis perpendicular to the current plane for snapping or constraining to.</li>
+						<li>Set the grid color and transparency</li>
+					</ul>
+				</li>
+			</ul>
+		</details>
+	
+	</section>
+		
+	<section class="about">
+
+		<h2>Advanced grids</h2>
+		
+		<p>The <span class="ui">Grid and Axis Manager</span> is ideal for laying out advanced axonometric grids as well as two-dimensional fixed grids and isometric grids.</p>
+		
+		<p>Instead of the commonly used isometric grid set up via the <span class="ui">Isometric</span> panel, a choice of other project grid presets can also be selected (e.g., dimetric, triangular) from the Manager; you can even create custom axonometric grids with options for enabling plane sets, grid sizing, custom aspect ratios and angles for more advanced use.</p>
+
+		<p>If you're looking beyond the presets such as isometric you can customize the grid to your liking.</p>
+		
+		<h3>Grid origin</h3>
+
+		<p>The grid origin is a point at which axes meet and is the corner of the logical plane. The origin is shown as a set of axis handles (in red, green and blue) which can be extended or repositioned on the page.</p>
+		
+		<p>For most axonometric grids, the axis handles remain locked in relation to each other but can all be lengthened by the same amount simultaneously to set grid spacing.</p> 
+
+		<p>The origin is set by dragging the grid origin (top left corner of page) by its intersection point and positioning it on the page. As you change between planes, the handles on the active plane will be shown thicker.</p>
+		
+			<figure>
+				<div class="comparison"><img src="../../../shared/gridorigin_before.png" alt="Grid origin before" /><div><img src="../../../shared/gridorigin_after.png" alt="Grid origin after" /></div>
+				</div>
+				<figcaption></figcaption>
+			</figure>
+
+		<p>You can snap the grid origin to an object on any plane and equally snap an object to a fixed grid origin.</p>
+
+		<h2>Setting up additional axis</h2>
+
+		<p>You can introduce additional angles and an extra axis to your grid that gives you extra options for snapping and constraining object edges, corners and curve nodes to.</p>
+		
+			<ul>		
+				<li><span class="ui">Intermediate angles</span>&#8212;adds additional angles between axes that can be snapped or constrained to.</li>
+				<li><span class="ui">Intermediate divisions</span>&#8212;Divides the angle between axes by a set number (set to 4 for 22.5&#176; divisions for origami).</li>
+				<li><span class="ui">Plane perpendicular axis</span>&#8212;creates another axis perpendicular to any active plane on axonometric grids. <span class="ui">Create plane set</span> must be enabled.</li>
+				<li><span class="ui">Horizontal axis</span>&#8212;adds an additional horizontal axis for constraining or snapping.</li>
+				<li><span class="ui">Vertical axis</span>&#8212;adds an additional vertical axis for constraining or snapping.</li>
+			</ul>
+		
+		<h2>Understanding axis and snapping colors</h2>
+		
+		<p>You may see the following colors which indicate different axes while snapping or constraining:</p>
+ 		
+ 		<ul>
+			<li>Red line: First axis (X axis on basic square grid)</li>
+			<li>Green line: Second axis (Y axis on basic square grid)</li>
+			<li>Blue line: Third axis (Z axis; axonometric grids)</li>
+			<li>Yellow node: Intersection point</li>
+			<li>Purple node: construction snap</li>
+			<li>Orange node: intermediate angles</li>
+		</ul>
+
+	</section>
+
+	<section class="howto">	
+		<details open="open">
+			<summary>To set your advanced grid:</summary>
+			<ol>
+				<li>From the <span class="ui">View</span> menu, select <span class="ui">Grid and Axis Manager</span>.</li>
+				<li>Do one of the following:<ul>
+						<li>Select a Parallel perspective preset from the <span class="ui">Presets</span> pop-up menu.</li>
+						<li>Click <span class="ui">Advanced</span>, then from the <span class="ui">Grid type</span> pop-up menu, select a grid, then edit its settings in the dialog.</li>
+					</ul>
+				</li>
+			</ol>
+		</details>
+		
+		<details open="open">
+			<summary>To view and position the grid origin:</summary>
+			<ol>
+				<li>From the <span class="ui">Grid and Axis Manager</span>, check <span class="ui">Show axis editing handles</span>. By default, the grid origin will show at the top-left corner of your page.</li>
+				<li>Using any tool, drag the grid origin intersection to a point on your page, e.g. a corner of a geometric shape.</li>
+			</ol>
+			
+			<aside class="box tip">
+				<p>Reset the origin by double-clicking the intersection.</p>
+			</aside>
+			
+		</details>
+
+		<details open="open">
+			<summary>To set the grid spacing:</summary>
+			<ul>
+				<li>On the page, drag the end of one of the red, green or blue axis-editing handles outwards or inwards to size the grid. If snapped to an object you can size the grid to the object.</li>
+			</ul>
+		</details>
+		
+	</section>
+
+	<h2>Custom grids using Cube mode</h2>
+
+	<p>The Grid &amp; Axis Manager's Cube mode offers a natural approach to setting up an axonometric grid. You can alter the elevation, orientation and roll of the cube, which automatically repositions your grid on the page.<p>
+
+	<figure>
+		<div class="single"><img src="../../../shared/grid_cube.png" alt="grid Cube"></div>
+		<figcaption>Changing the Elevation (A), Orientation (B) and Roll (C) when using the grid Cube mode.</figcaption>
+	</figure>
+
+<h3>Grid cube advantages</h3>
+
+		<ul>
+			<li>Visual approach to planar grid setup</li>
+			<li>Natural control of correctly foreshortened grid axis based on a fixed scale</li>
+			<li>Controllable elevation point, with separate control of horizontal orientation and roll</li>
+			<li>Quick adjustment of the cube for complimentary axis with common up direction</li>
+			<li>Extends existing snapping/constraining system</li>
+		</ul>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To set up an axonometric grid using Cube mode:</summary>
+			<ol>
+				<li>From the <span class="ui">View</span> menu, select <span class="ui">Grid and Axis Manager</span>.</li>
+				<li>Set the <span class="ui">Mode</span> to be 'Cube'.</li>
+				<li>Set the <span class="ui">Cube Scale</span> which is the edge size of the cube and any <span class="ui">Divisions</span> value for all axes.</li>
+				<li>Change the Elevation (<span class="ui">E</span>) by dragging the blue marker on the vertical slider next to the cube (or input a specific E value), using available snapping points if needed.</li>
+				<li>On the cube, adjust the cube Orientation (<span class="ui">O</span>) by dragging left or right (or enter an O value). The angle and the lengths of the grid axes are derived from the cube orientation.</li>
+				<li>On the outer ring gage around the cube, drag the blue marker to adjust the Roll (<span class="ui">R</span>) setting.</li>
+			</ol>
+
+		<aside class="box note">
+			<p>For a true isometric grid, a snapping point at 35.3&#176; OR -35.3&#176; can be combined with an O (Orientation) angle of 45&#176;.</p>
+		</aside>
+
+		<aside class="box note">
+			<h3>Modifier keys</h3>
+			<p>The following modifier keys can be used:</p>
+			<ul>
+				<li>The <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span> temporarily overrides snapping.</li>
+				<li>The <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> adjusts Orientation and Roll in 5&#176; increments.</li>
+			</ul>
+		</aside>
+
+		</details>
+
+		</section>
+				
+		<h2>Custom grids</h2>
+
+		<p>For custom grids, any grid origin's axis editing handle’s length and direction can be changed in relation to and independently of other handles.</p>
+		
+		<section>
+		
+		<details open="open">
+			<summary>To create a custom grid:</summary>
+				<ol>
+					<li>From the <span class="ui">Grid and Axis Manager</span>, select a <span class="ui">Grid type</span> of either <span class="ui">Two axis custom</span> or <span class="ui">Triangular custom</span>.</li>
+					<li>Enable <span class="ui">Uniform</span> to keep grid spacing the same across axes.</li>
+					<li>Enable <span class="ui">Create plane set</span> to activate and configure the <span class="ui">Up</span> axis.</li>
+					<li>Enable <span class="ui">Fixed aspect ratio</span> to configure the aspect ratio between axes. Disable to keep the same aspect ratios for Second and Up axes.</li>
+					<li>Do one of the following:<ul>
+							<li>Configure <span class="ui">Spacing</span>, <span class="ui">Division</span> and <span class="ui">Angle</span> setting for First, Second and Up axes.<li>With the <span class="ui">Move Tool</span> enabled, drag an axis editing handle on the grid origin inwards or outwards, changing its angle.<aside class="box note">
+										<h3>Modifier keys</h3>
+										<p>As you adjust the handles, the following modifier keys can be used:</p>
+										<ul>
+											<li>The <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> locks non-moving axis angles so length (i.e. grid spacing) is changed and not angles.</li>
+											<li>The <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> changes the angle of the moving handle (not length) while locking other axis angles.</li>
+										</ul>
+									</aside>
+							 </li>
+						</ul>
+					</li>
+					<li>Click <span class="ui">Close</span>.</li>
+				</ol>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../CurvesShapes/draw_linesAndShapes.html">Draw curves and shapes</a></li>
+			<li><a href="../CurvesShapes/draw_geometricShapes.html">Draw and edit shapes</a></li>
+			<li><a href="grids.html">Grids</a></li>
+			<li><a href="snapping.html">Snapping</a></li>
+			<li><a href="rulers.html">Rulers</a></li>
+			<li><a href="../Layers/layerClip.html">Layer clipping</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

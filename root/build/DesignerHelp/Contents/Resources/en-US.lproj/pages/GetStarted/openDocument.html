@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="load, illustrator, ai, freehand, fh, photoshop, psd, bmp, eps, gif, jpeg, HDP, jpeg-XR, pdf, png, raw, tiff, webp" />
+	<meta name="description" content="Open previously saved documents, photos and images." />
+	<title>Open documents and images</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Open documents and images</h1>
+
+		<p>As well as opening previously saved documents, raster images (from camera, mobile device, or digital artwork) and vector images (SVGs) can be opened. A range of <a href="../Appendix/fileformat.html">popular camera raw images and other professional design file formats</a> can also be opened.</p>
+
+	</header>
+
+	<section class="about">
+
+		<p>A key feature of the Affinity product range is the ability to seamlessly open any Affinity project file in any Affinity product, regardless of the original Affinity product it was created in. In doing so, you can enhance your design with another Affinity product's features with no concern over file compatibility on saving.</p>
+
+		<aside class="box note">
+			<p>When opening Affinity Publisher documents, an additional <span class="ui">Page Locator</span> appears in the bottom left hand corner, allowing you to jump between pages.</p>
+		</aside>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To open a document or image:</summary>
+			<ol>
+				<li>Do one of the following:<ul>
+						<li>From the <span class="ui">File</span> menu, click <span class="ui">Open</span>.</li>
+						<li>Double-click anywhere in the empty view. (Only available in <a href="../Workspace/workspaceModes.html">Normal mode</a> when no other documents are open.)</li>
+					</ul>
+				</li>
+				<li>Select the file you want and click <span class="ui">Open</span>.</li>
+			</ol>
+
+		</details>
+
+		<details open="open">
+			<summary>To open a recently used document:</summary>
+
+			<ul>
+				<li>From the <span class="ui">File</span> menu, click <span class="ui">Open Recent</span>, then select a file from the submenu.</li>
+			</ul>
+		</details>
+
+		<x-osx>
+			<details open="open">
+				<summary>To open an image as a new document (via Finder):</summary>
+				<ul>
+					<li>Open Finder and drag the file to an off page area of your workspace.</li>
+				</ul>
+			</details>
+		</x-osx>
+		
+		<x-win32>
+			<details open="open">
+				<summary>To open an image as a new document (via Explorer):</summary>
+				<ul>
+					<li>Open Explorer and drag the file to an off page area of your workspace.</li>
+				</ul>
+			</details>
+		</x-win32>	
+
+		<aside class="box note">
+			<p>Raster images opened using the above methods will create a new document with one layer, named 'Background', which is <a href="../Layers/manageLayers.html">locked</a> by default. The document will adopt the image name as its file name.</p>
+		</aside>
+
+		<aside class="box note">
+			<x-osx><p>On opening, a file's color space is preserved by default, but you can convert it to the default working color space via <span class="ui">Affinity Designer&#62;Preferences</span> (Color option) using the <span class="ui">Convert opened files..</span> option. The document's current color profile is displayed at the top left of your workspace.</p></x-osx>
+			<x-win32><p>On opening, a file's color space is preserved by default, but you can convert it to the default working color space via <span class="ui">Edit&#62;Preferences</span> (Color option) using the <span class="ui">Convert opened files..</span> option. The document's current color profile is displayed at the top left of your workspace.</p></x-win32>
+		</aside>
+
+		<details open="open">
+			<summary>To add an image to a layer (via Finder):</summary>
+			<ol>
+				<li>From the <span class="ui">Layers</span> panel, select the 'target' layer.</li>
+				<li>Drag an image from Finder to your page. The image will be added to the selected layer.</li>
+			</ol>
+
+			<aside class="box note">
+				<p>You can embed existing documents into layers as described for adding images above.</p>
+			</aside>
+		</details>
+
+		<details open="open">
+			<summary>To open Adobe PDF files:</summary>
+			<ol>
+				<li>From the <span class="ui">File</span> menu, click <span class="ui">Open</span>.</li>
+				<li>Select the file you want and click <span class="ui">Open</span>.</li>
+				<li>From the PDF Options dialog, you can choose:<ul>
+						<li>A specific or all pages to import.</li>
+						<li>Set the resolution for the PDF content.</li>
+						<li>The document color space that PDF contents will use. The Estimate option senses the PDF file's color space and uses that.</li>
+						<li>If text is to remain more editable at the expense of accurate design reproduction.</li>
+						<li>If separate text lines can be treated as a single text frame to aid text flow.</li>
+						<li>To substitute a missing font with a similar replacement font.</li>
+					</ul>
+				</li>
+			</ol>
+
+		<aside class="box note">
+			<p>For multi-page PDF files, each page is placed on its own artboard.</p>
+		</aside>
+
+		</details>
+		
+		<x-win32>	
+			<details open="open">
+				<summary>To open a document template:</summary>
+				<ol>
+					<li>From the <span class="ui">File</span> menu, click <span class="ui">Open</span>.</li>
+					<li>Select the .aftemplate file you want and click <span class="ui">Open</span>.</li>
+				</ol>
+
+			</details>
+		</x-win32>
+		
+		<aside class="box prefs">
+			<h3>Preferences</h3>
+			<p>Related behaviors can be adjusted from <a href="../Workspace/preferences.html">the app's preferences</a>:</p>
+			<ul>
+				<li><span class="ui">General&gt;Reopen document(s) on startup</span></li>
+			</ul>			
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="NewDocument.html">Create new documents</a></li>
+			<li><a href="templates.html">Document templates</a></li>
+			<li><a href="../Clr/ClrProfiles.html">Color management</a></li>
+			<li><a href="../Appendix/fileformat.html">Supported file formats</a></li>
+			<li><a href="../Layers/manageLayers.html">Arrange/Manage layers</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=file">Keyboard shortcuts for file/document management</a></li>
+		</ul>
+	</section>
+
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

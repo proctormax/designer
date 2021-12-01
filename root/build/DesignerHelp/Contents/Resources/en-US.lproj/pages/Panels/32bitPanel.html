@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="panels, sampling, sampler" />
+	<meta name="description" content="Panel overview and settings." />
+	<title>32-bit Preview panel</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>32-bit Preview panel</h1>
+
+		<p>The 32-bit Preview panel provides configurable exposure and gamma controls to preview the vast tonal range of a 32-bit document without tonally modifying it. This is especially useful for floating point lossless workflows (e.g., 3D rendering), where edits need to be made to the image without sacrificing the available tonal range through tonal compression or adjustments.</p>
+
+	</header>
+
+	<section class="about">
+		<h2>About the 32-bit Preview panel</h2>
+
+		<p>The panel options include:</p>
+			<ul>
+				<li class="osx"><span class="ui">Enable EDR</span>&#8212;enables <i>Extended Dynamic Range</i> mode to allow peak brightness values greater than diffuse/paper white to be displayed, increasing the dynamic range of the document view.</li>
+				<li class="win32"><span class="ui">Enable HDR</span>&#8212;enables <i>High Dynamic Range</i> mode to allow peak brightness values greater than diffuse/paper white to be displayed, increasing the dynamic range of the document view.</li>
+				<li class="osx"><span class="ui">Show EDR Clipping</span>&#8212;displays over-exposed areas while in EDR mode. These are areas outside of the peak brightness value that the display is capable of (e.g. 1000 nits).</li>
+				<li class="win32"><span class="ui">Clip warning</span>&#8212;displays over-exposed areas while in HDR mode. Choose between <span class="ui">average</span> or <span class="ui">peak</span> brightness, measured in nits. These values are obtained from the display's metadata.</li>
+				<li class="win32"><span class="ui">Monitor reference white (nits)</span>&#8212;used in conjunction with clipping. Set this value to the diffuse/paper white brightness value you have calibrated your display to (if using a profiling device, this may be measured in <i>cd/m2</i> which is equal to <i>nits</i>). This ensures accurate clipping information is displayed.</li>
+				<li class="osx"><span class="ui">Clip to maximum</span>&#8212;prevents the display from tone mapping while in EDR mode. Ordinarily, the display will tone map brightness values above its peak brightness threshold, but with this option enabled those values will instead be clipped.</li>
+				<li class="win32"><span class="ui">Clip to Max (Peak)</span>&#8212;prevents the display from tone mapping while in HDR mode. Ordinarily, the display will tone map brightness values above its peak brightness threshold, but with this option enabled those values will instead be clipped.</li>
+				<li><span class="ui">Preview Exposure</span>&#8212;increases or decreases the preview exposure of the image, allowing you to better visualize the highlight or shadow tonal ranges for editing.</li>
+				<li><span class="ui">Preview Gamma</span>&#8212;alters the gamma correction value.</li>
+				<li><span class="ui">Display Transform</span>&#8212;allows you to switch between a non-linear view using the current display profile, linear light or an OCIO transform:<ul>
+					<li><span class="ui">ICC Display Transform</span>&#8212;non-linear transform using the current display profile.</li>
+					<li><span class="ui">Unmanaged</span>&#8212;a linear light view where no transform is applied.</li>
+					<li><span class="ui">OCIO Display Transform</span>&#8212;choose a device transform and a view transform to preview your document using OpenColorIO. The options presented for both pop-up menus will differ depending on your current OpenColorIO configuration.</li>
+				</ul>
+				</li>
+			</ul>
+
+		<aside class="box tip">
+			<p>In order to use the <span class="ui">Display Transform</span> options, you must have a valid <span class="ui">OpenColorIO</span> configurable file and directory defined. See <a href="../Clr/ocio.html">Using OpenColorIO</a> for more information.</p>
+		</aside>
+
+		<aside class="box tip">
+			<p>If you intend on tone mapping or tonally modifying your image to compress its tonal range, you will likely not need to use this panel.</p>
+		</aside>
+	</section>
+
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Clr/ocio.html">Using OpenColorIO</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

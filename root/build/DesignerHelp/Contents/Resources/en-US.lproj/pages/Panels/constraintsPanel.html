@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="panel, constraints" />
+	<meta name="description" content="The Constraints panel controls the scaling and anchoring of a child object when its parent is resized." />
+	<title>Constraints panel</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Constraints panel</h1>
+
+
+		<p>The <span class="ui">Constraints</span> panel lets you control how objects are positioned and scaled when presented on different artboards and differently sized layouts.</p>
+
+	</header>
+
+	<section class="about">
+	<h2>About the Constraints panel</h2>
+
+		<p>Constraints are useful when designing for different devices simultaneously&#8212;they are labor saving and preserve accuracy. Objects are selectively responsive to resizing and transforms.</p>
+
+		<p>The <span class="ui">Constraints</span> panel lets you prevent child objects from being scaled when its parent object is resized. Anchoring the child object to its parent is also possible. Both scaling and anchoring can be applied to top, bottom, right or left of the child object.</p>
+
+		<p>The Constraints panel is hidden by default. It can be switched on via <span class="ui">View&gt;Studio</span> when working in Designer or Pixel Persona.</p>
+
+		<figure class="nft overrideDE overrideFR">
+			<p><img src="../../images/panel_constraints.png" class="responsive panel" alt="Constraints panel" /></p>
+			<figcaption>The Constraints panel with top and right anchoring applied, horizontal scaling activated, vertical scaling deactivated, and Max Fit applied.</figcaption>
+		</figure>
+
+		<p>The outer box represents the container (parent object). The inner box represents the nested content (child object).</p>
+
+	</section>
+
+	<section class="settings">
+		<h3>Options</h3>
+
+		<p>The following options are available in the panel:</p>
+
+		<ul>
+			<li>Anchor lines&#8212;when gray and broken (default), the child object is not anchored in the selected direction. When white and solid, the child object is anchored in the selected direction.</li>
+			<li>Scaling arrows&#8212;when white and solid (default), the child object will scale in the selected direction. When gray and broken, the child object will not scale in the selected direction. If white and broken, the child object is forced to scale in the selected direction due to anchoring applied on opposite sides.</li>
+			<li><img src="../../../shared/ui/constraints_minfit.png" width="18" height="18" alt="Constraints Min fit" /> Min Fit&#8212;when the parent object is resized disproportionately, the child object may scale so it always fits within its parent object (if unanchored).</li>
+			<li><img src="../../../shared/ui/constraints_maxfit.png" width="18" height="18" alt="Constraints max fit" /> Max Fit&#8212;when the parent object is resized disproportionately, the child object may scale but it will be allowed to be bigger than its scaled parent object, potentially clipping content from view.</li>
+		</ul>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../DesignAids/constraints.html">Constraints</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="selecting objects, next, previous, vector, select, select same, select object, select type" />
+	<meta name="description" content="Selecting objects allows you to move and modify them." />
+	<title>Selecting objects</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Selecting objects</h1>
+
+		<p>Before you can move or modify vector objects, you must first select them.</p>
+		
+	<figure>
+		<div class="single"><img src="../../../shared/selecting_objects.png" alt="Selecting objects" /></div>
+		<figcaption></figcaption>
+	</figure>
+
+	</header>
+	
+	<section class="about">
+		<p>You can select single or multiple objects using a variety of methods. If you already have an object selected, you can quickly select the next or previous object in the z-order (stack).</p>
+		
+		<p>When shapes are created, a base box will be established on creation to accommodate the range of different potential shape sizes when creating variants of that shape. You can manually swap to a tight bounding box using the <span class="ui">Cycle Selection Box</span> option on the context toolbar.</p>
+		
+		<h2>Edit All Layers and Select All</h2>
+		
+		<p>The behavior of the Select All command depends on the Edit All Layers setting on the <span class="ui">Layers</span> panel:</p>
+		<ul>
+			<li>When enabled, the command will select all objects across all layers and sub-layers.</li>
+			<li>If this option is off, only objects on the current layer are selected. Objects within sub-layers are not selected.</li>
+		</ul>
+
+		<aside class="box note">
+			<p>Edit All Layers is enabled by default but can be disabled at any time.</p>
+		</aside>
+		
+		<h2>Select Same and Select Object</h2>
+		
+		<p>The <span class="ui">Select Same</span> command selects all objects in your document that match an attribute on your currently selected object. You can match by Fill Color, Stroke Color, Fill &amp; Stroke Color, Stroke Weight, Transparency, Blend Mode, Shape, Name, or Tag Color. This powerful selection method can make bulk changes to your design all at once (e.g., conversion of objects that share a non-global color to ones that use a global one).</p>
+		
+		<figure>
+			<div class="single"><img src="../../../shared/selecting_same_fill.png" alt="Select same fill" /></div>
+			<figcaption>Selecting the same fill color across objects.</figcaption>
+		</figure>
+
+		<p>The <span class="ui">Select Object</span> command selects all objects of a matching type within your document. For example, you can select all groups, symbols, art text, artboards, pixel layers, unfilled objects, transparent objects, and any objects which do/don't have a stroke, etc.</p>
+		
+		<figure>
+			<div class="single"><img src="../../../shared/selecting_object_stroked.png" alt="Select object stroked" /></div>
+			<figcaption>Selecting objects with strokes applied.</figcaption>
+		</figure>		
+		
+		<p>Both commands also work well in conjunction with each other, allowing you to first group all layers of each fill color (using Select Same) and then select all of the grouped layers (using Select Object), for example, effectively organizing the layers in your image.</p>
+
+	</section>
+
+	<section class="howto">
+	
+		<details open="open">
+			<summary><img src="../../../shared/ui/LayersTabEditAllLayersIcon.png" class="tool" width="16" height="16" alt="Edit All Layers" /> To toggle Edit All Layers:</summary>
+			<ul>
+				<li>On the <span class="ui">Layers</span> panel, click <span class="ui">Edit All Layers</span>.</li>
+			</ul>
+		</details>
+	
+		<details open="open">
+			<summary><img src="../../../shared/ui/move_tool.png" class="tool" width="18" height="18" alt="Move Tool" /> To select an object:</summary>
+			<p>Do one of the following:</p>
+			<ul>
+				<li>With the <span class="ui">Move Tool</span> selected, click an object or group on the page to select it.</li>
+				<li>On the <span class="ui">Layers</span> panel, click an object entry.</li>
+			</ul>
+
+		<aside class="box note">
+			<p><span class="ui">Select&gt;Select Next/Previous</span> will select objects sequentially within the same layer (or group) as the initially selected object.</p> 
+		</aside>
+
+		</details>
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/move_tool.png" class="tool" width="18" height="18" alt="Move Tool" /> To select multiple objects:</summary>
+			<p>Do one of the following:</p>
+			<ul>
+				<li>With the <span class="ui">Move Tool</span> selected, <span class="key SHIFT-TAG"></span>-click each object on the page in turn to select them.</li>
+				<li>With the <span class="ui">Move Tool</span> selected, drag to draw a marquee around the object(s).*</li>
+			</ul>
+		</details>
+
+		<details open="open">
+			<summary>To select all objects in a layer:</summary>
+			<ul>
+				<li>On the <span class="ui">Layers</span> panel, click a layer or sub-layer.</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+			<summary>To select all objects on a page:</summary>
+			<ul>
+				<li>From the <span class="ui">Select</span> menu, select <span class="ui">Select All</span>.</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+			<summary>To select objects (or groups) in a group:</summary>
+			<ul>
+				<li>Double-click on the object. If the object itself is in a group, the group will be selected first&#8212;double-clicking again will select the object.</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+			<summary>To select all objects sharing a chosen attribute with the currently selected object:</summary>
+			<ul>
+				<li>With an object selected, from the <span class="ui">Select</span> menu, choose <span class="ui">Select Same</span> and select an attribute from the menu.</li>
+			</ul>
+		</details>
+		
+			<details open="open">
+			<summary>To select all objects of a certain type:</summary>
+			<ul>
+				<li>From the <span class="ui">Select</span> menu, choose <span class="ui">Select Object</span> and select an object type from the menu.</li>
+			</ul>
+		</details>
+		
+		<aside class="box note">
+			<h3>Modifier keys</h3>
+			<p>When using the Move Tool, the following modifier keys can be used to aid object selection:</p>
+			<ul>
+				<li>The <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> allows you to select multiple objects by clicking them in turn.</li>
+				<li>The <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span> selects objects which are located directly behind the currently selected object.</li>
+				<li>The <span class="key">.</span> <span class="KEY-TAG"></span> toggles a shape's bounding box between regular bounds and the base box.</li>
+				<li class="osx">As you drag a selection marquee, pressing the <span class="key CTRL-TAG"></span> <span class="KEY-TAG"></span> selects objects which are only partially covered by the selection marquee. This behavior can be made the default in Preferences*.</li>
+				<li class="win32">As you drag a selection marquee, pressing the right mouse button selects objects which are only partially covered by the selection marquee. This behavior can be made the default in Preferences*.</li>
+			</ul>
+		</aside>
+
+		<aside class="box tip">
+			<p><img src="../../../shared/ui/LayersTabLockIcon.png" class="tool" width="12" height="12" alt="Lock/Unlock" /> You can <span class="ui">Lock</span>/<span class="ui">Unlock</span> selected objects from the <span class="ui">Layers</span> panel or <span class="ui">Layer</span> menu.</p>
+		</aside>
+		
+		<aside class="box prefs">
+			<h3>Preferences</h3>
+			<p>Related behaviors can be adjusted from <a href="../Workspace/preferences.html">the app's preferences</a>:</p>
+			<ul>
+				<li><span class="ui">General&gt;Prefer to keep selection after delete</span></li>
+				<li><span class="ui">*Tools&gt;Select object when intersects with selection marquee</span></li>
+				<li><span class="ui">User Interface&gt;Auto-scroll to show selection in <span class="ui">Layers</span> panel</span></li>
+			</ul>			
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Tools/tools_move.html">Move Tool</a></li>
+			<li><a href="group.html">Grouping objects</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

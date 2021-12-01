@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="image layer, image, place, content" />
+	<meta name="description" content="Placed images will automatically be added to the Layers panel as an image layer." />
+	<title>Image layers</title>
+</head>
+
+<body>
+
+	<header>
+		
+	<h1>Image layers</h1>
+	
+		<p>Placed images will automatically be added to the <span class="ui">Layers</span> panel as an image layer. This includes files that are dragged and dropped onto the document, placed via <span class="ui">File&gt;Place</span>, or by any other placement method.</p>
+
+		<figure>
+			<p><img src="../../../shared/layers_image.jpg" class="responsive" alt="Image layer" /></p>
+			<figcaption>A placed image.</figcaption>
+		</figure>
+	
+	</header>
+
+	<section class="about">
+	
+		<p>Image layers retain all of the data from the original image, which remains intact when the document is exported.</p>
+
+		<p>An image layer has a container which retains the placed image's original color space, resolution and physical dimensions (when placed at native resolution).</p>
+		
+		<p>Image layers can be recolored much like an opened image or a pixel layer. If an image layer is drawn on, the layer will be rasterized and will adopt pixel layer properties. Rasterization is required to convert the image to the document's color space.</p>
+
+		<aside class="box note">
+			<p>Images should be exported using physical print dimensions, e.g. 6in x 4in, and a set DPI when resizing or cropping a document.</p>
+		</aside>
+			
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary>To create an image layer by placing content:</summary>
+			<ol>
+				<li>From the <span class="ui">File</span> menu, select <span class="ui">Place</span>.</li>
+				<li>In the pop-up dialog, navigate to and select a file, and click <span class="ui">Open</span>.</li>
+				<li>Do one of the following:<ul>
+						<li>Click to place the file at its default, displayed size.</li>
+						<li>Drag on the page to set the size and position of the content.</li>
+					</ul>
+				</li>
+				<li>Alternatively, you can drag and drop the file onto the page to place it. The current image placement policy (embedded or linked) will be honored.</li>
+			</ol>
+
+		</details><!-- 
+		<x-win32>
+			<details open="open">
+				<summary>To convert a pixel layer to an image layer:</summary>
+				<ol>
+					<li>With a pixel layer selected, from the <span class="ui">Edit</span> menu, select <span class="ui">Copy</span>.</li>
+					<li>From the <span class="ui">Edit</span> menu, select <span class="ui">Paste Special</span>, then choose <span class="ui">Device Independent Bitmap</span>.</li>
+				</ol>
+			</details>
+		</x-win32>
+ --><details open="open">
+			<summary>To convert an image layer to a pixel layer:</summary>
+			<p>Do one of the following:</p>
+			<ul>
+				<li>Select the <span class="ui">Paint Brush Tool</span> or another brush-based tool and paint on the layer.</li>
+				<li>From the <span class="ui">Layer</span> menu, select <span class="ui">Rasterize</span>.</li>
+			</ul>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="aboutLayers.html">About layers</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

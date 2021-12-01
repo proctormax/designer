@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+/* THEME-green:
+dark      = #262626
+base      = #2e2e2e
+light     = #3f3f3f
+accent    = #ff4500
+primary   = #5c6a79
+highlight = #E5c300
+*/
+.theme-green .clist > .active,
+.theme-green .fill-dark{ background-color: #262626;}
+.theme-green .fill-base{ background-color: #2e2e2e;}
+.theme-green .fill-base{ background-color: #202729;}
+.theme-green .fill-light{ background-color: #3f3f3f;}
+.theme-green .clist > *:not(.active):not(.disabled):hover,
+.theme-green .fill-light{ background-color: #20343a;}
+.theme-green .fill-accent{ background-color: #ff4500;}
+.theme-green .fill-primary{ background-color: #5c6a79;}
+.theme-green .fill-highlight{ background-color: #E5c300;}
+
+.theme-green .stroke-dark{ border-color: #262626;}
+.theme-green .stroke-base{ border-color: #2e2e2e;}
+.theme-green .stroke-light{ border-color: #3f3f3f;}
+.theme-green .stroke-accent{ border-color: #ff4500;}
+.theme-green .stroke-primary{ border-color: #3f3f3f;}
+.theme-green .stroke-highlight{ border-color: #E5c300;}
+
+.theme-green .text-dark{ color: #262626;}
+.theme-green .text-base{ color: #2e2e2e;}
+.theme-green .text-light{ color: #3f3f3f;}
+.theme-green .text-accent{ color: #ff4500;}
+.theme-green .text-primary{ color: #5c6a79;}
+.theme-green .text-highlight{ color: #E5c300;}
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="text styles, types, group" />
+	<meta name="description" content="Exploring text style types: paragraph, character and group." />
+	<title>Text style types</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Text style types</h1>
+
+		<p>There are three types of text style in Affinity Designer which are used for differing purposes.</p>
+		
+	</header>
+
+	<section class="about">
+	<h2>About text style types</h2>
+
+		<p>There are no restrictions on what text attributes and properties can be applied to a text style, regardless of its type. Instead, the type determines the predominant purpose of that text style.</p>
+		
+		<p>There are three types of text style:</p>
+		
+		<ul>
+			<li><span class="ui">Paragraph</span>&#8212;used to define the properties of paragraphs.</li>
+			<li><span class="ui">Character</span>&#8212;used to define the properties of individual glyphs (or words, lines and sentences inside a paragraph).</li>
+			<li><span class="ui">Group</span>&#8212;used to define the properties for a group of text styles.</li>
+		</ul>
+
+	<h3>Paragraph and Character text styles</h3>
+
+		<p>Although text styles are assigned a type, Affinity Designer gives you the option of applying paragraph and character text styles flexibly. For example, you can set paragraph styles to selected glyphs as if they are character styles, without affecting the style applied to the paragraph. To activate this feature, you must set the text style to <span class="ui">Show in both panels</span>.</p>
+		
+		<aside class="box note">
+			<p>If a keyboard shortcut is attached to a text style, that shortcut will apply the style using its predominant nature. For example, if you select a portion of text and use a shortcut to apply a paragraph text style, the selected text's paragraph will be modified, not just the selected text.</p>
+		</aside>
+
+	<h3>Group text styles</h3>
+
+		<p>A <span class="ui">Group</span> text style cannot be applied directly to text on the page. Instead it defines the foundations on which other text styles are built and allows you to quickly create a text style hierarchy.</p>
+		<p><img src="../../../shared/ui/moremenuicon.png" class="tool" width="15" height="11" alt="Options menu" /> Group text styles only display in the <a href="../Panels/textStylesPanel.html">Text Styles panel</a> and are best understood when <span class="ui">Show hierarchical</span> is set on the panel's Panel Preferences.</p>
+		<p>The Group style can be considered as the group's <span class="term">parent</span> or <span class="term">master</span> text style. All other styles which are based on a Group style are considered to be <span class="term">child</span> or <span class="term">subordinate</span> styles.</p>
+		<p>You can create subordinate text styles within a group by selecting the Group text style as the <span class="ui">Based on</span> style.</p>
+
+		<aside class="box note">
+			<p>The complexity of your hierarchy is entirely in your hands&#8212;subordinate styles can also be master styles with their own subordinates and group styles can be introduced as subordinates to a master group style.</p>
+		</aside>
+	
+	</section>
+
+	<section class="howto">
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/moremenuicon.png" class="tool" width="15" height="11" alt="Options menu" /> To edit a text style's type:</summary>
+			<ol>
+				<li>On the <span class="ui">Text Styles</span> panel, click on a listed style's options menu and select <span class="ui">Edit</span>.</li>
+				<li>In the dialog's <span class="ui">Style</span> section, select an option from the <span class="ui">Type</span> list.</li>
+				<li>Click <span class="ui">OK</span>.</li>
+			</ol>
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/moremenuicon.png" class="tool" width="15" height="11" alt="Options menu" /> To allow flexible use of a text style:</summary>
+			<ol>
+				<li>On the <span class="ui">Text Styles</span> panel, click on a listed style's options menu and select <span class="ui">Edit</span>.</li>
+				<li>In the dialog's <span class="ui">Style</span> section, select the <span class="ui">Show in both panels</span> option.</li>
+				<li>Click <span class="ui">OK</span>.</li>
+			</ol>
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/CreateGroupStyle.png" class="tool" width="16" height="16" alt="Create Group Style" /> <img src="../../../shared/ui/moremenuicon.png" class="tool" width="15" height="11" alt="Options menu" /> To create a text style hierarchy:</summary>
+			<ol>
+				<li>On the <span class="ui">Text Styles</span> panel, select <span class="ui">Create Group Style</span>.</li>
+				<li>Adjust the settings in the dialog.</li>
+				<li>Click <span class="ui">OK</span>.</li>				
+				<li>On the <span class="ui">Text Styles</span> panel, click on the newly created group style's options menu and select <span class="ui">Create Style Based on</span>.</li>
+				<li>Adjust the settings in the dialog.</li>
+				<li>Click <span class="ui">OK</span>.</li>
+			</ol>
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="textStyles.html">Using text styles</a></li>
+			<li><a href="textStyles_create.html">Creating and managing text styles</a></li>
+			<li><a href="textStyles_remove.html">Removing text styles</a></li>
+			<li><a href="../Panels/textStylesPanel.html">Text Styles panel</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

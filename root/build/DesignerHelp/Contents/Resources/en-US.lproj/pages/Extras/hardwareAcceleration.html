@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="performance, boost, GPU, integrated, discrete, external, graphics processor" />
+	<meta name="description" content="Boosting performance by processing on your device's GPU instead of its CPU." />
+	<title>Hardware acceleration</title>
+</head>
+
+<body>
+	
+	<header>
+		<h1>Hardware acceleration</h1>
+		<p class="osx">To improve the performance of some operations, Affinity Designer can use Apple's Metal technology to talk directly to your system's graphics hardware.</p>
+		<p class="win32">To improve the performance of some operations, Affinity Designer can use OpenCL technology to talk directly to your system's graphics hardware.</p>
+		<p>Hardware acceleration is available for many graphics processors (GPUs), whether integrated into your computer's CPU (central processing unit), a discrete graphics card or onboard processor, or external and connected via Thunderbolt 3. Affinity Designer can make use of multiple GPUs in parallel.</p>
+		<p>It is recommended that hardware acceleration is enabled unless you experience unusual performance problems or our technical support team instructs you to disable it.</p>
+		
+		<aside class="box note">
+			<p>Hardware acceleration is enabled by default. If you experience poorer performance than expected, try disabling it to see if CPU-based processing works better on your system.</p>
+		</aside>
+	</header>
+
+	<section class="about">
+		<h2>Benefits</h2>
+		<p>In practice, the performance boost depends on the task at hand.</p>
+		<p>Hardware acceleration is of great benefit to many raster-based tasks. Vector operations and specific features like blend ranges are performed on the CPU.</p>
+		<p>Tools, adjustments, canvas previewing and other operations will use GPU resources to achieve improved performance.</p>		
+		
+		<h2>Cost</h2>
+		<p>As a trade-off, memory requirements are increased and performance may be dependent on the amount of VRAM available to the GPU(s).</p>
+		<p>The VRAM requirement depends on the complexity of your workflow. Document resolution and bit depth, screen resolution, and layer complexity all contribute to it.</p>
+	
+		<h2>System requirements</h2>
+		<p class="osx">Affinity support for Metal compute acceleration requires macOS High Sierra 10.13 or later.</p>
+		<p class="osx">Affinity support for safe unplugging of eGPUs requires macOS Mojave 10.14 or later.</p>
+		<p class="win32">Affinity support for OpenCL compute acceleration requires Windows 10.0.19042 (May 2020) or later.</p>
+		<p class="win32">It also requires GPU support for <a href="https://en.wikipedia.org/wiki/Feature_levels_in_Direct3D#Direct3D_12" target="_blank">Direct3D 12 Feature Level 12.0</a>, meaning the GPU must feature AMD's GCN (Graphics Core Next), NVIDIA's Maxwell, or Intel HD Graphics 510 (Skylake) or a later microarchitecture.</p>
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary>To enable or disable hardware acceleration:</summary>
+			<ol>
+				<li class="osx">Select <span class="ui">Affinity Designer&gt;Preferences</span>.</li>
+				<li class="win32" style="display: none;">Select <span class="ui">Edit&gt;Preferences</span>.</li>
+				<li>Select <span class="ui">Performance</span>.</li>
+				<li class="osx">Set <span class="ui">Enable Metal compute acceleration</span> as required.</li>
+				<li class="win32" style="display: none;">Set <span class="ui">Enable OpenCL compute acceleration</span> as required.</li>
+			</ol>
+			<p>The setting is inaccessible if Affinity Designer is unable to detect a compatible GPU on your system.</p>
+			<p>When enabled, compatible GPUs in use by the setting are listed under it.</p>
+		</details>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Workspace/preferences.html">Performance preferences</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

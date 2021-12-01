@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="expand stroke" />
+	<meta name="description" content="Expand stroke expands the stroke of a shape or line, converting the line's boundaries into paths forming a closed shape." />
+	<title>Expand stroke</title>
+</head>
+
+<body>
+	<header>
+
+		<h1>Expand stroke</h1>
+
+		<p>Expand stroke expands the stroke of a shape or line, converting the line's boundaries into paths forming a closed shape.</p>
+		
+		<figure>
+			<div class="comparison"><img src="../../../shared/expand_before.png" alt="Before" /><div><img src="../../../shared/expand_after.png" alt="After" /></div>
+			</div>
+			<figcaption>Before and after expand stroke is applied.</figcaption>
+		</figure>
+		
+	</header>
+		
+	<section class="about">
+		
+		<p>Drawing a line creates an open path with a skeletal structure that can be adjusted. The boundaries of a line, on the other hand cannot be edited. Expanding the stroke converts the line's boundaries into paths forming a closed shape, so you can edit them individually in the same way as a regular shape.</p>
+
+		<p>The expand stroke feature has a range of uses. It can be used to:</p>
+		
+		<ul>
+			<li>Modify the shape of strokes by adjusting its curves and nodes.</li>
+			<li>Separate a shape into its two components: its stroke and fill (without stroke outline)</li>
+			<li>Convert strokes to flattened shapes that can scale better as a flattened image, which looks more consistent across browsers.</li>
+			<li>Flatten strokes prior to SVG export in web development.</li>
+		</ul>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/move_tool.png" class="tool" width="18" height="18" alt="Move tool" /> <img src="../../../shared/ui/node_tool.png" class="tool" width="18" height="18" alt="Node tool" /> To expand a stroke:</summary>
+			<ol>
+				<li>Select the shape with either the <span class="ui">Move Tool</span> or the <span class="ui">Node Tool</span>.</li>
+				<li>Click <span class="ui">Expand Stroke</span> on the <span class="ui">Layer</span> menu.</li>
+			</ol>
+			<p>The shape's stroke is now detached from the object and made into curves. As with <span class="ui">Convert to Curves</span>, the resulting curves can then be manipulated with the <span class="ui">Node Tool</span>.</p>
+			
+			<aside class="box tip">
+				<p>Pixel brush strokes, either as standalone strokes or on object outlines, cannot be expanded as they are based on pixels rather than being vector.</p>
+			</aside>
+
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="about_geometricShapes.html">About geometric shapes</a></li>
+			<li><a href="draw_geometricShapes.html">Draw and edit shapes</a></li>
+			<li><a href="edit_linesAndShapes.html">Edit curves and shapes</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

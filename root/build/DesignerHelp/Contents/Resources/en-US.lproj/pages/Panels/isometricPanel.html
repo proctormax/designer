@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="panel, isometric, axonometric, orthographic, parallel perspective, planes, one point" />
+	<meta name="description" content="The Isometric panel lets you create an isometric grid and then design on its planes." />
+	<title>Isometric panel</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Isometric panel</h1>
+
+
+		<p>The <span class="ui">Isometric</span> panel lets you create an isometric grid on which you can draw objects in-plane, make '2D' objects fit to plane and transform planar objects between planes.</p>
+
+	</header>
+
+	<section class="about">
+	<h2>About the Isometric panel</h2>
+
+		<p>From the <span class="ui">Isometric</span> panel, you can draw and edit objects across three planes on an isometric grid. The panel also provides several transformation operations which can be applied to selected objects (shapes, text or images).</p>
+
+		<p>The Isometric panel is hidden by default. It can be switched on via <span class="ui">View&gt;Studio</span> when working in Designer or Pixel Persona.</p>
+		
+		<aside class="box tip">
+		<p>If you haven't set up a grid previously, you'll be prompted to initially modify the settings (e.g., grid Spacing) for your new isometric grid; you can then make the grid visible.</p>
+		<p>If an isometric or other type of axonometric grid was already set up, the you won't be prompted for settings.</p>  
+		</aside>
+
+		<figure class="nft overrideDE overrideFR">
+			<p><img src="../../images/panel_isometric.png" class="responsive panel" alt="Isometric panel" /></p>
+			<figcaption>The Isometric panel.</figcaption>
+		</figure>
+
+	</section>
+
+	<section class="settings">
+		<h3>Options</h3>
+
+		<p>The following options are available in the panel:</p>
+
+		<details open="open">
+			<summary>Current plane</summary>
+			<ul>
+				<li><img src="../../../shared/ui/planar_front.png" class="tool" width="32" height="32" alt="Front plane" /> <span class="ui">Front</span>&#8212;when selected, all <span class="ui">Plane editing</span> options will be applied to the front plane.</li>
+				<li><img src="../../../shared/ui/planar_side.png" class="tool" width="32" height="32" alt="Side plane" /> <span class="ui">Side</span>&#8212;when selected, all <span class="ui">Plane editing</span> options will be applied to the side plane.</li>
+				<li><img src="../../../shared/ui/planar_top.png" class="tool" width="32" height="32" alt="Top plane" /> <span class="ui">Top</span>&#8212;when selected, all <span class="ui">Plane editing</span> options will be applied to the top plane.</li>
+			</ul>
+			
+			<aside class="box tip">
+				<p>Press the apostrophe (') key to toggle between planes as you edit.</p>
+			</aside>
+		
+		</details>
+				
+		<details open="open">
+			<summary>Plane editing options</summary>
+			<ul>
+				<li><img src="../../../shared/ui/edit_in_plane.png" class="tool" width="18" height="18" alt="Edit in Plane" /> <span class="ui">Edit in plane</span>&#8212;when selected, any object created is automatically fitted to the currently active plane.</li>
+				<li><img src="../../../shared/ui/correct_to_plane.png" class="tool" width="18" height="18" alt="Fit to Plane" /> <span class="ui">Fit to plane</span>&#8212;fits either a selected two-dimensional object or object on another plane to the currently active plane.</li>
+				<li><img src="../../../shared/ui/planar_flip_horizontal.png" class="tool" width="18" height="18" alt="Flip horizontal in plane" /> <span class="ui">Flip horizontal in plane</span>&#8212;flips the selected object horizontally within the currently active plane.</li>
+				<li><img src="../../../shared/ui/planar_flip_vertical.png" class="tool" width="18" height="18" alt="Flip vertical in plane" /> <span class="ui">Flip vertical in plane</span>&#8212;flips the selected object vertically within the currently active plane.</li>
+				<li><img src="../../../shared/ui/planar_rotate_anti_clockwise.png" class="tool" width="18" height="18" alt="Rotate anticlockwise in plane" /> <span class="ui">Rotate anticlockwise in plane</span>&#8212;rotates the selected object 90 degrees anticlockwise within the currently active plane.</li>
+				<li><img src="../../../shared/ui/planar_rotate_clockwise.png" class="tool" width="18" height="18" alt="Rotate clockwise in plane" /> <span class="ui">Rotate clockwise in plane</span>&#8212;rotates the selected object 90 degrees clockwise within the currently active plane.</li>
+			</ul>
+		</details>
+				
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../DesignAids/grids.html">Grids</a></li>
+			<li><a href="../DesignAids/grids_axonometric.html">Isometric and axonometric grids</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="add, change direction, convert, delete, control handles, edit, join, lines, node, nodes, shape, split, curves, segments, paths" />
+	<meta name="description" content="Edit your path by changing curvature, add and delete nodes, join and split paths using the Node tool." />
+	<title>Edit vector curves and shapes</title>
+</head>
+
+<body>
+	<header>
+
+		<h1>Edit vector curves and shapes</h1>
+
+		<p>Vector curves and shapes are easily edited using either:</p>
+		<ul>
+			<li>The <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> as you draw your curve or shape with the <span class="ui">Pen Tool</span>.</li>
+			<li>The <img src="../../../shared/ui/node_tool.png" class="tool" width="18" height="18" alt="Node tool" /> <span class="ui">Node Tool</span>.</li>
+		</ul>
+		<p>Use the former for fine tuning and curve adjustment as you draw, the latter for more prolonged editing operations.</p>
+		</header>
+
+		<section class="howto">
+		<details open="open">
+			<summary>To edit curves as you draw:</summary>
+
+			<ul>
+				<li>With the <span class="ui">Pen Tool</span> active, press the <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> to move nodes and adjust control handles when fine tuning of your curve is needed.<br />
+				Colour and opacity can also be altered from the <span class="ui">Colour</span> panel.</li>
+			</ul>
+
+			<aside class="box note">
+				<p>With <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> pressed, you can edit other segments in the same way by clicking them.</p>
+			</aside>
+
+		</details>
+		
+		<details open="open">
+			<summary>To change curvature of a segment:</summary>
+			<p>Do one of the following:</p>
+			<ul>
+				<li>Select the node and then drag the control handles.<br /><p><img src="../../../shared/editlines_directionHandles.png" class="screenshot responsive" alt="Drag control handles" /></p></li>
+				<li>Drag on the line directly to pull it into position.<br /><p><img src="../../../shared/editlines_onCurve.png" class="screenshot responsive" alt="Drag on curve" /></p></li>
+				<li><span class="key ALT-TAG"></span>-click a segment to straighten it.</li>
+				<li class="osx"><span class="key CTRL-TAG"></span>-click a segment to delete it, creating two separate curves within one curve object.</li>
+				<li class="win32"><span class="key CMD-TAG"></span>-click a segment to delete it, creating two separate curves within one curve object.</li>
+			</ul>
+
+			<aside class="box note">
+				<h3>Modifier keys</h3>
+				<p>When using the Node tool, the following modifier keys can be used to speed up the workflow:</p>
+				<ul>
+					<li>The <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> constrains node movement and control handle positioning to 45&#176; intervals. It also extends a dragged control handle while keeping the control handle directions locked.</li>
+					<li>The <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span> changes the node type to a sharp node to create a cusp in the line.</li>
+					<li class="osx">The <span class="key CTRL-TAG"></span> <span class="KEY-TAG"></span> keeps both control handles locked in position while moving a node.</li>
+					<li class="win32">Pressing left- and right-mouse buttons keeps both control handles locked in position while moving the node.</li>
+				</ul>
+			</aside>
+
+			<aside class="box tip">
+				<p>The Node Tool can be used in conjunction with the <span class="ui">Transform</span> panel to reposition individual nodes; you can also reposition, scale or rotate multiple selected nodes relatively and precisely.</p>
+			</aside>
+		</details>
+
+		<details>
+			<summary>To add nodes:</summary>
+			<ul>
+				<li>With the curve selected, click at the point where you want the node to be added.</li>
+			</ul>
+
+		</details>
+
+		<details>
+			<summary>To delete nodes:</summary>
+			<ul>
+				<li class="osx">Select the node and press the <span class="key BACKSPACE"></span> <span class="KEY-TAG"></span>.</li>
+				<li class="win32">Select the node and press the <span class="key BACKSPACE-WIN"></span> <span class="KEY-TAG"></span>.</li>
+			</ul>
+
+		<aside class="box note">
+			<x-osx><p>The curve will automatically reshape because of the deleted node, but you can retain the curve's original geometry by pressing <span class="key ALT-TAG"></span>+<span class="key BACKSPACE"></span> <span class="KEY-TAG"></span> instead. This needs to be a node that could be removed with the curve still remaining similar.</p></x-osx>
+			<x-win32><p>The curve will automatically reshape because of the deleted node, but you can retain the curve's original geometry by pressing <span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key BACKSPACE-WIN"></span> <span class="KEY-TAG"></span> instead. This needs to be a node that could be removed with the curve still remaining similar.</p></x-win32>
+		</aside>
+
+		</details>
+
+		<details>
+			<summary><img src="../../../shared/ui/Close%20Curve.png" class="tool" width="16" height="16" alt="Close Curve" /> To close curves:</summary>
+			<p>Do one of the following:</p>
+			<ul>
+				<li>Select the curve and click <span class="ui">Close Curve</span> on the context toolbar.</li>
+				<li>Drag the end node and drop on top of start node when the pointer changes.</li>
+			</ul>
+		</details>
+
+		<details>
+			<summary><img src="../../../shared/ui/Break%20Curve.png" class="tool" width="16" height="16" alt="Break Curve" /> To break (split) curves:</summary>
+			<ul>
+				<li>Select the node at the point at which you want the curve to break and click <span class="ui">Break Curve</span> on the context toolbar.</li>
+			</ul>
+
+		</details>
+
+		<details>
+			<summary><img src="../../../shared/ui/Join%20Curves.png" class="tool" width="16" height="16" alt="Join Curves" /> To join curves:</summary>
+			<ol>
+				<li>With the Node Tool (hold down the <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> if using the Pen Tool), hold down with the <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> and select both curves.</li>
+				<li>Click <span class="ui">Join Curves</span> on the context toolbar.</li>
+			</ol>
+		</details>
+
+		<details>
+			<summary><img src="../../../shared/ui/reversecurves.png" class="tool" width="16" height="16" alt="Reverse Curve" /> To reverse curves:</summary>
+			<ul>
+				<li>Click <span class="ui">Reverse Curve</span> on the context toolbar. The start node will be toggled from clockwise to anticlockwise. With a closed curve selected, this direction can be viewed using the <span class="ui">Show Orientation</span> checkbox. With an open curve selected, the direction of the curve is swapped, ready for further drawing from the opposite end of the curve.</li>
+			</ul>
+
+		</details>
+
+		<details>
+			<summary><img src="../../../shared/ui/Sharp%20Corner.png" class="tool" width="16" height="16" alt="Sharp Corner" /> <img src="../../../shared/ui/Smart%20Corner.png" class="tool" width="16" height="16" alt="Smart Corner" /> <img src="../../../shared/ui/Smooth%20Corner.png" class="tool" width="16" height="16" alt="Smooth Corner" /> To convert nodes to a different type:</summary>
+			<p>Do one of the following:</p>
+			<ul>
+				<li>Select the node(s) you want to change and click one of the node types, <span class="ui">Sharp</span>, <span class="ui">Smart</span> or <span class="ui">Smooth</span>, on the context toolbar.</li>
+				<li>Hold the <span class="key ALT-TAG"></span> <span class="KEY-TAG"></span> and click on the node to convert it to a <span class="ui">Sharp</span> node.</li>
+			</ul>
+		</details>
+		
+		<details open="open">
+			<summary>To copy control handle length/direction from another curve's node:</summary>
+
+			<ul>
+				<li>Drag a node from one curve directly over another on a second selected curve until the cursor changes to two overlapping squares, then wait until the node's handles adjust to their new positions.</li>
+			</ul>
+
+		</details>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="draw_linesAndShapes.html">Draw curves and shapes</a></li>
+			<li><a href="draw_geometricShapes.html">Draw and edit shapes</a></li>
+			<li><a href="../Tools/tools_node.html">Node tool</a></li>
+			<li><a href="../Workspace/shortcuts.html?category=operations">Keyboard shortcuts for curve drawing operations</a></li>
+		</ul>
+	</section>
+
+
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

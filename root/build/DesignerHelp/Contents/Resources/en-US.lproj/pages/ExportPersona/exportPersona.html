@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="export, png, jpg, gif, tiff, raster" />
+	<meta name="description" content="Export your document to a universally recognized raster image format." />
+	<style>table.override td:nth-child(1) {width: 25%; }</style>
+	<title>Exporting using Export Persona</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1><img src="../../../shared/ui/webpersona.png" class="tool heading" width="18" height="18" alt="Export Persona" /> Exporting using Export Persona</h1>
+		<p>The Export Persona is a dedicated workspace for exporting artboards, layers, groups, and objects as export slices to different file formats and image sizes simultaneously. You'll also be able to export custom drawn slices.</p>
+		</header>
+
+	<section class="about">
+	
+		<h2>How it works</h2>
+		
+		<p>The Export Persona uses a combination of panels and tools to create slices. Slices are export areas which you choose to output from your document.</p>
+		
+		<p>The Layers panel, Export Options panel and Slices panel are used in combination in Export Persona. A Slice Tool is a unique tool in Export Persona which is used to create custom slices.</p>			
+		
+		<h2>Using the Layers panel</h2>
+		
+		<p>The <span class="ui">Layers</span> panel is different from the Layers panel in Designer Persona. It is used exclusively as a precursor for selecting artboards, layers, groups, or objects from which slices can be created, and added to the <span class="ui">Slices</span> panel.</p>
+
+		<p>When you export a Layers panel item as a slice, the slice will automatically size to what is considered to be the extent of the selected item. A circle symbol at the top right of the slice indicates that it is auto-sized. If you choose to resize the slice, the symbol changes to a square, indicating that the slice has been modified. A resized slice created from a Layers panel item can be reset to 'auto-sized' at any point.</p>
+		
+		<h2>Using the Export Options panel</h2>
+
+		<p>The <span class="ui">Export Options</span> panel lets you set up your default export settings, or settings for the currently selected item prior to slice creation.</p>
+		
+		<h2>Using the Slices panel</h2>
+		
+		<p>The <span class="ui">Slices</span> panel stores all your slices (from the Layers panel or Slice Tool) ready for export directly from the panel. Each created slice has an initial export format (e.g., PNG, JPEG, or SVG) associated with it on creation, with additional export formats being added per slice if needed; each export format lets you export at different size scaling or absolute sizes.</p>	
+		
+		<p>You can use the filenames in the <span class="ui">Slices</span> panel to specify (or create) a folder hierarchy in which to place your exported files. This is achieved through the use of the forward slash, or oblique, character.</p>
+		<p>For example, a PNG hero image could be placed within an <span class="ui">img</span> folder within an <span class="ui">assets</span> folder using the following syntax: <span class="ui">assets/img/hero</span></p>
+		<p>If any part of the folder structure does not exist, the folder hierarchy will be created when the appropriate slices are exported using <span class="ui">Export Slices (<i>n</i>)</span>.</p> 
+		
+		<aside class="box tip">
+			<p>You can export the entire document's page using <span class="ui">File&#62;Export</span> or by selecting the predefined spread area on the <span class="ui">Slices</span> panel.</p>			
+		</aside>
+		
+		<h2>Exported slice dimensions and DPI</h2>
+		
+		<p>When exporting slices via the Export Persona, the slice export size (1x, 2x, 3x, etc.) is linked with your document's DPI. The table below shows how DPI and export size affect export dimensions, using a 64x64 px document as an example.</p>
+
+		<table class="thirtythree shortcut override">
+			<tr>
+				<th>DPI setting for a 64x64 document</th>
+				<th colspan="3">Export dimensions (in pixels)&#59; Exported DPI</th>
+			</tr>
+	
+			<tr>
+				<td style="width: 25%;"></td><td>1x</td><td>2x</td><td>3x</td>
+			</tr>
+			<tr>
+				<td>72</td><td>64x64&#59; 72</td><td>128x128&#59; 144</td><td>192x192&#59; 216</td>
+			</tr>
+			<tr>
+				<td>96</td><td>64x64&#59; 96</td><td>128x128&#59; 192</td><td>192x192&#59; 288</td>
+			</tr>
+			<tr>
+				<td>144</td><td>32x32&#59; 72</td><td>64x64&#59; 144</td><td>96x96&#59; 216</td>
+			</tr>
+			<tr>
+				<td>192</td><td>32x32&#59; 96</td><td>64x64&#59; 192</td><td>96x96&#59; 288</td>
+			</tr>
+			<tr>
+				<td>216</td><td>21x21&#59; 72</td><td>42x42&#59; 144</td><td>64x64&#59; 216</td>
+			</tr>
+			<tr>
+				<td>288</td><td>21x21&#59; 96</td><td>42x42&#59; 192</td><td>64x64&#59; 288</td>
+			</tr>
+		</table>
+		
+		<h2>Using the Slice Tool</h2>
+		
+		<p>The Slice Tool gives you full freedom to create export areas of all sizes, over any part of your document.</p>
+
+	</section>
+
+	<section class="howto">
+	
+		<details open="open">
+			<summary>To set default export options:</summary>
+			<ol>
+				<li>On the <span class="ui">Export Options</span> panel, select the <span class="ui">Defaults</span> tab.</li>
+				<li>Adjust settings as appropriate.</li>
+				<li>Jump back to the <span class="ui">Selection</span> tab when finished.</li>
+			</ol>
+			<p>The settings will be used when your next slice is created.</p>
+		</details>
+
+		<details open="open">
+			<summary><img src="../../../shared/ui/slicecreationtool.png" class="tool" width="16" height="16" alt="Slice Tool" /> <img src="../../../shared/ui/export.png" class="tool" width="16" height="16" alt="Export" /> To export an area of the document as an image:</summary>
+			<ol>
+				<li>Do one of the following:<ul>
+						<li>On the <span class="ui">Layers</span> panel, select an artboard, layer, group or object and click <span class="ui">Create Slice</span>.</li>
+						<li>With the <span class="ui">Slice Tool</span> selected, drag on your page to define your export area.</li>
+					</ul>
+				</li>
+				<li>Do one of the following:<ul>
+						<li>On the <a href="exportOptionsPanel.html"><span class="ui">Export Options</span> panel</a>, adjust export settings as appropriate.</li>
+						<li>Jump to the <a href="slicesPanel.html"><span class="ui">Slices</span> panel</a>, expand the slice entry and alter the export format or choose an <span class="ui">Export preset</span> from the pop-up menu (PNG, JPEG, and Apple icon design presets only).</li>
+					</ul>
+				</li>
+				<li>(Optional) On the <a href="slicesPanel.html"><span class="ui">Slices</span> panel</a>, click the + icon under the export format entry to add an additional graphic export format.</li>
+				<li>(Optional) On the <a href="slicesPanel.html"><span class="ui">Slices</span> panel</a>, click the indented + icon under the export size entries to add increasing levels of resolution (2x, 3x, etc.) to the export format.</li>
+				<li>Do one of the following, to control what gets exported:<ul>
+						<li>Select <span class="ui">Click to export all formats for this item</span>.</li>
+						<li>Select <span class="ui">Click to export this size</span>. This exports a specific export format for a slice at a specific size.</li>
+						<li>Click <span class="ui">Export Slices (<i>n</i>)</span> to export all formats and sizes for all checked slices in the Slices panel.</li>
+					</ul>
+				</li>
+				<li>Navigate to and select the storage folder for the exported image(s) and then click <span class="ui">Export</span>.</li>
+				<li>(Optional) On the <span class="ui">Slices</span> panel, select <span class="ui">Continuous</span> if you want to automatically re-export export areas if the document is subsequently changed. This option is only available if <span class="ui">Export Slices (<i>n</i>)</span> was selected above.</li>
+			</ol>
+		</details>	
+ 
+ 		<aside class="box note">
+			<h3>Modifier keys</h3>
+			<p>When using the Slice Tool, the following modifier keys can be used:</p>
+			<ul>
+				<li>The <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span> constrains the area's proportions to a square.</li>
+				<li>The <span class="key CMD-TAG"></span> <span class="KEY-TAG"></span> if pressed as you drag out a slice area, draws from the center of the original drag position (can be combined with the <span class="key SHIFT-TAG"></span> <span class="KEY-TAG"></span>).</li>
+			</ul>
+		</aside>
+
+		<details>
+			<summary><img src="../../../shared/ui/slicecreationtool.png" class="tool" width="18" height="18" alt="Slice Tool" /> To reset the dimensions of an manually resized export area created from a layer:</summary>
+			<ol>
+				<li>With the <span class="ui">Slice Tool</span>, select a resized export area.</li>
+				<li>On the context toolbar, select <span class="ui">Revert to auto sized</span>.</li>
+			</ol>
+		</details>
+		
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="exportPersona_layersPanel.html">Layers panel (Export Persona)</a></li>
+			<li><a href="exportOptionsPanel.html">Export Options panel</a></li>
+			<li><a href="slicesPanel.html">Slices panel</a></li>
+			<li><a href="../ShareSavePrint/export.html">Export</a></li>
+			<li><a href="../Artboards/artboards_export.html">Exporting artboards</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="panel, transform, resize, move, rotate, shear, straight line" />
+	<meta name="description" content="The Transform panel moves, resizes, rotates, and shears objects or layers." />
+	<title>Transform panel</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Transform panel</h1>
+
+		<p>When selected, an object (or layer) can be easily moved, resized and sheared by adjusting the values in the <span class="ui">Transform</span> panel.</p>
+
+		<aside class="box note">
+			<p>When used in conjunction with the <span class="ui">Node Tool</span>, selected nodes can be positioned or scaled precisely using the <span class="ui">Transform</span> panel.</p>
+		</aside>
+
+	</header>
+
+	<section class="about">
+		<h2>About the Transform panel</h2>
+
+		<p>The <span class="ui">Transform</span> panel places objects (or layers) precisely. All transforms are carried out in relation to a defined anchor point&#8212;corner, edge midpoint or center&#8212;allowing the selected object or layer's position, width, height, rotation angle and shear to be adjusted.</p>
+		
+		<p>If an object has a custom transform origin applied, it can be resized, rotated or sheared about that center using the options on the panel.</p>
+
+		<figure class="nft overrideDE overrideFR">
+			<p><img src="../../images/panel_transform.png" class="responsive panel" alt="Transform panel" /></p>
+			<figcaption>The Transform panel showing settings applied to an object.</figcaption>
+		</figure>
+
+		<p>The following controls are found on the <span class="ui">Transform</span> panel:</p>
+
+		<ul>
+			<li>Anchor point selector&#8212;transforms are carried out from the selected anchor point. Click on an anchor point to select. If the object has a custom transform origin, it will be ignored if this selector is then used.</li>
+
+			<li><span class="ui">X</span>&#8212;Horizontal position. Increasing the value moves the selected object (layer) to the right.</li>
+
+			<li><span class="ui">Y</span>&#8212;Vertical position. Increasing the value moves the selected object (layer) down the page.</li>
+
+			<li><span class="ui">W</span>&#8212;Width. Adjusts the object (layer) width in relation to the selected anchor point.</li>
+
+			<li><span class="ui">H</span>&#8212;Height. Adjusts the object (layer) height in relation to the selected anchor point.</li>
+
+			<li><img src="../../../shared/ui/ChainLink.png" class="tool" width="12" height="24" alt="Link" /> Link&#8212;when enabled, width and height are adjusted in proportion to each other, maintaining the current aspect ratio. When deselected, they can be adjusted independently.</li>
+
+			<li><span class="ui">R</span>&#8212;Rotation. Rotates the object (layer) by a specified number of degrees in relation to the selected anchor point.</li>
+
+			<li><span class="ui">S</span>&#8212;Shear. Shears the object (layer) by a specified number of degrees in relation to the selected anchor point.</li>
+			
+			<li><span class="ui">L</span>&#8212;Length. Replaces Shear (S) when a straight line is selected using the <span class="ui">Move</span> Tool. Allows you to precisely adjust the line's length. The Anchor point selector changes its appearance for straight lines.</li>
+		</ul>
+
+		<aside class="box note">
+			<p>All transform measurements are in relation to the ruler's zero point, and display in the currently set measurement units.</p>
+			<x-osx><p>The number of decimal places allowed can be set via <span class="ui">Affinity Designer&#62;Preferences&#62;User Interface</span>.</p></x-osx>
+			<x-win32><p>The number of decimal places allowed can be set via <span class="ui">Edit&#62;Preferences&#62;User Interface</span>.</p></x-win32>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Workspace/customizingWorkspace.html">Customizing the workspace</a></li>
+			<li><a href="../DesignAids/rulers.html">Rulers</a></li>
+			<li><a href="../ObjectControl/transform.html">Transforming objects</a></li>
+			<li><a href="../ObjectControl/rotateShear.html">Rotating and shearing objects</a></li>
+			<li><a href="../Tools/tools_node.html">Node Tool</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

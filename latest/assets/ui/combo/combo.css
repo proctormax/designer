@@ -1,0 +1,146 @@
+.combo{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 100%;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: inherit;
+  background-image: url("./singlearrowsmalldown.png");
+  background-repeat: no-repeat;
+  background-size: 5px;
+  background-position: 45% 50%;
+}
+
+.combo:hover{
+  overflow: visible;
+}
+.combos > i.icon{
+  display: none !important;
+  border-radius: inherit;
+  font-size: 0.85rem;
+ text-align: left;
+ float: right;
+ box-sizing: border-box;
+ width: 10px;
+ opacity: 0.5;
+ overflow: hidden;
+}
+.combos > i.icons:before{
+  content:"\25BE";
+  padding: 2pt;
+  margin-left: -1px;
+  display:none;
+  transform: translateX(-50%);
+}
+.combo-pane{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: auto;
+  z-index:999999;
+  height: auto;
+  padding: 8pt 15pt;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
+  border:solid 1px #1117;
+}
+.combo-gap::before{
+  position: relative;
+    top: 0;
+    transform:translateX(70%);
+    display: inline-block;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #1597;
+    border-left: 9px solid transparent;
+    content: '';
+    margin-bottom: 10pt;
+}
+.combo-pane .cslider{
+  background-color: #444;
+  width: 100pt;
+}
+
+.ccombo{
+  height: 20px;
+  width: auto;
+  display: inline-block;
+  border: solid 1px #1117;
+  border-radius: 3px;
+  position: relative;
+  background-color: #222;
+  color: #fff;
+  box-sizing: border-box;
+
+}
+.ccombo > .combo-btn{
+  height: 20px;
+  background-color: transparent;
+  display: inline-block;
+  width: 15px;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.ccombo > .combo-btn{
+  background-image: url("./singlearrowsmalldown.png");
+  background-repeat: no-repeat;
+  background-size: 5px;
+  background-position: 45% 50%;
+}
+
+.ccombo > .combo-btn:hover{
+  background-color: #1598;
+}
+.ccombo > .combo-widget{
+  height: 20px;
+  min-width: 20px;
+  display: inline-block;
+  overflow: hidden;
+}
+.ccombo:hover > .combo-pane{
+  display: block;
+}
+.ccombo > .combo-pane{
+  height: auto;
+  min-width: 120px;
+  width: auto;
+  display:  none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: inherit;
+  color: inherit;
+  border-radius: inherit;
+  padding: 2pt 0;
+}
+.ccombo > .combo-widget > *{
+  color: #29C;
+}
+.ccombo > .combo-widget > *{
+  margin-left: 2pt;
+  font-size: 12px;
+}
+.ccombo > .combo-pane > .li{
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding: 2pt 6pt !important;
+  border: none;
+  margin-bottom: 1px;
+  background-color: inherit;
+  border-radius: 0;
+}
+.ccombo > .combo-pane > .li:hover{
+  background-color: #19d4;
+}
+.ccombo > .combo-widget > input{
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  min-width: auto;
+}
+.ui-combo, .ui-slider{
+  border-color: #222 !important;
+}

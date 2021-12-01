@@ -1,0 +1,36 @@
+
+.fillet-l-inherit,
+.fillet-inherit,
+.fillet-b-inherit,
+.fillet-tl-inherit
+{ border-bottom-left-radius: inherit;}
+
+.fillet-inherit,
+.fillet-b-inherit,
+.fillet-r-inherit,
+.fillet-tr-inherit
+{ border-bottom-right-radius: inherit;}
+
+.fillet-l-inherit,
+.fillet-inherit,
+.fillet-t-inherit,
+.fillet-bl-inherit
+{ border-top-left-radius: inherit;}
+
+.fillet-t-inherit,
+.fillet-r-inherit,
+.fillet-inherit,
+.fillet-br-inherit
+{ border-top-right-radius: inherit;}
+
+.fillet-round{ border-radius: 50%;}
+.fillet{ border-radius: 2pt;}
+.fillet-t,
+.fillet-tl{ border-top-left-radius: 2pt;}
+.fillet-t,
+.fillet-tr{ border-top-right-radius: 2pt;}
+.fillet-b,
+.fillet-bl{ border-bottom-left-radius: 2pt;}
+.fillet-b,
+.fillet-br{ border-bottom-right-radius: 2pt;}
+.fillet-none{ border-radius: 0;}

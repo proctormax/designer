@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="shortcuts" />
+	<meta name="description" content="A list of commonly used shortcuts." />
+	<title>Keyboard shortcuts</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Keyboard shortcuts</h1>
+		<x-osx><p>You can quickly access common tools and commands using your keyboard. Many of the shortcuts are the same as those that you use in other apps (such as <span class="key CMD-TAG"></span><span class="key">C</span> to copy). You'll find many of the shortcuts listed next to menu items (and in the list below).</p></x-osx>
+		<x-win32><p>You can quickly access common tools and commands using your keyboard. Many of the shortcuts are the same as those that you use in other apps (such as <span class="key CMD-TAG"></span>+<span class="key">C</span> to copy). You'll find many of the shortcuts listed next to menu items (and in the list below).</p></x-win32>
+		<p>For complete flexibility, you can <a href="../Workspace/customizingShortcuts.html">customize keyboard shortcuts</a> to your own way of working.</p>
+		
+		<p>Show shortcuts for:<select id="category">
+				<option value="default">All categories</option>
+				<option value="operations">Operations</option>
+				<option value="file">File</option>
+				<option value="tools">Tools</option>
+				<option value="edit">Edit</option>
+				<option value="objectControl">Object control</option>
+				<option value="text">Text</option>
+				<option value="view">View</option>
+				<option value="selection">Selection</option>
+				<option value="workspace">Workspace</option>
+				<option value="misc">Miscellaneous</option>
+			</select>
+		</p>
+		
+	</header>
+
+	<section class="about">
+	
+		<div data-category="operations">
+			<h2 class="table">Operations shortcuts</h2>
+
+			<table class="shortcut">
+				<tr>
+					<th>Action</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Constrain the movement of an object horizontally, vertically or diagonally</td>
+					<td><span class="key SHIFT-TAG"></span>-drag</td>
+				</tr>
+				<tr>
+					<td>Select multiple objects</td>
+					<td><span class="key SHIFT-TAG"></span>-click</td>
+				</tr>
+				<tr>
+					<td>Select overlapped object</td>
+					<td><span class="key ALT-TAG"></span>-click</td>
+				</tr>
+				<tr>
+					<td>Cycle Selection Box</td>
+					<td><span class="key">.</span></td>
+				</tr>
+				<tr>
+					<td>Change opacity for selected layer (or Brush tools in Pixel Persona)</td>
+					<td>numeric keys (4=40%, 43=43%, etc.)</td>
+				</tr>
+				<tr>
+					<td>Erase with Pixel Tool (Pixel Persona only)</td>
+					<td><span class="key CMD-TAG"></span><span class="key"></span></td>
+				</tr>
+				<tr>
+					<td>Switch between Stroke/Fill (or Color 1/Color 2) color selectors (Color and Swatches panels)</td>
+					<td><span class="key">X</span></td>
+				</tr>
+				<tr>
+					<td>Swap Stroke/Fill (or Color 1/Color 2) color selectors</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key">X</span></x-osx>
+						<x-win32><span class="key SHIFT-TAG"></span>+<span class="key">X</span></x-win32>
+					</td>
+				</tr>
+				<tr class="osx">
+					<td>Set Stroke/Fill (or Color 1/Color 2) color selectors and any vector objects that are selected to black and white, respectively</td>
+					<td><span class="key">D</span></td>
+				</tr>
+				<tr>
+					<td>Set No fill on Stroke/Fill (or Color 1/Color 2) color selectors</td>
+					<td><span class="key">/</span> (International and selected keyboards only)</td>
+				</tr>
+				<tr>
+					<td>Modify attribute listed on a panel or dialog</td>
+					<td>Drag attribute text label</td>
+				</tr>
+				<tr>
+					<td>Toggle Snapping</td>
+					<td><span class="key">;</span></td>
+				</tr>
+			</table>
+			<p></p>
+			
+			<table class="shortcut">
+				<tr>
+					<th>Action (Curve drawing)</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Edit line or brush strokes as you draw/paint</td>
+					<td><span class="key CMD-TAG"></span></td>
+				</tr>
+				<tr>
+					<td>Creates cusp node (sharp corner)</td>
+					<td><span class="key ALT-TAG"></span>-drag control handle</td>
+				</tr>
+				<tr>
+					<td>Snap a line's control handle to 45° intervals</td>
+					<td><span class="key SHIFT-TAG"></span>-drag control handle</td>
+				</tr>
+				<tr>
+					<td>Select next node on a curve</td>
+					<td>]</td>
+				</tr>
+				<tr>
+					<td>Select previous node on a curve</td>
+					<td>[</td>
+				</tr>
+				<tr>
+					<td>Straighten a segment</td>
+					<td><span class="key ALT-TAG"></span>-click a segment</td>
+				</tr>
+				<tr>
+					<td>Delete a segment</td>
+					<td><span class="key CMD-TAG"></span>-click a segment</td>
+				</tr>
+			</table>
+			<p></p>
+
+			<table class="shortcut">
+				<tr>
+					<th>Action (Transforming)</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Move with horizontal, vertical or diagonal constraint</td>
+					<td><span class="key SHIFT-TAG"></span>-drag</td>
+				</tr>
+				<tr>
+					<td>Rotate in 15&#176; intervals</td>
+					<td><span class="key SHIFT-TAG"></span>-drag rotation/corner handle</td>
+				</tr>
+				<tr>
+					<td>Rotate around opposite corner</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"></span>-drag corner handle</x-osx>
+						<x-win32>Drag corner handle then hold down right mouse button</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Cancel a sizing, moving, or creating operation</td>
+					<td><span class="key ESC-TAG"></span></td>
+				</tr>
+				<tr>
+					<td>Resize vector objects, maintaining aspect ratio</td>
+					<td><span class="key SHIFT-TAG"></span>-drag from a corner handle</td>
+				</tr>
+				<tr>
+					<td>Resize an object from its center</td>
+					<td><span class="key CMD-TAG"></span>-drag from a corner handle</td>
+				</tr>
+				<tr>
+					<td>Mirror shearing</td>
+					<td><span class="key CMD-TAG"></span>-drag</td>
+				</tr>
+				<tr>
+					<td>Nudge<sup>1</sup></td>
+					<td>arrow keys</td>
+				</tr>
+				<tr>
+					<td>Nudge (by modified distance)<sup>1</sup></td>
+					<td><span class="key SHIFT-TAG"></span>-arrow keys</td>
+				</tr>
+			</table>
+			<x-osx>
+				<p><sup>1</sup> Nudge distances are customizable via <span class="ui">Affinity Designer&gt;Preferences&gt;Tools</span></p>
+			</x-osx>
+			<x-win32>
+				<p><sup>1</sup> Nudge distances are customizable via <span class="ui">Edit&gt;Preferences&gt;Tools</span></p>
+			</x-win32>
+			<p></p>
+			
+			<table class="shortcut">
+				<tr>
+					<th>Action (Painting)</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Decrease/increase brush width (Pixel Persona only)</td>
+					<td>] [</td>
+				</tr>
+				<tr>
+					<td>Decrease/increase brush width with on-screen readout</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"></span><span class="key ALT-TAG"></span>-drag (left/right)</x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>-drag (left/right)</x-win32>
+					</td>
+
+				</tr>
+				<tr>
+					<td>Decrease/increase brush hardness with on-screen readout (Pixel Persona only)</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"></span><span class="key ALT-TAG"></span>-drag (up/down)</x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>-drag (up/down)</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Paint a brush stroke along a straight line</td>
+					<td>Click then <span class="key SHIFT-TAG"></span>-click</td>
+				</tr>
+				<tr>
+					<td>Toggle brush properties (for width, hardness, shape/spacing or rotation):</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"></span><span class="key ALT-TAG"></span>+left-click</x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+left-click</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Setting brush properties on page (after setting above toggle)</td>
+					<td>
+						<x-osx>For width: <span class="key CTRL-TAG"></span><span class="key ALT-TAG"></span>+left-click+drag (left/right)</x-osx>
+						<x-win32>For width: <span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+left-click+drag (left/right)</x-win32><br /><x-osx>For hardness: <span class="key CTRL-TAG"></span><span class="key ALT-TAG"></span>+left-click+drag (up/down)</x-osx>
+						<x-win32>For hardness: <span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+left-click+drag (up/down)</x-win32><br /><x-osx>For nozzle shape: <span class="key CTRL-TAG"></span><span class="key ALT-TAG"></span>+left-click+drag (left/right)</x-osx>
+						<x-win32>For nozzle shape: <span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+left-click+drag (left/right)</x-win32><br /><x-osx>For nozzle spacing: <span class="key CTRL-TAG"></span><span class="key ALT-TAG"></span>+left-click+drag (up/down)</x-osx>
+						<x-win32>For nozzle spacing: <span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+left-click+drag (up/down)</x-win32><br /><x-osx>For nozzle rotation: <span class="key CTRL-TAG"></span><span class="key ALT-TAG"></span>+left-click+drag (left/right)</x-osx>
+						<x-win32>For nozzle rotation: <span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+left-click+drag (left/right)</x-win32></td>
+				</tr>
+			</table>
+		</div>
+
+		<div data-category="file">
+			<h2 class="table">File shortcuts</h2>
+
+			<table class="shortcut">
+				<tr>
+					<th>Action</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>New Document</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">N</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">N</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>New From Clipboard</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">N</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">N</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Open Document</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">O</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">O</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Close Document/Close App (when no documents open)</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">W</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">W</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Switch Document/View</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"> </span><span class="key TAB-TAG"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key TAB-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Save</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">S</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">S</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Save As</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">S</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">S</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Export</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">S</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">S</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Document Setup</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">P</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">P</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Print</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">P</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">P</span></x-win32>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div data-category="tools">
+			<h2 class="table">Tools shortcuts</h2>
+
+			<table class="shortcut">
+				<tr>
+					<th>Action (General and Designer Persona)</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Fill tool</td>
+					<td><span class="key">G</span></td>
+				</tr>
+				<tr>
+					<td>Transparency tool</td>
+					<td><span class="key">Y</span></td>
+				</tr>
+				<tr>
+					<td>Move tool</td>
+					<td><span class="key">V</span></td>
+				</tr>
+				<tr>
+					<td>Node tool</td>
+					<td><span class="key">A</span></td>
+				</tr>
+				<tr>
+					<td>Point Transform tool</td>
+					<td><span class="key">F</span></td>
+				</tr>
+				<tr>
+					<td>View tool</td>
+					<td><span class="key">H</span></td>
+				</tr>
+				<tr>
+					<td>Contour tool</td>
+					<td><span class="key">O</span></td>
+				</tr>
+				<tr>
+					<td>Corner tool</td>
+					<td><span class="key">C</span></td>
+				</tr>
+				<tr>
+					<td>Pen tool</td>
+					<td><span class="key">P</span></td>
+				</tr>
+				<tr>
+					<td>Pencil tool</td>
+					<td><span class="key">N</span></td>
+				</tr>
+				<tr>
+					<td>Zoom tool</td>
+					<td><span class="key">Z</span></td>
+				</tr>
+				<tr>
+					<td>Vector Brush tool</td>
+					<td><span class="key">B</span></td>
+				</tr>
+				<tr>
+					<td>Rectangle, Ellipse, and Rounded Rectangle tools cycle</td>
+					<td><span class="key">M</span></td>
+				</tr>
+				<tr>
+					<td>Artistic and Frame text tools cycle</td>
+					<td><span class="key">T</span></td>
+				</tr>
+				<tr>
+					<td>Color Picker Tool</td>
+					<td><span class="key">I</span></td>
+				</tr>
+			</table>
+			<p></p>
+
+			<table class="shortcut">
+				<tr>
+					<th>Action (Pixel Persona only)</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Paint Brush and Pixel tools cycle</td>
+					<td><span class="key">B</span></td>
+				</tr>
+				<tr>
+					<td>Erase Brush</td>
+					<td><span class="key">E</span></td>
+				</tr>
+				<tr>
+					<td>Selection Brush</td>
+					<td><span class="key">W</span></td>
+				</tr>
+				<tr>
+					<td>Marquee Selection tools cycle</td>
+					<td><span class="key">M</span></td>
+				</tr>
+				<tr>
+					<td>Freehand Selection tool</td>
+					<td><span class="key">L</span></td>
+				</tr>
+				<tr>
+					<td>Dodge and Burn brushes cycle</td>
+					<td><span class="key">O</span></td>
+				</tr>
+				<tr>
+					<td>Flood Fill tool</td>
+					<td><span class="key">G</span></td>
+				</tr>
+			</table>
+			<p></p>
+
+			<table class="shortcut">
+				<tr>
+					<th>Action (Export Persona only)</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Slice Tool</td>
+					<td><span class="key">S</span></td>
+				</tr>
+				<tr>
+					<td>Slice Selection tool</td>
+					<td><span class="key">L</span></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div data-category="edit">
+			<h2 class="table">Edit shortcuts</h2>
+
+			<table class="shortcut">
+				<tr>
+					<th>Action</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Undo</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">Z</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">Z</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Redo</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">Z</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">Y</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Paste Style</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">V</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">V</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Paste FX</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"></span><span class="key CMD-TAG"></span><span class="key">V</span></x-osx>
+						<x-win32><span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">V</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Paste Inside</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">V</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">V</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Paste Without Format</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">V</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">V</span></x-win32>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div data-category="objectControl">
+			<h2 class="table">Object control shortcuts</h2>
+
+			<table class="shortcut">
+				<tr>
+					<th>Action</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Group</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">G</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">G</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Ungroup</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">G</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">G</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Duplicate</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">J</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">J</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Move to Front</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">]</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">]</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Move Forward One</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">]</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">]</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Move to Back</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">[</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">[</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Move Back One</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">[</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">[</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Move Inside</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">G</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">G</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Move Outside</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">G</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">G</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Show All</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"></span><span class="key CMD-TAG"></span><span class="key">H</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">H</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Lock</td>
+					<td>
+					<x-osx><span class="key CMD-TAG"></span><span class="key">L</span></x-osx>
+					<x-win32><span class="key CMD-TAG"></span>+<span class="key">L</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Unlock</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">L</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">L</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Unlock All</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"></span><span class="key CMD-TAG"></span><span class="key">L</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">L</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>New Pixel Layer</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">N</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">N</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Convert to Curves</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key RETURN-TAG"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key RETURN-TAG"></span></x-win32>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div data-category="text">
+			<h2 class="table">Text shortcuts</h2>
+		
+			<aside class="box note osx">
+				<p>By default, Serif-chosen keyboard shortcuts are used to adjust character spacing, baseline and paragraph leading, move the insertion point within text, and select text. They can be changed to standard macOS key combinations in <a href="../Workspace/customizingShortcuts.html">Affinity Designer's Keyboards Shortcuts preferences</a>.</p>
+			</aside>
+		
+			<table class="shortcut">
+				<tr>
+					<th>Action</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Show Character</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">T</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">T</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Show Typography</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">T</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">T</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Spelling Options</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">;</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">;</span></x-win32>
+					</td>
+				</tr>
+			</table>
+			<p></p>
+		
+			<table class="shortcut">
+				<tr>
+					<th>Action (Navigation)</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Moves insertion point one character left</td>
+					<td><span class="key LEFT-TAG"></span></td>
+				</tr>
+				<tr>
+					<td>Moves insertion point one character right</td>
+					<td><span class="key RIGHT-TAG"></span></td>
+				</tr>
+				<tr>
+					<td>Moves insertion point to start of word</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key LEFT-TAG"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key LEFT-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Moves insertion point to end of word</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key RIGHT-TAG"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key RIGHT-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Moves insertion point to start of line</td>
+					<td>
+						<x-osx><span class="key FN-TAG"></span><span class="key LEFT-TAG"></span></x-osx>
+						<x-win32><span class="key">Home</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Moves insertion point to end of line</td>
+					<td>
+						<x-osx><span class="key FN-TAG"></span><span class="key RIGHT-TAG"></span></x-osx>
+						<x-win32><span class="key">End</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Moves insertion point to start of text frame</td>
+					<td>
+						<x-osx><span class="key FN-TAG"></span><span class="CMD-TAG"></span><span class="key LEFT-TAG"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">Home</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Moves insertion point to end of text frame</td>
+					<td>
+						<x-osx><span class="key FN-TAG"></span><span class="CMD-TAG"></span><span class="key RIGHT-TAG"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">End</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Moves insertion point to start of current paragraph</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key UP-TAG"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key UP-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Moves insertion point to start of next paragraph</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key DOWN-TAG"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key DOWN-TAG"></span></x-win32>
+					</td>
+				</tr>
+			</table>
+		
+			<aside class="box note">
+				<p>Add the <span class="SHIFT-TAG"></span> key to shortcuts that move the insertion point to also select text between the insertion point's start and end positions.</p>
+			</aside>
+		
+			<table class="shortcut">
+				<tr>
+					<th>Action (Deleting)</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Delete character to left of insertion point</td>
+					<td>
+						<x-osx><span class="key BACKSPACE"></span></x-osx>
+						<x-win32><span class="key BACKSPACE-WIN"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Delete character to right of insertion point</td>
+					<td>
+						<x-osx><span class="key FN-TAG"></span><span class="key BACKSPACE"></span></x-osx>
+						<x-win32><span class="key">Delete</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Delete from insertion point to start of word</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key BACKSPACE"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key BACKSPACE-WIN"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Delete from insertion point to end of word</td>
+					<td>
+						<x-osx><span class="key FN-TAG"></span><span class="key ALT-TAG"></span><span class="key BACKSPACE"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">Delete</span></x-win32>
+					</td>
+				</tr>
+				<tr class="osx">
+					<td>Delete from insertion point to start of line</td>
+					<td><span class="key CMD-TAG"></span><span class="key BACKSPACE"></span></td>
+				</tr>
+				<tr class="osx">
+					<td>Delete from insertion point to end of paragraph</td>
+					<td><span class="key CTRL-TAG"></span><span class="key">K</span></td>
+				</tr>
+			</table>
+			<p></p>
+		
+			<table class="shortcut">
+				<tr>
+					<th>Action (Formatting)</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Bigger text</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">&gt;</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">&gt;</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Smaller text</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">&lt;</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">&lt;</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Precise bigger text</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">&gt;</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">&gt;</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Precise smaller text</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">&lt;</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">&lt;</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Bold</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">B</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">B</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Italic</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">I</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">I</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Underline</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">U</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">U</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Superscript</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"></span><span class="key CMD-TAG"></span><span class="key">+</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">=</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Subscript</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"></span><span class="key CMD-TAG"></span><span class="key">-</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">-</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Align Left</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">L</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">L</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Align Center</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">C</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">C</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Align Right</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">R</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">R</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Justify Left</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">|</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">|</span></x-win32>
+					</td>
+				</tr>
+			</table>
+			<p></p>
+		
+			<table class="shortcut">
+				<tr>
+					<th>Action (Typography)</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Tighten (Spacing, 10&permil; decrement)</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key LEFT-TAG"></span></x-osx>
+						<x-win32><span class="key ALT-TAG"></span>+<span class="key LEFT-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Loosen (Spacing, 10&permil; increment)</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key RIGHT-TAG"></span></x-osx>
+						<x-win32><span class="key ALT-TAG"></span>+<span class="key RIGHT-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Tighten More (Spacing, 50&permil; decrement)</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key LEFT-TAG"></span></x-osx>
+						<x-win32><span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key LEFT-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Loosen More (Spacing, 50&permil; increment)</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key RIGHT-TAG"></span></x-osx>
+						<x-win32><span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key RIGHT-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Raise Baseline</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key SHIFT-TAG"></span><span class="key UP-TAG"></span></x-osx>
+						<x-win32><span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key UP-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Lower Baseline</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key SHIFT-TAG"></span><span class="key DOWN-TAG"></span></x-osx>
+						<x-win32><span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key DOWN-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Precise Raise Baseline</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key UP-TAG"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key UP-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Precise Lower Baseline</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key DOWN-TAG"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key DOWN-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Increase Paragraph Leading</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key DOWN-TAG"></span></x-osx>
+						<x-win32><span class="key ALT-TAG"></span>+<span class="key DOWN-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Decrease Paragraph Leading</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key UP-TAG"></span></x-osx>
+						<x-win32><span class="key ALT-TAG"></span>+<span class="key UP-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Precise Increase Paragraph Leading</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key DOWN-TAG"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key DOWN-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Precise Decrease Paragraph Leading</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key UP-TAG"></span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key UP-TAG"></span></x-win32>
+					</td>
+				</tr>
+			</table>
+			<p></p>
+		
+			<table class="shortcut">
+				<tr>
+					<th>Action (Special characters)</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Line Break</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key RETURN-TAG"></span></x-osx>
+						<x-win32><span class="key SHIFT-TAG"></span>+<span class="key RETURN-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Non-Breaking Space</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key SPACEBAR-TAG"></span></x-osx>
+						<x-win32><span class="key ALT-TAG"></span>+<span class="key SPACEBAR-TAG"></span></x-win32>
+					</td>
+				</tr>
+				<tr class="osx">
+					<td>Non-Breaking Hyphen</td>
+					<td><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">-</span></td>
+				</tr>
+				<tr>
+					<td>En Dash</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key">-</span></x-osx>
+						<x-win32><span class="key ALT-TAG"></span>+<span class="key">-</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Em Dash</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key SHIFT-TAG"></span><span class="key">-</span></x-osx>
+						<x-win32><span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">-</span></x-win32>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div data-category="view">
+			<h2 class="table">View shortcuts</h2>
+			<table class="shortcut">
+				<tr>
+					<th>Action</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Rotate document view</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span> while using a mouse scroll wheel</x-osx>
+						<x-win32><span class="key ALT-TAG"></span> while using a mouse scroll wheel</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Reset document view rotation</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"></span><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">R</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">R</span></x-win32>
+					</td>
+				</tr>
+				<tr class="win32">
+					<td>Rotate about the document view center</td>
+					<td><span class="key SHIFT-TAG"></span>+<span class="key ALT-TAG"></span> while using a mouse scroll wheel</td>
+				</tr>
+				<tr class="win32">
+					<td>Increase document view rotation speed</td>
+					<td><span class="key CMD-TAG"></span> while rotating the document view</td>
+				</tr>
+				<tr>
+					<td>Zoom In</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">+</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">=</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Zoom Out</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">-</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">-</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Zoom to Fit</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">0</span> (or double-click View Tool icon)</x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">0</span> (or double-click View Tool icon)</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Zoom to Selection</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">0</span> (or double-click Layers panel thumbnail)</x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">0</span> (or double-click Layers panel thumbnail)</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>(Zoom to) 100%</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">1</span> (or double-click Zoom Tool icon)</x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">1</span> (or double-click Zoom Tool icon)</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>(Zoom to) 200%</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">2</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">2</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>(Zoom to) 400%</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">3</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">3</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>(Zoom to) 800%</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">4</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">4</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>(Zoom to) Actual Size</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">8</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">8</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>(Zoom to) Pixel Size</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">9</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">9</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Hot key zoom</td>
+					<td>
+						<x-osx><span class="key SPACEBAR-TAG"></span><span class="key CMD-TAG"></span>-drag</x-osx>
+						<x-win32><span class="key SPACEBAR-TAG"></span>+<span class="key CMD-TAG"></span>-drag</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Hot key zoom in</td>
+					<td>
+						<x-osx><span class="key SPACEBAR-TAG"></span><span class="key CMD-TAG"></span>-click</x-osx>
+						<x-win32><span class="key SPACEBAR-TAG"></span>+<span class="key CMD-TAG"></span>-click</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Hot key zoom out</td>
+					<td>
+						<x-osx><span class="key SPACEBAR-TAG"></span><span class="key ALT-TAG"></span>-click</x-osx>
+						<x-win32><span class="key SPACEBAR-TAG"></span>+<span class="key ALT-TAG"></span>-click</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Hot key zoom in marquee</td>
+					<td>
+						<x-osx><span class="key SPACEBAR-TAG"></span><span class="key ALT-TAG"></span>-drag</x-osx>
+						<x-win32><span class="key SPACEBAR-TAG"></span>+<span class="key ALT-TAG"></span>-drag</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Hot key panning</td>
+					<td><span class="key SPACEBAR-TAG"></span></td>
+				</tr>
+				<tr>
+					<td>Scroll vertically up/down</td>
+					<td><span class="key">Mouse scroll wheel</span></td>
+				</tr>
+				<tr>
+					<td>Scroll horizontally left/right</td>
+					<td><span class="key SHIFT-TAG"></span>+<span class="key">Mouse scroll wheel</span></td>
+				</tr>
+				<tr>
+					<td>Show Rulers</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">R</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">R</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Show Guides</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">;</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">;</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Show Grid</td>
+					<td>
+					<x-osx><span class="key CMD-TAG"></span><span class="key">'</span></x-osx>
+					<x-win32><span class="key CMD-TAG"></span>+<span class="key">'</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Grid Plane cycle</td>
+					<td><span class="key">'</span></td>
+				</tr>
+				<tr class="osx">
+					<td>Outline view mode</td>
+					<td><span class="key CMD-TAG"></span><span class="key">Y</span></td>
+				</tr>
+				<tr>
+					<td>Pixels view mode</td>
+					<td>
+					<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">Y</span></x-osx>
+					<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">Y</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Pixels (Retina) view mode</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">Y</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">Y</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Toggle Split View</td>
+					<td><span class="key">,</span></td>
+				</tr>
+				<tr>
+					<td>Switch to Next View</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">`</span></x-osx>
+						<x-win32><span class="key"></span>`</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Clip to Canvas</td>
+					<td>\</td>
+				</tr>
+				<tr>
+					<td>Isolate an object</td>
+					<td><span class="key ALT-TAG"></span>-click Layers panel thumbnail</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div data-category="selection">
+			<h2 class="table">Selection shortcuts</h2>
+			<table class="shortcut">
+				<tr>
+					<th>Action</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Select All</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">A</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">A</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Deselect</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">D</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">D</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Invert Pixel Selection</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">I</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">I</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Select Next</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">]</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">]</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Select Previous</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">[</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">[</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Nudge selection<sup>1</sup></td>
+					<td><span class="key">Arrow key</span></td>
+				</tr>
+				<tr>
+					<td>Modified nudge selection<sup>1</sup></td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key">arrow key</span></x-osx>
+						<x-win32><span class="key SHIFT-TAG"></span>+<span class="key">arrow key</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Selection from layer</td>
+					<td><span class="key CMD-TAG"></span>-click Layers panel thumbnail</td>
+				</tr>
+				<tr>
+					<td>Selection from layer luminosity</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span>-click Layers panel thumbnail</x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>-click Layers panel thumbnail</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Add to object selection</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"></span>-drag (Move tool)</x-osx>
+						<x-win32>Drag with left mouse button, then hold down right mouse button (Move tool)</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Add to pixel selection</td>
+					<td>
+						<x-osx><span class="key CTRL-TAG"></span>-drag (Marquee and Freehand Selection tools)</x-osx>
+						<x-win32><span class="key CTRL-TAG"></span><span class="key ALT-TAG"></span>-drag (Marquee and Freehand Selection tools)</x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Remove from pixel selection</td>
+					<td><span class="key ALT-TAG"></span>-drag (Marquee and Freehand Selection tools)</td>
+				</tr>
+			</table>
+			<x-osx>
+				<p><sup>1</sup> Nudge distances are customizable via <span class="ui">Affinity Designer&gt;Preferences&gt;Tools</span></p>
+			</x-osx>
+			<x-win32>
+				<p><sup>1</sup> Nudge distances are customizable via <span class="ui">Edit&gt;Preferences&gt;Tools</span></p>
+			</x-win32>
+		</div>
+		
+		<div data-category="workspace">
+			<h2 class="table">Workspace shortcuts</h2>
+			<table class="shortcut">
+				<tr>
+					<th>Action</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Show/Hide Studio</td>
+					<td>
+						<x-osx><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">H</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">H</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Show/Hide Toolbar</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">T</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key">T</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Toggle UI</td>
+					<td><span class="key TAB-TAG"></span></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div data-category="misc">
+			<h2 class="table">Misc shortcuts</h2>
+			<table class="shortcut">
+				<tr>
+					<th>Action</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Preferences</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">,</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">,</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Curves (Adjustment)</td>
+					<td>
+						<x-osx><span class="key CMD-TAG"></span><span class="key">M</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key">M</span></x-win32>
+					</td>
+				</tr>
+				<tr>
+					<td>Black and White (Adjustment)</td>
+					<td>
+						<x-osx><span class="key ALT-TAG"></span><span class="key SHIFT-TAG"></span><span class="key CMD-TAG"></span><span class="key">B</span></x-osx>
+						<x-win32><span class="key CMD-TAG"></span>+<span class="key ALT-TAG"></span>+<span class="key SHIFT-TAG"></span>+<span class="key">B</span></x-win32>
+					</td>
+				</tr>
+			</table>
+
+			<x-osx><h2 class="table">macOS shortcuts</h2>
+			<table class="shortcut">
+				<tr>
+					<th>Action</th>
+					<th>Key</th>
+				</tr>
+				<tr>
+					<td>Special Characters</td>
+					<td><span class="key CTRL-TAG"></span><span class="key CMD-TAG"></span><span class="key SPACEBAR-TAG"></span></td>
+				</tr>
+				<tr>
+					<td>Toggle Full Screen</td>
+					<td><span class="key CTRL-TAG"></span><span class="key CMD-TAG"></span><span class="key">F</span></td>
+				</tr>
+				<tr>
+					<td>Hide Workspace</td>
+					<td><span class="key CMD-TAG"></span><span class="key">H</span></td>
+				</tr>
+				<tr>
+					<td>Hide Others (applications)</td>
+					<td><span class="key ALT-TAG"></span><span class="key CMD-TAG"></span><span class="key">H</span></td>
+				</tr>
+			</table></x-osx>
+		</div>
+	</section>
+	
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="customizingShortcuts.html">Customizing keyboard shortcuts</a></li>
+		</ul>
+	</section>
+
+
+<script src="../../../resources/js/breakout.js"></script>
+<script src="../../../resources/js/shortcuts.js"></script>
+</body>
+
+</html>

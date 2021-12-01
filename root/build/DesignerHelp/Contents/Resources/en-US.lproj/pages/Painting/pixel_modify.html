@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="edit brush, modify brushes, raster, pixel, pattern, controller, pen, stylus, tablet pen, apple pencil, mouse" />
+	<meta name="description" content="Pixel brushes can be modified before you paint on your design." />
+	<title>Modifying pixel brushes</title>
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Modifying pixel brushes</h1>
+
+		<p>Pixel brushes can be modified before you paint on your design. Basic modifications can be made from the context toolbar, while advanced adjustments can be made from the <span class="ui">Brushes</span> panel.</p>
+
+	</header>
+
+	<section class="settings">
+
+		<h3>Settings</h3>
+
+		<p>The following settings are available:</p>
+
+		<h4>General</h4>
+		<ul>
+			<li><span class="ui">Size</span>&#8212;sets the default width of the stroke. This can still be overwritten for individual brush strokes using the context toolbar.</li>
+			<li><span class="ui">Accumulation</span>&#8212;sets the deviation in the opacity or visibility of the stroke as it is painted.</li>
+			<li><span class="ui">Hardness</span>&#8212;how hard the edges of the brush are. The brush appears softer as the percentage decreases.</li>
+			<li><span class="ui">Spacing</span>&#8212;sets the distance between each nozzle point. A lower percentage results in the nozzles blending together to give a flowing stroke. A higher percentage pushes nozzles away from each other creating a spray-style stroke.</li>
+			<li><span class="ui">Flow</span>&#8212;controls how fast color is built up under your brush.</li>
+			<li><span class="ui">Shape</span>&#8212;allows you to squash the brush nozzles.</li>
+			<li><span class="ui">Rotation</span>&#8212;sets the angle at which the brush nozzles are drawn. Great for non-round brushes, e.g. for calligraphic effects.</li>
+			<li><span class="ui">Blend Mode</span>&#8212;changes how the applied color interacts with existing colors on a layer. Select from the pop-up menu.</li>
+			<li><span class="ui">Wet edges</span>&#8212;sets the default 'wet edge' behavior of the brush. Select from the pop-up menu. Check <span class="ui">Custom</span> and apply a preset or custom profile, which subtly changes how watery the stroke appears.<br /> The 'wet edge' behavior builds paint up along the edges of your pixel brush stroke, producing a watercolor effect.</li>
+		</ul>
+
+		<h4>Dynamics</h4>
+		<ul>
+			<li class="osx">Jitter settings determine the extent to which a chosen controller (Pressure, Velocity, Rotation, etc.) will affect the above General settings. Pick a controller from the pop-up menu and click the adjacent Ramp profile icon to select a standard profile from lower thumbnails or create your own using the ramp chart. Move circular nodes to reshape the ramp, add nodes to the ramp by clicking on the line, or select a node to delete a node with the <span class="key BACKSPACE"></span> <span class="KEY-TAG"></span> (simplifying the ramp). Check <span class="ui">Linear</span> for straight lines between all nodes; If unchecked (non-linear), nodes are connected using smooth curves.</li>
+			<li class="win32">Jitter settings determine the extent to which a chosen controller (Pressure, Velocity, Rotation, etc.) will affect the above General settings. Pick a controller from the pop-up menu and click the adjacent Ramp profile icon to select a standard profile from lower thumbnails or create your own using the ramp chart. Move circular nodes to reshape the ramp, add nodes to the ramp by clicking on the line, or select a node to delete a node with the <span class="key BACKSPACE-WIN"></span> <span class="KEY-TAG"></span> (simplifying the ramp). Check <span class="ui">Linear</span> for straight lines between all nodes; If unchecked (non-linear), nodes are connected using smooth curves.</li>
+			<li><span class="ui">Scatter X</span>&#8212;sets the deviation in the horizontal position of the stroke the preset will allow as a stroke is painted.</li>
+			<li><span class="ui">Scatter Y</span>&#8212;sets the deviation in the vertical position of the stroke the preset will allow as a stroke is painted.</li>
+		</ul>
+		<aside class="box note">
+			<p>Hue, Saturation, and Luminosity Jitter settings affect the brush color, which is set via the <span class="ui">Color</span> panel. Similarly, Flow Jitter affects brush opacity, also set on the Color panel.</p>
+		</aside>
+		
+		<h4>Texture</h4>
+
+		<p>For nozzle control:</p>
+		<ul>
+			<li><span class="ui">Brush Nozzles</span>&#8212;displays the nozzles currently used in the current brush.</li>
+			<li><span class="ui">Add</span>&#8212;adds an additional nozzle to the preset.</li>
+			<li><span class="ui">Remove</span>&#8212;deletes the selected nozzle from the preset.</li>
+			<li>Nozzle-specific controller (Pressure, Velocity, Rotation, etc.)&#8212;For multi-nozzle brushes, pick a controller from the pop-up menu and click the adjacent Ramp profile icon to select a standard profile from lower thumbnails or create your own using the ramp chart.</li> 
+		</ul>
+		<p>For base texture control:</p>
+		<ul>
+			<li><span class="ui">Base Texture</span>&#8212;displays the underlying texture or pattern for the current brush.</li>
+			<li><span class="ui">Set Texture</span>&#8212;launches a dialog to add a base texture, as an image, to the brush. For example, to simulate a textured surface like paper or canvas.</li>
+			<li><span class="ui">Remove</span>&#8212;deletes the base texture from the current brush.</li>
+			<li><span class="ui">Invert</span>&#8212;creates a negative version of the texture.</li>
+			<li><span class="ui">Mode</span>&#8212;controls how the base texture contributes to the current brush. Select from the pop-up menu.<ul>
+					<li><span class="ui">None</span>&#8212;the base texture is ignored, so only the brush nozzles are used.</li>
+					<li><span class="ui">Nozzle</span>&#8212;allows nozzles to build up brush color onto the base texture depending on flow and opacity response.</li>
+					<li><span class="ui">Final</span>&#8212;the density of the base texture is kept constant, with no nozzle flow or opacity response.</li>
+				</ul>
+			</li>
+			<li><span class="ui">Scale</span>&#8212;sets the size at which the texture is displayed. A lower percentage will display the texture at a larger size. A higher percentage will display the texture tiled at a smaller size.</li>
+		</ul>
+		<aside class="box note">
+			<p>Images for base textures should be JPEG or PNG. Any reasonably sized image will be acceptable as the base texture can be scaled (above). We recommend using an 8bit grayscale image with a size greater than or equal to 1024 x 1024 pixels. 16bit brushes will generally be slower with no appreciable increase in quality but can also be used.</p>
+		</aside>
+		<aside class="box note">
+			<p>Images for base textures should be JPEG or PNG. Any reasonably sized image will be acceptable as the base texture can be scaled (above).</p>
+		</aside>
+		
+		<h4>Sub Brushes</h4>
+		<ul>
+			<li><span class="ui">Drawing</span>&#8212;controls where the sub brush is drawn in relation to the main brush.</li>
+			<li><span class="ui">Blending</span>&#8212;controls how the sub brush blends with the main brush.</li>
+			<li><span class="ui">Sync size</span>&#8212;when checked, sets the default width of the stroke to match that of the main brush.</li>
+			<li><span class="ui">Sync spacing</span>&#8212;when checked, sets the distance between each nozzle point to match that of the main brush.</li>
+		</ul>
+
+		<h4>Additional settings:</h4>
+		<ul>
+			<li><span class="ui">Reset</span>&#8212;returns all stroke settings to those of the saved brush preset.</li>
+			<li><span class="ui">Duplicate</span>&#8212;saves the current stroke settings to a new preset.</li>
+			<li><span class="ui">Close</span>&#8212;exits the dialog and applies stroke settings to the selected preset.</li>
+		</ul>
+
+	</section>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/manager.png" alt="Edit Brush" /> To modify pixel brush settings:</summary>
+
+			<ol>
+				<li>Choose one of the following:<ul>
+						<li>With Paint Brush selected, on the context toolbar, click <span class="ui">More</span>.</li>
+						<li>On the <span class="ui">Brushes</span> panel, click <span class="ui">Edit Brush</span>.</li>
+					</ul>
+				</li>
+				<li>Adjust the settings in the dialog.</li>
+				<li>Click <span class="ui">Close</span>.</li>
+			</ol>
+		</details>
+
+		<aside class="box note">
+			<p>For more information on creating custom pixel brush presets, see the <a href="pixel_customBrushes.html">Creating custom pixel brushes</a> topic.</p>
+		</aside>
+		
+	</section>
+	
+	<section class="about">
+	
+	<h2>Paint Brush Tool controller options</h2>
+				
+			<table class="shortcut">
+		<tr>
+			<th>Option</th>
+			<th>Device</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>Random</td>
+			<td>Tablet pen, mouse</td>
+			<td>The value of the attribute will be randomly determined based on the percentage of jitter set. The range of this jitter can be seen by the length of the blue bar in the <span class="ui">General</span> tab.</td>
+		</tr>
+		<tr>
+			<td>Pressure</td>
+			<td>Tablet pen</td>
+			<td>The appearance of the brush stroke will be affected by the amount of pressure applied to the tablet.</td>
+		</tr>
+		<tr>
+			<td>Angle</td>
+			<td>Tablet pen</td>
+			<td>The behavior of the brush stroke will be mapped to match the angle of the tablet pen (this varies from 0 to 360&#176;).</td>
+		</tr>
+		<tr>
+			<td>Tilt</td>
+			<td>Tablet pen</td>
+			<td>The behavior of the brush stroke will be mapped to match the tilt of the tablet pen (this varies from 0 to 90&#176;).</td>
+		</tr>
+		<tr>
+			<td>Rotation</td>
+			<td>Tablet pen <sup>1</sup> , <sup>2</sup></td>
+			<td>The behavior of the brush stroke will be mapped to match the tablet pen's barrel rotation.</td>
+		</tr>
+		<tr>
+			<td>Cyclic</td>
+			<td>Tablet pen, mouse</td>
+			<td>The behavior of the brush stroke will cycle between the range of available values shown on the slider. <sup>3</sup></td>
+		</tr>
+		<tr>
+			<td>Velocity</td>
+			<td>Tablet pen, mouse</td>
+			<td>The appearance of the brush stroke will be modified as the speed of the tablet pen or mouse movement increases. The range of the jitter can be seen by the length of the blue bar with low velocity on the left and high velocity on the right.</td>
+		</tr>
+		<tr>
+			<td>Velocity (Inverse)</td>
+			<td>Tablet pen, mouse</td>
+			<td>The appearance of the brush stroke will be modified inversely as the speed of the tablet pen or mouse movement increases. The range of the jitter can be seen by the length of the blue bar with high velocity on the left and low velocity on the right.</td>
+		</tr>
+		<tr>
+			<td>Direction</td>
+			<td>Tablet pen, mouse</td>
+			<td>The appearance of the brush stroke will be affected by the direction the pen or mouse is moving in.</td>
+		</tr>
+		<tr>
+			<td>Stylus Wheel</td>
+			<td>Tablet pen <sup>1</sup> , <sup>2</sup></td>
+			<td>The appearance of the brush stroke will change depending on the setting of the wheel on the airbrush pen.</td>
+		</tr>
+	</table>
+<p><sup>1</sup> This setting is only supported on certain Wacom tablet pens.</p>
+<p><sup>2</sup> The Apple Pencil does not support this setting.</p>
+<p><sup>3</sup> You will need to ensure the <span class="ui">Jitter</span> setting is sufficiently high enough for the effect to change.</p>
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="pixel_painting.html">Painting pixel brush strokes</a></li>
+			<li><a href="pixel_customBrushes.html">Creating custom pixel brushes</a></li>
+			<li><a href="pixel_modify.html">Modifying pixel brushes</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>

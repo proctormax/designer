@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+	<link href="../../../resources/css/style.css" rel="stylesheet" media="all" />
+	<meta name="keywords" content="edit brush, custom brushes, presets, raster brushes, pixel brushes, image brush, intensity brush" />
+	<meta name="description" content="Create your own pixel brushes from scratch." />
+	<title>Creating custom pixel brushes</title>
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Creating custom pixel brushes</h1>
+
+		<p>You can create a custom brush from scratch using a raster image, from a copied preset or from a pixel selection.</p>
+
+
+	</header>
+
+	<section class="howto">
+		<details open="open">
+			<summary><img src="../../../shared/ui/moremenuicon.png" class="tool heading" width="15" height="11" alt="Panel Preferences" /> To create a custom preset brush stroke from scratch:</summary>
+
+			<p>On the <span class="ui">Brushes</span> panel, click Panel Preferences and then select:</p>
+				<ul>
+					<li><span class="ui">New Intensity Brush</span>&#8212;creates a brush stroke based on the opacity values of a raster image. In the pop-up dialog, navigate to and select a file, and click <span class="ui">Open</span>.</li>
+					<li><span class="ui">New Round Brush</span>&#8212;creates a brush stroke based on a circular shape.</li>
+					<li><span class="ui">New Square Brush</span>&#8212;creates a brush stroke based on a rectangular shape.</li>
+					<li><span class="ui">New Image Brush</span>&#8212;creates a brush stroke based on the color values of a raster image. In the pop-up dialog, navigate to and select a file, and click <span class="ui">Open</span>.</li>
+				</ul>
+			<p>The new brush is added to the selected category using default settings. To edit the default settings, follow the procedure below from step 3 immediately below.</p>
+		</details>
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/manager.png" alt="Edit Brush" /> To create a custom preset brush stroke from a preset:</summary>
+
+			<ol>
+				<li>On the <span class="ui">Brushes</span> panel, select a brush and click <span class="ui">Edit Brush</span>.</li>
+				<li>In the dialog, click <span class="ui">Duplicate</span> and then <span class="ui">Close</span>.</li>
+				<li>Select the new brush at the bottom of the panel and click <span class="ui">Edit Brush</span>.</li>
+				<li>Adjust the settings in the dialog. See <a href="pixel_modify.html">Modifying brushes</a> for more information.</li>
+				<li>Click <span class="ui">Close</span>.</li>
+			</ol>
+				
+		</details>
+		
+		<details open="open">
+			<summary><img src="../../../shared/ui/moremenuicon.png" class="tool heading" width="15" height="11" alt="Panel Preferences" /> To create a custom image brush from a pixel selection:</summary>
+
+			<ol>
+				<li>Make a selection using a pixel selection tool.</li>
+				<li>On the <span class="ui">Brushes</span> panel, choose a category to save your brush to.</li>
+				<li>click Panel Preferences and then select <span class="ui">New Brush From Selection</span>.</li>
+			</ol>
+		<p>The image brush is added to the end of the current brush category. Custom intensity brushes can also be created from a mask layer that has a pixel selection in place by using the same process.</p>
+				
+		<aside class="box note">
+			<p>If you are creating a brush from a selection on a placed image, its image layer needs to be rasterized first.</p>
+		</aside>
+		</details>
+		
+		<details>
+			<summary><img src="../../../shared/ui/manager.png" alt="Edit Brush" /> To create a multi-brush:</summary>
+
+			<ol>
+				<li>On the <span class="ui">Brushes</span> panel, create a main brush or duplicate a selected brush.</li>
+				<li>Select the new brush and click <span class="ui">Edit Brush</span>.</li>
+				<li>Click the Sub Brushes tab.</li>
+				<li>Click <span class="ui">Add Bitmap</span>, select a nib file for your sub brush and click <span class="ui">Open</span>.</li>
+				<li>Double-click the brush entry appearing in the window to launch the Sub-Brush Editor.</li>
+				<li>Edit the sub brush settings as you would for your base brush, then click <span class="ui">Close</span>.</li>
+				<li>In the Brush Editing dialog, change sub brush settings to control:<ul>
+						<li><span class="ui">Drawing</span>&#8212;controls where the sub brush is drawn in relation to the main brush.</li>
+						<li><span class="ui">Blending</span>&#8212;controls how the sub brush blends with the main brush.</li>
+						<li><span class="ui">Sync size</span>&#8212;when checked, sets the default width of the stroke to match that of the main brush.</li>
+						<li><span class="ui">Sync spacing</span>&#8212;when checked, sets the distance between each nozzle point to match that of the main brush.</li>
+					</ul>
+				</li>
+			</ol>
+
+			<aside class="box note">
+				<p>You can add additional sub brushes with the topmost sub brush affecting the lower sub brush, and the resulting stroke affecting the main brush. Sub-brushes can be reordered by dragging within the Sub Brushes window.</p>
+			</aside>
+	
+		</details>
+		
+		<aside class="box tip">
+			<p>Additional options from <img src="../../../shared/ui/moremenuicon.png" class="tool heading" width="15" height="11" alt="Panel Preferences" /> Panel Preferences allow you to create, rename, delete, import and export brush categories.</p>
+			<p>Move brushes to any created category by <span class="key CLICK-TAG"></span>-clicking and selecting a category name from the <span class="ui">Move Brush to Category</span> menu option. Custom categories adopt the naming convention 'Brushes', 'Brushes 2', 'Brushes 3', etc.</p>
+		</aside>
+
+	</section>
+
+	<section id="also">
+		<h4>SEE ALSO:</h4>
+		<ul class="plain">
+			<li><a href="../Panels/brushesPanel.html">Brushes panel</a></li>
+			<li><a href="pixel_modify.html">Modifying pixel brushes</a></li>
+			<li><a href="../ObjectControl/rasterizing.html">Rasterizing</a></li>
+		</ul>
+	</section>
+
+<script src="../../../resources/js/breakout.js"></script>
+</body>
+
+</html>
